@@ -949,7 +949,7 @@ namespace FSFLauncherA3
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://server.clan-fsf.fr:8008/redmine/projects/fsf-launcher-a3/issues");
+            System.Diagnostics.Process.Start("https://github.com/ChristopheTdn/FSF-LAUNCHER-ARMA3/issues");
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
@@ -1124,7 +1124,11 @@ namespace FSFLauncherA3
             CheminA3Server.SelectedPath = FSFLauncherCore.cheminARMA3;
             CheminA3Server.ShowDialog();
             textBox18.Text = CheminA3Server.SelectedPath;
+        }
 
+        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/ChristopheTdn/FSF-LAUNCHER-ARMA3");
         }
 
 

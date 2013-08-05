@@ -117,173 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="comboBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox14.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="radioButton21.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="radioButton20.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox13.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button13.Text" xml:space="preserve">
     <value>Inverse selection</value>
-  </data>
-  <data name="button13.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="button12.Text" xml:space="preserve">
     <value>select all</value>
   </data>
-  <data name="button12.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkedListBox7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button3.Text" xml:space="preserve">
     <value>inverse selection</value>
-  </data>
-  <data name="button3.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="button2.Text" xml:space="preserve">
     <value>select all</value>
   </data>
-  <data name="button2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkedListBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button4.Text" xml:space="preserve">
     <value>inverse selection</value>
-  </data>
-  <data name="button4.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="button5.Text" xml:space="preserve">
     <value>select all</value>
   </data>
-  <data name="button5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkedListBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button6.Text" xml:space="preserve">
     <value>inverse selection</value>
-  </data>
-  <data name="button6.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="button7.Text" xml:space="preserve">
     <value>select all</value>
   </data>
-  <data name="button7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkedListBox3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button11.Text" xml:space="preserve">
     <value>inverse selection</value>
-  </data>
-  <data name="button11.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="button10.Text" xml:space="preserve">
     <value>select all</value>
   </data>
-  <data name="button10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkedListBox6.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button8.Text" xml:space="preserve">
     <value>inverse selection</value>
-  </data>
-  <data name="button8.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="button9.Text" xml:space="preserve">
     <value>select all</value>
   </data>
-  <data name="button9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkedListBox4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabControl1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ModsFSF.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox12.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button14.Text" xml:space="preserve">
     <value>inverse selection</value>
   </data>
-  <data name="button14.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button15.Text" xml:space="preserve">
     <value>select all</value>
-  </data>
-  <data name="button15.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkedListBox5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MODs.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="button32.Text" xml:space="preserve">
     <value>Down</value>
@@ -303,32 +177,8 @@
   <data name="button29.ToolTip" xml:space="preserve">
     <value>higher priority</value>
   </data>
-  <data name="ctrlListModPrioritaire.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="Priorité.Text" xml:space="preserve">
     <value>Priority</value>
-  </data>
-  <data name="Priorité.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox30.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox28.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox26.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label36.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label35.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label34.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
@@ -339,20 +189,11 @@
 only if you know
 what you're doing.</value>
   </data>
-  <data name="label41.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 17</value>
   </data>
   <data name="checkBox6.Text" xml:space="preserve">
     <value>Max memory (MB)</value>
-  </data>
-  <data name="checkBox6.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox3.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="pictureBox29.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -660,32 +501,11 @@ what you're doing.</value>
         B9sViQosBoEbAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox29.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="trackBar3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox22.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 17</value>
   </data>
   <data name="checkBox22.Text" xml:space="preserve">
     <value>Max VIDEO memory (MB)</value>
-  </data>
-  <data name="checkBox22.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox6.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox20.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="trackBar2.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 17</value>
@@ -693,23 +513,11 @@ what you're doing.</value>
   <data name="checkBox7.Text" xml:space="preserve">
     <value>CPU count</value>
   </data>
-  <data name="checkBox7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="trackBar1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Parameters expert mode</value>
   </data>
-  <data name="groupBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox23.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 49</value>
-  </data>
-  <data name="pictureBox23.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="button38.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 88</value>
@@ -717,17 +525,11 @@ what you're doing.</value>
   <data name="button38.Text" xml:space="preserve">
     <value>Export MOD List</value>
   </data>
-  <data name="button38.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>251, 88</value>
   </data>
   <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 34</value>
-  </data>
-  <data name="button18.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>117, 64</value>
@@ -738,9 +540,6 @@ what you're doing.</value>
   <data name="checkBox11.Text" xml:space="preserve">
     <value>activate Fraps</value>
   </data>
-  <data name="checkBox11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>117, 88</value>
   </data>
@@ -750,32 +549,17 @@ what you're doing.</value>
   <data name="checkBox12.Text" xml:space="preserve">
     <value>activate TrackIR</value>
   </data>
-  <data name="checkBox12.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox16.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 34</value>
   </data>
-  <data name="pictureBox16.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="progExterne.Text" xml:space="preserve">
     <value>3rd party programs</value>
-  </data>
-  <data name="progExterne.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox21.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 13</value>
   </data>
   <data name="label18.Text" xml:space="preserve">
     <value>Add a Profil :</value>
-  </data>
-  <data name="label18.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 113</value>
@@ -786,17 +570,8 @@ what you're doing.</value>
   <data name="label5.Text" xml:space="preserve">
     <value>Favorite profil set !</value>
   </data>
-  <data name="label5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox5.ToolTip" xml:space="preserve">
     <value>set profile as favorite</value>
-  </data>
-  <data name="textBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="listBox1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="pictureBox3.ToolTip" xml:space="preserve">
     <value>add profile</value>
@@ -808,14 +583,8 @@ what you're doing.</value>
   <data name="profil.Text" xml:space="preserve">
     <value>Profile</value>
   </data>
-  <data name="profil.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox22.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 31</value>
-  </data>
-  <data name="pictureBox22.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 31</value>
@@ -823,80 +592,32 @@ what you're doing.</value>
   <data name="radioButton1.Text" xml:space="preserve">
     <value>Francais</value>
   </data>
-  <data name="radioButton1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox14.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 56</value>
-  </data>
-  <data name="pictureBox14.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox20.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 59</value>
   </data>
-  <data name="radioButton2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="radioButton5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="radioButton4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox15.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 31</value>
-  </data>
-  <data name="pictureBox15.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="radioButton6.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox19.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="pictureBox27.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 88</value>
   </data>
-  <data name="pictureBox27.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 88</value>
-  </data>
-  <data name="radioButton3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox18.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="Langage.Text" xml:space="preserve">
     <value>Language</value>
   </data>
-  <data name="Langage.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox24.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 76</value>
+    <value>329, 29</value>
   </data>
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
+    <value>87, 13</value>
   </data>
   <data name="linkLabel1.Text" xml:space="preserve">
-    <value>Bug report</value>
-  </data>
-  <data name="linkLabel1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox13.ToolTip" xml:space="preserve">
-    <value />
+    <value>Report an issue</value>
   </data>
   <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
     <value>331, 92</value>
@@ -904,52 +625,10 @@ what you're doing.</value>
   <data name="button17.Text" xml:space="preserve">
     <value>Unlock</value>
   </data>
-  <data name="button17.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="linkLabel3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label31.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label37.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label33.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label32.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label22.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label12.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label20.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label13.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label17.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="Apropos.Text" xml:space="preserve">
     <value>about</value>
   </data>
-  <data name="Apropos.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabControl3.ToolTip" xml:space="preserve">
+  <data name="checkBox10.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="checkBox23.Size" type="System.Drawing.Size, System.Drawing">
@@ -973,9 +652,6 @@ what you're doing.</value>
   <data name="checkBox5.Text" xml:space="preserve">
     <value>Show script errors</value>
   </data>
-  <data name="checkBox5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 17</value>
   </data>
@@ -991,17 +667,11 @@ what you're doing.</value>
   <data name="checkBox2.Text" xml:space="preserve">
     <value>No pause</value>
   </data>
-  <data name="checkBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 17</value>
   </data>
   <data name="checkBox4.Text" xml:space="preserve">
     <value>Empty world</value>
-  </data>
-  <data name="checkBox4.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 17</value>
@@ -1009,257 +679,17 @@ what you're doing.</value>
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Window mode</value>
   </data>
-  <data name="checkBox3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Parameters</value>
-  </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="Options.Text" xml:space="preserve">
     <value>options</value>
   </data>
-  <data name="Options.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="panel1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button22.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button21.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button20.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ServeurZone.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button24.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button23.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button19.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox18.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label30.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox17.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label29.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox16.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label28.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label24.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numericUpDown1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label23.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox15.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label21.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox14.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox13.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox12.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label15.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label6.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Serveur_Detail.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numericUpDown5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox19.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox18.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox17.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox15.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox14.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label25.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numericUpDown2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox13.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numericUpDown4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label27.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label26.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numericUpDown3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox16.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage6.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tab_serveur.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ServeurZoneA3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label19.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="progressBar3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="progressBar2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label14.ToolTip" xml:space="preserve">
-    <value />
+  <data name="button16.Text" xml:space="preserve">
+    <value>SERVER Launch</value>
   </data>
   <data name="button25.Text" xml:space="preserve">
     <value>Synchronization</value>
-  </data>
-  <data name="button25.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label16.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button26.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="progressBar1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox17.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SynchroZONE.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabControl2.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 17</value>
@@ -1273,12 +703,6 @@ what you're doing.</value>
   <data name="button1.Text" xml:space="preserve">
     <value>Launch ARMA 3</value>
   </data>
-  <data name="button1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 535</value>
   </data>
@@ -1287,9 +711,6 @@ what you're doing.</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Profil saved !</value>
-  </data>
-  <data name="label4.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="pictureBox2.ToolTip" xml:space="preserve">
     <value>save the profil</value>
@@ -1302,15 +723,6 @@ what you're doing.</value>
   </data>
   <data name="button39.Text" xml:space="preserve">
     <value>Import MODs List</value>
-  </data>
-  <data name="button39.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button16.Text" xml:space="preserve">
-    <value>SERVER Launch</value>
-  </data>
-  <data name="button16.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2807,8 +2219,5 @@ what you're doing.</value>
         /wH///8B////Af///wH///8BAAAAAAAAAAAAAAAA/n8mAPgfJgDgByYAwAMmAIABJgCAASYAAAAmAAAA
         JgAAACYAgAEmAIABJgCAASYAgAEmAIABJgDAAyYA4AcmAA==
 </value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>

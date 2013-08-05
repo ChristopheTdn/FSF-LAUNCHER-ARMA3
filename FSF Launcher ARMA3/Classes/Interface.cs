@@ -11,7 +11,7 @@ using System.Xml;
 
 namespace FSFLauncherA3
 {
-
+    
     public class ComboboxItem
     {
         public string Text { get; set; }
@@ -60,7 +60,6 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.button18.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button39.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button38.Visible = false;
-                FSFLauncherCore.fenetrePrincipale.label37.Visible = true;
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;
             }
         }

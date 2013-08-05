@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ModsFSF.Text" xml:space="preserve">
+    <value>Моды FSF</value>
+  </data>
+  <data name="Options.Text" xml:space="preserve">
+    <value>Опции</value>
+  </data>
   <data name="button13.Text" xml:space="preserve">
     <value>Инвертировать</value>
   </data>
@@ -207,9 +213,6 @@
   </data>
   <data name="button9.Text" xml:space="preserve">
     <value>Выбрать все</value>
-  </data>
-  <data name="ModsFSF.Text" xml:space="preserve">
-    <value>Моды FSF</value>
   </data>
   <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 90</value>
@@ -598,11 +601,17 @@
   <data name="label5.Text" xml:space="preserve">
     <value>Главний профиль !</value>
   </data>
-  <data name="pictureBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>340, 13</value>
+  <data name="Apropos.Text" xml:space="preserve">
+    <value>О программе</value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 86</value>
+    <value>323, 33</value>
+  </data>
+  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="linkLabel1.Text" xml:space="preserve">
+    <value>Report an Issue</value>
   </data>
   <data name="pictureBox13.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 35</value>
@@ -616,14 +625,8 @@
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
     <value>313, 122</value>
   </data>
-  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 9</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 69</value>
-  </data>
-  <data name="Apropos.Text" xml:space="preserve">
-    <value>О программе</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Параметры запуска</value>
   </data>
   <data name="checkBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 17</value>
@@ -663,12 +666,6 @@
   </data>
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Оконный режим игры</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Параметры запуска</value>
-  </data>
-  <data name="Options.Text" xml:space="preserve">
-    <value>Опции</value>
   </data>
   <data name="checkBox19.Location" type="System.Drawing.Point, System.Drawing">
     <value>202, 548</value>
