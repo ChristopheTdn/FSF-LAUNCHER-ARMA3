@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Deployment.Application;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -32,6 +33,7 @@ namespace FSFLauncherA3
             // Affiche version 
 
             FSFLauncherCore.fenetrePrincipale.label31.Text = AfficheVersionProgramme();
+            FSFLauncherCore.fenetrePrincipale.label8.Text = AfficheVersionArma3();
 
             // Genere Mode Serveur dédié.
 
@@ -209,6 +211,19 @@ namespace FSFLauncherA3
                 versionProg = "v. " + version.Major + "." + version.Minor + "." + version.Build + " (Rev. " + version.Revision + ")";
             }
             return versionProg;
+        }
+        static private string AfficheVersionArma3()
+        {
+            try
+            {
+                FileVersionInfo version = FileVersionInfo.GetVersionInfo(FSFLauncherCore.cheminARMA3 + @"/arma3.exe");
+                //ApplicationDeployment.CurrentDeployment.CurrentVersion;
+                return "v. " + version.FileMajorPart + "." + version.FileMinorPart;
+            }
+            catch
+            {
+                return "";
+            }
         }
         /*
          *    LANGAGE
