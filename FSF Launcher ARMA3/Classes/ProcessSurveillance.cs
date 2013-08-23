@@ -39,11 +39,9 @@ namespace FSFLauncherA3
 
         static public void ProcessDisabled()
         {
-            if (!FSFLauncherCore.isFSFServerDedicated())
-            {
-                FSFLauncherCore.fenetrePrincipale.button1.Enabled = true;
-            }
-            FSFLauncherCore.fenetrePrincipale.button16.Enabled = true;
+
+            FSFLauncherCore.fenetrePrincipale.button1.Enabled = true;
+            
         }
        
     }

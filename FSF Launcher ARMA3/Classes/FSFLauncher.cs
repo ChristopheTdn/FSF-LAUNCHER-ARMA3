@@ -108,10 +108,7 @@ namespace FSFLauncherA3
         static public void sauvegardeProfil()
         {
             sauvegardeConfigProfilXML("");
-            if (FSFLauncherCore.isFSFServerDedicated())
-            { 
-            ProfilServer.SauvegardeProfilServer();
-            }
+
         }
         static public void sauvegardeConfigProfilXML(string nomProfil)
         {
@@ -458,46 +455,7 @@ namespace FSFLauncherA3
 
         #region Serveur
 
-        static public void lancerServeur()
-        {
-            ProfilServer.GenerefichierServer();
-            string cheminServer = FSFLauncherCore.fenetrePrincipale.textBox18.Text;
-            string cheminCfgServer = @"@FSFServer\" + (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString() + @"\";
-            generationLigneArguments();
-            string parametreServeur = " ";
-            parametreServeur += @"""-config="+ cheminCfgServer + @"server.cfg"" ";
-            parametreServeur += @"""-cfg=" + cheminCfgServer + @"basic.cfg"" ";
-            parametreServeur += @"""-profiles=" + cheminCfgServer + @"profile"" ";
-            parametreServeur += @"""-name=server"" ";
 
-
-            parametreServeur += "-port=" + fenetrePrincipale.textBox15.Text + " "; 
-            FileStream fs = File.Create(cheminServer + @"\" + cheminCfgServer + @"\serveur.bat");
-            fs.Close();
-
-             string text = "";
-             text += @":FSF" + Environment.NewLine;
-             text += @"Echo  off" + Environment.NewLine;
-             text += @"Cls" + Environment.NewLine;
-             text += @"Echo     +------------------------+" + Environment.NewLine;
-             text += @"Echo     +                        +" + Environment.NewLine;
-             text += @"Echo     +    FSF LAUNCHER A3     +" + Environment.NewLine;
-             text += @"Echo     +                        +" + Environment.NewLine;
-             text += @"Echo     +------------------------+" + Environment.NewLine;
-             text += @"Echo   Profil : [" + fenetrePrincipale.comboBox4.Text + "] en cours d'execution." + Environment.NewLine;
-             text += Environment.NewLine;
-             text += System.IO.Directory.GetDirectoryRoot(cheminServer).Replace(@"\", "") + Environment.NewLine;
-             text += @"CD " + cheminServer + Environment.NewLine;
-             text += @"arma3server.exe " + listArguments + parametreServeur + Environment.NewLine;
-             text += @"Echo + Arret serveur !!!" + Environment.NewLine;
-             text += @"Echo + Redemarrage Serveur. Patientez SVP !" + Environment.NewLine;
-             text += @"Echo .." + Environment.NewLine;
-             text += @"Echo ." + Environment.NewLine;
-             text += @"timeout /T 20 /NOBREAK" + Environment.NewLine;
-             text += @"Goto FSF" + Environment.NewLine;
-
-            //*/
-        }
         static public void generationLigneArguments()
         {
             listMODS = "-MOD=";
@@ -793,10 +751,6 @@ namespace FSFLauncherA3
          */
 
         #region MOTDEPASSE
-        static public bool isFSFServerDedicated()
-        {
-            if (System.IO.File.Exists(FSFLauncherCore.cheminARMA3 + @"\serveur.xml")) {return true;} else {return false;}
-        }
         static public bool isFSFValid()
         {
             if (Encoder(GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "UnlockPass")) == "43b97597d8bd45aed49b393fef1223d7")

@@ -33,19 +33,8 @@ namespace FSFLauncherA3
             // Affiche version 
 
             FSFLauncherCore.fenetrePrincipale.label31.Text = AfficheVersionProgramme();
-            FSFLauncherCore.fenetrePrincipale.label8.Text = AfficheVersionArma3();
 
-            // Genere Mode Serveur dédié.
 
-            if (FSFLauncherCore.isFSFServerDedicated())
-            {
-                FSFLauncherCore.fenetrePrincipale.button1.Enabled = false;
-            }
-            else
-            {
-                FSFLauncherCore.fenetrePrincipale.tabControl2.TabPages.Remove(FSFLauncherCore.fenetrePrincipale.ServeurZoneA3);
-
-            }
 
  
             // bouton prog externe
@@ -63,6 +52,11 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.button39.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button38.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;
+                FSFLauncherCore.fenetrePrincipale.label1.Visible = false;
+            }
+            else
+            {
+                AlerteVersionArma3();
             }
         }
  
@@ -70,11 +64,6 @@ namespace FSFLauncherA3
         {
             effaceTousItemsOnglets();
 
-            // genere param Serveur
-            if (FSFLauncherCore.isFSFServerDedicated())
-            {
-                ProfilServer.ChargeProfilServer();
-            }
 
             // @FSF 
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox7, "@TEMPLATE", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
@@ -218,12 +207,37 @@ namespace FSFLauncherA3
             {
                 FileVersionInfo version = FileVersionInfo.GetVersionInfo(FSFLauncherCore.cheminARMA3 + @"/arma3.exe");
                 //ApplicationDeployment.CurrentDeployment.CurrentVersion;
-                return "v. " + version.FileMajorPart + "." + version.FileMinorPart;
+                return version.FileMajorPart + "." + version.FileMinorPart;
             }
             catch
             {
                 return "";
             }
+        }
+        static private void AlerteVersionArma3()
+        {
+            try
+            {
+                XmlTextReader fichierInfoServer = new XmlTextReader("http://server.clan-fsf.fr/fsfserver/infoserveur.xml");
+                fichierInfoServer.ReadToFollowing("VERSION");
+                string VersionServeur = fichierInfoServer.ReadString();
+                fichierInfoServer.Close();
+                if (VersionServeur == AfficheVersionArma3())
+                {
+                    FSFLauncherCore.fenetrePrincipale.label1.Text = "Votre version arma3.exe est compatible FSF Serveur (" + VersionServeur + ")";
+                    FSFLauncherCore.fenetrePrincipale.label1.ForeColor = System.Drawing.Color.Black;
+                }
+                else 
+                {
+                    FSFLauncherCore.fenetrePrincipale.label1.Text = "Votre version (" + AfficheVersionArma3() + ") est INCOMPATIBLE FSF Serveur (" + VersionServeur + ")";
+                    FSFLauncherCore.fenetrePrincipale.label1.ForeColor = System.Drawing.Color.Red;
+                }
+               
+            }
+            catch
+            {
+            }
+
         }
         /*
          *    LANGAGE

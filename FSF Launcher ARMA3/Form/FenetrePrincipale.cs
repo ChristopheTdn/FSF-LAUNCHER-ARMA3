@@ -579,12 +579,6 @@ namespace FSFLauncherA3
             button25.Enabled = true;
         }
 
- 
-
-
-
-
-
         /*
          * 
          * 
@@ -793,15 +787,6 @@ namespace FSFLauncherA3
             textBox6.Text = trackBar2.Value.ToString();
         }
 
-
-
-
-
-
-
-
-
-
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.clan-fsf.fr");
@@ -909,32 +894,11 @@ namespace FSFLauncherA3
         }
 
 
-        private void checkBox13_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox13.Checked)
-            {
-                numericUpDown2.Enabled = true;
-            }
-            else
-            {
-                numericUpDown2.Enabled = false;
-            }
-        }
-
-
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
+           private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            FSFLauncherCore.lancerServeur();
-
-        }
 
         private void progExterne_Click(object sender, EventArgs e)
         {
@@ -1063,67 +1027,19 @@ namespace FSFLauncherA3
         {
         }
 
-        private void checkBox16_CheckedChanged(object sender, EventArgs e)
-        {
 
-            numericUpDown3.Enabled = checkBox16.Checked;
-            numericUpDown4.Enabled = checkBox16.Checked;
-            
-        }
-
-        private void checkBox13_CheckedChanged_1(object sender, EventArgs e)
-        {
-            numericUpDown2.Enabled = checkBox13.Checked;
-        }
 
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
-        {
-            groupBox_recruit.Visible = radioButton7.Checked;
-            groupBox_regular.Visible = radioButton8.Checked;
-            groupBox_veteran.Visible = radioButton9.Checked;
-            groupBox_elite.Visible = radioButton10.Checked;
-        }
-
-        private void radioButton10_CheckedChanged(object sender, EventArgs e)
-        {
-            groupBox_recruit.Visible = radioButton7.Checked;
-            groupBox_regular.Visible = radioButton8.Checked;
-            groupBox_veteran.Visible = radioButton9.Checked;
-            groupBox_elite.Visible = radioButton10.Checked;
-        }
-
-        private void radioButton9_CheckedChanged(object sender, EventArgs e)
-        {
-            groupBox_recruit.Visible = radioButton7.Checked;
-            groupBox_regular.Visible = radioButton8.Checked;
-            groupBox_veteran.Visible = radioButton9.Checked;
-            groupBox_elite.Visible = radioButton10.Checked;
-        }
-
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-            groupBox_recruit.Visible = radioButton7.Checked;
-            groupBox_regular.Visible = radioButton8.Checked;
-            groupBox_veteran.Visible = radioButton9.Checked;
-            groupBox_elite.Visible = radioButton10.Checked;
-        }
-
-        private void textBox21_TextChanged(object sender, EventArgs e)
-        {
-            numericUpDown10.Enabled = (textBox21.Text != "");
-        }
 
         private void button37_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog CheminA3Server = new FolderBrowserDialog();
             CheminA3Server.SelectedPath = FSFLauncherCore.cheminARMA3;
             CheminA3Server.ShowDialog();
-            textBox18.Text = CheminA3Server.SelectedPath;
         }
 
         private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
