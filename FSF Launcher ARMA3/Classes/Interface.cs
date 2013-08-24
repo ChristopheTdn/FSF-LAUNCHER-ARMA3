@@ -207,7 +207,7 @@ namespace FSFLauncherA3
             {
                 FileVersionInfo version = FileVersionInfo.GetVersionInfo(FSFLauncherCore.cheminARMA3 + @"/arma3.exe");
                 //ApplicationDeployment.CurrentDeployment.CurrentVersion;
-                return version.FileMajorPart + "." + version.FileMinorPart;
+                return version.ProductVersion;
             }
             catch
             {
@@ -218,24 +218,26 @@ namespace FSFLauncherA3
         {
             try
             {
+                FSFLauncherCore.fenetrePrincipale.label1.Visible = true;
                 XmlTextReader fichierInfoServer = new XmlTextReader("http://server.clan-fsf.fr/fsfserver/infoserveur.xml");
                 fichierInfoServer.ReadToFollowing("VERSION");
                 string VersionServeur = fichierInfoServer.ReadString();
                 fichierInfoServer.Close();
                 if (VersionServeur == AfficheVersionArma3())
                 {
-                    FSFLauncherCore.fenetrePrincipale.label1.Text = "Votre version arma3.exe est compatible FSF Serveur (" + VersionServeur + ")";
+                    FSFLauncherCore.fenetrePrincipale.label1.Text = "Votre version arma3.exe est\ncompatible FSF Serveur (" + VersionServeur + ")";
                     FSFLauncherCore.fenetrePrincipale.label1.ForeColor = System.Drawing.Color.Black;
                 }
                 else 
                 {
-                    FSFLauncherCore.fenetrePrincipale.label1.Text = "Votre version (" + AfficheVersionArma3() + ") est INCOMPATIBLE FSF Serveur (" + VersionServeur + ")";
+                    FSFLauncherCore.fenetrePrincipale.label1.Text = "Votre version (" + AfficheVersionArma3() + ") est\nINCOMPATIBLE FSF Serveur (" + VersionServeur + ")";
                     FSFLauncherCore.fenetrePrincipale.label1.ForeColor = System.Drawing.Color.Red;
                 }
                
             }
             catch
             {
+                FSFLauncherCore.fenetrePrincipale.label1.Visible = false;
             }
 
         }

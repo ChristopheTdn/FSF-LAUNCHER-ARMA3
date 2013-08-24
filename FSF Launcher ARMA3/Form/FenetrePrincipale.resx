@@ -6505,7 +6505,7 @@ l'alpha de ARMA 3
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>480, 582</value>
+    <value>480, 597</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6517,16 +6517,17 @@ l'alpha de ARMA 3
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 561</value>
+    <value>238, 560</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 15</value>
+    <value>155, 30</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Votre version 0.00 est compatible FSF Server (0.00)</value>
+    <value>Votre version 0.00 est
+compatible FSF Server (0.00)</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>

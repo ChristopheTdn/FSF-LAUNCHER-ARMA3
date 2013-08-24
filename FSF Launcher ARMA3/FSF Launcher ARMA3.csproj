@@ -37,8 +37,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>176</ApplicationRevision>
-    <ApplicationVersion>0.99.0823.%2a</ApplicationVersion>
+    <ApplicationRevision>178</ApplicationRevision>
+    <ApplicationVersion>0.99.0824.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
