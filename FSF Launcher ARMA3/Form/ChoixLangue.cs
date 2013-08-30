@@ -74,6 +74,14 @@ namespace FSFLauncherA3
                 FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "langage", "el-GR");
             }
         }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton6.Checked)
+            {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "langage", "es-ES");
+            }
+        }
         
 
 

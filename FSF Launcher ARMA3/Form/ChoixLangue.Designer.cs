@@ -41,12 +41,15 @@
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -105,7 +108,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(280, 115);
+            this.button1.Location = new System.Drawing.Point(280, 144);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -179,11 +182,35 @@
             this.radioButton5.UseVisualStyleBackColor = true;
             this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::FSFLauncherA3.Properties.Resources.espagne;
+            this.pictureBox7.Location = new System.Drawing.Point(361, 98);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(39, 37);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 13;
+            this.pictureBox7.TabStop = false;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(278, 109);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(63, 17);
+            this.radioButton6.TabIndex = 12;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Español";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
+            // 
             // langue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 146);
+            this.ClientSize = new System.Drawing.Size(424, 179);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.radioButton6);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.pictureBox5);
@@ -208,6 +235,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,5 +255,7 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.RadioButton radioButton6;
     }
 }

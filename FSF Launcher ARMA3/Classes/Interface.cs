@@ -288,6 +288,9 @@ namespace FSFLauncherA3
                     case "el-GR":
                         textAffiche = "Προεπιλογή";
                         break;
+                    case "es-ES":
+                        textAffiche = "Por defecto";
+                        break;
                     default:
                         textAffiche = "defaut";
                         break;
@@ -321,6 +324,10 @@ namespace FSFLauncherA3
                     case "el-GR":
                         textAffiche = "Προεπιλογή";
                         break;
+                    case "es-ES":
+                        textAffiche = "Por defecto";
+                        break;
+
                     default:
                         textAffiche = "defaut";
                         break;

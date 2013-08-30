@@ -1047,6 +1047,14 @@ namespace FSFLauncherA3
             System.Diagnostics.Process.Start("https://github.com/ChristopheTdn/FSF-LAUNCHER-ARMA3");
         }
 
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton4.Checked)
+            {
+                Interface.ChangeLangage("es-ES");
+            };
+        }
+
 
 
 

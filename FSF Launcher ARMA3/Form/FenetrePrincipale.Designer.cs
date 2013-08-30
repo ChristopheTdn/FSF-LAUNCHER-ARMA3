@@ -179,13 +179,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.checkBox24 = new System.Windows.Forms.CheckBox();
             this.button39 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -623,6 +623,7 @@
             this.Priorité.Controls.Add(this.ctrlListModPrioritaire);
             resources.ApplyResources(this.Priorité, "Priorité");
             this.Priorité.Name = "Priorité";
+            this.toolTip1.SetToolTip(this.Priorité, resources.GetString("Priorité.ToolTip"));
             this.Priorité.Enter += new System.EventHandler(this.Priorité_Enter);
             // 
             // button32
@@ -1049,6 +1050,7 @@
             resources.ApplyResources(this.radioButton4, "radioButton4");
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // pictureBox15
             // 
@@ -1426,6 +1428,11 @@
             this.button39.UseVisualStyleBackColor = true;
             this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // openFileDialog2
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
@@ -1441,11 +1448,6 @@
             // cultureManager1
             // 
             this.cultureManager1.ManagedControl = this;
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // FenetrePrincipale
             // 
