@@ -697,7 +697,8 @@ namespace FSFLauncherA3
                         fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "->fichier " + repertoireLocal + "Organisation.txt mis a jour." + Environment.NewLine);
 
                         downloadnouvelleVersion("Organisation.txt", FSFLauncherCore.constCheminFTP + "/@FSF/", FSFLauncherCore.constLoginFTP, FSFLauncherCore.constMdpFTP, repertoireLocal);
-                    
+                        downloadnouvelleVersion("version.xml", FSFLauncherCore.constCheminFTP + "/@FSF/", FSFLauncherCore.constLoginFTP, FSFLauncherCore.constMdpFTP, repertoireLocal);
+
                 }
             }
             catch (Exception z)

@@ -22,11 +22,14 @@ namespace FSFLauncherA3
 
             radioButton2.Checked = true; 
             CultureInfo ci = CultureInfo.InstalledUICulture;
+            
             if (ci.Name == "fr-FR") { radioButton1.Checked = true; this.Close();}
             if (ci.Name == "en-US") { radioButton2.Checked = true; this.Close(); }
             if (ci.Name == "de-DE") { radioButton3.Checked = true; this.Close(); }
             if (ci.Name == "ru-RU") { radioButton4.Checked = true; this.Close(); }
             if (ci.Name == "el-GR") { radioButton5.Checked = true; this.Close(); }
+            if (ci.Name == "es-ES") { radioButton6.Checked = true; this.Close(); }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
