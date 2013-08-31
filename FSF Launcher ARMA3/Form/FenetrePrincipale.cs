@@ -100,6 +100,7 @@ namespace FSFLauncherA3
             if (langue == "ru-RU") { radioButton3.Checked = true; };
             if (langue == "de-DE") { radioButton6.Checked = true; };
             if (langue == "el-GR") { radioButton5.Checked = true; };
+            if (langue == "es-ES") { radioButton4.Checked = true; };
         }
 
 
