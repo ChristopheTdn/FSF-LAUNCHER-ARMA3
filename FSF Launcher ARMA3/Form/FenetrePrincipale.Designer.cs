@@ -34,7 +34,6 @@
             this.ModsFSF = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
@@ -139,7 +138,6 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.button17 = new System.Windows.Forms.Button();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.label31 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -171,6 +169,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.label31 = new System.Windows.Forms.Label();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -289,7 +288,6 @@
             this.tabPage8.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.tabPage8, "tabPage8");
             this.tabPage8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage8.Controls.Add(this.label1);
             this.tabPage8.Controls.Add(this.groupBox14);
             this.tabPage8.Controls.Add(this.groupBox13);
             this.tabPage8.Controls.Add(this.pictureBox1);
@@ -297,11 +295,6 @@
             this.tabPage8.Controls.Add(this.button12);
             this.tabPage8.Controls.Add(this.checkedListBox7);
             this.tabPage8.Name = "tabPage8";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // groupBox14
             // 
@@ -1167,11 +1160,6 @@
             this.linkLabel3.UseMnemonic = false;
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // label31
-            // 
-            resources.ApplyResources(this.label31, "label31");
-            this.label31.Name = "label31";
-            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
@@ -1377,6 +1365,11 @@
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.TabStop = false;
             // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.Name = "label31";
+            // 
             // checkBox19
             // 
             resources.ApplyResources(this.checkBox19, "checkBox19");
@@ -1535,7 +1528,6 @@
             this.ModsFSF.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
@@ -1761,7 +1753,6 @@
         public System.Windows.Forms.TabControl tabControl2;
         internal System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        internal System.Windows.Forms.Label label1;
         internal System.Windows.Forms.Label label8;
         internal System.Windows.Forms.Label label7;
         internal System.Windows.Forms.Label label6;

@@ -52,7 +52,6 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.button39.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button38.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;
-                FSFLauncherCore.fenetrePrincipale.label1.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.groupBox3.Visible = false;
             }
             else
@@ -236,7 +235,6 @@ namespace FSFLauncherA3
         {
             try
             {
-                FSFLauncherCore.fenetrePrincipale.label1.Visible = true;
                 XmlTextReader fichierInfoServer = new XmlTextReader("http://server.clan-fsf.fr/fsfserver/infoserveur.xml");
                 fichierInfoServer.ReadToFollowing("VERSION");
                 string VersionServeur = fichierInfoServer.ReadString();
@@ -246,7 +244,6 @@ namespace FSFLauncherA3
                     FSFLauncherCore.fenetrePrincipale.label7.Text = VersionArma3();
                     FSFLauncherCore.fenetrePrincipale.toolTip1.SetToolTip(FSFLauncherCore.fenetrePrincipale.pictureBox24, "Version (FSF server) : " + VersionServeur + Environment.NewLine);
                     FSFLauncherCore.fenetrePrincipale.pictureBox24.Image = FSFLauncherA3.Properties.Resources.valide;
-                    FSFLauncherCore.fenetrePrincipale.label1.ForeColor = System.Drawing.Color.Black;
                 }
                 else 
                 {
@@ -293,7 +290,6 @@ namespace FSFLauncherA3
             }
             catch
             {
-                FSFLauncherCore.fenetrePrincipale.label1.Visible = false;
             }
 
         }
