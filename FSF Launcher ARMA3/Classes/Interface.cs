@@ -53,10 +53,12 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.button38.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;
                 FSFLauncherCore.fenetrePrincipale.label1.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.groupBox3.Visible = false;
             }
             else
             {
                 AlerteVersionArma3();
+                AlerteVersionSynchro();
             }
         }
  
@@ -201,7 +203,7 @@ namespace FSFLauncherA3
             }
             return versionProg;
         }
-        static private string AfficheVersionArma3()
+        static private string VersionArma3()
         {
             try
             {
@@ -214,6 +216,22 @@ namespace FSFLauncherA3
                 return "";
             }
         }
+        static private string VersionSynchro()
+        {
+            string VersionSynchro;
+            try
+            {
+                XmlTextReader fichierInfoServer = new XmlTextReader(FSFLauncherCore.cheminARMA3 +@"\@FSF\version.xml");
+                fichierInfoServer.ReadToFollowing("VERSION");
+                VersionSynchro = fichierInfoServer.ReadString();
+                fichierInfoServer.Close();
+            }
+            catch
+            {
+                return "null";
+            }
+            return VersionSynchro;
+        }
         static private void AlerteVersionArma3()
         {
             try
@@ -223,17 +241,55 @@ namespace FSFLauncherA3
                 fichierInfoServer.ReadToFollowing("VERSION");
                 string VersionServeur = fichierInfoServer.ReadString();
                 fichierInfoServer.Close();
-                if (VersionServeur == AfficheVersionArma3())
+                if (VersionServeur == VersionArma3())
                 {
-                    FSFLauncherCore.fenetrePrincipale.label1.Text = "Votre version arma3.exe est\ncompatible FSF Serveur (" + VersionServeur + ")";
+                    FSFLauncherCore.fenetrePrincipale.label7.Text = VersionArma3();
+                    FSFLauncherCore.fenetrePrincipale.toolTip1.SetToolTip(FSFLauncherCore.fenetrePrincipale.pictureBox24, "Version (FSF server) : " + VersionServeur + Environment.NewLine);
+                    FSFLauncherCore.fenetrePrincipale.pictureBox24.Image = FSFLauncherA3.Properties.Resources.valide;
                     FSFLauncherCore.fenetrePrincipale.label1.ForeColor = System.Drawing.Color.Black;
                 }
                 else 
                 {
-                    FSFLauncherCore.fenetrePrincipale.label1.Text = "Votre version (" + AfficheVersionArma3() + ") est\nINCOMPATIBLE FSF Serveur (" + VersionServeur + ")";
-                    FSFLauncherCore.fenetrePrincipale.label1.ForeColor = System.Drawing.Color.Red;
+                    FSFLauncherCore.fenetrePrincipale.label7.Text = VersionArma3();
+                    FSFLauncherCore.fenetrePrincipale.toolTip1.SetToolTip(FSFLauncherCore.fenetrePrincipale.pictureBox24, "Version (FSF server) : " + VersionServeur );
+                    FSFLauncherCore.fenetrePrincipale.pictureBox24.Image = FSFLauncherA3.Properties.Resources.delete;
+                    FSFLauncherCore.fenetrePrincipale.label7.ForeColor = System.Drawing.Color.Red;
                 }
                
+            }
+            catch
+            {
+                
+            }
+
+        }
+        static private void AlerteVersionSynchro()
+        {
+            string VersionSynchroEnLigne;
+            try
+            {
+
+                string link = @"ftp://" + FSFLauncherCore.constLoginFTP + ":" + FSFLauncherCore.constMdpFTP + @"@" + FSFLauncherCore.constCheminFTP + @"/@FSF/version.xml";
+                XmlTextReader fichierInfoServer = new XmlTextReader(link);
+                fichierInfoServer.ReadToFollowing("VERSION");
+                VersionSynchroEnLigne = fichierInfoServer.ReadString();
+                fichierInfoServer.Close();
+
+                if (VersionSynchroEnLigne == VersionSynchro())
+                {
+                    FSFLauncherCore.fenetrePrincipale.label8.Text = VersionSynchro();
+                    FSFLauncherCore.fenetrePrincipale.toolTip1.SetToolTip(FSFLauncherCore.fenetrePrincipale.pictureBox25, "Synchro (FSF server) : " + VersionSynchroEnLigne + Environment.NewLine);
+                    FSFLauncherCore.fenetrePrincipale.pictureBox25.Image = FSFLauncherA3.Properties.Resources.valide;
+                    FSFLauncherCore.fenetrePrincipale.label8.ForeColor = System.Drawing.Color.Black;
+                }
+                else
+                {
+                    FSFLauncherCore.fenetrePrincipale.label8.Text = VersionSynchro();
+                    FSFLauncherCore.fenetrePrincipale.toolTip1.SetToolTip(FSFLauncherCore.fenetrePrincipale.pictureBox25, "Synchro (FSF server) : " + VersionSynchroEnLigne);
+                    FSFLauncherCore.fenetrePrincipale.pictureBox25.Image = FSFLauncherA3.Properties.Resources.delete;
+                    FSFLauncherCore.fenetrePrincipale.label8.ForeColor = System.Drawing.Color.Red;
+                }
+
             }
             catch
             {
@@ -241,6 +297,14 @@ namespace FSFLauncherA3
             }
 
         }
+
+   
+           
+ 
+
+
+
+
         /*
          *    LANGAGE
          */

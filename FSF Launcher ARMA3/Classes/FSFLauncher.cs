@@ -902,7 +902,7 @@ namespace FSFLauncherA3
 
         }
 
-        // ecris clé dans la base de registre
+        // ecrit clé dans la base de registre
 
         static public void SetKeyValue(string DirName, string name, string value)
         {
