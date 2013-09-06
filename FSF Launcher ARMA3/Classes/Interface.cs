@@ -231,7 +231,7 @@ namespace FSFLauncherA3
             }
             return VersionSynchro;
         }
-        static private void AlerteVersionArma3()
+        static public void AlerteVersionArma3()
         {
             try
             {
@@ -260,7 +260,7 @@ namespace FSFLauncherA3
             }
 
         }
-        static private void AlerteVersionSynchro()
+        static public void AlerteVersionSynchro()
         {
             string VersionSynchroEnLigne;
             try

@@ -707,7 +707,8 @@ namespace FSFLauncherA3
             }
             fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "_______________" + Environment.NewLine);
             fenetrePrincipale.textBox11.Text += "Fin de la synchro";
-
+            Interface.AlerteVersionArma3();
+            Interface.AlerteVersionSynchro();
 
         }
         static private void effaceProgressBar()
