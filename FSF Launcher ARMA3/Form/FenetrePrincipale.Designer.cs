@@ -182,7 +182,6 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -1445,10 +1444,6 @@
             // 
             this.openFileDialog3.FileName = "openFileDialog3";
             // 
-            // timer2
-            // 
-            this.timer2.Interval = 30000;
-            // 
             // cultureManager1
             // 
             this.cultureManager1.ManagedControl = this;
@@ -1678,7 +1673,6 @@
         internal System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         internal System.Windows.Forms.OpenFileDialog openFileDialog2;
         internal System.Windows.Forms.OpenFileDialog openFileDialog3;
-        internal System.Windows.Forms.Timer timer2;
         internal System.Windows.Forms.PictureBox pictureBox12;
         internal System.Windows.Forms.FolderBrowserDialog folderBrowserDialog2;
         internal System.Windows.Forms.LinkLabel linkLabel3;

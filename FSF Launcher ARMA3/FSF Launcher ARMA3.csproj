@@ -37,8 +37,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>185</ApplicationRevision>
-    <ApplicationVersion>0.99.0906.%2a</ApplicationVersion>
+    <ApplicationRevision>187</ApplicationRevision>
+    <ApplicationVersion>0.99.0908.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -176,6 +176,12 @@
     <Compile Include="Form\ChoixLangue.Designer.cs">
       <DependentUpon>ChoixLangue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form\Dial_Unlock.en.resx">
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FenetrePrincipale.ru-RU.resx">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -316,6 +325,8 @@
     <Content Include="gfx\profil.png" />
     <None Include="gfx\royaumeunis.png" />
     <None Include="gfx\russe.png" />
+    <None Include="gfx\splascreen.png" />
+    <None Include="gfx\splashscreen.png" />
     <Content Include="Projet1.ico" />
   </ItemGroup>
   <ItemGroup>

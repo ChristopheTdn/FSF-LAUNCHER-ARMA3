@@ -59,6 +59,7 @@ namespace FSFLauncherA3
                 AlerteVersionArma3();
                 AlerteVersionSynchro();
             }
+
         }
  
         static public void genereTab()

@@ -18,15 +18,18 @@ using Infralution.Localization;
 namespace FSFLauncherA3
 {
     public partial class FenetrePrincipale : Form
-    {
+    {   Form splashscreen = new SplashScreen();
         public FenetrePrincipale()
         {
             InitializeComponent();
+
             
         }
 
         private void FenetrePrincipale_Load(object sender, EventArgs e)
         {
+           
+
 
             Control.CheckForIllegalCrossThreadCalls = false;
 
@@ -50,6 +53,7 @@ namespace FSFLauncherA3
 
             // PREPARATION INITIALISATION INTERFACE
             FSFLauncherCore.fenetrePrincipale = this;
+   
 
             FSFLauncherCore.DefinitionConstante();
 
@@ -63,8 +67,9 @@ namespace FSFLauncherA3
             configureInstallationMODS();      
             /* 
                 Organisation INTERFACE
-            */
+            */          
             Interface.dessineInterface();
+            splashscreen.ShowDialog();
         }
 
 
@@ -1059,6 +1064,11 @@ namespace FSFLauncherA3
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            splashscreen.Close();
         }
 
 
