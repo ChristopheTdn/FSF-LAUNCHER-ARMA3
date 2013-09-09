@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace FSFLauncherA3
 {
-    public partial class Dial_LanceSynchroBeta : Form
+    public partial class Dial_LanceSynchroOfficielle : Form
     {
-        public Dial_LanceSynchroBeta()
+        public Dial_LanceSynchroOfficielle()
         {
             InitializeComponent();
             FSFLauncherCore.dialogueReponse = false;
@@ -27,6 +27,11 @@ namespace FSFLauncherA3
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Dial_LanceSynchroOfficielle_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

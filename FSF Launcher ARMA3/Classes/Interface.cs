@@ -34,9 +34,10 @@ namespace FSFLauncherA3
 
             FSFLauncherCore.fenetrePrincipale.label31.Text = AfficheVersionProgramme();
 
+            // Affiche Version Synchro Effective
 
-
- 
+            FSFLauncherCore.fenetrePrincipale.label15.Text = versionSynchroEnLignes("@FSF_OFFICIELLE");
+            FSFLauncherCore.fenetrePrincipale.label10.Text = versionSynchroEnLignes("@FSF");
             // bouton prog externe
 
             ProgExterne.ValideProgExt();
@@ -232,6 +233,25 @@ namespace FSFLauncherA3
             }
             return VersionSynchro;
         }
+        static public string versionSynchroEnLignes(string Rep)
+        {
+            string VersionSynchroEnLigne="?";
+            string repertoireDistant = @"/" + Rep + @"/";
+            try
+            {
+                string link = @"ftp://" + FSFLauncherCore.constLoginFTP + ":" + FSFLauncherCore.constMdpFTP + @"@" + FSFLauncherCore.constCheminFTP + repertoireDistant + "version.xml";
+                XmlTextReader fichierInfoServer = new XmlTextReader(link);
+                fichierInfoServer.ReadToFollowing("VERSION");
+                VersionSynchroEnLigne = fichierInfoServer.ReadString();
+                fichierInfoServer.Close();
+            }
+            catch
+            {
+            
+            }
+            return VersionSynchroEnLigne;
+
+        }
         static public void AlerteVersionArma3()
         {
             try
@@ -264,10 +284,13 @@ namespace FSFLauncherA3
         static public void AlerteVersionSynchro()
         {
             string VersionSynchroEnLigne;
+            string repertoireDistant=@"/";
+           
             try
             {
-
-                string link = @"ftp://" + FSFLauncherCore.constLoginFTP + ":" + FSFLauncherCore.constMdpFTP + @"@" + FSFLauncherCore.constCheminFTP + @"/@FSF/version.xml";
+                if (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro") == "beta") repertoireDistant = @"/@FSF/";
+                if (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro") == "officielle") repertoireDistant = @"/@FSF_OFFICIELLE/";
+                string link = @"ftp://" + FSFLauncherCore.constLoginFTP + ":" + FSFLauncherCore.constMdpFTP + @"@" + FSFLauncherCore.constCheminFTP + repertoireDistant + "version.xml";
                 XmlTextReader fichierInfoServer = new XmlTextReader(link);
                 fichierInfoServer.ReadToFollowing("VERSION");
                 VersionSynchroEnLigne = fichierInfoServer.ReadString();
@@ -289,8 +312,9 @@ namespace FSFLauncherA3
                 }
 
             }
-            catch
+            catch (Exception e)
             {
+                FSFLauncherCore.fenetrePrincipale.label1.Text = e.ToString();
             }
 
         }

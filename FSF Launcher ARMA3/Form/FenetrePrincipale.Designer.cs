@@ -160,11 +160,14 @@
             this.label19 = new System.Windows.Forms.Label();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.button25 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
             this.button26 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -192,6 +195,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1281,6 +1285,7 @@
             this.SynchroZONE.Controls.Add(this.label19);
             this.SynchroZONE.Controls.Add(this.progressBar3);
             this.SynchroZONE.Controls.Add(this.progressBar2);
+            this.SynchroZONE.Controls.Add(this.label16);
             this.SynchroZONE.Controls.Add(this.label11);
             this.SynchroZONE.Controls.Add(this.label14);
             this.SynchroZONE.Controls.Add(this.groupBox8);
@@ -1310,6 +1315,11 @@
             this.progressBar2.Step = 100;
             this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
@@ -1322,11 +1332,32 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.label10);
+            this.groupBox8.Controls.Add(this.label15);
+            this.groupBox8.Controls.Add(this.button16);
+            this.groupBox8.Controls.Add(this.label1);
             this.groupBox8.Controls.Add(this.button25);
-            this.groupBox8.Controls.Add(this.label16);
             resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Name = "label15";
+            // 
+            // button16
+            // 
+            resources.ApplyResources(this.button16, "button16");
+            this.button16.Name = "button16";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // button25
             // 
@@ -1334,11 +1365,6 @@
             this.button25.Name = "button25";
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.button25_Click);
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
             // 
             // button26
             // 
@@ -1499,6 +1525,12 @@
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
             this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Name = "label10";
             // 
             // FenetrePrincipale
             // 
@@ -1755,6 +1787,10 @@
         internal System.Windows.Forms.PictureBox pictureBox24;
         internal System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label9;
+        internal System.Windows.Forms.Button button16;
+        internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Label label10;
+        internal System.Windows.Forms.Label label15;
     }
 }
 

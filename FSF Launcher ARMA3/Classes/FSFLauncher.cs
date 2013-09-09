@@ -576,7 +576,7 @@ namespace FSFLauncherA3
             try
             {
                 string repertoireLocal = FSFLauncherCore.cheminARMA3 + @"\@FSF\";
-                string repertoireDistant = "/@FSF/";
+                string repertoireDistant="";
 
                 fenetrePrincipale.textBox11.Text = "Synchronisation procedure " + typeSynchro + " en cours :" + Environment.NewLine;
                 fenetrePrincipale.textBox11.Text += "────────────────────────────" + Environment.NewLine;
@@ -597,6 +597,18 @@ namespace FSFLauncherA3
                         repertoireDistant = "/@FSF/";
                         sessionOptions = sessionOptions1;
 
+                        break;
+                    case "officielle":
+                        SessionOptions sessionOptions2 = new SessionOptions
+                        {
+                            Protocol = Protocol.Ftp,
+                            HostName = constCheminFTP,
+                            UserName = constLoginFTP,
+                            Password = constMdpFTP
+
+                        };
+                        repertoireDistant = "/@FSF_OFFICIELLE/";
+                        sessionOptions = sessionOptions2;
                         break;
                 }
 
@@ -696,8 +708,8 @@ namespace FSFLauncherA3
                         synchronizationResult.Check();
                         fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "->fichier " + repertoireLocal + "Organisation.txt mis a jour." + Environment.NewLine);
 
-                        downloadnouvelleVersion("Organisation.txt", FSFLauncherCore.constCheminFTP + "/@FSF/", FSFLauncherCore.constLoginFTP, FSFLauncherCore.constMdpFTP, repertoireLocal);
-                        downloadnouvelleVersion("version.xml", FSFLauncherCore.constCheminFTP + "/@FSF/", FSFLauncherCore.constLoginFTP, FSFLauncherCore.constMdpFTP, repertoireLocal);
+                        downloadnouvelleVersion("Organisation.txt", FSFLauncherCore.constCheminFTP + repertoireDistant, FSFLauncherCore.constLoginFTP, FSFLauncherCore.constMdpFTP, repertoireLocal);
+                        downloadnouvelleVersion("version.xml", FSFLauncherCore.constCheminFTP + repertoireDistant, FSFLauncherCore.constLoginFTP, FSFLauncherCore.constMdpFTP, repertoireLocal);
 
                 }
             }

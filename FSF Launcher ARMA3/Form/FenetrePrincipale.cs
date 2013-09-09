@@ -18,19 +18,19 @@ using Infralution.Localization;
 namespace FSFLauncherA3
 {
     public partial class FenetrePrincipale : Form
-    {   Form splashscreen = new SplashScreen();
-        public FenetrePrincipale()
-        {
-            InitializeComponent();
+    {
+        Form splashscreen = new SplashScreen();
+        string[] argumentFSFLauncher;       
 
-            
+        public FenetrePrincipale(string [] args)
+        {
+
+            argumentFSFLauncher = args;
+            InitializeComponent();
         }
 
         private void FenetrePrincipale_Load(object sender, EventArgs e)
-        {
-           
-
-
+        {        
             Control.CheckForIllegalCrossThreadCalls = false;
 
            
@@ -42,6 +42,7 @@ namespace FSFLauncherA3
                 progressBar1.Visible = false;
                 pictureBox17.Visible = false;
                 button25.Enabled = true;
+                button16.Enabled = true;
             }
             else
             {
@@ -49,6 +50,7 @@ namespace FSFLauncherA3
                 button26.Visible = true;
                 pictureBox17.Visible = true;
                 button25.Enabled = false;
+                button16.Enabled = false;
             }
 
             // PREPARATION INITIALISATION INTERFACE
@@ -61,6 +63,7 @@ namespace FSFLauncherA3
             /*
                    Config repertoire FSF Launcher
             */
+
             initialiseFichierConfig();
             Interface.initialiseListeProfil();
             initialiseProfilActif();
@@ -70,6 +73,7 @@ namespace FSFLauncherA3
             */          
             Interface.dessineInterface();
             splashscreen.ShowDialog();
+            if (argumentFSFLauncher.Length > 0) ResidentAdmin.initialiseTrayIcon();
         }
 
 
@@ -583,6 +587,7 @@ namespace FSFLauncherA3
             progressBar1.Visible = false;
             pictureBox17.Visible = false;
             button25.Enabled = true;
+            button16.Enabled = true;
         }
 
         /*
@@ -814,6 +819,7 @@ namespace FSFLauncherA3
             dialogue.ShowDialog();
             if (FSFLauncherCore.dialogueReponse)
             {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "beta");
                 FSFLauncherCore.synchro("beta");
                 Interface.initialiseListeProfil();
                 initialiseProfilActif();
@@ -1071,15 +1077,24 @@ namespace FSFLauncherA3
             splashscreen.Close();
         }
 
+        private void button16_Click(object sender, EventArgs e)
+        {
+            Form dialogue = new Dial_LanceSynchroOfficielle();
+            dialogue.ShowDialog();
+            if (FSFLauncherCore.dialogueReponse)
+            {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "officielle");
+                FSFLauncherCore.synchro("officielle");
+                Interface.initialiseListeProfil();
+                initialiseProfilActif();
+                configureInstallationMODS();
+            }
+            else
+            {
+                textBox11.Text = "Break...";
+            }
+        }
 
-
-
-        
-
-
-
-   
- 
     }
 }
     

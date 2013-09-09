@@ -37,8 +37,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>187</ApplicationRevision>
-    <ApplicationVersion>0.99.0908.%2a</ApplicationVersion>
+    <ApplicationRevision>190</ApplicationRevision>
+    <ApplicationVersion>0.99.0910.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -62,6 +62,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Projet1.ico</ApplicationIcon>
@@ -134,6 +135,13 @@
     <Compile Include="Classes\ProcessSurveillance.cs" />
     <Compile Include="Classes\ProgExterne.cs" />
     <Compile Include="Classes\FormSerializer.cs" />
+    <Compile Include="Classes\ResidentAdmin.cs" />
+    <Compile Include="Form\Dial_LanceSynchroOfficielle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dial_LanceSynchroOfficielle.Designer.cs">
+      <DependentUpon>Dial_LanceSynchroOfficielle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\Dial_Unlock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +192,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form\Dial_LanceSynchroOfficielle.en.resx">
+      <DependentUpon>Dial_LanceSynchroOfficielle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dial_LanceSynchroOfficielle.resx">
+      <DependentUpon>Dial_LanceSynchroOfficielle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Dial_Unlock.en.resx">
       <DependentUpon>Dial_Unlock.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,6 +336,7 @@
     <None Include="gfx\danger.png" />
     <None Include="gfx\grece.png" />
     <None Include="gfx\point_interrogation.png" />
+    <None Include="gfx\FSFLauncherA3.ico" />
     <Content Include="gfx\profil.png" />
     <None Include="gfx\royaumeunis.png" />
     <None Include="gfx\russe.png" />
