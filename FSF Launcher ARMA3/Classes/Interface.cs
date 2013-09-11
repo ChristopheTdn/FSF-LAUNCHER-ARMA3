@@ -285,11 +285,20 @@ namespace FSFLauncherA3
         {
             string VersionSynchroEnLigne;
             string repertoireDistant=@"/";
-           
+            FSFLauncherCore.fenetrePrincipale.pictureBox31.Image = FSFLauncherA3.Properties.Resources.off;
+            FSFLauncherCore.fenetrePrincipale.pictureBox32.Image = FSFLauncherA3.Properties.Resources.off;
             try
             {
-                if (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro") == "beta") repertoireDistant = @"/@FSF/";
-                if (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro") == "officielle") repertoireDistant = @"/@FSF_OFFICIELLE/";
+                if (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro") == "beta")
+                {
+                    repertoireDistant = @"/@FSF/";
+                    FSFLauncherCore.fenetrePrincipale.pictureBox32.Image = FSFLauncherA3.Properties.Resources.on;
+                }
+                if (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro") == "officielle")
+                {
+                    repertoireDistant = @"/@FSF_OFFICIELLE/";
+                    FSFLauncherCore.fenetrePrincipale.pictureBox31.Image = FSFLauncherA3.Properties.Resources.on;
+                }
                 string link = @"ftp://" + FSFLauncherCore.constLoginFTP + ":" + FSFLauncherCore.constMdpFTP + @"@" + FSFLauncherCore.constCheminFTP + repertoireDistant + "version.xml";
                 XmlTextReader fichierInfoServer = new XmlTextReader(link);
                 fichierInfoServer.ReadToFollowing("VERSION");

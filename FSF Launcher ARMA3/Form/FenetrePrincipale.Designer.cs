@@ -164,6 +164,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -195,7 +196,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -253,6 +255,8 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl2
@@ -1332,6 +1336,8 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.pictureBox32);
+            this.groupBox8.Controls.Add(this.pictureBox31);
             this.groupBox8.Controls.Add(this.label10);
             this.groupBox8.Controls.Add(this.label15);
             this.groupBox8.Controls.Add(this.button16);
@@ -1340,6 +1346,12 @@
             resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Name = "label10";
             // 
             // label15
             // 
@@ -1526,11 +1538,19 @@
             this.label9.Name = "label9";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // label10
+            // pictureBox31
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Name = "label10";
+            this.pictureBox31.Image = global::FSFLauncherA3.Properties.Resources.off;
+            resources.ApplyResources(this.pictureBox31, "pictureBox31");
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.TabStop = false;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = global::FSFLauncherA3.Properties.Resources.off;
+            resources.ApplyResources(this.pictureBox32, "pictureBox32");
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.TabStop = false;
             // 
             // FenetrePrincipale
             // 
@@ -1618,6 +1638,8 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1791,6 +1813,8 @@
         internal System.Windows.Forms.Label label1;
         internal System.Windows.Forms.Label label10;
         internal System.Windows.Forms.Label label15;
+        internal System.Windows.Forms.PictureBox pictureBox32;
+        internal System.Windows.Forms.PictureBox pictureBox31;
     }
 }
 

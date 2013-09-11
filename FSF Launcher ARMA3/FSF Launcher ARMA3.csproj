@@ -37,8 +37,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>190</ApplicationRevision>
-    <ApplicationVersion>0.99.0910.%2a</ApplicationVersion>
+    <ApplicationRevision>191</ApplicationRevision>
+    <ApplicationVersion>0.99.0911.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -337,6 +337,8 @@
     <None Include="gfx\grece.png" />
     <None Include="gfx\point_interrogation.png" />
     <None Include="gfx\FSFLauncherA3.ico" />
+    <None Include="gfx\off.png" />
+    <None Include="gfx\on.png" />
     <Content Include="gfx\profil.png" />
     <None Include="gfx\royaumeunis.png" />
     <None Include="gfx\russe.png" />
