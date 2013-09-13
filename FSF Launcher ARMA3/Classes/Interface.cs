@@ -166,7 +166,6 @@ namespace FSFLauncherA3
                 if (fichierProfilXML.ReadString() == "true") { FSFLauncherCore.fenetrePrincipale.checkBox24.Checked = true; }
                 fichierProfilXML.ReadToFollowing("nologs");
                 if (fichierProfilXML.ReadString() == "true") { FSFLauncherCore.fenetrePrincipale.checkBox10.Checked = true; }
-
             }
             fichierProfilXML.Close();
         }

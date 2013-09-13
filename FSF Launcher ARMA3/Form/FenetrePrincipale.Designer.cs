@@ -164,6 +164,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
@@ -183,11 +185,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.checkBox24 = new System.Windows.Forms.CheckBox();
             this.button39 = new System.Windows.Forms.Button();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
-            this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
-            this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
-            this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
@@ -196,8 +193,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
+            this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -250,13 +250,13 @@
             this.groupBox1.SuspendLayout();
             this.SynchroZONE.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl2
@@ -1347,6 +1347,20 @@
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
             // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = global::FSFLauncherA3.Properties.Resources.off;
+            resources.ApplyResources(this.pictureBox32, "pictureBox32");
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.TabStop = false;
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = global::FSFLauncherA3.Properties.Resources.off;
+            resources.ApplyResources(this.pictureBox31, "pictureBox31");
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.TabStop = false;
+            // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
@@ -1474,18 +1488,6 @@
             this.button39.UseVisualStyleBackColor = true;
             this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
-            // openFileDialog2
-            // 
-            this.openFileDialog2.FileName = "openFileDialog2";
-            // 
-            // openFileDialog3
-            // 
-            this.openFileDialog3.FileName = "openFileDialog3";
-            // 
-            // cultureManager1
-            // 
-            this.cultureManager1.ManagedControl = this;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.pictureBox25);
@@ -1538,19 +1540,17 @@
             this.label9.Name = "label9";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // pictureBox31
+            // openFileDialog2
             // 
-            this.pictureBox31.Image = global::FSFLauncherA3.Properties.Resources.off;
-            resources.ApplyResources(this.pictureBox31, "pictureBox31");
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.TabStop = false;
+            this.openFileDialog2.FileName = "openFileDialog2";
             // 
-            // pictureBox32
+            // openFileDialog3
             // 
-            this.pictureBox32.Image = global::FSFLauncherA3.Properties.Resources.off;
-            resources.ApplyResources(this.pictureBox32, "pictureBox32");
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.TabStop = false;
+            this.openFileDialog3.FileName = "openFileDialog3";
+            // 
+            // cultureManager1
+            // 
+            this.cultureManager1.ManagedControl = this;
             // 
             // FenetrePrincipale
             // 
@@ -1632,14 +1632,14 @@
             this.SynchroZONE.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
