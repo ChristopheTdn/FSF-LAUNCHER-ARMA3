@@ -29,6 +29,8 @@ namespace FSFLauncherA3
         static public string constLoginFTP;
         static public string constMdpFTP;
         static public FenetrePrincipale fenetrePrincipale;
+        static public System.Windows.Forms.Timer timerSynchro = new System.Windows.Forms.Timer();
+
         
         /*
          *         Config
@@ -102,9 +104,22 @@ namespace FSFLauncherA3
                 langueform.ShowDialog();
             }
             Interface.ChangeLangage(GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "langage"));
-
-
+            if (isFSFValid())
+           {
+               timerSynchro.Tick += new EventHandler(TimerSynchroEvent);
+               timerSynchro.Interval = 300000; // 5 min
+               timerSynchro.Start();
+           }
         }
+
+        private static void TimerSynchroEvent(Object myObject, EventArgs myEventArgs)
+        {
+            timerSynchro.Stop();
+            Interface.AlerteVersionSynchro();
+            timerSynchro.Start();
+        }
+
+        
         static public void sauvegardeProfil()
         {
             sauvegardeConfigProfilXML("");
