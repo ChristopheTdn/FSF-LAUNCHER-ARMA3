@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Priorité.Text" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="Options.Text" xml:space="preserve">
+    <value>options</value>
+  </data>
   <data name="button13.Text" xml:space="preserve">
     <value>Inverse selection</value>
   </data>
@@ -177,8 +183,8 @@
   <data name="button29.ToolTip" xml:space="preserve">
     <value>higher priority</value>
   </data>
-  <data name="Priorité.Text" xml:space="preserve">
-    <value>Priority</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Parameters expert mode</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
@@ -513,8 +519,8 @@ what you're doing.</value>
   <data name="checkBox7.Text" xml:space="preserve">
     <value>CPU count</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Parameters expert mode</value>
+  <data name="progExterne.Text" xml:space="preserve">
+    <value>3rd party programs</value>
   </data>
   <data name="pictureBox23.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 49</value>
@@ -552,8 +558,8 @@ what you're doing.</value>
   <data name="pictureBox16.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 34</value>
   </data>
-  <data name="progExterne.Text" xml:space="preserve">
-    <value>3rd party programs</value>
+  <data name="profil.Text" xml:space="preserve">
+    <value>Profile</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 13</value>
@@ -580,8 +586,8 @@ what you're doing.</value>
     <value>delete profil
 </value>
   </data>
-  <data name="profil.Text" xml:space="preserve">
-    <value>Profile</value>
+  <data name="Langage.Text" xml:space="preserve">
+    <value>Language</value>
   </data>
   <data name="pictureBox22.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 31</value>
@@ -607,8 +613,8 @@ what you're doing.</value>
   <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 88</value>
   </data>
-  <data name="Langage.Text" xml:space="preserve">
-    <value>Language</value>
+  <data name="Apropos.Text" xml:space="preserve">
+    <value>about</value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 29</value>
@@ -625,8 +631,8 @@ what you're doing.</value>
   <data name="button17.Text" xml:space="preserve">
     <value>Unlock</value>
   </data>
-  <data name="Apropos.Text" xml:space="preserve">
-    <value>about</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Parameters</value>
   </data>
   <data name="checkBox10.ToolTip" xml:space="preserve">
     <value />
@@ -679,12 +685,6 @@ what you're doing.</value>
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Window mode</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Parameters</value>
-  </data>
-  <data name="Options.Text" xml:space="preserve">
-    <value>options</value>
-  </data>
   <data name="button16.Text" xml:space="preserve">
     <value>SERVER Launch</value>
   </data>
@@ -704,7 +704,7 @@ what you're doing.</value>
     <value>Launch ARMA 3</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 535</value>
+    <value>44, 564</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 13</value>
