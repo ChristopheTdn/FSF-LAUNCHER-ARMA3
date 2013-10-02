@@ -50,6 +50,7 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.pictureBox6.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.pictureBox16.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button18.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.button19.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button39.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button38.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;

@@ -1095,6 +1095,11 @@ namespace FSFLauncherA3
             }
         }
 
+        private void button19_Click_2(object sender, EventArgs e)
+        {
+            ProgExterne.ReinstallTS3();
+        }
+
     }
 }
     

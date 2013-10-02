@@ -170,5 +170,20 @@ namespace FSFLauncherA3
                 }
             
         }
+   static public void ReinstallTS3()
+        {
+            try
+            {
+                FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.10.1\TeamSpeak3\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
+                var infoBox = MessageBox.Show("Le TS3 dédié à ACRE a été reinstallé dans sa version 3.10.1.", "TS3 reinstallé", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+
+            catch
+            {
+                var infoBox = MessageBox.Show("Impossible de reinstaller le TS3 dédié à ACRE (code d'erreur #CON HARD 00x007H). Vous semblez avoir TS3 deja lancé sur votre ordinateur.", "Erreur : TS3 en cours d'execution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
     }
 }
