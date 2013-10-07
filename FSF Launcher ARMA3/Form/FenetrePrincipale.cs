@@ -111,9 +111,7 @@ namespace FSFLauncherA3
             if (langue == "el-GR") { radioButton5.Checked = true; };
             if (langue == "es-ES") { radioButton4.Checked = true; };
         }
-
-
-
+        
         void initialiseProfilActif()
         {
             comboBox4.SelectedIndex = 0;
@@ -134,6 +132,7 @@ namespace FSFLauncherA3
             // efface les onglets
 
             checkedListBox7.Items.Clear();
+            checkedListBox8.Items.Clear();
             checkedListBox1.Items.Clear();
             checkedListBox2.Items.Clear();
             checkedListBox3.Items.Clear();
@@ -143,7 +142,6 @@ namespace FSFLauncherA3
 
             // Recupere et genere les tabs pour chaque repertoire
 
-
             //ouvre the XmlDocument
             XmlDocument fichierProfilXML = new XmlDocument();
             fichierProfilXML.Load(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml");
@@ -151,8 +149,7 @@ namespace FSFLauncherA3
 
             // Genere les Tab Specifiques pour les tenues FSF
             foreach (var ligne in listeRepertoire)
-            {
-               
+            {               
                 if ((ligne.IndexOf(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@FSFUnit_HelmetsST;") != -1)) { radioButton20.Enabled = true; }
                 if ((ligne.IndexOf(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@FSFUnit_HelmetsXT;") != -1)) { radioButton21.Enabled = true; }
             }
@@ -171,7 +168,6 @@ namespace FSFLauncherA3
                         XmlNodeList eltList = elemList[i].ChildNodes;
                         for (int j = 0; j < eltList.Count; j++)
                         {
-
                         string repertoireAChercher = eltList[j].InnerXml;                      
                         if  (repertoireAChercher.IndexOf(@"@FSF\@TEMPLATE\@FSFSkin_") != -1)
                         {
@@ -184,7 +180,6 @@ namespace FSFLauncherA3
                                 }
                                 indexApparence++;
                             }
-
                         }
                         if ((System.IO.Directory.GetParent(ligne).ToString() + @"\") == FSFLauncherCore.cheminARMA3 + @"\" + eltList[j].InnerXml + @"\")
                             {
@@ -201,7 +196,6 @@ namespace FSFLauncherA3
                             {
                                 //
                             }
-
                             else
                             {
                                 checkedListBox7.Items.Add(menuRepertoire.Replace(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\", ""), elementsProfilChecked);
@@ -211,6 +205,34 @@ namespace FSFLauncherA3
                     }
                 }
             }
+
+            // RESSOURCES
+
+            foreach (var ligne in listeRepertoire)
+            {
+                if (ligne.IndexOf(FSFLauncherCore.cheminARMA3 + @"\@FSF\@RESSOURCES") != -1)
+                {
+                    bool elementsProfilChecked = false;
+                    // Read the XmlDocument (Directory Node)
+                    XmlNodeList elemList = fichierProfilXML.GetElementsByTagName("RESSOURCES");
+                    for (int i = 0; i < elemList.Count; i++)
+                    {
+                        XmlNodeList eltList = elemList[i].ChildNodes;
+                        for (int j = 0; j < eltList.Count; j++)
+                        {
+                            string repertoireAChercher = FSFLauncherCore.cheminARMA3 + @"\" + eltList[j].InnerXml + @"\";
+                            if ((System.IO.Directory.GetParent(ligne).ToString() + @"\") == repertoireAChercher) { elementsProfilChecked = true; }
+                        }
+                        string menuRepertoire = System.IO.Directory.GetParent(ligne).ToString();
+                        if (menuRepertoire.Replace(FSFLauncherCore.cheminARMA3, "").IndexOf("@") != -1)
+                        {
+                            checkedListBox8.Items.Add(menuRepertoire.Replace(FSFLauncherCore.cheminARMA3 + @"\@FSF\@RESSOURCES\", ""), elementsProfilChecked);
+                        }
+                    }
+                }
+            }
+
+
             // ISLANDS
 
             foreach (var ligne in listeRepertoire)
@@ -398,6 +420,17 @@ namespace FSFLauncherA3
                 FichierProfilXML.WriteStartElement("PROFIL");
                 FichierProfilXML.WriteStartElement("MODS_FSF");
 
+                //RESSOURCES
+                FichierProfilXML.WriteStartElement("RESSOURCES");
+                if (checkedListBox8.CheckedItems.Count != 0)
+                {
+                    for (int x = 0; x <= checkedListBox8.CheckedItems.Count - 1; x++)
+                    {
+                        FichierProfilXML.WriteElementString("MODS", @"@FSF\@RESSOURCES\" + checkedListBox8.CheckedItems[x].ToString());
+                    }
+                }
+                FichierProfilXML.WriteEndElement();
+
                 //ISLANDS
                 FichierProfilXML.WriteStartElement("ISLANDS");
                 if (checkedListBox1.CheckedItems.Count != 0)
@@ -466,12 +499,10 @@ namespace FSFLauncherA3
                 FichierProfilXML.Close(); // ferme le document
                 UploadConfigServeur(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml", @"ftp://ftp1.clan-fsf.fr/system/config/ImportConfigServeurA3.xml");
             }
-            }
+          }
         }
 
  
-
-
         string testTailleFTP(string nomFichier, string ftpDistant, string login, string motDePasse)
         {
             string resultat = "";
@@ -868,7 +899,6 @@ namespace FSFLauncherA3
             DownloadConfigServeur("ImportConfigServeurA3.xml", "ftp://ftp1.clan-fsf.fr/system/config", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
             genereTabModsImportServeur();
             MessageBox.Show("Liste des MODS importée.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
 
         private void button38_Click(object sender, EventArgs e)
@@ -1015,9 +1045,6 @@ namespace FSFLauncherA3
                     break;
 
             }
-
-
-
         }
 
         private void radioButton5_CheckedChanged_1(object sender, EventArgs e)
@@ -1098,6 +1125,16 @@ namespace FSFLauncherA3
         private void button19_Click_2(object sender, EventArgs e)
         {
             ProgExterne.ReinstallTS3();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

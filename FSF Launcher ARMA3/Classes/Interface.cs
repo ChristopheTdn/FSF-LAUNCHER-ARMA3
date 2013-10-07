@@ -68,9 +68,9 @@ namespace FSFLauncherA3
         {
             effaceTousItemsOnglets();
 
-
             // @FSF 
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox7, "@TEMPLATE", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
+            FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox8, "@RESSOURCES", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox1, "@ISLANDS", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox2, "@UNITS", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox3, "@MATERIEL", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
@@ -92,6 +92,8 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.radioButton21.Enabled = false;
             FSFLauncherCore.fenetrePrincipale.radioButton21.Checked = false;
             FSFLauncherCore.fenetrePrincipale.pictureBox1.Image = FSFLauncherA3.Properties.Resources.logofsf;
+
+            FSFLauncherCore.fenetrePrincipale.checkedListBox8.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox7.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox1.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox2.Items.Clear();

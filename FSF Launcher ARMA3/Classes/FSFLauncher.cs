@@ -30,8 +30,7 @@ namespace FSFLauncherA3
         static public string constMdpFTP;
         static public FenetrePrincipale fenetrePrincipale;
         static public System.Windows.Forms.Timer timerSynchro = new System.Windows.Forms.Timer();
-
-        
+       
         /*
          *         Config
          */
@@ -134,6 +133,17 @@ namespace FSFLauncherA3
             FichierProfilXML.WriteComment("Creation Du profil FSF LAUNCHER " + nomProfil + ".profil.xml"); // commentaire
             FichierProfilXML.WriteStartElement("PROFIL");
             FichierProfilXML.WriteStartElement("MODS_FSF");
+
+            //RESSOURCES
+            FichierProfilXML.WriteStartElement("RESSOURCES");
+            if (fenetrePrincipale.checkedListBox8.CheckedItems.Count != 0)
+            {
+                for (int x = 0; x <= fenetrePrincipale.checkedListBox1.CheckedItems.Count - 1; x++)
+                {
+                    FichierProfilXML.WriteElementString("MODS", @"@FSF\@RESSOURCES\" + fenetrePrincipale.checkedListBox8.CheckedItems[x].ToString());
+                }
+            }
+            FichierProfilXML.WriteEndElement();
 
             //ISLANDS
             FichierProfilXML.WriteStartElement("ISLANDS");
@@ -289,8 +299,6 @@ namespace FSFLauncherA3
                 Directory.CreateDirectory(cheminARMA3 + @"\@FSF\" + repertoireSource);
             }
 
-
-
             string[] tableauRepertoire = Directory.GetDirectories(cheminARMA3 + @"\@FSF\" + repertoireSource + @"\", "Addons*", SearchOption.AllDirectories);
 
             foreach (var ligne in tableauRepertoire)
@@ -326,6 +334,7 @@ namespace FSFLauncherA3
                 string menuRepertoire = System.IO.Directory.GetParent(ligne).ToString();
                 string nomAAjouter = menuRepertoire;
                 if ((nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@ISLANDS\") == -1)
+                    && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@RESSOURCES\") == -1)
                     && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@UNITS\") == -1)
                     && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@MATERIEL\") == -1)
                     && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@TEMPLATE\") == -1)
@@ -373,6 +382,10 @@ namespace FSFLauncherA3
                     tagNameXML = "TEMPLATE";
                     filtreRepertoire = @"@FSF\@TEMPLATE\";
                     break;
+                case "@RESSOURCES":
+                    tagNameXML = "RESSOURCES";
+                    filtreRepertoire = @"@FSF\@RESSOURCES\";
+                    break;
                 case "@ISLANDS":
                     tagNameXML = "ISLANDS";
                     filtreRepertoire = @"@FSF\@ISLANDS\";
@@ -401,13 +414,12 @@ namespace FSFLauncherA3
             XmlDocument fichierProfilXML = new XmlDocument();
             if (nomProfil == "") { nomProfil = "defaut"; };
             fichierProfilXML.Load(cheminARMA3 + @"\userconfig\FSF-LauncherA3\" + nomProfil + ".profil.xml");
-
-
             foreach (var ligne in tableauValeur)
             {
                 bool elementsProfilChecked = false;
                 // Read the XmlDocument (Directory Node)
                 XmlNodeList elemList = fichierProfilXML.GetElementsByTagName(tagNameXML);
+                if (elemList.Count == 0) { Tab.Items.Add(ligne, elementsProfilChecked); }
                 for (int i = 0; i < elemList.Count; i++)
                 {
                     XmlNodeList eltList = elemList[i].ChildNodes;
@@ -641,6 +653,7 @@ namespace FSFLauncherA3
                             Directory.CreateDirectory(repertoireLocal + "@UNITS");
                             Directory.CreateDirectory(repertoireLocal + "@MATERIEL");
                             Directory.CreateDirectory(repertoireLocal + "@ISLANDS");
+                            Directory.CreateDirectory(repertoireLocal + "@RESSOURCES");
                             break;
                     }
                     // Will continuously report progress of synchronization
@@ -666,6 +679,19 @@ namespace FSFLauncherA3
                                 false,
                                 SynchronizationCriteria.Size);
                         effaceProgressBar();
+
+
+                        fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @RESSOURCES     ******" + Environment.NewLine);
+                        synchronizationResult =
+                            session.SynchronizeDirectories(
+                                SynchronizationMode.Local,
+                                repertoireLocal + "@RESSOURCES",
+                                repertoireDistant + "@RESSOURCES",
+                                true,
+                                false,
+                                SynchronizationCriteria.Size);
+                        effaceProgressBar();
+                                        
 
                         fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @CLIENT     ******" + Environment.NewLine);
                         synchronizationResult =

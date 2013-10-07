@@ -102,6 +102,7 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.progExterne = new System.Windows.Forms.TabPage();
+            this.button19 = new System.Windows.Forms.Button();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.button38 = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -198,7 +199,11 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.button19 = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -258,6 +263,8 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl2
@@ -282,6 +289,7 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage8);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -880,6 +888,13 @@
             this.progExterne.Name = "progExterne";
             this.progExterne.Click += new System.EventHandler(this.progExterne_Click);
             // 
+            // button19
+            // 
+            resources.ApplyResources(this.button19, "button19");
+            this.button19.Name = "button19";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click_2);
+            // 
             // pictureBox23
             // 
             this.pictureBox23.Image = global::FSFLauncherA3.Properties.Resources.programme;
@@ -901,6 +916,7 @@
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox6, resources.GetString("pictureBox6.ToolTip"));
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // button18
             // 
@@ -929,6 +945,7 @@
             this.pictureBox16.Image = global::FSFLauncherA3.Properties.Resources.teamspeak;
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // profil
             // 
@@ -1291,7 +1308,6 @@
             this.SynchroZONE.Controls.Add(this.label19);
             this.SynchroZONE.Controls.Add(this.progressBar3);
             this.SynchroZONE.Controls.Add(this.progressBar2);
-            this.SynchroZONE.Controls.Add(this.label16);
             this.SynchroZONE.Controls.Add(this.label11);
             this.SynchroZONE.Controls.Add(this.label14);
             this.SynchroZONE.Controls.Add(this.groupBox8);
@@ -1341,6 +1357,7 @@
             this.groupBox8.Controls.Add(this.pictureBox32);
             this.groupBox8.Controls.Add(this.pictureBox31);
             this.groupBox8.Controls.Add(this.label10);
+            this.groupBox8.Controls.Add(this.label16);
             this.groupBox8.Controls.Add(this.label15);
             this.groupBox8.Controls.Add(this.button16);
             this.groupBox8.Controls.Add(this.label1);
@@ -1554,12 +1571,45 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
-            // button19
+            // tabPage5
             // 
-            resources.ApplyResources(this.button19, "button19");
-            this.button19.Name = "button19";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click_2);
+            this.tabPage5.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage5.Controls.Add(this.pictureBox33);
+            this.tabPage5.Controls.Add(this.button20);
+            this.tabPage5.Controls.Add(this.button21);
+            this.tabPage5.Controls.Add(this.checkedListBox8);
+            resources.ApplyResources(this.tabPage5, "tabPage5");
+            this.tabPage5.Name = "tabPage5";
+            // 
+            // pictureBox33
+            // 
+            resources.ApplyResources(this.pictureBox33, "pictureBox33");
+            this.pictureBox33.Image = global::FSFLauncherA3.Properties.Resources.idee;
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.TabStop = false;
+            // 
+            // button20
+            // 
+            resources.ApplyResources(this.button20, "button20");
+            this.button20.Name = "button20";
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            resources.ApplyResources(this.button21, "button21");
+            this.button21.Name = "button21";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox8
+            // 
+            this.checkedListBox8.BackColor = System.Drawing.Color.Gainsboro;
+            this.checkedListBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox8.CheckOnClick = true;
+            resources.ApplyResources(this.checkedListBox8, "checkedListBox8");
+            this.checkedListBox8.FormattingEnabled = true;
+            this.checkedListBox8.MultiColumn = true;
+            this.checkedListBox8.Name = "checkedListBox8";
+            this.checkedListBox8.ThreeDCheckBoxes = true;
             // 
             // FenetrePrincipale
             // 
@@ -1649,6 +1699,8 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1825,6 +1877,11 @@
         internal System.Windows.Forms.PictureBox pictureBox32;
         internal System.Windows.Forms.PictureBox pictureBox31;
         internal System.Windows.Forms.Button button19;
+        private System.Windows.Forms.TabPage tabPage5;
+        internal System.Windows.Forms.PictureBox pictureBox33;
+        internal System.Windows.Forms.Button button20;
+        internal System.Windows.Forms.Button button21;
+        internal System.Windows.Forms.CheckedListBox checkedListBox8;
     }
 }
 
