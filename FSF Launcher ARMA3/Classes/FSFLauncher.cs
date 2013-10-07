@@ -319,7 +319,7 @@ namespace FSFLauncherA3
         static public List<string> GenereListeAUTRE(string repertoireSource)
         {
             List<string> listeRepertoire = new List<string>();
-            string[] tableauRepertoire = Directory.GetDirectories(cheminARMA3, "Addons*", SearchOption.AllDirectories);
+            string[] tableauRepertoire = Directory.GetDirectories(repertoireSource, "Addons*", SearchOption.AllDirectories);
 
             foreach (var ligne in tableauRepertoire)
             {
@@ -354,7 +354,10 @@ namespace FSFLauncherA3
             }
             else
             {
-                tableauValeur = GenereListeAUTRE(nomRep);                
+                
+                tableauValeur = GenereListeAUTRE(cheminARMA3);
+                tableauValeur.AddRange(GenereListeAUTRE(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3"));
+                tableauValeur.AddRange(GenereListeAUTRE(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3 - Other Profiles"));
             }
 
 

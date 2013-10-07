@@ -328,13 +328,6 @@ namespace FSFLauncherA3
 
         }
 
-   
-           
- 
-
-
-
-
         /*
          *    LANGAGE
          */
