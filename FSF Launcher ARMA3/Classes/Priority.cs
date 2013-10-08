@@ -66,7 +66,11 @@ namespace FSFLauncherA3
             // Casque Perso
             if (FSFLauncherCore.fenetrePrincipale.radioButton20.Checked) {listeModsValide.Add(@"@FSF\@TEMPLATE\@FSFUnit_HelmetsST");};
             if (FSFLauncherCore.fenetrePrincipale.radioButton21.Checked) { listeModsValide.Add(@"@FSF\@TEMPLATE\@FSFUnit_HelmetsXT"); };
-
+            // FRAMEWORK
+            foreach (string ligne in ExtractionListeModsValides(FSFLauncherCore.fenetrePrincipale.checkedListBox8, @"@FSF\@FRAMEWORK\"))
+            {
+                listeModsValide.Add(ligne);
+            }
             // Islands
             foreach (string ligne in ExtractionListeModsValides(FSFLauncherCore.fenetrePrincipale.checkedListBox1, @"@FSF\@ISLANDS\"))
             {

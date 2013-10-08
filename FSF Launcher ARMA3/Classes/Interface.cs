@@ -70,7 +70,7 @@ namespace FSFLauncherA3
 
             // @FSF 
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox7, "@TEMPLATE", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
-            FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox8, "@RESSOURCES", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
+            FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox8, "@FRAMEWORK", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox1, "@ISLANDS", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox2, "@UNITS", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox3, "@MATERIEL", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());

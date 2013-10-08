@@ -206,15 +206,15 @@ namespace FSFLauncherA3
                 }
             }
 
-            // RESSOURCES
+            // FRAMEWORK
 
             foreach (var ligne in listeRepertoire)
             {
-                if (ligne.IndexOf(FSFLauncherCore.cheminARMA3 + @"\@FSF\@RESSOURCES") != -1)
+                if (ligne.IndexOf(FSFLauncherCore.cheminARMA3 + @"\@FSF\@FRAMEWORK") != -1)
                 {
                     bool elementsProfilChecked = false;
                     // Read the XmlDocument (Directory Node)
-                    XmlNodeList elemList = fichierProfilXML.GetElementsByTagName("RESSOURCES");
+                    XmlNodeList elemList = fichierProfilXML.GetElementsByTagName("FRAMEWORK");
                     for (int i = 0; i < elemList.Count; i++)
                     {
                         XmlNodeList eltList = elemList[i].ChildNodes;
@@ -226,7 +226,7 @@ namespace FSFLauncherA3
                         string menuRepertoire = System.IO.Directory.GetParent(ligne).ToString();
                         if (menuRepertoire.Replace(FSFLauncherCore.cheminARMA3, "").IndexOf("@") != -1)
                         {
-                            checkedListBox8.Items.Add(menuRepertoire.Replace(FSFLauncherCore.cheminARMA3 + @"\@FSF\@RESSOURCES\", ""), elementsProfilChecked);
+                            checkedListBox8.Items.Add(menuRepertoire.Replace(FSFLauncherCore.cheminARMA3 + @"\@FSF\@FRAMEWORK\", ""), elementsProfilChecked);
                         }
                     }
                 }
@@ -420,13 +420,13 @@ namespace FSFLauncherA3
                 FichierProfilXML.WriteStartElement("PROFIL");
                 FichierProfilXML.WriteStartElement("MODS_FSF");
 
-                //RESSOURCES
-                FichierProfilXML.WriteStartElement("RESSOURCES");
+                //FRAMEWORK
+                FichierProfilXML.WriteStartElement("FRAMEWORK");
                 if (checkedListBox8.CheckedItems.Count != 0)
                 {
                     for (int x = 0; x <= checkedListBox8.CheckedItems.Count - 1; x++)
                     {
-                        FichierProfilXML.WriteElementString("MODS", @"@FSF\@RESSOURCES\" + checkedListBox8.CheckedItems[x].ToString());
+                        FichierProfilXML.WriteElementString("MODS", @"@FSF\@FRAMEWORK\" + checkedListBox8.CheckedItems[x].ToString());
                     }
                 }
                 FichierProfilXML.WriteEndElement();
@@ -1135,6 +1135,27 @@ namespace FSFLauncherA3
         private void pictureBox16_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkedListBox8_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+
+            FSFLauncherCore.SelectionneTousTAB(checkedListBox8);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.InverseTousTAB(checkedListBox8);
         }
 
     }
