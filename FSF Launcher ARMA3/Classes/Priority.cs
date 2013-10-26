@@ -18,9 +18,12 @@ namespace FSFLauncherA3
                   // Ajoute ceux qui manque en fin de liste
 
             // Affiche la liste par priorité dans la listeBox
+           FSFLauncherCore.ListModsrealUrl.Clear();
+            
             foreach (string ligne in  compareListeModsValidesEtListePrioritaire(ListeModsValide(), ListeModsPrioritaire()))
             {
                 FSFLauncherCore.fenetrePrincipale.ctrlListModPrioritaire.Items.Add(ligne);
+                FSFLauncherCore.ListModsrealUrl.Add(ligne);                
             }
             
         }

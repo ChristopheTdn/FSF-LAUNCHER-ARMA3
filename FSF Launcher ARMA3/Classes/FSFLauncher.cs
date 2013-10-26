@@ -28,6 +28,7 @@ namespace FSFLauncherA3
         static public string constCheminFTP;
         static public string constLoginFTP;
         static public string constMdpFTP;
+        static public List<string>ListModsrealUrl= new List<string>();
         static public FenetrePrincipale fenetrePrincipale;
         static public System.Windows.Forms.Timer timerSynchro = new System.Windows.Forms.Timer();
        
@@ -82,6 +83,18 @@ namespace FSFLauncherA3
             }
             sauvegardeCheminArma3();
             Directory.SetCurrentDirectory(FSFLauncherCore.cheminARMA3);
+
+            // supprime @RESSOURCES BUG
+            if (System.IO.Directory.Exists(FSFLauncherCore.cheminARMA3+@"\@FSF\@RESSOURCES\"))
+            {
+                try
+                {
+                    System.IO.Directory.Delete(FSFLauncherCore.cheminARMA3 + @"\@FSF\@RESSOURCES\", true);
+                }
+                catch {
+                }
+            }
+
             return;
         }    
         static public void DefinitionConstante()

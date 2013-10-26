@@ -204,6 +204,7 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.button22 = new System.Windows.Forms.Button();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -646,6 +647,7 @@
             this.MODs.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.MODs, "MODs");
             this.MODs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MODs.Controls.Add(this.button22);
             this.MODs.Controls.Add(this.pictureBox12);
             this.MODs.Controls.Add(this.button14);
             this.MODs.Controls.Add(this.button15);
@@ -1615,6 +1617,13 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
+            // button22
+            // 
+            resources.ApplyResources(this.button22, "button22");
+            this.button22.Name = "button22";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -1886,6 +1895,7 @@
         internal System.Windows.Forms.Button button20;
         internal System.Windows.Forms.Button button21;
         internal System.Windows.Forms.CheckedListBox checkedListBox8;
+        internal System.Windows.Forms.Button button22;
     }
 }
 

@@ -1158,6 +1158,12 @@ namespace FSFLauncherA3
             FSFLauncherCore.InverseTousTAB(checkedListBox8);
         }
 
+        private void button22_Click(object sender, EventArgs e)
+        {
+            Interface.genereTab();
+        }
+
+
     }
 }
     

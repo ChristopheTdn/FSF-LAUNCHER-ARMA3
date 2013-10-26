@@ -12,7 +12,6 @@ using System.Xml;
 
 namespace FSFLauncherA3
 {
-    
     public class ComboboxItem
     {
         public string Text { get; set; }
@@ -63,7 +62,6 @@ namespace FSFLauncherA3
             }
 
         }
- 
         static public void genereTab()
         {
             effaceTousItemsOnglets();

@@ -41,6 +41,8 @@ namespace FSFLauncherA3
             trayIcon.BalloonTipText = "Vous avez restauré l'interface du FSF Launcher.";
             trayIcon.ShowBalloonTip(500);
             FSFLauncherCore.fenetrePrincipale.WindowState = FormWindowState.Normal;
+            FSFLauncherCore.fenetrePrincipale.Activate();
+            trayIcon.Icon.Dispose();
         }
     }
 }
