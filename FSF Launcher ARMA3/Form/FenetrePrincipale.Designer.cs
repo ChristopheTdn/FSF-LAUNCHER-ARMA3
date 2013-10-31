@@ -920,7 +920,7 @@
             // trackBar3
             // 
             resources.ApplyResources(this.trackBar3, "trackBar3");
-            this.trackBar3.Maximum = 4048;
+            this.trackBar3.Maximum = 4096;
             this.trackBar3.Minimum = 128;
             this.trackBar3.Name = "trackBar3";
             this.trackBar3.TickStyle = System.Windows.Forms.TickStyle.None;
