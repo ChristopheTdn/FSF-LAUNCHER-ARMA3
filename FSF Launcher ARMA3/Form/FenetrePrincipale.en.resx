@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Priorité.Text" xml:space="preserve">
-    <value>Priority</value>
-  </data>
-  <data name="Options.Text" xml:space="preserve">
-    <value>options</value>
-  </data>
   <data name="button13.Text" xml:space="preserve">
     <value>Inverse selection</value>
   </data>
@@ -183,8 +177,8 @@
   <data name="button29.ToolTip" xml:space="preserve">
     <value>higher priority</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Parameters expert mode</value>
+  <data name="Priorité.Text" xml:space="preserve">
+    <value>Priority</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
@@ -519,26 +513,35 @@ what you're doing.</value>
   <data name="checkBox7.Text" xml:space="preserve">
     <value>CPU count</value>
   </data>
-  <data name="progExterne.Text" xml:space="preserve">
-    <value>3rd party programs</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Parameters expert mode</value>
+  </data>
+  <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 15</value>
+  </data>
+  <data name="button19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="button19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 54</value>
+  </data>
+  <data name="button19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 28</value>
   </data>
   <data name="pictureBox23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 49</value>
+    <value>27, 39</value>
   </data>
   <data name="button38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 88</value>
+    <value>322, 88</value>
   </data>
   <data name="button38.Text" xml:space="preserve">
     <value>Export MOD List</value>
   </data>
   <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 88</value>
-  </data>
-  <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 34</value>
+    <value>249, 78</value>
   </data>
   <data name="checkBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 64</value>
+    <value>115, 54</value>
   </data>
   <data name="checkBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 17</value>
@@ -547,7 +550,7 @@ what you're doing.</value>
     <value>activate Fraps</value>
   </data>
   <data name="checkBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 88</value>
+    <value>115, 78</value>
   </data>
   <data name="checkBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 17</value>
@@ -556,10 +559,10 @@ what you're doing.</value>
     <value>activate TrackIR</value>
   </data>
   <data name="pictureBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 34</value>
+    <value>251, 24</value>
   </data>
-  <data name="profil.Text" xml:space="preserve">
-    <value>Profile</value>
+  <data name="progExterne.Text" xml:space="preserve">
+    <value>3rd party programs</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 13</value>
@@ -586,8 +589,8 @@ what you're doing.</value>
     <value>delete profil
 </value>
   </data>
-  <data name="Langage.Text" xml:space="preserve">
-    <value>Language</value>
+  <data name="profil.Text" xml:space="preserve">
+    <value>Profile</value>
   </data>
   <data name="pictureBox22.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 31</value>
@@ -613,8 +616,8 @@ what you're doing.</value>
   <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 88</value>
   </data>
-  <data name="Apropos.Text" xml:space="preserve">
-    <value>about</value>
+  <data name="Langage.Text" xml:space="preserve">
+    <value>Language</value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 29</value>
@@ -631,8 +634,8 @@ what you're doing.</value>
   <data name="button17.Text" xml:space="preserve">
     <value>Unlock</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Parameters</value>
+  <data name="Apropos.Text" xml:space="preserve">
+    <value>about</value>
   </data>
   <data name="checkBox10.ToolTip" xml:space="preserve">
     <value />
@@ -684,6 +687,12 @@ what you're doing.</value>
   </data>
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Window mode</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="Options.Text" xml:space="preserve">
+    <value>options</value>
   </data>
   <data name="button16.Text" xml:space="preserve">
     <value>SERVER Launch</value>

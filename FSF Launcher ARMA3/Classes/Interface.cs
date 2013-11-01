@@ -119,6 +119,10 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.checkBox21.Checked = false;
             FSFLauncherCore.fenetrePrincipale.checkBox10.Checked = false;
             FSFLauncherCore.fenetrePrincipale.checkBox24.Checked = false;
+            FSFLauncherCore.fenetrePrincipale.checkBox_HeadlessClient.Checked = false;
+            FSFLauncherCore.fenetrePrincipale.textBox2.Text = "";
+            FSFLauncherCore.fenetrePrincipale.textBox3.Text = "";
+
 
         }
         static public void genereTabParam()
@@ -167,6 +171,12 @@ namespace FSFLauncherA3
                 if (fichierProfilXML.ReadString() == "true") { FSFLauncherCore.fenetrePrincipale.checkBox24.Checked = true; }
                 fichierProfilXML.ReadToFollowing("nologs");
                 if (fichierProfilXML.ReadString() == "true") { FSFLauncherCore.fenetrePrincipale.checkBox10.Checked = true; }
+                fichierProfilXML.ReadToFollowing("HC");
+                if (fichierProfilXML.ReadString() == "true") { FSFLauncherCore.fenetrePrincipale.checkBox_HeadlessClient.Checked = true;
+                                                               fichierProfilXML.ReadToFollowing("HCPort");
+                                                               FSFLauncherCore.fenetrePrincipale.textBox2.Text = fichierProfilXML.ReadString();
+                                                               fichierProfilXML.ReadToFollowing("HCPassWord");
+                                                               FSFLauncherCore.fenetrePrincipale.textBox3.Text = fichierProfilXML.ReadString(); }
             }
             fichierProfilXML.Close();
         }

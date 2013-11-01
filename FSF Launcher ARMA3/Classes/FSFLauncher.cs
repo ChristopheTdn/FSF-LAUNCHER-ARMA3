@@ -268,6 +268,18 @@ namespace FSFLauncherA3
             if (fenetrePrincipale.checkBox21.Checked) { FichierProfilXML.WriteElementString("threadMax", fenetrePrincipale.comboBox3.SelectedIndex.ToString()); } else { FichierProfilXML.WriteElementString("threadMax", ""); }
             if (fenetrePrincipale.checkBox24.Checked) { FichierProfilXML.WriteElementString("adminmode", "true"); } else { FichierProfilXML.WriteElementString("adminmode", ""); }
             if (fenetrePrincipale.checkBox10.Checked) { FichierProfilXML.WriteElementString("nologs", "true"); } else { FichierProfilXML.WriteElementString("nologs", ""); }
+            if (fenetrePrincipale.checkBox_HeadlessClient.Checked)
+                          {
+                           FichierProfilXML.WriteElementString("HC", "true");
+                           FichierProfilXML.WriteElementString("HCPort", fenetrePrincipale.textBox2.Text);
+                           FichierProfilXML.WriteElementString("HCPassWord", fenetrePrincipale.textBox3.Text);                            
+                          }
+                    else
+                          {
+                              FichierProfilXML.WriteElementString("HC", "");                              
+                              FichierProfilXML.WriteElementString("HCPort", "");
+                              FichierProfilXML.WriteElementString("HCPassWord", "");                            
+                          }
 
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.WriteEndElement();
@@ -540,6 +552,7 @@ namespace FSFLauncherA3
             if (fenetrePrincipale.checkBox23.Checked) { listArguments += "-noFilePatching "; }
             if (fenetrePrincipale.checkBox22.Checked) { listArguments += "-maxVRAM=" + fenetrePrincipale.textBox20.Text + " "; }
             if (fenetrePrincipale.checkBox21.Checked) { listArguments += "-exThreads=" + fenetrePrincipale.comboBox3.Text + " "; }
+            if (fenetrePrincipale.checkBox_HeadlessClient.Checked) { listArguments += @"-name=""HeadLess Client"" -localhost=127.0.0.1 -connect=localhost -port="+fenetrePrincipale.textBox2.Text+" -password="+fenetrePrincipale.textBox3.Text+" -client -nosound "; }
             listArguments += @"""" + listMODS + @"""";
         }
 

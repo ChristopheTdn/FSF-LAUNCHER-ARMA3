@@ -1163,6 +1163,12 @@ namespace FSFLauncherA3
             Interface.genereTab();
         }
 
+        private void checkBox_HeadlessClient_CheckedChanged(object sender, EventArgs e)
+        {
+            FSFLauncherCore.fenetrePrincipale.textBox2.Enabled = FSFLauncherCore.fenetrePrincipale.checkBox_HeadlessClient.Checked;
+            FSFLauncherCore.fenetrePrincipale.textBox3.Enabled = FSFLauncherCore.fenetrePrincipale.checkBox_HeadlessClient.Checked;
+        }
+
 
     }
 }
