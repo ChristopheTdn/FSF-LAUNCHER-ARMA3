@@ -75,8 +75,12 @@ namespace FSFLauncherA3
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox6, "@CLIENT", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox4, "@TEST", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             // @Autre
-            FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox5, "", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
-
+            // Root
+            FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox5, "AUTRES_MODS", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
+            //Arma3 profile
+            FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox9, "DOC_ARMA3", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
+            //Arma3 other profile
+            //FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox10, "DOC_OTHERPROFILE", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             //genereTabMods();
             genereTabParam();
             genereTabPriorite();
@@ -99,6 +103,10 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.checkedListBox6.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox4.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox5.Items.Clear();
+
+            FSFLauncherCore.fenetrePrincipale.checkedListBox9.Items.Clear();
+
+            FSFLauncherCore.fenetrePrincipale.checkedListBox10.Items.Clear();
         }
         static public void effaceTousparamsOnglet()
         {

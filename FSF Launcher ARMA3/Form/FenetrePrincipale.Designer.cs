@@ -74,11 +74,25 @@
             this.button9 = new System.Windows.Forms.Button();
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.MODs = new System.Windows.Forms.TabPage();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
             this.button22 = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.checkedListBox9 = new System.Windows.Forms.CheckedListBox();
+            this.button23 = new System.Windows.Forms.Button();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.checkedListBox10 = new System.Windows.Forms.CheckedListBox();
+            this.button28 = new System.Windows.Forms.Button();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
             this.Priorité = new System.Windows.Forms.TabPage();
             this.button32 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
@@ -154,6 +168,11 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.checkBox_HeadlessClient = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox23 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
@@ -205,11 +224,6 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.checkBox_HeadlessClient = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -230,7 +244,13 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.MODs.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            this.tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             this.Priorité.SuspendLayout();
             this.Options.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -652,12 +672,38 @@
             this.MODs.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.MODs, "MODs");
             this.MODs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.MODs.Controls.Add(this.button22);
-            this.MODs.Controls.Add(this.pictureBox12);
-            this.MODs.Controls.Add(this.button14);
-            this.MODs.Controls.Add(this.button15);
-            this.MODs.Controls.Add(this.checkedListBox5);
+            this.MODs.Controls.Add(this.tabControl4);
             this.MODs.Name = "MODs";
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.tabPage6);
+            this.tabControl4.Controls.Add(this.tabPage9);
+            this.tabControl4.Controls.Add(this.tabPage10);
+            resources.ApplyResources(this.tabControl4, "tabControl4");
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage6.Controls.Add(this.checkedListBox5);
+            this.tabPage6.Controls.Add(this.button22);
+            this.tabPage6.Controls.Add(this.pictureBox12);
+            this.tabPage6.Controls.Add(this.button15);
+            this.tabPage6.Controls.Add(this.button14);
+            resources.ApplyResources(this.tabPage6, "tabPage6");
+            this.tabPage6.Name = "tabPage6";
+            // 
+            // checkedListBox5
+            // 
+            this.checkedListBox5.BackColor = System.Drawing.Color.Gainsboro;
+            this.checkedListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox5.CheckOnClick = true;
+            this.checkedListBox5.FormattingEnabled = true;
+            resources.ApplyResources(this.checkedListBox5, "checkedListBox5");
+            this.checkedListBox5.Name = "checkedListBox5";
+            this.checkedListBox5.ThreeDCheckBoxes = true;
             // 
             // button22
             // 
@@ -673,13 +719,6 @@
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.TabStop = false;
             // 
-            // button14
-            // 
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
             // button15
             // 
             resources.ApplyResources(this.button15, "button15");
@@ -687,15 +726,110 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
-            // checkedListBox5
+            // button14
             // 
-            this.checkedListBox5.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkedListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox5.CheckOnClick = true;
-            this.checkedListBox5.FormattingEnabled = true;
-            resources.ApplyResources(this.checkedListBox5, "checkedListBox5");
-            this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.ThreeDCheckBoxes = true;
+            resources.ApplyResources(this.button14, "button14");
+            this.button14.Name = "button14";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage9.Controls.Add(this.checkedListBox9);
+            this.tabPage9.Controls.Add(this.button23);
+            this.tabPage9.Controls.Add(this.pictureBox34);
+            this.tabPage9.Controls.Add(this.button24);
+            this.tabPage9.Controls.Add(this.button27);
+            resources.ApplyResources(this.tabPage9, "tabPage9");
+            this.tabPage9.Name = "tabPage9";
+            // 
+            // checkedListBox9
+            // 
+            this.checkedListBox9.BackColor = System.Drawing.Color.Gainsboro;
+            this.checkedListBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox9.CheckOnClick = true;
+            this.checkedListBox9.FormattingEnabled = true;
+            resources.ApplyResources(this.checkedListBox9, "checkedListBox9");
+            this.checkedListBox9.Name = "checkedListBox9";
+            this.checkedListBox9.ThreeDCheckBoxes = true;
+            // 
+            // button23
+            // 
+            resources.ApplyResources(this.button23, "button23");
+            this.button23.Name = "button23";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // pictureBox34
+            // 
+            resources.ApplyResources(this.pictureBox34, "pictureBox34");
+            this.pictureBox34.Image = global::FSFLauncherA3.Properties.Resources.boite;
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.TabStop = false;
+            // 
+            // button24
+            // 
+            resources.ApplyResources(this.button24, "button24");
+            this.button24.Name = "button24";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button27
+            // 
+            resources.ApplyResources(this.button27, "button27");
+            this.button27.Name = "button27";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage10.Controls.Add(this.checkedListBox10);
+            this.tabPage10.Controls.Add(this.button28);
+            this.tabPage10.Controls.Add(this.pictureBox35);
+            this.tabPage10.Controls.Add(this.button33);
+            this.tabPage10.Controls.Add(this.button34);
+            resources.ApplyResources(this.tabPage10, "tabPage10");
+            this.tabPage10.Name = "tabPage10";
+            // 
+            // checkedListBox10
+            // 
+            this.checkedListBox10.BackColor = System.Drawing.Color.Gainsboro;
+            this.checkedListBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox10.CheckOnClick = true;
+            this.checkedListBox10.FormattingEnabled = true;
+            resources.ApplyResources(this.checkedListBox10, "checkedListBox10");
+            this.checkedListBox10.Name = "checkedListBox10";
+            this.checkedListBox10.ThreeDCheckBoxes = true;
+            // 
+            // button28
+            // 
+            resources.ApplyResources(this.button28, "button28");
+            this.button28.Name = "button28";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
+            // pictureBox35
+            // 
+            resources.ApplyResources(this.pictureBox35, "pictureBox35");
+            this.pictureBox35.Image = global::FSFLauncherA3.Properties.Resources.boite;
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.TabStop = false;
+            // 
+            // button33
+            // 
+            resources.ApplyResources(this.button33, "button33");
+            this.button33.Name = "button33";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click_1);
+            // 
+            // button34
+            // 
+            resources.ApplyResources(this.button34, "button34");
+            this.button34.Name = "button34";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // Priorité
             // 
@@ -1305,6 +1439,34 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // checkBox_HeadlessClient
+            // 
+            resources.ApplyResources(this.checkBox_HeadlessClient, "checkBox_HeadlessClient");
+            this.checkBox_HeadlessClient.Name = "checkBox_HeadlessClient";
+            this.toolTip1.SetToolTip(this.checkBox_HeadlessClient, resources.GetString("checkBox_HeadlessClient.ToolTip"));
+            this.checkBox_HeadlessClient.UseVisualStyleBackColor = true;
+            this.checkBox_HeadlessClient.CheckedChanged += new System.EventHandler(this.checkBox_HeadlessClient_CheckedChanged);
+            // 
             // checkBox10
             // 
             resources.ApplyResources(this.checkBox10, "checkBox10");
@@ -1634,34 +1796,6 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
-            // checkBox_HeadlessClient
-            // 
-            resources.ApplyResources(this.checkBox_HeadlessClient, "checkBox_HeadlessClient");
-            this.checkBox_HeadlessClient.Name = "checkBox_HeadlessClient";
-            this.toolTip1.SetToolTip(this.checkBox_HeadlessClient, resources.GetString("checkBox_HeadlessClient.ToolTip"));
-            this.checkBox_HeadlessClient.UseVisualStyleBackColor = true;
-            this.checkBox_HeadlessClient.CheckedChanged += new System.EventHandler(this.checkBox_HeadlessClient_CheckedChanged);
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            // 
-            // label21
-            // 
-            resources.ApplyResources(this.label21, "label21");
-            this.label21.Name = "label21";
-            // 
-            // label23
-            // 
-            resources.ApplyResources(this.label23, "label23");
-            this.label23.Name = "label23";
-            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -1702,7 +1836,13 @@
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.MODs.ResumeLayout(false);
+            this.tabControl4.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.tabPage9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            this.tabPage10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             this.Priorité.ResumeLayout(false);
             this.Options.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -1939,6 +2079,20 @@
         internal System.Windows.Forms.Label label21;
         internal System.Windows.Forms.TextBox textBox3;
         internal System.Windows.Forms.TextBox textBox2;
+        internal System.Windows.Forms.TabControl tabControl4;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage9;
+        internal System.Windows.Forms.CheckedListBox checkedListBox9;
+        internal System.Windows.Forms.Button button23;
+        internal System.Windows.Forms.PictureBox pictureBox34;
+        internal System.Windows.Forms.Button button24;
+        internal System.Windows.Forms.Button button27;
+        private System.Windows.Forms.TabPage tabPage10;
+        internal System.Windows.Forms.CheckedListBox checkedListBox10;
+        internal System.Windows.Forms.Button button28;
+        internal System.Windows.Forms.PictureBox pictureBox35;
+        internal System.Windows.Forms.Button button33;
+        internal System.Windows.Forms.Button button34;
     }
 }
 

@@ -104,7 +104,16 @@ namespace FSFLauncherA3
             {
                 listeModsValide.Add(ligne);
             }
-
+            // ARMA 3 DOC
+            foreach (string ligne in ExtractionListeModsValides(FSFLauncherCore.fenetrePrincipale.checkedListBox9, ""))
+            {
+                listeModsValide.Add((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3\") + ligne);
+            }
+            // ARMA 3 DOC OTHER PROFILE
+            foreach (string ligne in ExtractionListeModsValides(FSFLauncherCore.fenetrePrincipale.checkedListBox10, ""))
+            {
+                listeModsValide.Add((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3 - Other Profiles\") + ligne);
+            }
             return listeModsValide;
         }
         static private List<string> ExtractionListeModsValides(CheckedListBox ListBox,string cheminModsFSF)

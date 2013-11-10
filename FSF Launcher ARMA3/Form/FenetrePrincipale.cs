@@ -1169,6 +1169,37 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.textBox3.Enabled = FSFLauncherCore.fenetrePrincipale.checkBox_HeadlessClient.Checked;
         }
 
+        private void button24_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.SelectionneTousTAB(checkedListBox9);
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.InverseTousTAB(checkedListBox9);
+        }
+
+        private void button33_Click_1(object sender, EventArgs e)
+        {
+            FSFLauncherCore.SelectionneTousTAB(checkedListBox10);
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.InverseTousTAB(checkedListBox10);
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            Interface.genereTab();
+        }
+
+
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            Interface.genereTab();
+        }
 
     }
 }

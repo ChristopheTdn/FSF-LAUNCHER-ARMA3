@@ -123,14 +123,12 @@ namespace FSFLauncherA3
                timerSynchro.Start();
            }
         }
-
         private static void TimerSynchroEvent(Object myObject, EventArgs myEventArgs)
         {
             timerSynchro.Stop();
             Interface.AlerteVersionSynchro();
             timerSynchro.Start();
         }
-
         
         static public void sauvegardeProfil()
         {
@@ -146,7 +144,6 @@ namespace FSFLauncherA3
             FichierProfilXML.WriteComment("Creation Du profil FSF LAUNCHER " + nomProfil + ".profil.xml"); // commentaire
             FichierProfilXML.WriteStartElement("PROFIL");
             FichierProfilXML.WriteStartElement("MODS_FSF");
-
             //FRAMEWORK
             FichierProfilXML.WriteStartElement("FRAMEWORK");
             if (fenetrePrincipale.checkedListBox8.CheckedItems.Count != 0)
@@ -237,7 +234,7 @@ namespace FSFLauncherA3
 
             FichierProfilXML.WriteEndElement();
             
-            //AUTRE MODS
+            //ARMA3 ROOT
 
             FichierProfilXML.WriteStartElement("AUTRES_MODS");
             if (fenetrePrincipale.checkedListBox5.CheckedItems.Count != 0)
@@ -248,6 +245,30 @@ namespace FSFLauncherA3
                 }
             }
             FichierProfilXML.WriteEndElement();
+            //ARMA3 DOCUMENTS
+            FichierProfilXML.WriteStartElement("DOC_ARMA3");
+            if (fenetrePrincipale.checkedListBox9.CheckedItems.Count != 0)
+            {
+                for (int x = 0; x <= fenetrePrincipale.checkedListBox9.CheckedItems.Count - 1; x++)
+                {
+                    FichierProfilXML.WriteElementString("MODS", fenetrePrincipale.checkedListBox9.CheckedItems[x].ToString().Replace(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3\", ""));
+                }
+            }
+            FichierProfilXML.WriteEndElement();
+            /*
+            //ARMA3 DOCUMENTS OTHER PROFILE
+
+            FichierProfilXML.WriteStartElement("DOC_OTHERPROFILE");
+            if (fenetrePrincipale.checkedListBox10.CheckedItems.Count != 0)
+            {
+                for (int x = 0; x <= fenetrePrincipale.checkedListBox10.CheckedItems.Count - 1; x++)
+                {
+                    FichierProfilXML.WriteElementString("MODS", fenetrePrincipale.checkedListBox10.CheckedItems[x].ToString());
+                }
+            }
+            FichierProfilXML.WriteEndElement();
+             //*/
+
 
             // PARAMETRES
             FichierProfilXML.WriteStartElement("PARAMETRES");
@@ -381,40 +402,43 @@ namespace FSFLauncherA3
         }
         static public void ListeTab(CheckedListBox Tab, string nomRep, string nomProfil)
         {
-            List<string> tableauValeur;
-            if (nomRep != "")
+            List<string> tableauValeur = new List<string>();
+            switch (nomRep)
             {
-                tableauValeur = GenereListeFSF(nomRep);
-            }
-            else
-            {
-                
-                tableauValeur = GenereListeAUTRE(cheminARMA3);
-                try
-                {
-                    tableauValeur.AddRange(GenereListeAUTRE(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3"));
-                }
-                catch
-                {
-                }
-                try
-                {
-                    tableauValeur.AddRange(GenereListeAUTRE(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3 - Other Profiles"));
-                }
-                catch
-                {
-
-                }
-                }
-
-
+                case "@TEMPLATE":
+                case "@FRAMEWORK":
+                case "@ISLANDS":
+                case "@UNITS":
+                case "@MATERIEL":
+                case "@CLIENT":
+                case "@TEST":
+                    tableauValeur = GenereListeFSF(nomRep);
+                    break;
+                case "AUTRES_MODS":
+                    tableauValeur = GenereListeAUTRE(cheminARMA3);
+                    break;
+                case "DOC_ARMA3":
+                    tableauValeur = GenereListeAUTRE(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3");
+                    break;
+                case "DOC_OTHERPROFILE":
+                    tableauValeur = GenereListeAUTRE(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3 - Other Profiles");
+                    break;
+            } 
             string tagNameXML;
             string filtreRepertoire;
             switch (nomRep)
             {
-                case "":
+                case "AUTRES_MODS":
                     tagNameXML = "AUTRES_MODS";
-                    filtreRepertoire = "";
+                    filtreRepertoire = " ";
+                    break;
+                case "DOC_ARMA3":
+                    tagNameXML = "DOC_ARMA3";
+                    filtreRepertoire = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3\";
+                    break;
+                case "DOC_OTHERPROFILE":
+                    tagNameXML = "DOC_OTHERPROFILE";
+                    filtreRepertoire = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3 - Other Profiles\";
                     break;
                 case "@TEMPLATE":
                     tagNameXML = "TEMPLATE";
@@ -446,7 +470,7 @@ namespace FSFLauncherA3
                     break;
                 default:
                     tagNameXML = "AUTRES_MODS";
-                    filtreRepertoire = "";
+                    filtreRepertoire = " ";
                     break;
             }
             XmlDocument fichierProfilXML = new XmlDocument();
@@ -486,7 +510,7 @@ namespace FSFLauncherA3
                         }
                         
                     }
-                    Tab.Items.Add(ligne, elementsProfilChecked);
+                    Tab.Items.Add(ligne.Replace(filtreRepertoire,""), elementsProfilChecked);
                 }
                 
             }
