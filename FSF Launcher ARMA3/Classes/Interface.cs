@@ -77,10 +77,10 @@ namespace FSFLauncherA3
             // @Autre
             // Root
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox5, "AUTRES_MODS", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
-            //Arma3 profile
+            //Arma3 profile            
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox9, "DOC_ARMA3", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             //Arma3 other profile
-            //FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox10, "DOC_OTHERPROFILE", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
+            FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox10, "DOC_OTHERPROFILE", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             //genereTabMods();
             genereTabParam();
             genereTabPriorite();

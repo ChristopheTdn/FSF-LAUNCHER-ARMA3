@@ -1447,7 +1447,7 @@
     <value>0</value>
   </data>
   <data name="tabPage6.Text" xml:space="preserve">
-    <value>ROOT</value>
+    <value>ARMA3</value>
   </data>
   <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
     <value>tabPage6</value>
@@ -1612,7 +1612,7 @@
     <value>1</value>
   </data>
   <data name="tabPage9.Text" xml:space="preserve">
-    <value>ARMA3 Profile</value>
+    <value>Docs &gt; ARMA3</value>
   </data>
   <data name="&gt;&gt;tabPage9.Name" xml:space="preserve">
     <value>tabPage9</value>
@@ -1774,7 +1774,7 @@
     <value>2</value>
   </data>
   <data name="tabPage10.Text" xml:space="preserve">
-    <value>ARMA 3 Others Profiles</value>
+    <value>Docs &gt; ARMA 3 Others Profiles</value>
   </data>
   <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
     <value>tabPage10</value>

@@ -255,7 +255,7 @@ namespace FSFLauncherA3
                 }
             }
             FichierProfilXML.WriteEndElement();
-            /*
+            //*
             //ARMA3 DOCUMENTS OTHER PROFILE
 
             FichierProfilXML.WriteStartElement("DOC_OTHERPROFILE");
@@ -373,30 +373,36 @@ namespace FSFLauncherA3
         static public List<string> GenereListeAUTRE(string repertoireSource)
         {
             List<string> listeRepertoire = new List<string>();
-            string[] tableauRepertoire = Directory.GetDirectories(repertoireSource, "Addons*", SearchOption.AllDirectories);
-
-            foreach (var ligne in tableauRepertoire)
+            try
             {
-                string menuRepertoire = System.IO.Directory.GetParent(ligne).ToString();
-                string nomAAjouter = menuRepertoire;
-                if ((nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@ISLANDS\") == -1)
-                    && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@FRAMEWORK\") == -1)
-                    && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@UNITS\") == -1)
-                    && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@MATERIEL\") == -1)
-                    && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@TEMPLATE\") == -1)
-                    && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@CLIENT\") == -1)
-                    && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@TEST\") == -1)
-                    && (nomAAjouter.IndexOf(".pack") == -1)
-                    && (nomAAjouter.IndexOf(".rsync") == -1)
-                    )
-                {
+                string[] tableauRepertoire = Directory.GetDirectories(repertoireSource, "Addons*", SearchOption.AllDirectories);
 
-                    if ((menuRepertoire) != cheminARMA3)
+                foreach (var ligne in tableauRepertoire)
+                {
+                    string menuRepertoire = System.IO.Directory.GetParent(ligne).ToString();
+                    string nomAAjouter = menuRepertoire;
+                    if ((nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@ISLANDS\") == -1)
+                        && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@FRAMEWORK\") == -1)
+                        && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@UNITS\") == -1)
+                        && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@MATERIEL\") == -1)
+                        && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@TEMPLATE\") == -1)
+                        && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@CLIENT\") == -1)
+                        && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@TEST\") == -1)
+                        && (nomAAjouter.IndexOf(".pack") == -1)
+                        && (nomAAjouter.IndexOf(".rsync") == -1)
+                        )
                     {
-                        listeRepertoire.Add(menuRepertoire.Replace(repertoireSource + @"\", ""));
+
+                        if ((menuRepertoire) != cheminARMA3)
+                        {
+                            listeRepertoire.Add(menuRepertoire.Replace(repertoireSource + @"\", ""));
+                        }
+
                     }
-                    
                 }
+            }
+            catch
+            {
             }
             return listeRepertoire;
         }
