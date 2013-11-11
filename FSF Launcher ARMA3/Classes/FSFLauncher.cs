@@ -393,7 +393,7 @@ namespace FSFLauncherA3
 
                     if ((menuRepertoire) != cheminARMA3)
                     {
-                        listeRepertoire.Add(menuRepertoire.Replace(cheminARMA3+@"\", ""));
+                        listeRepertoire.Add(menuRepertoire.Replace(repertoireSource + @"\", ""));
                     }
                     
                 }
@@ -424,8 +424,8 @@ namespace FSFLauncherA3
                     tableauValeur = GenereListeAUTRE(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString() + @"\Arma 3 - Other Profiles");
                     break;
             } 
-            string tagNameXML;
-            string filtreRepertoire;
+            string tagNameXML="";
+            string filtreRepertoire = "";
             switch (nomRep)
             {
                 case "AUTRES_MODS":
@@ -468,10 +468,6 @@ namespace FSFLauncherA3
                     tagNameXML = "TEST";
                     filtreRepertoire = @"@FSF\@TEST\";
                     break;
-                default:
-                    tagNameXML = "AUTRES_MODS";
-                    filtreRepertoire = " ";
-                    break;
             }
             XmlDocument fichierProfilXML = new XmlDocument();
             if (nomProfil == "") { nomProfil = "defaut"; };
@@ -503,8 +499,8 @@ namespace FSFLauncherA3
                         }
                         if (repertoireAChercher == @"@FSF\@TEMPLATE\@FSFUnit_HelmetsST") { fenetrePrincipale.radioButton20.Checked = true; }
                         if (repertoireAChercher == @"@FSF\@TEMPLATE\@FSFUnit_HelmetsXT") { fenetrePrincipale.radioButton21.Checked = true; }
-                        
-                        if (filtreRepertoire+ligne == repertoireAChercher) 
+
+                        if (filtreRepertoire + ligne.Replace(filtreRepertoire, "") == filtreRepertoire + repertoireAChercher.Replace(filtreRepertoire, "")) 
                         {
                             elementsProfilChecked = true;
                         }
