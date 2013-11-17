@@ -122,6 +122,8 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.progExterne = new System.Windows.Forms.TabPage();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.button35 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
@@ -224,6 +226,7 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.button36 = new System.Windows.Forms.Button();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -263,6 +266,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.tabControl3.SuspendLayout();
             this.progExterne.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -1068,6 +1072,9 @@
             // progExterne
             // 
             this.progExterne.BackColor = System.Drawing.Color.Gainsboro;
+            this.progExterne.Controls.Add(this.button36);
+            this.progExterne.Controls.Add(this.pictureBox36);
+            this.progExterne.Controls.Add(this.button35);
             this.progExterne.Controls.Add(this.button18);
             this.progExterne.Controls.Add(this.button19);
             this.progExterne.Controls.Add(this.pictureBox23);
@@ -1079,6 +1086,20 @@
             resources.ApplyResources(this.progExterne, "progExterne");
             this.progExterne.Name = "progExterne";
             this.progExterne.Click += new System.EventHandler(this.progExterne_Click);
+            // 
+            // pictureBox36
+            // 
+            resources.ApplyResources(this.pictureBox36, "pictureBox36");
+            this.pictureBox36.Image = global::FSFLauncherA3.Properties.Resources.TaskForceRadio;
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.TabStop = false;
+            // 
+            // button35
+            // 
+            resources.ApplyResources(this.button35, "button35");
+            this.button35.Name = "button35";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button18
             // 
@@ -1134,7 +1155,7 @@
             // pictureBox16
             // 
             resources.ApplyResources(this.pictureBox16, "pictureBox16");
-            this.pictureBox16.Image = global::FSFLauncherA3.Properties.Resources.teamspeak;
+            this.pictureBox16.Image = global::FSFLauncherA3.Properties.Resources.Small_logo;
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.TabStop = false;
             this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
@@ -1796,6 +1817,13 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
+            // button36
+            // 
+            resources.ApplyResources(this.button36, "button36");
+            this.button36.Name = "button36";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -1857,6 +1885,7 @@
             this.tabControl3.ResumeLayout(false);
             this.progExterne.ResumeLayout(false);
             this.progExterne.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
@@ -2093,6 +2122,9 @@
         internal System.Windows.Forms.PictureBox pictureBox35;
         internal System.Windows.Forms.Button button33;
         internal System.Windows.Forms.Button button34;
+        internal System.Windows.Forms.Button button35;
+        internal System.Windows.Forms.PictureBox pictureBox36;
+        internal System.Windows.Forms.Button button36;
     }
 }
 

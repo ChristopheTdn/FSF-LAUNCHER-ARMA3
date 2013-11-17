@@ -344,6 +344,7 @@
     <None Include="gfx\russe.png" />
     <None Include="gfx\splascreen.png" />
     <None Include="gfx\splashscreen.png" />
+    <None Include="gfx\TaskForceRadio.png" />
     <Content Include="Projet1.ico" />
   </ItemGroup>
   <ItemGroup>

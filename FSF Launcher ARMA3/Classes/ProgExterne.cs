@@ -16,6 +16,7 @@ namespace FSFLauncherA3
             ValideFRAPS();
             ValideTRACKIR();
             ValideTEAMSPEAK();
+            ValideTEAMSPEAKTeamForce();
         }
 
         // FRAPS
@@ -108,17 +109,21 @@ namespace FSFLauncherA3
         static public void ValideTEAMSPEAK()
         {
             FSFLauncherCore.fenetrePrincipale.button18.Enabled = false;
+            FSFLauncherCore.fenetrePrincipale.button19.Enabled = false;
             if (testTeamSpeakExist())
             {
                 FSFLauncherCore.fenetrePrincipale.button18.Enabled = true;
+                FSFLauncherCore.fenetrePrincipale.button19.Enabled = true;
             }
             else
             {
-                if (File.Exists(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.10.1\TeamSpeak3\ts3client_win64.exe")) //Si le fichier existe 
+                if (File.Exists(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.10.1\TeamSpeak3\ts3client_win64.exe") && (File.Exists(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@ACRE\plugins\acre_win64.dll"))) //Si le fichier existe 
                 {
                     try
                     {
                         FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.10.1\TeamSpeak3\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
+                        FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@ACRE\plugins\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3\");
+                        FSFLauncherCore.fenetrePrincipale.button18.Enabled = true;
                     }
                     catch
                     {
@@ -170,11 +175,12 @@ namespace FSFLauncherA3
                 }
             
         }
-   static public void ReinstallTS3()
+        static public void ReinstallTS3()
         {
             try
             {
                 FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.10.1\TeamSpeak3\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
+                FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@ACRE\plugins\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3\");
                 var infoBox = MessageBox.Show("Le TS3 dédié à ACRE a été reinstallé dans sa version 3.10.1.", "TS3 reinstallé", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -185,5 +191,104 @@ namespace FSFLauncherA3
 
             }
         }
+
+        // TEAMSPEAK Task Force
+        static public void ValideTEAMSPEAKTeamForce()
+        {
+
+            FSFLauncherCore.fenetrePrincipale.button35.Enabled = false;
+            FSFLauncherCore.fenetrePrincipale.button36.Enabled = false;
+            if (testTeamSpeakExistTaskForce())
+            {
+                FSFLauncherCore.fenetrePrincipale.button35.Enabled = true;
+                FSFLauncherCore.fenetrePrincipale.button36.Enabled = true;
+            }
+            else
+            {
+                if (File.Exists(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.10.1\TeamSpeak3\ts3client_win64.exe") && (File.Exists(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEST\@task_force_radio\TeamSpeak 3 Client\plugins\task_force_radio_win64.dll"))) //Si le fichier existe 
+                {
+                    try
+                    {
+                        FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.10.1\TeamSpeak3\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce\");
+                        FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEST\@task_force_radio\TeamSpeak 3 Client\plugins\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce\TeamSpeak3\");
+                        if (!File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\task_force_radio\radio_keys.hpp"))
+                        {
+                            FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEST\@task_force_radio\userconfig\task_force_radio\", FSFLauncherCore.cheminARMA3 + @"\userconfig\");
+                        };
+                    }
+                    catch
+                    {
+
+                    }
+                }
+
+            }
+        }
+        static public bool testTeamSpeakExistTaskForce()
+        {
+            try
+            {
+                if (File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce\TeamSpeak3\ts3client_win64.exe")) //Si le fichier existe 
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch
+            {
+            }
+            return false;
+        }
+        static public void lancerTeamspeak3TaskForce()
+        {
+            Process[] ts364bit = Process.GetProcessesByName("ts3client_win64");
+            Process[] ts332bit = Process.GetProcessesByName("ts3client_win32");
+
+            if (ts364bit.Length == 0 && ts332bit.Length == 0)
+            {
+                //test l'existence d'un process
+                // lance TASK FORCE
+                Process ts3TaskForce = new Process();
+                // Activation de l'envoi des événements
+                ts3TaskForce.StartInfo.UseShellExecute = true;
+                ts3TaskForce.StartInfo.Verb = "runas";
+                ts3TaskForce.StartInfo.FileName = FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce\TeamSpeak3\ts3client_win64.exe";
+                ts3TaskForce.StartInfo.Arguments = "ts3server://ts3.clan-fsf.fr?password=welcome";
+                //ts3TaskForce.StartInfo.CreateNoWindow = true;
+                ts3TaskForce.Start();
+            }
+            else
+            {
+                var infoBox = MessageBox.Show("Impossible de lancer le TS3 dédié à TASK FORCE (code d'erreur #CON HARD 00x276H). Vous semblez avoir TS3 deja lancé sur votre ordinateur.", "Erreur TS3 en cours d'execution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+        static public void ReinstallTS3TaskForce()
+        {
+            try
+            {
+                FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.10.1\TeamSpeak3\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce\");
+                FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEST\@task_force_radio\TeamSpeak 3 Client\plugins\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce\TeamSpeak3\");
+                if (!File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\task_force_radio\radio_keys.hpp"))
+                {
+                    FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEST\@task_force_radio\userconfig\task_force_radio\", FSFLauncherCore.cheminARMA3 + @"\userconfig\");
+                };
+
+                    
+                    
+                var infoBox = MessageBox.Show("Le TS3 dédié à ACRE a été reinstallé dans sa version 3.10.1.", "TS3 reinstallé", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                var infoBox = MessageBox.Show("Impossible de reinstaller le TS3 dédié au TASK FORCE RADIO (code d'erreur #CON HARD 00x007H). Vous semblez avoir TS3 deja lancé sur votre ordinateur.", "Erreur : TS3 en cours d'execution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+        //Reinstall TS3
+
+
     }
 }
