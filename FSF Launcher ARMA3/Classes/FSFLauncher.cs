@@ -301,6 +301,7 @@ namespace FSFLauncherA3
                               FichierProfilXML.WriteElementString("HCPort", "");
                               FichierProfilXML.WriteElementString("HCPassWord", "");                            
                           }
+            if (fenetrePrincipale.checkBox13.Checked) { FichierProfilXML.WriteElementString("other", fenetrePrincipale.textBox4.Text); } else { FichierProfilXML.WriteElementString("other", ""); }
 
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.WriteEndElement();
@@ -579,6 +580,7 @@ namespace FSFLauncherA3
             if (fenetrePrincipale.checkBox22.Checked) { listArguments += "-maxVRAM=" + fenetrePrincipale.textBox20.Text + " "; }
             if (fenetrePrincipale.checkBox21.Checked) { listArguments += "-exThreads=" + fenetrePrincipale.comboBox3.Text + " "; }
             if (fenetrePrincipale.checkBox_HeadlessClient.Checked) { listArguments += @"-name=""HeadLess Client"" -localhost=127.0.0.1 -connect=localhost -port="+fenetrePrincipale.textBox2.Text+" -password="+fenetrePrincipale.textBox3.Text+" -client -nosound "; }
+            if (fenetrePrincipale.checkBox13.Checked) { listArguments += " " + fenetrePrincipale.textBox4.Text + " "; }
             listArguments += @"""" + listMODS + @"""";
         }
 

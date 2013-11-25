@@ -121,6 +121,7 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.checkBox9.Checked = false;
             FSFLauncherCore.fenetrePrincipale.checkBox11.Checked = false;
             FSFLauncherCore.fenetrePrincipale.checkBox12.Checked = false;
+            FSFLauncherCore.fenetrePrincipale.checkBox13.Checked = false;
             FSFLauncherCore.fenetrePrincipale.checkBox19.Checked = false;
             FSFLauncherCore.fenetrePrincipale.checkBox22.Checked = false;
             FSFLauncherCore.fenetrePrincipale.checkBox23.Checked = false;
@@ -130,6 +131,7 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.checkBox_HeadlessClient.Checked = false;
             FSFLauncherCore.fenetrePrincipale.textBox2.Text = "";
             FSFLauncherCore.fenetrePrincipale.textBox3.Text = "";
+            FSFLauncherCore.fenetrePrincipale.textBox4.Text = "";
 
 
         }
@@ -185,6 +187,9 @@ namespace FSFLauncherA3
                                                                FSFLauncherCore.fenetrePrincipale.textBox2.Text = fichierProfilXML.ReadString();
                                                                fichierProfilXML.ReadToFollowing("HCPassWord");
                                                                FSFLauncherCore.fenetrePrincipale.textBox3.Text = fichierProfilXML.ReadString(); }
+                fichierProfilXML.ReadToFollowing("other");
+                string otherCMD =  fichierProfilXML.ReadString();
+                if (otherCMD != "") { FSFLauncherCore.fenetrePrincipale.checkBox13.Checked = true; FSFLauncherCore.fenetrePrincipale.textBox4.Text = otherCMD;} 
             }
             fichierProfilXML.Close();
         }

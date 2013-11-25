@@ -224,6 +224,9 @@
     <EmbeddedResource Include="Form\FenetrePrincipale.el-GR.resx">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\FenetrePrincipale.en-US.resx">
+      <DependentUpon>FenetrePrincipale.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FenetrePrincipale.en.resx">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>
       <Generator>ResXFileCodeGenerator</Generator>

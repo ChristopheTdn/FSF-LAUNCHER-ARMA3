@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="button22.Text" xml:space="preserve">
-    <value>Actualiser Liste des Mods</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox29.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -427,14 +424,44 @@
         B9sViQosBoEbAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="checkBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 599</value>
+  <data name="button36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 112</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 567</value>
+  <data name="pictureBox36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 76</value>
   </data>
-  <data name="checkBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 567</value>
+  <data name="button35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 76</value>
+  </data>
+  <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 6</value>
+  </data>
+  <data name="button19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 45</value>
+  </data>
+  <data name="pictureBox23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 15</value>
+  </data>
+  <data name="button38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 45</value>
+  </data>
+  <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 45</value>
+  </data>
+  <data name="checkBox11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 88</value>
+  </data>
+  <data name="checkBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 112</value>
+  </data>
+  <data name="pictureBox16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 6</value>
+  </data>
+  <data name="button16.Text" xml:space="preserve">
+    <value>Official</value>
+  </data>
+  <data name="button25.Text" xml:space="preserve">
+    <value>Mapping</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

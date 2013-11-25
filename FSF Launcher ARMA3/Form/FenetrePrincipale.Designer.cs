@@ -122,6 +122,7 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.progExterne = new System.Windows.Forms.TabPage();
+            this.button36 = new System.Windows.Forms.Button();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.button35 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
@@ -170,6 +171,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -226,7 +229,6 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.button36 = new System.Windows.Forms.Button();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1087,6 +1089,13 @@
             this.progExterne.Name = "progExterne";
             this.progExterne.Click += new System.EventHandler(this.progExterne_Click);
             // 
+            // button36
+            // 
+            resources.ApplyResources(this.button36, "button36");
+            this.button36.Name = "button36";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
             // pictureBox36
             // 
             resources.ApplyResources(this.pictureBox36, "pictureBox36");
@@ -1441,6 +1450,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.checkBox13);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -1459,6 +1470,18 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // textBox4
+            // 
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.Name = "textBox4";
+            // 
+            // checkBox13
+            // 
+            resources.ApplyResources(this.checkBox13, "checkBox13");
+            this.checkBox13.Name = "checkBox13";
+            this.toolTip1.SetToolTip(this.checkBox13, resources.GetString("checkBox13.ToolTip"));
+            this.checkBox13.UseVisualStyleBackColor = true;
             // 
             // label23
             // 
@@ -1817,13 +1840,6 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
-            // button36
-            // 
-            resources.ApplyResources(this.button36, "button36");
-            this.button36.Name = "button36";
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Click += new System.EventHandler(this.button36_Click);
-            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -2125,6 +2141,8 @@
         internal System.Windows.Forms.Button button35;
         internal System.Windows.Forms.PictureBox pictureBox36;
         internal System.Windows.Forms.Button button36;
+        internal System.Windows.Forms.TextBox textBox4;
+        internal System.Windows.Forms.CheckBox checkBox13;
     }
 }
 

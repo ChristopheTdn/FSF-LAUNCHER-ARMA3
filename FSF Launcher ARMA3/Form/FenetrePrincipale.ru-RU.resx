@@ -214,15 +214,6 @@
   <data name="button9.Text" xml:space="preserve">
     <value>Выбрать все</value>
   </data>
-  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>329, 90</value>
-  </data>
-  <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 43</value>
-  </data>
-  <data name="button14.Text" xml:space="preserve">
-    <value>Инвертировать</value>
-  </data>
   <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 41</value>
   </data>
@@ -231,6 +222,15 @@
   </data>
   <data name="button15.Text" xml:space="preserve">
     <value>Выбрать все</value>
+  </data>
+  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 90</value>
+  </data>
+  <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 43</value>
+  </data>
+  <data name="button14.Text" xml:space="preserve">
+    <value>Инвертировать</value>
   </data>
   <data name="checkBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 17</value>
@@ -551,7 +551,7 @@
     <value>Число процессоров</value>
   </data>
   <data name="button38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 90</value>
+    <value>182, 20</value>
   </data>
   <data name="button38.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 41</value>
@@ -560,16 +560,10 @@
     <value>Експортировать моды</value>
   </data>
   <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 91</value>
+    <value>134, 20</value>
   </data>
   <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 41</value>
-  </data>
-  <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 35</value>
-  </data>
-  <data name="button18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 42</value>
   </data>
   <data name="checkBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 17</value>
@@ -584,7 +578,7 @@
     <value>Включить TrackIR5</value>
   </data>
   <data name="pictureBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 35</value>
+    <value>310, 9</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 13</value>
@@ -621,9 +615,6 @@
   </data>
   <data name="linkLabel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 117</value>
-  </data>
-  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 122</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Параметры запуска</value>
@@ -667,11 +658,20 @@
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Оконный режим игры</value>
   </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 25</value>
+  </data>
   <data name="checkBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 548</value>
+    <value>224, 601</value>
   </data>
   <data name="checkBox19.Text" xml:space="preserve">
     <value>уменьшить запуску</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 567</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 49</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Запустить ARMA 3</value>
@@ -682,8 +682,11 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Профиль сохранён !</value>
   </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 578</value>
+  </data>
   <data name="checkBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 525</value>
+    <value>224, 567</value>
   </data>
   <data name="checkBox24.Size" type="System.Drawing.Size, System.Drawing">
     <value>147, 17</value>
