@@ -36,8 +36,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>210</ApplicationRevision>
-    <ApplicationVersion>1.00.1117.%2a</ApplicationVersion>
+    <ApplicationRevision>212</ApplicationRevision>
+    <ApplicationVersion>1.00.1127.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -217,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Dial_LanceSynchroBeta.resx">
       <DependentUpon>Dial_LanceSynchroBeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FenetrePrincipale.de-DE.resx">
+      <DependentUpon>FenetrePrincipale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FenetrePrincipale.de.resx">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>

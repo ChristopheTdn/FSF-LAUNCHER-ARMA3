@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ModsFSF.Text" xml:space="preserve">
-    <value>Моды FSF</value>
-  </data>
-  <data name="Options.Text" xml:space="preserve">
-    <value>Опции</value>
-  </data>
   <data name="button13.Text" xml:space="preserve">
     <value>Инвертировать</value>
   </data>
@@ -213,6 +207,9 @@
   </data>
   <data name="button9.Text" xml:space="preserve">
     <value>Выбрать все</value>
+  </data>
+  <data name="ModsFSF.Text" xml:space="preserve">
+    <value>Моды FSF</value>
   </data>
   <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 41</value>
@@ -595,9 +592,6 @@
   <data name="label5.Text" xml:space="preserve">
     <value>Главний профиль !</value>
   </data>
-  <data name="Apropos.Text" xml:space="preserve">
-    <value>О программе</value>
-  </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>323, 33</value>
   </data>
@@ -616,8 +610,8 @@
   <data name="linkLabel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 117</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Параметры запуска</value>
+  <data name="Apropos.Text" xml:space="preserve">
+    <value>О программе</value>
   </data>
   <data name="checkBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 17</value>
@@ -658,6 +652,12 @@
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Оконный режим игры</value>
   </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Параметры запуска</value>
+  </data>
+  <data name="Options.Text" xml:space="preserve">
+    <value>Опции</value>
+  </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
     <value>207, 25</value>
   </data>
@@ -666,12 +666,6 @@
   </data>
   <data name="checkBox19.Text" xml:space="preserve">
     <value>уменьшить запуску</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 567</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 49</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Запустить ARMA 3</value>

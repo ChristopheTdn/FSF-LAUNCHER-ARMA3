@@ -41,7 +41,9 @@ namespace FSFLauncherA3
         {
 
             FSFLauncherCore.fenetrePrincipale.button1.Enabled = true;
-            
+            FSFLauncherCore.fenetrePrincipale.button37.Enabled = true;
+            FSFLauncherCore.fenetrePrincipale.button40.Enabled = true;
+
         }
        
     }

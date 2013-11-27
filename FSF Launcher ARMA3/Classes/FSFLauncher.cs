@@ -607,9 +607,14 @@ namespace FSFLauncherA3
             if (apparenceValide())
             {
                 fenetrePrincipale.button1.Enabled = false;
+                fenetrePrincipale.button37.Enabled = false;
+                fenetrePrincipale.button40.Enabled = false;
                 generationLigneArguments();
+                if (serveur == "server1") { serveur = "-connect=188.165.206.141 -port=2542 -password=patrie "; };
+                if (serveur == "mapping") { serveur = "-connect=188.165.206.141 -port=2532 -password=honneur "; };
                 ProgExterne.lancerFraps();
                 ProgExterne.lancerTrackIR();
+
 
                 // Lancement Jeu
 

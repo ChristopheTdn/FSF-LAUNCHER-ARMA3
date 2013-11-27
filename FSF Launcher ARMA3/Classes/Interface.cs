@@ -48,10 +48,15 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.tabControl2.TabPages.Remove(FSFLauncherCore.fenetrePrincipale.SynchroZONE);
                 FSFLauncherCore.fenetrePrincipale.pictureBox6.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.pictureBox16.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.pictureBox36.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button18.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button19.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.button40.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button39.Visible = false;
-                FSFLauncherCore.fenetrePrincipale.button38.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.button38.Visible = false;                
+                FSFLauncherCore.fenetrePrincipale.button37.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.button36.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.button35.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;
                 FSFLauncherCore.fenetrePrincipale.groupBox3.Visible = false;
             }

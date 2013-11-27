@@ -1211,6 +1211,16 @@ namespace FSFLauncherA3
             ProgExterne.ReinstallTS3TaskForce();
         }
 
+        private void button37_Click_1(object sender, EventArgs e)
+        {
+            FSFLauncherCore.lancerJeu("server1");
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.lancerJeu("mapping");
+        }
+
     }
 }
     
