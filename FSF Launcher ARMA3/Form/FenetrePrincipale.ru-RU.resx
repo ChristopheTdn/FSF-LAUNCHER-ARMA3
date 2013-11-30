@@ -662,7 +662,7 @@
     <value>207, 25</value>
   </data>
   <data name="checkBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 601</value>
+    <value>219, 627</value>
   </data>
   <data name="checkBox19.Text" xml:space="preserve">
     <value>уменьшить запуску</value>
@@ -680,7 +680,7 @@
     <value>171, 578</value>
   </data>
   <data name="checkBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 567</value>
+    <value>219, 593</value>
   </data>
   <data name="checkBox24.Size" type="System.Drawing.Size, System.Drawing">
     <value>147, 17</value>

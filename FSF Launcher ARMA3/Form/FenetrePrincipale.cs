@@ -1221,6 +1221,12 @@ namespace FSFLauncherA3
             FSFLauncherCore.lancerJeu("mapping");
         }
 
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox7.Enabled = checkBox3.Checked;
+            textBox8.Enabled = checkBox3.Checked;
+        }
+
     }
 }
     

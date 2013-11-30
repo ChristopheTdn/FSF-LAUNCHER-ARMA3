@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;button37.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Langage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -149,8 +146,8 @@
   <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>160, 13</value>
   </data>
-  <data name="&gt;&gt;pictureBox12.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="label17.Text" xml:space="preserve">
+    <value>ToF, El Doktor</value>
   </data>
   <data name="&gt;&gt;pictureBox16.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -158,17 +155,27 @@
   <data name="&gt;&gt;radioButton6.Name" xml:space="preserve">
     <value>radioButton6</value>
   </data>
+  <data name="MODs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 501</value>
+  </data>
   <data name="&gt;&gt;tabControl3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pictureBox34.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SynchroZONE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 501</value>
+  </data>
   <data name="checkBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 599</value>
+    <value>235, 614</value>
   </data>
   <data name="&gt;&gt;ModsFSF.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox22.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
   </data>
   <data name="checkBox5.Text" xml:space="preserve">
     <value>Afficher les erreurs script</value>
@@ -203,11 +210,20 @@
   <data name="button35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label25.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureBox7.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="&gt;&gt;tabControl2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 87</value>
   </data>
   <data name="&gt;&gt;tabPage9.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -215,21 +231,14 @@
   <data name="&gt;&gt;button15.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkedListBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>317, 391</value>
-  </data>
   <data name="progressBar2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="pictureBox5.ToolTip" xml:space="preserve">
-    <value>Définir comme Favoris</value>
+  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Print, 9pt, style=Bold</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Options.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
   </data>
   <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -247,14 +256,17 @@
   <data name="&gt;&gt;openFileDialog3.Name" xml:space="preserve">
     <value>openFileDialog3</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
   <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 43</value>
   </data>
   <data name="pictureBox21.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 26</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;tabPage8.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 43</value>
@@ -268,11 +280,8 @@
   <data name="pictureBox32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;checkBox13.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 14</value>
   </data>
   <data name="&gt;&gt;pictureBox20.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -280,20 +289,26 @@
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Mode fenêtré</value>
   </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 456</value>
+  </data>
+  <data name="&gt;&gt;pictureBox26.Name" xml:space="preserve">
+    <value>pictureBox26</value>
+  </data>
   <data name="pictureBox26.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="textBox3.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="button22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 302</value>
+  <data name="checkBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 66</value>
   </data>
   <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="button6.ToolTip" xml:space="preserve">
     <value />
@@ -322,8 +337,9 @@
   <data name="checkBox8.Text" xml:space="preserve">
     <value>Arrêt gestion MultiCore (-noCB)</value>
   </data>
-  <data name="ctrlListModPrioritaire.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 407</value>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Vixente, KiTooN, Galahad, Aplion 
+Brainbug, Alpha-Kilo</value>
   </data>
   <data name="pictureBox29.ToolTip" xml:space="preserve">
     <value />
@@ -334,9 +350,6 @@
   <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
     <value>radioButton2</value>
   </data>
-  <data name="&gt;&gt;pictureBox20.Name" xml:space="preserve">
-    <value>pictureBox20</value>
-  </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>355, 91</value>
   </data>
@@ -345,6 +358,9 @@
   </data>
   <data name="&gt;&gt;checkedListBox10.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
   </data>
   <data name="tabControl3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -362,10 +378,10 @@
     <value>53</value>
   </data>
   <data name="Options.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 486</value>
+    <value>484, 501</value>
   </data>
-  <data name="&gt;&gt;trackBar1.Name" xml:space="preserve">
-    <value>trackBar1</value>
+  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox16.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -376,11 +392,14 @@
   <data name="&gt;&gt;radioButton3.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ctrlListModPrioritaire.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
   </data>
   <data name="tabPage2.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="checkedListBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 14</value>
@@ -388,17 +407,11 @@
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 18pt, style=Bold, Italic</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
   <data name="&gt;&gt;button13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
-    <value>Apropos</value>
-  </data>
-  <data name="pictureBox23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 9</value>
+  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
+    <value>checkBox4</value>
   </data>
   <data name="&gt;&gt;comboBox3.Name" xml:space="preserve">
     <value>comboBox3</value>
@@ -412,8 +425,8 @@
   <data name="&gt;&gt;checkBox8.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="radioButton4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="checkBox6.Text" xml:space="preserve">
+    <value>Mémoire max (MB)</value>
   </data>
   <data name="button19.ToolTip" xml:space="preserve">
     <value />
@@ -427,8 +440,8 @@
   <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
     <value>358, 9</value>
   </data>
-  <data name="&gt;&gt;button35.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;pictureBox36.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -445,8 +458,8 @@
   <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 81</value>
+  <data name="linkLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;button23.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -457,8 +470,8 @@
   <data name="textBox11.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
     <value>Vertical</value>
   </data>
-  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="linkLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="groupBox13.ToolTip" xml:space="preserve">
     <value />
@@ -493,17 +506,14 @@
   <data name="&gt;&gt;checkBox6.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="trackBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 45</value>
+  <data name="&gt;&gt;pictureBox30.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;checkedListBox9.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="button30.ToolTip" xml:space="preserve">
     <value>Diminue la priorité</value>
-  </data>
-  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -520,8 +530,8 @@
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 22</value>
   </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label32.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt, style=Underline</value>
@@ -547,6 +557,9 @@
   <data name="button12.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="comboBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
   <data name="&gt;&gt;groupBox14.Parent" xml:space="preserve">
     <value>tabPage8</value>
   </data>
@@ -555,6 +568,9 @@
   </data>
   <data name="button3.Text" xml:space="preserve">
     <value>Inverser selection</value>
+  </data>
+  <data name="&gt;&gt;button35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="trackBar1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -568,14 +584,14 @@
   <data name="&gt;&gt;ctrlListModPrioritaire.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="ctrlListModPrioritaire.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 472</value>
+  </data>
   <data name="pictureBox32.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
   <data name="trackBar3.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 45</value>
-  </data>
-  <data name="pictureBox23.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label41.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -585,9 +601,6 @@
   </data>
   <data name="&gt;&gt;checkedListBox10.Parent" xml:space="preserve">
     <value>tabPage10</value>
-  </data>
-  <data name="tabPage6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
   </data>
   <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 41</value>
@@ -628,26 +641,23 @@
   <data name="&gt;&gt;button28.Parent" xml:space="preserve">
     <value>tabPage10</value>
   </data>
+  <data name="checkedListBox7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
   <data name="pictureBox24.Location" type="System.Drawing.Point, System.Drawing">
     <value>131, 17</value>
   </data>
   <data name="&gt;&gt;checkBox11.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="label23.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox19.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;button39.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="pictureBox11.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
-  <data name="&gt;&gt;profil.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 47</value>
+  <data name="&gt;&gt;ModsFSF.Name" xml:space="preserve">
+    <value>ModsFSF</value>
   </data>
   <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -676,8 +686,8 @@
   <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="pictureBox11.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>groupBox8</value>
   </data>
   <data name="pictureBox16.ToolTip" xml:space="preserve">
     <value />
@@ -706,9 +716,6 @@
   <data name="pictureBox10.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 13</value>
   </data>
@@ -719,16 +726,16 @@
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="textBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 176</value>
+    <value>18</value>
   </data>
   <data name="&gt;&gt;label13.Parent" xml:space="preserve">
     <value>Apropos</value>
   </data>
   <data name="&gt;&gt;checkBox19.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button19.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;button24.Parent" xml:space="preserve">
     <value>tabPage9</value>
@@ -746,10 +753,19 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
-  <data name="pictureBox21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 69</value>
+  <data name="&gt;&gt;checkedListBox5.Name" xml:space="preserve">
+    <value>checkedListBox5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox19.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;MODs.Name" xml:space="preserve">
+    <value>MODs</value>
   </data>
   <data name="pictureBox29.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -757,8 +773,8 @@
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 609</value>
+  <data name="&gt;&gt;textBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -773,7 +789,7 @@
     <value />
   </data>
   <data name="tabControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>457, 433</value>
+    <value>457, 480</value>
   </data>
   <data name="button26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -784,11 +800,8 @@
   <data name="&gt;&gt;checkedListBox4.Name" xml:space="preserve">
     <value>checkedListBox4</value>
   </data>
-  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;checkBox22.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;groupBox13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox4.ToolTip" xml:space="preserve">
     <value />
@@ -799,8 +812,8 @@
   <data name="button35.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="button12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="pictureBox20.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
   </data>
   <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
     <value>profil</value>
@@ -814,14 +827,17 @@
   <data name="button2.Text" xml:space="preserve">
     <value>Selectionner tous</value>
   </data>
+  <data name="&gt;&gt;pictureBox12.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;button23.Parent" xml:space="preserve">
     <value>tabPage9</value>
   </data>
-  <data name="&gt;&gt;radioButton5.Parent" xml:space="preserve">
-    <value>Langage</value>
-  </data>
-  <data name="pictureBox19.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="label24.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;checkBox22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="radioButton21.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 17</value>
@@ -835,20 +851,17 @@
   <data name="&gt;&gt;pictureBox8.Name" xml:space="preserve">
     <value>pictureBox8</value>
   </data>
-  <data name="pictureBox36.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;button14.Parent" xml:space="preserve">
-    <value>tabPage6</value>
-  </data>
   <data name="checkBox4.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;pictureBox7.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="button27.Text" xml:space="preserve">
-    <value>Inverser selection</value>
+  <data name="&gt;&gt;radioButton4.Parent" xml:space="preserve">
+    <value>Langage</value>
+  </data>
+  <data name="pictureBox12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -864,9 +877,6 @@
   </data>
   <data name="checkBox21.ToolTip" xml:space="preserve">
     <value> -exThreads</value>
-  </data>
-  <data name="progExterne.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;pictureBox27.Name" xml:space="preserve">
     <value>pictureBox27</value>
@@ -919,9 +929,6 @@
   <data name="button32.Text" xml:space="preserve">
     <value>Bas</value>
   </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
   <data name="checkBox8.ToolTip" xml:space="preserve">
     <value>-noCB : It slows down rendering but may resolve visual glitches.</value>
   </data>
@@ -955,8 +962,8 @@
   <data name="&gt;&gt;progressBar2.Name" xml:space="preserve">
     <value>progressBar2</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;pictureBox6.Name" xml:space="preserve">
     <value>pictureBox6</value>
@@ -970,14 +977,11 @@
   <data name="pictureBox20.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="checkBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 202</value>
-  </data>
   <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
     <value>profil</value>
   </data>
-  <data name="tabPage6.Text" xml:space="preserve">
-    <value>ARMA3</value>
+  <data name="button16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 35</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1003,20 +1007,29 @@
   <data name="&gt;&gt;SynchroZONE.Name" xml:space="preserve">
     <value>SynchroZONE</value>
   </data>
-  <data name="tabPage3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
+  <data name="&gt;&gt;button39.Name" xml:space="preserve">
+    <value>button39</value>
   </data>
-  <data name="tabControl2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
+    <value>profil</value>
   </data>
   <data name="Apropos.Size" type="System.Drawing.Size, System.Drawing">
     <value>455, 138</value>
+  </data>
+  <data name="pictureBox13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox24.Text" xml:space="preserve">
     <value>force mode ADMIN</value>
   </data>
   <data name="button18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="checkBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1046,7 +1059,7 @@
     <value>3</value>
   </data>
   <data name="checkedListBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 391</value>
+    <value>326, 425</value>
   </data>
   <data name="&gt;&gt;checkedListBox7.Name" xml:space="preserve">
     <value>checkedListBox7</value>
@@ -1069,17 +1082,20 @@
   <data name="linkLabel3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt</value>
   </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>207, 113</value>
-  </data>
-  <data name="profil.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="pictureBox17.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="radioButton4.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 17</value>
+  </data>
+  <data name="button17.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
   </data>
   <data name="&gt;&gt;radioButton20.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1089,9 +1105,6 @@
   </data>
   <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="checkBox_HeadlessClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 17</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
@@ -1103,7 +1116,7 @@
     <value>49</value>
   </data>
   <data name="checkedListBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 391</value>
+    <value>334, 442</value>
   </data>
   <data name="&gt;&gt;checkedListBox6.Name" xml:space="preserve">
     <value>checkedListBox6</value>
@@ -1113,9 +1126,6 @@
   </data>
   <data name="pictureBox13.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox6.Parent" xml:space="preserve">
-    <value>tabPage7</value>
   </data>
   <data name="&gt;&gt;linkLabel1.Name" xml:space="preserve">
     <value>linkLabel1</value>
@@ -1150,8 +1160,8 @@
   <data name="&gt;&gt;button25.Name" xml:space="preserve">
     <value>button25</value>
   </data>
-  <data name="textBox20.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="pictureBox20.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1165,17 +1175,14 @@
   <data name="&gt;&gt;button20.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button6.Text" xml:space="preserve">
-    <value>Inverser selection</value>
-  </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
   <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBox10.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="&gt;&gt;button18.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="checkBox8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1210,12 +1217,6 @@
   <data name="&gt;&gt;checkedListBox3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Lancer ARMA 3</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>Apropos</value>
-  </data>
   <data name="button13.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
@@ -1234,11 +1235,14 @@
   <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>443, 165</value>
   </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="button16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;checkBox10.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;textBox8.Name" xml:space="preserve">
+    <value>textBox8</value>
   </data>
   <data name="&gt;&gt;button22.Name" xml:space="preserve">
     <value>button22</value>
@@ -1258,8 +1262,8 @@
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 204</value>
+  <data name="checkedListBox4.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="checkBox21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1273,8 +1277,8 @@
   <data name="button30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;checkedListBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
+    <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;checkBox6.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -1298,13 +1302,16 @@
     <value>48</value>
   </data>
   <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="&gt;&gt;checkBox10.Name" xml:space="preserve">
     <value>checkBox10</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="pictureBox34.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -1339,8 +1346,8 @@
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
   </data>
-  <data name="checkBox23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
   </data>
   <data name="&gt;&gt;checkedListBox9.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1348,17 +1355,17 @@
   <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 420</value>
-  </data>
   <data name="comboBox2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="pictureBox13.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>Options</value>
+  </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 243</value>
+    <value>64, 215</value>
   </data>
   <data name="&gt;&gt;trackBar3.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -1369,6 +1376,9 @@
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
   </data>
+  <data name="pictureBox21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 69</value>
+  </data>
   <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
@@ -1377,9 +1387,6 @@
   </data>
   <data name="pictureBox20.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 20</value>
-  </data>
-  <data name="pictureBox14.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>@UNITS</value>
@@ -1390,8 +1397,8 @@
   <data name="label41.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="tabPage8.Text" xml:space="preserve">
-    <value>@TEMPLATE</value>
+  <data name="pictureBox23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 9</value>
   </data>
   <data name="button38.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -1417,6 +1424,9 @@
   <data name="&gt;&gt;radioButton21.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="textBox20.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="pictureBox17.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
@@ -1426,8 +1436,11 @@
   <data name="checkBox7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label32.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 456</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>Texture loading</value>
   </data>
   <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
     <value>textBox4</value>
@@ -1456,9 +1469,6 @@
   <data name="&gt;&gt;pictureBox33.Name" xml:space="preserve">
     <value>pictureBox33</value>
   </data>
-  <data name="&gt;&gt;pictureBox18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="radioButton5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1484,8 +1494,8 @@ et aux besoins des mappeurs.
   <data name="ModsFSF.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="&gt;&gt;checkBox6.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 41</value>
@@ -1493,20 +1503,17 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;label15.Parent" xml:space="preserve">
     <value>groupBox8</value>
   </data>
-  <data name="&gt;&gt;pictureBox24.Name" xml:space="preserve">
-    <value>pictureBox24</value>
+  <data name="radioButton6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="button25.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 34</value>
   </data>
-  <data name="pictureBox35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 175</value>
+  <data name="&gt;&gt;progressBar2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
-    <value>profil</value>
-  </data>
-  <data name="&gt;&gt;MODs.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="checkBox12.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1541,14 +1548,14 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;pictureBox36.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
+  <data name="label34.Text" xml:space="preserve">
+    <value>File operations</value>
   </data>
   <data name="&gt;&gt;pictureBox9.Name" xml:space="preserve">
     <value>pictureBox9</value>
   </data>
   <data name="checkedListBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 391</value>
+    <value>327, 425</value>
   </data>
   <data name="&gt;&gt;radioButton4.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1574,6 +1581,9 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
   </data>
+  <data name="pictureBox35.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="pictureBox25.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -1592,11 +1602,14 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;groupBox14.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;pictureBox29.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="Options.ToolTipText" xml:space="preserve">
     <value>Sauvegarder le profil</value>
   </data>
-  <data name="progExterne.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -1606,6 +1619,9 @@ et aux besoins des mappeurs.
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 13</value>
+  </data>
+  <data name="radioButton5.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
   </data>
   <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
     <value>tabPage3</value>
@@ -1625,9 +1641,6 @@ et aux besoins des mappeurs.
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>groupBox8</value>
   </data>
@@ -1637,14 +1650,14 @@ et aux besoins des mappeurs.
   <data name="label12.Text" xml:space="preserve">
     <value>code :</value>
   </data>
+  <data name="MODs.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="label32.Text" xml:space="preserve">
     <value>Traduction: </value>
   </data>
-  <data name="pictureBox21.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
   <data name="checkBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 134</value>
+    <value>16, 106</value>
   </data>
   <data name="pictureBox32.ToolTip" xml:space="preserve">
     <value />
@@ -1673,6 +1686,9 @@ et aux besoins des mappeurs.
   <data name="comboBox3.Items1" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="tabPage4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;pictureBox7.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1685,32 +1701,29 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>SynchroZONE</value>
   </data>
-  <data name="checkBox5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;checkBox8.Parent" xml:space="preserve">
     <value>groupBox1</value>
-  </data>
-  <data name="pictureBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 20</value>
   </data>
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
-    <value>checkBox4</value>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>56, 19</value>
   </data>
   <data name="&gt;&gt;checkBox13.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;checkBox12.Name" xml:space="preserve">
+    <value>checkBox12</value>
   </data>
   <data name="pictureBox1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 300</value>
+    <value>208, 315</value>
   </data>
   <data name="button38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1745,14 +1758,14 @@ et aux besoins des mappeurs.
   <data name="progressBar2.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 585</value>
+    <value>35, 600</value>
   </data>
   <data name="pictureBox19.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
   </data>
   <data name="pictureBox13.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -1763,23 +1776,20 @@ et aux besoins des mappeurs.
   <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="&gt;&gt;radioButton20.Name" xml:space="preserve">
+    <value>radioButton20</value>
+  </data>
   <data name="&gt;&gt;progressBar3.Name" xml:space="preserve">
     <value>progressBar3</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
     <value>355, 33</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 13</value>
-  </data>
   <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
     <value>progressBar1</value>
   </data>
   <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 35</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 56</value>
@@ -1793,11 +1803,14 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
+  <data name="&gt;&gt;checkedListBox9.Parent" xml:space="preserve">
+    <value>tabPage9</value>
   </data>
   <data name="pictureBox25.Size" type="System.Drawing.Size, System.Drawing">
     <value>16, 16</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
   </data>
   <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
     <value>tabPage7</value>
@@ -1862,8 +1875,8 @@ et aux besoins des mappeurs.
   <data name="checkedListBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 15</value>
   </data>
-  <data name="&gt;&gt;Priorité.Name" xml:space="preserve">
-    <value>Priorité</value>
+  <data name="trackBar3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="comboBox4.ToolTip" xml:space="preserve">
     <value />
@@ -1880,17 +1893,14 @@ et aux besoins des mappeurs.
   <data name="button12.Text" xml:space="preserve">
     <value>Selectionner tous</value>
   </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="button40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 609</value>
+    <value>434, 624</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 246</value>
+    <value>30, 218</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
   <data name="&gt;&gt;radioButton20.Parent" xml:space="preserve">
     <value>groupBox13</value>
@@ -1901,14 +1911,14 @@ et aux besoins des mappeurs.
   <data name="pictureBox14.Location" type="System.Drawing.Point, System.Drawing">
     <value>222, 56</value>
   </data>
-  <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
   <data name="&gt;&gt;checkBox8.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
   </data>
   <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 43</value>
@@ -1916,8 +1926,8 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;checkBox_HeadlessClient.Name" xml:space="preserve">
     <value>checkBox_HeadlessClient</value>
   </data>
-  <data name="&gt;&gt;Apropos.Name" xml:space="preserve">
-    <value>Apropos</value>
+  <data name="pictureBox21.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;button16.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1928,23 +1938,26 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;button10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="linkLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 13</value>
+  </data>
   <data name="&gt;&gt;label12.Parent" xml:space="preserve">
     <value>Apropos</value>
   </data>
   <data name="Langage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="&gt;&gt;button27.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="button38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 41</value>
   </data>
   <data name="&gt;&gt;button9.Name" xml:space="preserve">
     <value>button9</value>
   </data>
-  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 288</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
   <data name="checkBox22.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -1979,6 +1992,9 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
+  <data name="button14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;pictureBox23.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1988,8 +2004,8 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;radioButton6.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton20.Name" xml:space="preserve">
-    <value>radioButton20</value>
+  <data name="&gt;&gt;Priorité.Parent" xml:space="preserve">
+    <value>tabControl2</value>
   </data>
   <data name="&gt;&gt;textBox20.ZOrder" xml:space="preserve">
     <value>15</value>
@@ -2018,9 +2034,6 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;label18.Parent" xml:space="preserve">
     <value>profil</value>
   </data>
-  <data name="button32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 148</value>
-  </data>
   <data name="&gt;&gt;pictureBox13.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2033,14 +2046,8 @@ et aux besoins des mappeurs.
   <data name="&gt;&gt;Priorité.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox36.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 43</value>
-  </data>
-  <data name="pictureBox35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;checkedListBox4.Parent" xml:space="preserve">
+    <value>tabPage4</value>
   </data>
   <data name="radioButton21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2064,8 +2071,8 @@ le clan FSF.</value>
   <data name="&gt;&gt;linkLabel3.Parent" xml:space="preserve">
     <value>Apropos</value>
   </data>
-  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 13</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -2100,8 +2107,8 @@ le clan FSF.</value>
   <data name="checkedListBox3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="linkLabel2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="checkBox21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 204</value>
   </data>
   <data name="pictureBox12.ToolTip" xml:space="preserve">
     <value />
@@ -2112,14 +2119,11 @@ le clan FSF.</value>
   <data name="pictureBox27.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="pictureBox25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 34</value>
   </data>
-  <data name="checkBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 66</value>
-  </data>
-  <data name="pictureBox30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 13</value>
+  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 22</value>
   </data>
   <data name="label22.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -2145,6 +2149,9 @@ le clan FSF.</value>
   <data name="button13.Text" xml:space="preserve">
     <value>Inverser selection</value>
   </data>
+  <data name="radioButton21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 53</value>
+  </data>
   <data name="pictureBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 96</value>
   </data>
@@ -2157,6 +2164,9 @@ Task Force</value>
   </data>
   <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2186,10 +2196,16 @@ Task Force</value>
     <value>355, 86</value>
   </data>
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="&gt;&gt;trackBar1.ZOrder" xml:space="preserve">
     <value>18</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="pictureBox14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2209,11 +2225,17 @@ Task Force</value>
   <data name="Apropos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
+  <data name="pictureBox29.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="&gt;&gt;pictureBox23.Name" xml:space="preserve">
     <value>pictureBox23</value>
   </data>
   <data name="comboBox4.Items" xml:space="preserve">
     <value>defaut</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
   </data>
   <data name="&gt;&gt;checkBox13.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2224,8 +2246,8 @@ Task Force</value>
   <data name="&gt;&gt;button16.Parent" xml:space="preserve">
     <value>groupBox8</value>
   </data>
-  <data name="&gt;&gt;button18.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;progExterne.Name" xml:space="preserve">
+    <value>progExterne</value>
   </data>
   <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -2242,14 +2264,11 @@ Task Force</value>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
   </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button29.ToolTip" xml:space="preserve">
-    <value>Augmente la priorité</value>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 291</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 576</value>
+    <value>171, 591</value>
   </data>
   <data name="progressBar3.ToolTip" xml:space="preserve">
     <value />
@@ -2302,6 +2321,9 @@ Task Force</value>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 19</value>
   </data>
+  <data name="&gt;&gt;comboBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="groupBox13.Text" xml:space="preserve">
     <value>Casques Perso</value>
   </data>
@@ -2310,6 +2332,9 @@ Task Force</value>
   </data>
   <data name="button40.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 43</value>
@@ -2335,9 +2360,6 @@ Task Force</value>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>ToF, El Doktor</value>
-  </data>
   <data name="button36.Text" xml:space="preserve">
     <value>init TS 3.10.1</value>
   </data>
@@ -2346,6 +2368,9 @@ Task Force</value>
   </data>
   <data name="&gt;&gt;profil.Parent" xml:space="preserve">
     <value>tabControl3</value>
+  </data>
+  <data name="&gt;&gt;textBox7.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;button12.Parent" xml:space="preserve">
     <value>tabPage8</value>
@@ -2375,7 +2400,7 @@ Task Force</value>
     <value>4, 22</value>
   </data>
   <data name="checkedListBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 391</value>
+    <value>319, 425</value>
   </data>
   <data name="comboBox4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -2698,11 +2723,17 @@ Task Force</value>
   <data name="&gt;&gt;radioButton21.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 252</value>
+  </data>
   <data name="&gt;&gt;button37.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="linkLabel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>326, 44</value>
+  </data>
+  <data name="ctrlListModPrioritaire.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 19</value>
   </data>
   <data name="groupBox14.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -2752,9 +2783,6 @@ Task Force</value>
   <data name="&gt;&gt;button36.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2767,8 +2795,11 @@ Task Force</value>
   <data name="checkedListBox2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="checkedListBox6.ColumnWidth" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
   <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -2776,14 +2807,17 @@ Task Force</value>
   <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="button21.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;MODs.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
   <data name="&gt;&gt;trackBar1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="checkBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2794,14 +2828,11 @@ Task Force</value>
   <data name="checkedListBox1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;groupBox13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox23.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
-  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 252</value>
-  </data>
-  <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="Priorité.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
     <value>tabControl1</value>
@@ -2815,14 +2846,17 @@ Task Force</value>
   <data name="&gt;&gt;label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="checkBox11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="checkBox8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="button29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;checkBox10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 22</value>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Y=</value>
   </data>
   <data name="button17.Text" xml:space="preserve">
     <value>Deverrouiller</value>
@@ -2836,9 +2870,6 @@ Task Force</value>
   <data name="&gt;&gt;radioButton21.Name" xml:space="preserve">
     <value>radioButton21</value>
   </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>350, 88</value>
   </data>
@@ -2849,7 +2880,7 @@ Task Force</value>
     <value>9</value>
   </data>
   <data name="&gt;&gt;checkBox23.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="pictureBox22.ToolTip" xml:space="preserve">
     <value />
@@ -2857,14 +2888,14 @@ Task Force</value>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
     <value>265, 86</value>
   </data>
-  <data name="&gt;&gt;progExterne.Name" xml:space="preserve">
-    <value>progExterne</value>
+  <data name="label21.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="textBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 236</value>
   </data>
   <data name="ModsFSF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 486</value>
+    <value>484, 501</value>
   </data>
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2872,8 +2903,8 @@ Task Force</value>
   <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
     <value>tabPage6</value>
   </data>
-  <data name="checkBox10.ToolTip" xml:space="preserve">
-    <value>-no Logs option</value>
+  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
     <value>134, 90</value>
@@ -2890,11 +2921,14 @@ Task Force</value>
   <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="checkedListBox4.ColumnWidth" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
   <data name="trackBar2.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="progressBar2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 13</value>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button31.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -2906,7 +2940,7 @@ Task Force</value>
     <value />
   </data>
   <data name="&gt;&gt;checkBox10.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="checkBox19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2919,6 +2953,9 @@ Task Force</value>
   </data>
   <data name="&gt;&gt;label34.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox7.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="pictureBox15.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -2951,8 +2988,11 @@ Task Force</value>
     <value>Désactive les écrans de chargement 
 pour un lancement plus rapide (-noSplash)</value>
   </data>
-  <data name="&gt;&gt;Priorité.Parent" xml:space="preserve">
-    <value>tabControl2</value>
+  <data name="textBox8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
   </data>
   <data name="linkLabel1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
@@ -2972,6 +3012,9 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;button9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2979,19 +3022,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value />
   </data>
   <data name="checkedListBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 391</value>
+    <value>327, 425</value>
   </data>
   <data name="checkedListBox6.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="radioButton21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 53</value>
-  </data>
-  <data name="pictureBox18.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="groupBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 126</value>
   </data>
   <data name="pictureBox35.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3005,8 +3042,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="radioButton5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -3014,8 +3051,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label19.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;pictureBox20.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="checkBox21.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -3023,11 +3060,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="groupBox13.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 83</value>
   </data>
-  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 226</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="pictureBox19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 20</value>
   </data>
   <data name="&gt;&gt;openFileDialog3.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3050,17 +3084,17 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label20.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="comboBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 21</value>
+  <data name="pictureBox7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 22</value>
   </data>
   <data name="label31.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
   <data name="&gt;&gt;pictureBox23.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="button16.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox9.ToolTip" xml:space="preserve">
     <value>force Direct3D version 9 pour ameliorer alt-Tab. Favorise le multi GPU avec d'ancien  driver.</value>
@@ -3087,7 +3121,10 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>Inverser selection</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 246</value>
+    <value>118, 218</value>
+  </data>
+  <data name="checkBox10.ToolTip" xml:space="preserve">
+    <value>-no Logs option</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Parametres expert</value>
@@ -3095,14 +3132,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label34.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;tabControl4.Parent" xml:space="preserve">
-    <value>MODs</value>
-  </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 17</value>
   </data>
   <data name="&gt;&gt;tabControl3.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -3125,8 +3156,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label10.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="MODs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 486</value>
+  <data name="&gt;&gt;trackBar1.Name" xml:space="preserve">
+    <value>trackBar1</value>
   </data>
   <data name="pictureBox36.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 76</value>
@@ -3137,17 +3168,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button31.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
   <data name="pictureBox33.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;pictureBox13.Parent" xml:space="preserve">
-    <value>Apropos</value>
-  </data>
   <data name="pictureBox23.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -3164,8 +3192,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="textBox5.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
-    <value>tabPage10</value>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 77</value>
@@ -3209,17 +3237,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>261, 6</value>
   </data>
-  <data name="&gt;&gt;checkBox22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="pictureBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 91</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>Ghost, Skaven</value>
   </data>
   <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 21</value>
@@ -3239,9 +3261,6 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="Langage.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="button10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="pictureBox19.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -3254,8 +3273,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;progressBar2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 43</value>
+  <data name="&gt;&gt;pictureBox28.Name" xml:space="preserve">
+    <value>pictureBox28</value>
+  </data>
+  <data name="button29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
     <value>12</value>
@@ -3268,9 +3290,6 @@ pour un lancement plus rapide (-noSplash)</value>
   </data>
   <data name="trackBar2.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>516, 634</value>
   </data>
   <data name="&gt;&gt;tabControl4.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -3305,6 +3324,9 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
+  <data name="button17.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -3314,14 +3336,23 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
   </data>
+  <data name="&gt;&gt;checkBox24.Name" xml:space="preserve">
+    <value>checkBox24</value>
+  </data>
   <data name="button25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;checkedListBox4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
   <data name="checkBox12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;button10.Parent" xml:space="preserve">
+    <value>tabPage7</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -3332,11 +3363,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="button36.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 38</value>
-  </data>
-  <data name="groupBox3.ToolTip" xml:space="preserve">
-    <value />
+  <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 288</value>
   </data>
   <data name="label15.ToolTip" xml:space="preserve">
     <value />
@@ -3349,9 +3377,6 @@ pour un lancement plus rapide (-noSplash)</value>
   </data>
   <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
-  </data>
-  <data name="pictureBox21.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -3366,7 +3391,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>$this</value>
   </data>
   <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 112</value>
+    <value>16, 84</value>
   </data>
   <data name="button15.Text" xml:space="preserve">
     <value>Selectionner tous</value>
@@ -3377,20 +3402,17 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 82</value>
   </data>
+  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;pictureBox31.Parent" xml:space="preserve">
     <value>groupBox8</value>
   </data>
   <data name="checkedListBox9.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 13</value>
-  </data>
-  <data name="&gt;&gt;pictureBox22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button24.ToolTip" xml:space="preserve">
     <value />
@@ -3398,8 +3420,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;pictureBox11.Parent" xml:space="preserve">
     <value>tabPage4</value>
   </data>
-  <data name="tabPage4.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;pictureBox11.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -3410,17 +3432,17 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="ctrlListModPrioritaire.ToolTip" xml:space="preserve">
-    <value />
+  <data name="checkedListBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 442</value>
   </data>
-  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="progressBar3.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 13</value>
   </data>
-  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 420</value>
+  <data name="&gt;&gt;pictureBox13.Parent" xml:space="preserve">
+    <value>Apropos</value>
   </data>
   <data name="&gt;&gt;tabControl3.Name" xml:space="preserve">
     <value>tabControl3</value>
@@ -3434,6 +3456,9 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="textBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>441, 168</value>
   </data>
+  <data name="button15.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
   <data name="linkLabel2.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -3443,8 +3468,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;pictureBox22.Name" xml:space="preserve">
-    <value>pictureBox22</value>
+  <data name="progressBar3.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -3458,14 +3483,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>148, -1</value>
   </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label33.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox22.Name" xml:space="preserve">
-    <value>checkBox22</value>
+  <data name="button22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 302</value>
   </data>
   <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3491,6 +3513,9 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label10.Text" xml:space="preserve">
     <value>EFFECTIVE</value>
   </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
   <data name="&gt;&gt;button19.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -3506,11 +3531,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label22.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="pictureBox15.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
   <data name="&gt;&gt;button40.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 87</value>
   </data>
   <data name="button32.ToolTip" xml:space="preserve">
     <value>Priorité la plus basse</value>
@@ -3524,17 +3549,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox7.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="pictureBox9.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
-  </data>
-  <data name="button37.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
-  </data>
   <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
+  </data>
+  <data name="checkBox23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;button29.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3542,11 +3561,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <data name="label36.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="button9.Text" xml:space="preserve">
+    <value>Selectionner tous</value>
   </data>
   <data name="&gt;&gt;tabControl4.Name" xml:space="preserve">
     <value>tabControl4</value>
@@ -3554,17 +3573,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="checkBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 17</value>
   </data>
   <data name="linkLabel2.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
-  <data name="&gt;&gt;checkBox21.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;pictureBox22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="radioButton6.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -3575,14 +3591,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;linkLabel3.Type" xml:space="preserve">
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox15.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
   </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 33</value>
+  </data>
   <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 559</value>
+    <value>16, 574</value>
   </data>
   <data name="Options.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -3593,14 +3609,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBox26.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
   <data name="&gt;&gt;button39.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label21.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;pictureBox9.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -3620,6 +3630,9 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="checkedListBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
   </data>
+  <data name="&gt;&gt;checkBox19.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;label32.Parent" xml:space="preserve">
     <value>Apropos</value>
   </data>
@@ -3633,13 +3646,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>69, 22</value>
   </data>
   <data name="button39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 601</value>
+    <value>16, 616</value>
   </data>
   <data name="&gt;&gt;button33.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox5.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;radioButton6.Parent" xml:space="preserve">
     <value>Langage</value>
@@ -3659,9 +3672,6 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;checkBox_HeadlessClient.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox16.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="pictureBox16.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 61</value>
   </data>
@@ -3677,15 +3687,6 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="radioButton20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="button39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="textBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
   <data name="&gt;&gt;radioButton5.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
@@ -3694,6 +3695,9 @@ pour un lancement plus rapide (-noSplash)</value>
   </data>
   <data name="&gt;&gt;button38.Name" xml:space="preserve">
     <value>button38</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="button34.Text" xml:space="preserve">
     <value>Inverser selection</value>
@@ -3716,11 +3720,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button40.Name" xml:space="preserve">
     <value>button40</value>
   </data>
-  <data name="button3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;Priorité.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
     <value>tabControl1</value>
@@ -3733,9 +3737,6 @@ pour un lancement plus rapide (-noSplash)</value>
   </data>
   <data name="button15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;Options.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3754,6 +3755,9 @@ pour un lancement plus rapide (-noSplash)</value>
   </data>
   <data name="&gt;&gt;button21.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabControl2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
   </data>
   <data name="&gt;&gt;button40.Parent" xml:space="preserve">
     <value>$this</value>
@@ -3776,14 +3780,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button14.Name" xml:space="preserve">
     <value>button14</value>
   </data>
-  <data name="checkBox6.Text" xml:space="preserve">
-    <value>Mémoire max (MB)</value>
-  </data>
   <data name="&gt;&gt;button16.Name" xml:space="preserve">
     <value>button16</value>
   </data>
   <data name="checkBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 157</value>
+    <value>16, 129</value>
   </data>
   <data name="trackBar2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3800,8 +3801,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox13.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="pictureBox30.ToolTip" xml:space="preserve">
-    <value />
+  <data name="comboBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 21</value>
   </data>
   <data name="label41.ToolTip" xml:space="preserve">
     <value />
@@ -3836,11 +3837,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>468, 446</value>
+  <data name="&gt;&gt;button32.Parent" xml:space="preserve">
+    <value>Priorité</value>
   </data>
-  <data name="pictureBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>468, 482</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Ajouter un Profil :</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Synchro  :</value>
@@ -3852,19 +3856,22 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>68, 17</value>
   </data>
   <data name="checkBox23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 181</value>
+    <value>16, 153</value>
   </data>
   <data name="pictureBox11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="checkedListBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 391</value>
+  <data name="tabControl3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;profil.Name" xml:space="preserve">
+    <value>profil</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tabPage9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -3872,14 +3879,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button34.Name" xml:space="preserve">
     <value>button34</value>
   </data>
-  <data name="button11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;button36.Name" xml:space="preserve">
     <value>button36</value>
   </data>
-  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 13</value>
+  <data name="pictureBox31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 24</value>
   </data>
   <data name="&gt;&gt;checkBox19.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -3896,8 +3900,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox32.Location" type="System.Drawing.Point, System.Drawing">
     <value>281, 26</value>
   </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>344, 1</value>
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="pictureBox31.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -3917,9 +3921,6 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="tabControl3.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
-  <data name="pictureBox10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;pictureBox32.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -3932,26 +3933,29 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;pictureBox18.Parent" xml:space="preserve">
     <value>Langage</value>
   </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
   <data name="button23.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 22</value>
   </data>
-  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;button22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pictureBox18.ZOrder" xml:space="preserve">
     <value>12</value>
+  </data>
+  <data name="button32.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;button29.Parent" xml:space="preserve">
     <value>Priorité</value>
   </data>
   <data name="&gt;&gt;Langage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox11.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
   </data>
   <data name="profil.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -3971,8 +3975,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button12.Name" xml:space="preserve">
     <value>button12</value>
   </data>
-  <data name="&gt;&gt;pictureBox19.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="checkBox_HeadlessClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
+  </data>
+  <data name="tabPage2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button29.ToolTip" xml:space="preserve">
+    <value>Augmente la priorité</value>
   </data>
   <data name="tabControl4.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -3980,14 +3990,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;radioButton21.Parent" xml:space="preserve">
     <value>groupBox13</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 43</value>
   </data>
   <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
     <value>groupBox2</value>
+  </data>
+  <data name="profil.Text" xml:space="preserve">
+    <value>Profil</value>
   </data>
   <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4004,17 +4014,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;Apropos.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="radioButton21.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="Langage.Text" xml:space="preserve">
     <value>Langage</value>
   </data>
+  <data name="&gt;&gt;textBox7.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
   <data name="&gt;&gt;button20.Name" xml:space="preserve">
     <value>button20</value>
-  </data>
-  <data name="&gt;&gt;button21.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;comboBox4.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -4055,9 +4062,6 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;pictureBox14.Parent" xml:space="preserve">
     <value>Langage</value>
   </data>
-  <data name="pictureBox24.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
   <data name="pictureBox17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -4079,23 +4083,32 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;pictureBox33.Parent" xml:space="preserve">
     <value>tabPage5</value>
   </data>
+  <data name="&gt;&gt;pictureBox10.Name" xml:space="preserve">
+    <value>pictureBox10</value>
+  </data>
   <data name="&gt;&gt;pictureBox15.Parent" xml:space="preserve">
     <value>Langage</value>
   </data>
   <data name="textBox11.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;pictureBox16.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 65</value>
+  <data name="pictureBox19.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;pictureBox15.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 420</value>
+    <value>460, 456</value>
+  </data>
+  <data name="&gt;&gt;textBox7.Name" xml:space="preserve">
+    <value>textBox7</value>
   </data>
   <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
     <value>checkBox5</value>
@@ -4106,23 +4119,23 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="checkBox22.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;pictureBox26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;linkLabel2.Name" xml:space="preserve">
+    <value>linkLabel2</value>
+  </data>
+  <data name="SynchroZONE.Text" xml:space="preserve">
+    <value>Synchro ZONE</value>
   </data>
   <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="tabControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 312</value>
+    <value>6, 327</value>
   </data>
   <data name="pictureBox15.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;button22.Parent" xml:space="preserve">
     <value>tabPage6</value>
-  </data>
-  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 84</value>
   </data>
   <data name="pictureBox30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4134,7 +4147,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="Priorité.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 486</value>
+    <value>484, 501</value>
   </data>
   <data name="label31.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -4184,9 +4197,6 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button21.Parent" xml:space="preserve">
     <value>tabPage5</value>
   </data>
-  <data name="&gt;&gt;checkBox11.Parent" xml:space="preserve">
-    <value>progExterne</value>
-  </data>
   <data name="&gt;&gt;pictureBox21.Name" xml:space="preserve">
     <value>pictureBox21</value>
   </data>
@@ -4205,9 +4215,6 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 13</value>
   </data>
-  <data name="&gt;&gt;button30.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;pictureBox19.Name" xml:space="preserve">
     <value>pictureBox19</value>
   </data>
@@ -4218,9 +4225,6 @@ pour un lancement plus rapide (-noSplash)</value>
     <value />
   </data>
   <data name="button11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label23.Text" xml:space="preserve">
@@ -4250,11 +4254,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
     <value>radioButton1</value>
   </data>
-  <data name="tabPage7.Text" xml:space="preserve">
-    <value>@CLIENT</value>
-  </data>
   <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -4274,11 +4275,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button29.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;checkBox13.Name" xml:space="preserve">
     <value>checkBox13</value>
   </data>
-  <data name="radioButton5.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
+  <data name="&gt;&gt;Apropos.Name" xml:space="preserve">
+    <value>Apropos</value>
   </data>
   <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4286,11 +4290,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="textBox6.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pictureBox7.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
+    <value>textBox3</value>
   </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage8.Text" xml:space="preserve">
+    <value>@TEMPLATE</value>
   </data>
   <data name="pictureBox35.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -4310,8 +4314,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;checkBox22.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 33</value>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="textBox6.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -4325,8 +4329,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label5.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="label18.Text" xml:space="preserve">
-    <value>Ajouter un Profil :</value>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="button10.ToolTip" xml:space="preserve">
     <value />
@@ -4342,6 +4346,12 @@ pour un lancement plus rapide (-noSplash)</value>
   </data>
   <data name="button20.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 24</value>
+  </data>
+  <data name="pictureBox33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 153</value>
   </data>
   <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4368,8 +4378,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label8.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="pictureBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 91</value>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;button25.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -4386,11 +4396,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="linkLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
-  <data name="button37.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;pictureBox35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="pictureBox26.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 43</value>
@@ -4401,20 +4411,23 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="Options.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
   <data name="button26.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 43</value>
   </data>
-  <data name="button38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 41</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 65</value>
   </data>
-  <data name="radioButton6.ToolTip" xml:space="preserve">
-    <value />
+  <data name="pictureBox35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;pictureBox15.Name" xml:space="preserve">
-    <value>pictureBox15</value>
+  <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;pictureBox10.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -4425,8 +4438,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;radioButton5.Name" xml:space="preserve">
-    <value>radioButton5</value>
+  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 456</value>
   </data>
   <data name="groupBox13.Location" type="System.Drawing.Point, System.Drawing">
     <value>343, 302</value>
@@ -4446,11 +4459,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;checkBox7.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe Print, 9pt, style=Bold</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="pictureBox30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 13</value>
   </data>
   <data name="Options.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -4461,10 +4471,7 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label4.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 239</value>
-  </data>
-  <data name="button27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
@@ -4479,8 +4486,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="tabPage9.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="button13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;button21.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;button35.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -4490,6 +4497,9 @@ pour un lancement plus rapide (-noSplash)</value>
   </data>
   <data name="label31.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="checkBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
   </data>
   <data name="label2.ToolTip" xml:space="preserve">
     <value />
@@ -4515,11 +4525,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="checkBox10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 84</value>
   </data>
   <data name="checkedListBox8.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>Apropos</value>
   </data>
   <data name="button31.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 36</value>
@@ -4555,14 +4568,26 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox8.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="&gt;&gt;folderBrowserDialog2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
     <value>groupBox2</value>
+  </data>
+  <data name="button27.Text" xml:space="preserve">
+    <value>Inverser selection</value>
   </data>
   <data name="checkBox6.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="button27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="button8.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
+  </data>
+  <data name="radioButton6.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FenetrePrincipale</value>
@@ -4576,14 +4601,20 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button17.Name" xml:space="preserve">
     <value>button17</value>
   </data>
+  <data name="button19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 47</value>
+  </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 20</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="ModsFSF.Text" xml:space="preserve">
-    <value>Mods FSF</value>
+  <data name="tabPage6.Text" xml:space="preserve">
+    <value>ARMA3</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;label31.Name" xml:space="preserve">
     <value>label31</value>
@@ -4591,8 +4622,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox30.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="profil.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -4612,8 +4643,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="radioButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="button40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 22</value>
+  </data>
   <data name="checkBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 576</value>
+    <value>235, 591</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 5</value>
@@ -4621,8 +4655,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button27.Name" xml:space="preserve">
     <value>button27</value>
   </data>
-  <data name="&gt;&gt;folderBrowserDialog2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 81</value>
   </data>
   <data name="pictureBox16.Location" type="System.Drawing.Point, System.Drawing">
     <value>313, 9</value>
@@ -4639,8 +4673,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label36.Name" xml:space="preserve">
     <value>label36</value>
   </data>
+  <data name="tabPage3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="textBox7.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="pictureBox6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4651,8 +4691,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="button25.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>343, 186</value>
+  </data>
+  <data name="checkBox10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>00.0000.0</value>
@@ -4681,8 +4727,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox29.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="tabPage2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 1</value>
   </data>
   <data name="&gt;&gt;MODs.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4690,13 +4736,13 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="button10.Text" xml:space="preserve">
     <value>Selectionner tous</value>
   </data>
-  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
   <data name="pictureBox29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
@@ -4723,14 +4769,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="button26.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="radioButton3.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
   <data name="&gt;&gt;pictureBox25.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox21.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="pictureBox15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4744,6 +4790,12 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;checkBox22.Name" xml:space="preserve">
+    <value>checkBox22</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
@@ -4752,6 +4804,9 @@ pour un lancement plus rapide (-noSplash)</value>
   </data>
   <data name="progExterne.Text" xml:space="preserve">
     <value>Programmes Externes</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 32</value>
@@ -4765,29 +4820,26 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;Langage.Name" xml:space="preserve">
     <value>Langage</value>
   </data>
-  <data name="&gt;&gt;pictureBox26.Name" xml:space="preserve">
-    <value>pictureBox26</value>
+  <data name="&gt;&gt;Priorité.Name" xml:space="preserve">
+    <value>Priorité</value>
   </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 420</value>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label23.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="button34.Location" type="System.Drawing.Point, System.Drawing">
     <value>346, 83</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>Options</value>
+  <data name="button38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 44</value>
   </data>
-  <data name="&gt;&gt;comboBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 106</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="&gt;&gt;linkLabel1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
   </data>
   <data name="&gt;&gt;button23.Name" xml:space="preserve">
     <value>button23</value>
@@ -4810,8 +4862,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label32.Name" xml:space="preserve">
     <value>label32</value>
   </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
+  <data name="pictureBox24.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="radioButton3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4843,8 +4895,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="checkBox19.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="pictureBox35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 95</value>
+  <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 454</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
@@ -4852,11 +4904,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe Print, 18pt, style=Bold</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="button17.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
   </data>
   <data name="comboBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>On</value>
@@ -6369,20 +6418,23 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="button31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="pictureBox35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 95</value>
+  </data>
   <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="&gt;&gt;ctrlListModPrioritaire.Name" xml:space="preserve">
     <value>ctrlListModPrioritaire</value>
   </data>
-  <data name="pictureBox22.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
+  <data name="label11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button3.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="checkBox6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="button15.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;pictureBox33.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -6393,29 +6445,32 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="comboBox3.Items3" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;profil.Name" xml:space="preserve">
-    <value>profil</value>
+  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 27</value>
+  </data>
+  <data name="pictureBox36.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="checkedListBox2.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;label20.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Options.Text" xml:space="preserve">
-    <value>Options</value>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;pictureBox20.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Lancer ARMA 3</value>
   </data>
-  <data name="button4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;pictureBox28.Name" xml:space="preserve">
-    <value>pictureBox28</value>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>350, 30</value>
@@ -6423,8 +6478,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="button11.Text" xml:space="preserve">
     <value>Inverser selection</value>
   </data>
-  <data name="label34.Text" xml:space="preserve">
-    <value>File operations</value>
+  <data name="pictureBox23.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6435,14 +6490,17 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;comboBox4.Name" xml:space="preserve">
     <value>comboBox4</value>
   </data>
-  <data name="&gt;&gt;pictureBox21.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;pictureBox22.Name" xml:space="preserve">
+    <value>pictureBox22</value>
   </data>
   <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
     <value>tabPage4</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;button30.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6456,6 +6514,9 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox17.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
+  <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 23</value>
+  </data>
   <data name="linkLabel2.Text" xml:space="preserve">
     <value>Source code (GITHuB)</value>
   </data>
@@ -6463,7 +6524,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>2</value>
   </data>
   <data name="tabPage8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 420</value>
+    <value>460, 456</value>
   </data>
   <data name="&gt;&gt;pictureBox18.Name" xml:space="preserve">
     <value>pictureBox18</value>
@@ -6489,8 +6550,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;pictureBox12.Name" xml:space="preserve">
     <value>pictureBox12</value>
   </data>
-  <data name="&gt;&gt;pictureBox10.Name" xml:space="preserve">
-    <value>pictureBox10</value>
+  <data name="pictureBox5.ToolTip" xml:space="preserve">
+    <value>Définir comme Favoris</value>
   </data>
   <data name="progressBar3.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 420</value>
@@ -6510,17 +6571,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="checkedListBox5.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="pictureBox32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
   <data name="label3.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button17.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
+  <data name="pictureBox35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 175</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FSF Launcher A3 Edition</value>
@@ -6534,8 +6592,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
   </data>
-  <data name="&gt;&gt;pictureBox35.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox18.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="pictureBox33.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -6552,8 +6610,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="pictureBox8.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="button10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;groupBox13.Parent" xml:space="preserve">
     <value>tabPage8</value>
@@ -6564,20 +6622,26 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;trackBar2.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="progressBar1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="radioButton3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
     <value>201, 25</value>
   </data>
+  <data name="textBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>
   </data>
   <data name="linkLabel1.Text" xml:space="preserve">
     <value>Signaler une erreur</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="checkBox_HeadlessClient.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -6600,23 +6664,26 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
   </data>
-  <data name="&gt;&gt;checkBox19.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="button15.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;profil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
+  <data name="&gt;&gt;pictureBox24.Name" xml:space="preserve">
+    <value>pictureBox24</value>
   </data>
   <data name="button33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
+  <data name="pictureBox32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>Passer écrans de démarrage</value>
   </data>
   <data name="button31.Location" type="System.Drawing.Point, System.Drawing">
     <value>366, 19</value>
@@ -6642,6 +6709,9 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="checkBox19.ToolTip" xml:space="preserve">
     <value>Minimise l'interface du FSF Launcher au lancement du jeu</value>
   </data>
+  <data name="pictureBox10.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
   <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
     <value>checkBox3</value>
   </data>
@@ -6654,8 +6724,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;groupBox14.Name" xml:space="preserve">
     <value>groupBox14</value>
   </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="&gt;&gt;ModsFSF.Parent" xml:space="preserve">
     <value>tabControl2</value>
@@ -6663,11 +6733,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="&gt;&gt;checkBox11.Name" xml:space="preserve">
+    <value>checkBox11</value>
+  </data>
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 39</value>
   </data>
-  <data name="&gt;&gt;checkBox7.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;pictureBox23.Parent" xml:space="preserve">
     <value>progExterne</value>
@@ -6687,8 +6760,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button14.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox7.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 21</value>
@@ -6705,8 +6778,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="&gt;&gt;linkLabel2.Name" xml:space="preserve">
-    <value>linkLabel2</value>
+  <data name="&gt;&gt;button27.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="button7.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -6717,20 +6790,14 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="checkBox9.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;checkBox24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox36.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 291</value>
   </data>
   <data name="button39.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;comboBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="checkedListBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 14</value>
@@ -6748,13 +6815,10 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="checkBox_HeadlessClient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 222</value>
+    <value>16, 194</value>
   </data>
-  <data name="&gt;&gt;tabPage8.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button8.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
@@ -6776,10 +6840,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>&lt;</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 559</value>
+    <value>372, 574</value>
   </data>
   <data name="&gt;&gt;tabPage9.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;ModsFSF.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;pictureBox22.Parent" xml:space="preserve">
     <value>Langage</value>
@@ -6788,7 +6855,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value />
   </data>
   <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>449, 407</value>
+    <value>449, 454</value>
   </data>
   <data name="button25.Location" type="System.Drawing.Point, System.Drawing">
     <value>319, 24</value>
@@ -6798,6 +6865,12 @@ pour un lancement plus rapide (-noSplash)</value>
   </data>
   <data name="&gt;&gt;button34.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6823,6 +6896,9 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;checkBox7.Name" xml:space="preserve">
     <value>checkBox7</value>
   </data>
+  <data name="button23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 43</value>
+  </data>
   <data name="&gt;&gt;pictureBox32.Name" xml:space="preserve">
     <value>pictureBox32</value>
   </data>
@@ -6835,14 +6911,11 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;pictureBox30.Name" xml:space="preserve">
     <value>pictureBox30</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="button26.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;Apropos.Parent" xml:space="preserve">
-    <value>tabControl3</value>
-  </data>
-  <data name="groupBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 126</value>
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="button34.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 43</value>
@@ -6855,17 +6928,17 @@ ce que vous faites.</value>
   <data name="pictureBox12.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="button40.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 22</value>
+  <data name="ctrlListModPrioritaire.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;checkBox_HeadlessClient.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
   </data>
-  <data name="button15.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="button31.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;tabPage8.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6876,14 +6949,14 @@ ce que vous faites.</value>
   <data name="textBox2.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="Priorité.TabIndex" type="System.Int32, mscorlib">
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
   </data>
   <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 512</value>
+    <value>492, 527</value>
   </data>
   <data name="radioButton3.Text" xml:space="preserve">
     <value>Pусский</value>
@@ -6891,8 +6964,8 @@ ce que vous faites.</value>
   <data name="checkBox19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBox20.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
+  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="Langage.Size" type="System.Drawing.Size, System.Drawing">
     <value>455, 138</value>
@@ -6900,14 +6973,14 @@ ce que vous faites.</value>
   <data name="&gt;&gt;button12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 420</value>
+  <data name="button37.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label15.Text" xml:space="preserve">
     <value>EFFECTIVE</value>
   </data>
-  <data name="label35.Text" xml:space="preserve">
-    <value>Texture loading</value>
+  <data name="pictureBox30.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;linkLabel1.Parent" xml:space="preserve">
     <value>Apropos</value>
@@ -6924,6 +6997,9 @@ ce que vous faites.</value>
   <data name="&gt;&gt;button18.Parent" xml:space="preserve">
     <value>progExterne</value>
   </data>
+  <data name="pictureBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
   <data name="checkBox13.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 17</value>
   </data>
@@ -6936,8 +7012,11 @@ ce que vous faites.</value>
   <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt, style=Underline</value>
   </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>X=</value>
   </data>
   <data name="pictureBox6.ToolTip" xml:space="preserve">
     <value>Sauvegarder Liste Mods</value>
@@ -6948,20 +7027,17 @@ ce que vous faites.</value>
   <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;button22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 22</value>
   </data>
   <data name="checkBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 17</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 271</value>
+    <value>86, 243</value>
   </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
-  </data>
-  <data name="&gt;&gt;ModsFSF.Name" xml:space="preserve">
-    <value>ModsFSF</value>
   </data>
   <data name="&gt;&gt;pictureBox25.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -6999,11 +7075,14 @@ ce que vous faites.</value>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>361, 113</value>
   </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label32.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;pictureBox28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;pictureBox34.Name" xml:space="preserve">
     <value>pictureBox34</value>
@@ -7032,23 +7111,20 @@ ce que vous faites.</value>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;checkBox24.Name" xml:space="preserve">
-    <value>checkBox24</value>
+  <data name="button5.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;checkedListBox10.Name" xml:space="preserve">
     <value>checkedListBox10</value>
   </data>
-  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="progressBar2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 13</value>
   </data>
-  <data name="checkBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 17</value>
+  <data name="&gt;&gt;checkBox21.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="progressBar3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7056,11 +7132,14 @@ ce que vous faites.</value>
   <data name="textBox3.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;pictureBox29.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Arma 3  :</value>
+  </data>
+  <data name="&gt;&gt;radioButton5.Parent" xml:space="preserve">
+    <value>Langage</value>
   </data>
   <data name="checkBox24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -7069,10 +7148,10 @@ ce que vous faites.</value>
     <value>170, 25</value>
   </data>
   <data name="checkBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 273</value>
+    <value>17, 245</value>
   </data>
-  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;radioButton5.Name" xml:space="preserve">
+    <value>radioButton5</value>
   </data>
   <data name="pictureBox13.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 74</value>
@@ -7083,23 +7162,26 @@ ce que vous faites.</value>
   <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox12.ToolTip" xml:space="preserve">
+  <data name="textBox2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;button19.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="button8.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="checkBox11.Text" xml:space="preserve">
     <value>Activer Fraps</value>
   </data>
-  <data name="label33.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+  <data name="&gt;&gt;textBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="radioButton21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;button13.Parent" xml:space="preserve">
+    <value>tabPage8</value>
   </data>
   <data name="tabControl4.ToolTip" xml:space="preserve">
     <value />
@@ -7108,13 +7190,13 @@ ce que vous faites.</value>
     <value>16</value>
   </data>
   <data name="checkedListBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 357</value>
+    <value>305, 425</value>
   </data>
   <data name="checkBox11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label36.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
+  <data name="progExterne.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -7125,11 +7207,8 @@ ce que vous faites.</value>
   <data name="checkBox23.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 17</value>
   </data>
-  <data name="&gt;&gt;checkBox21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="progressBar3.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="textBox11.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -7149,17 +7228,17 @@ ce que vous faites.</value>
   <data name="&gt;&gt;pictureBox24.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>449, 407</value>
+  <data name="&gt;&gt;button39.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="button20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;checkedListBox5.Name" xml:space="preserve">
-    <value>checkedListBox5</value>
+  <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;pictureBox30.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+    <value>tabPage4</value>
   </data>
   <data name="&gt;&gt;pictureBox25.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -7167,11 +7246,17 @@ ce que vous faites.</value>
   <data name="button18.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="pictureBox29.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="tabPage6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;button17.Parent" xml:space="preserve">
+    <value>Apropos</value>
   </data>
   <data name="pictureBox18.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="&gt;&gt;checkBox13.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="pictureBox17.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -7186,13 +7271,13 @@ ce que vous faites.</value>
     <value />
   </data>
   <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;button36.Parent" xml:space="preserve">
     <value>progExterne</value>
   </data>
   <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 420</value>
+    <value>460, 456</value>
   </data>
   <data name="pictureBox17.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 37</value>
@@ -7203,8 +7288,8 @@ ce que vous faites.</value>
   <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
     <value>134, 59</value>
   </data>
-  <data name="&gt;&gt;trackBar2.Name" xml:space="preserve">
-    <value>trackBar2</value>
+  <data name="comboBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -7218,8 +7303,8 @@ ce que vous faites.</value>
   <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;checkBox12.Name" xml:space="preserve">
-    <value>checkBox12</value>
+  <data name="pictureBox36.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 43</value>
@@ -7234,10 +7319,13 @@ ce que vous faites.</value>
     <value>groupBox2</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 243</value>
+    <value>180, 215</value>
   </data>
-  <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 91</value>
   </data>
   <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -7255,8 +7343,8 @@ OFFICIELLE</value>
   <data name="&gt;&gt;label41.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox11.Name" xml:space="preserve">
-    <value>checkBox11</value>
+  <data name="&gt;&gt;checkBox11.Parent" xml:space="preserve">
+    <value>progExterne</value>
   </data>
   <data name="label33.ToolTip" xml:space="preserve">
     <value />
@@ -7288,14 +7376,14 @@ OFFICIELLE</value>
   <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 43</value>
   </data>
-  <data name="&gt;&gt;button17.Parent" xml:space="preserve">
-    <value>Apropos</value>
+  <data name="pictureBox36.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 17</value>
   </data>
-  <data name="&gt;&gt;checkedListBox9.Parent" xml:space="preserve">
-    <value>tabPage9</value>
+  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7309,17 +7397,20 @@ OFFICIELLE</value>
   <data name="&gt;&gt;groupBox14.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="linkLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 13</value>
+  <data name="checkedListBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 425</value>
   </data>
-  <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 23</value>
+  <data name="&gt;&gt;button14.Parent" xml:space="preserve">
+    <value>tabPage6</value>
   </data>
-  <data name="&gt;&gt;button32.Parent" xml:space="preserve">
-    <value>Priorité</value>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 43</value>
   </data>
   <data name="radioButton2.ToolTip" xml:space="preserve">
     <value />
@@ -7333,11 +7424,11 @@ OFFICIELLE</value>
   <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="pictureBox15.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
   </data>
   <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>449, 407</value>
+    <value>449, 454</value>
   </data>
   <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 17</value>
@@ -7348,35 +7439,41 @@ OFFICIELLE</value>
   <data name="button39.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
-  <data name="&gt;&gt;linkLabel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;checkedListBox8.Parent" xml:space="preserve">
     <value>tabPage5</value>
   </data>
   <data name="checkBox21.Text" xml:space="preserve">
     <value>Extra threads</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button16.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="pictureBox31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 24</value>
+  <data name="button22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>Apropos</value>
+  </data>
+  <data name="&gt;&gt;checkBox9.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <data name="button20.Text" xml:space="preserve">
     <value>Inverser selection</value>
   </data>
-  <data name="checkBox11.ToolTip" xml:space="preserve">
-    <value />
+  <data name="Priorité.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="radioButton5.Location" type="System.Drawing.Point, System.Drawing">
     <value>305, 30</value>
   </data>
-  <data name="&gt;&gt;checkBox9.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>414, 13</value>
   </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="textBox8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="progExterne.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;button31.Parent" xml:space="preserve">
     <value>Priorité</value>
@@ -7387,17 +7484,14 @@ OFFICIELLE</value>
   <data name="pictureBox36.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;checkBox10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
   </data>
-  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="textBox20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 176</value>
   </data>
-  <data name="pictureBox23.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="pictureBox10.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="pictureBox16.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -7408,8 +7502,8 @@ OFFICIELLE</value>
   <data name="button20.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 43</value>
   </data>
-  <data name="&gt;&gt;button13.Parent" xml:space="preserve">
-    <value>tabPage8</value>
+  <data name="ctrlListModPrioritaire.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -7423,9 +7517,6 @@ OFFICIELLE</value>
   <data name="label19.Text" xml:space="preserve">
     <value>                                       </value>
   </data>
-  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -7435,23 +7526,26 @@ OFFICIELLE</value>
   <data name="&gt;&gt;profil.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;progressBar2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="pictureBox16.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="pictureBox33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 153</value>
+  <data name="radioButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
   </data>
-  <data name="&gt;&gt;button10.Parent" xml:space="preserve">
-    <value>tabPage7</value>
+  <data name="textBox7.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="button22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="checkedListBox5.HorizontalScrollbar" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;checkBox10.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="checkBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 17</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="checkBox5.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="Apropos.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -7480,9 +7574,6 @@ OFFICIELLE</value>
   <data name="&gt;&gt;linkLabel2.Parent" xml:space="preserve">
     <value>Apropos</value>
   </data>
-  <data name="checkedListBox4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox35.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -7504,11 +7595,11 @@ OFFICIELLE</value>
   <data name="checkBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 17</value>
   </data>
-  <data name="&gt;&gt;ModsFSF.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="pictureBox21.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="&gt;&gt;label32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;linkLabel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;button6.Parent" xml:space="preserve">
     <value>tabPage3</value>
@@ -7522,8 +7613,8 @@ OFFICIELLE</value>
   <data name="&gt;&gt;button4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;button37.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;pictureBox10.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7546,8 +7637,8 @@ OFFICIELLE</value>
   <data name="pictureBox33.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="pictureBox25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 34</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>516, 653</value>
   </data>
   <data name="button22.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -7576,19 +7667,16 @@ OFFICIELLE</value>
   <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
     <value>355, 81</value>
   </data>
-  <data name="pictureBox35.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="radioButton21.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="checkedListBox6.ColumnWidth" type="System.Int32, mscorlib">
-    <value>150</value>
+  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 43</value>
   </data>
-  <data name="&gt;&gt;checkedListBox4.Parent" xml:space="preserve">
-    <value>tabPage4</value>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 38</value>
   </data>
-  <data name="tabControl3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="pictureBox9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
@@ -7603,8 +7691,8 @@ OFFICIELLE</value>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkedListBox5.HorizontalScrollbar" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="checkBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 17</value>
   </data>
   <data name="&gt;&gt;pictureBox27.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7618,8 +7706,8 @@ OFFICIELLE</value>
   <data name="tabPage8.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="MODs.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="progressBar1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="button17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -7636,8 +7724,8 @@ OFFICIELLE</value>
   <data name="&gt;&gt;SynchroZONE.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="SynchroZONE.Text" xml:space="preserve">
-    <value>Synchro ZONE</value>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="pictureBox14.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -7651,17 +7739,17 @@ OFFICIELLE</value>
   <data name="checkBox23.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="pictureBox12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;MODs.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="button32.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 239</value>
   </data>
-  <data name="&gt;&gt;button33.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>@CLIENT</value>
   </data>
-  <data name="&gt;&gt;MODs.Name" xml:space="preserve">
-    <value>MODs</value>
+  <data name="pictureBox14.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
   </data>
   <data name="&gt;&gt;cultureManager1.Name" xml:space="preserve">
     <value>cultureManager1</value>
@@ -7675,8 +7763,8 @@ OFFICIELLE</value>
   <data name="&gt;&gt;pictureBox27.Parent" xml:space="preserve">
     <value>Langage</value>
   </data>
-  <data name="profil.Text" xml:space="preserve">
-    <value>Profil</value>
+  <data name="groupBox3.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -7684,14 +7772,14 @@ OFFICIELLE</value>
   <data name="pictureBox14.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="button28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;button30.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="button36.Location" type="System.Drawing.Point, System.Drawing">
     <value>358, 112</value>
   </data>
-  <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 24</value>
+  <data name="button4.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -7729,8 +7817,8 @@ OFFICIELLE</value>
   <data name="pictureBox26.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
   </data>
-  <data name="checkedListBox4.ColumnWidth" type="System.Int32, mscorlib">
-    <value>150</value>
+  <data name="button37.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
   </data>
   <data name="label17.ToolTip" xml:space="preserve">
     <value />
@@ -7738,8 +7826,8 @@ OFFICIELLE</value>
   <data name="&gt;&gt;tabControl3.Parent" xml:space="preserve">
     <value>Options</value>
   </data>
-  <data name="ctrlListModPrioritaire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 19</value>
+  <data name="pictureBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -7753,12 +7841,8 @@ OFFICIELLE</value>
   <data name="button24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>Vixente, KiTooN, Galahad, Aplion 
-Brainbug, Alpha-Kilo</value>
-  </data>
-  <data name="pictureBox7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="button6.Text" xml:space="preserve">
+    <value>Inverser selection</value>
   </data>
   <data name="trackBar3.ToolTip" xml:space="preserve">
     <value />
@@ -7766,8 +7850,8 @@ Brainbug, Alpha-Kilo</value>
   <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
     <value>listBox1</value>
   </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>groupBox8</value>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkedListBox1.Parent" xml:space="preserve">
     <value>tabPage1</value>
@@ -7787,8 +7871,11 @@ Brainbug, Alpha-Kilo</value>
   <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 17</value>
   </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 13</value>
+  </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 420</value>
+    <value>460, 456</value>
   </data>
   <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7805,14 +7892,20 @@ Brainbug, Alpha-Kilo</value>
   <data name="pictureBox34.Location" type="System.Drawing.Point, System.Drawing">
     <value>346, 175</value>
   </data>
-  <data name="&gt;&gt;button39.Name" xml:space="preserve">
-    <value>button39</value>
+  <data name="&gt;&gt;pictureBox20.Name" xml:space="preserve">
+    <value>pictureBox20</value>
   </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
-  <data name="&gt;&gt;pictureBox28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pictureBox15.Name" xml:space="preserve">
+    <value>pictureBox15</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
   </data>
   <data name="comboBox4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
@@ -7823,8 +7916,8 @@ Brainbug, Alpha-Kilo</value>
   <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
     <value>355, 28</value>
   </data>
-  <data name="checkBox10.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;Options.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -7835,14 +7928,17 @@ Brainbug, Alpha-Kilo</value>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
   <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;checkedListBox7.Parent" xml:space="preserve">
     <value>tabPage8</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>groupBox8</value>
+  <data name="&gt;&gt;comboBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -7850,17 +7946,17 @@ Brainbug, Alpha-Kilo</value>
   <data name="Priorité.Text" xml:space="preserve">
     <value>Priorité</value>
   </data>
-  <data name="SynchroZONE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 486</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 13</value>
   </data>
-  <data name="label11.ToolTip" xml:space="preserve">
-    <value />
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt, style=Bold</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 43</value>
+  <data name="&gt;&gt;pictureBox18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button29.Text" xml:space="preserve">
     <value>+</value>
@@ -7874,11 +7970,11 @@ Brainbug, Alpha-Kilo</value>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;checkBox22.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="button9.Text" xml:space="preserve">
-    <value>Selectionner tous</value>
+  <data name="&gt;&gt;tabControl4.Parent" xml:space="preserve">
+    <value>MODs</value>
   </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7889,11 +7985,11 @@ Brainbug, Alpha-Kilo</value>
   <data name="&gt;&gt;pictureBox21.Parent" xml:space="preserve">
     <value>profil</value>
   </data>
-  <data name="checkedListBox7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;checkedListBox6.Parent" xml:space="preserve">
+    <value>tabPage7</value>
   </data>
-  <data name="&gt;&gt;pictureBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;checkBox24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7907,14 +8003,14 @@ Brainbug, Alpha-Kilo</value>
   <data name="&gt;&gt;folderBrowserDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="comboBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="button30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 106</value>
   </data>
   <data name="pictureBox20.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 89</value>
+    <value>16, 271</value>
   </data>
   <data name="pictureBox18.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -7928,8 +8024,11 @@ Brainbug, Alpha-Kilo</value>
   <data name="tabControl1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="button12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 300</value>
+    <value>240, 315</value>
   </data>
   <data name="checkBox10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -7940,6 +8039,9 @@ Brainbug, Alpha-Kilo</value>
   <data name="checkBox3.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="&gt;&gt;textBox8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="button30.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -7949,20 +8051,20 @@ Brainbug, Alpha-Kilo</value>
   <data name="&gt;&gt;pictureBox17.Name" xml:space="preserve">
     <value>pictureBox17</value>
   </data>
-  <data name="linkLabel3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 226</value>
   </data>
   <data name="pictureBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>333, 143</value>
   </data>
-  <data name="comboBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="button11.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;label20.Name" xml:space="preserve">
     <value>label20</value>
   </data>
-  <data name="&gt;&gt;Priorité.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="checkBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 174</value>
   </data>
   <data name="checkBox7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -7970,8 +8072,8 @@ Brainbug, Alpha-Kilo</value>
   <data name="tabPage9.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="button21.ToolTip" xml:space="preserve">
-    <value />
+  <data name="button39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label19.Parent" xml:space="preserve">
     <value>SynchroZONE</value>
@@ -7980,10 +8082,10 @@ Brainbug, Alpha-Kilo</value>
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="checkedListBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 391</value>
+    <value>334, 442</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="checkBox7.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -7991,11 +8093,11 @@ Brainbug, Alpha-Kilo</value>
   <data name="checkedListBox8.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 14</value>
+  <data name="button32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 148</value>
   </data>
-  <data name="&gt;&gt;MODs.Parent" xml:space="preserve">
-    <value>tabControl2</value>
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label7.ToolTip" xml:space="preserve">
     <value />
@@ -8024,11 +8126,11 @@ Brainbug, Alpha-Kilo</value>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
   </data>
-  <data name="pictureBox15.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="button37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 624</value>
   </data>
   <data name="checkedListBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 391</value>
+    <value>316, 425</value>
   </data>
   <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
     <value>ModsFSF</value>
@@ -8042,8 +8144,8 @@ Brainbug, Alpha-Kilo</value>
   <data name="SynchroZONE.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="pictureBox9.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="checkedListBox9.HorizontalScrollbar" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -8063,20 +8165,26 @@ Brainbug, Alpha-Kilo</value>
   <data name="checkBox5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="button26.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;button33.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;ctrlListModPrioritaire.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ModsFSF.Text" xml:space="preserve">
+    <value>Mods FSF</value>
+  </data>
   <data name="&gt;&gt;button5.Name" xml:space="preserve">
     <value>button5</value>
   </data>
-  <data name="label34.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>Passer écrans de démarrage</value>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkedListBox10.ToolTip" xml:space="preserve">
     <value />
@@ -8090,8 +8198,8 @@ Brainbug, Alpha-Kilo</value>
   <data name="pictureBox17.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 13</value>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 420</value>
   </data>
   <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -8108,8 +8216,8 @@ Brainbug, Alpha-Kilo</value>
   <data name="pictureBox16.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>tabPage4</value>
+  <data name="&gt;&gt;checkBox21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 17</value>
@@ -8126,8 +8234,11 @@ Brainbug, Alpha-Kilo</value>
   <data name="&gt;&gt;radioButton5.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox16.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;trackBar2.Name" xml:space="preserve">
+    <value>trackBar2</value>
+  </data>
+  <data name="checkedListBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 8</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 7</value>
@@ -8138,14 +8249,17 @@ Brainbug, Alpha-Kilo</value>
   <data name="textBox5.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;radioButton4.Parent" xml:space="preserve">
-    <value>Langage</value>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="checkBox23.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
-  <data name="Priorité.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="trackBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 45</value>
+  </data>
+  <data name="&gt;&gt;Apropos.Parent" xml:space="preserve">
+    <value>tabControl3</value>
   </data>
   <data name="&gt;&gt;pictureBox17.Parent" xml:space="preserve">
     <value>SynchroZONE</value>
@@ -8153,14 +8267,14 @@ Brainbug, Alpha-Kilo</value>
   <data name="pictureBox15.Location" type="System.Drawing.Point, System.Drawing">
     <value>222, 27</value>
   </data>
-  <data name="trackBar3.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;groupBox13.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 44</value>
+  <data name="pictureBox11.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="&gt;&gt;cultureManager1.Type" xml:space="preserve">
     <value>Infralution.Localization.CultureManager, Infralution.Localization, Version=1.2.2.0, Culture=neutral, PublicKeyToken=af4bb5454ff71782</value>
@@ -8171,8 +8285,8 @@ Brainbug, Alpha-Kilo</value>
   <data name="&gt;&gt;pictureBox17.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="button14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="pictureBox14.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 20</value>
@@ -8180,17 +8294,17 @@ Brainbug, Alpha-Kilo</value>
   <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="radioButton6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="pictureBox9.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>414, 13</value>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="checkedListBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 8</value>
+  <data name="&gt;&gt;pictureBox26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -8207,8 +8321,11 @@ Brainbug, Alpha-Kilo</value>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 27</value>
+  <data name="&gt;&gt;checkedListBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Ghost, Skaven</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -8233,6 +8350,9 @@ Brainbug, Alpha-Kilo</value>
   </metadata>
   <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>201, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es-ES</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>58</value>

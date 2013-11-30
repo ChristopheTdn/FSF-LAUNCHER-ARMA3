@@ -137,6 +137,10 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.textBox2.Text = "";
             FSFLauncherCore.fenetrePrincipale.textBox3.Text = "";
             FSFLauncherCore.fenetrePrincipale.textBox4.Text = "";
+            FSFLauncherCore.fenetrePrincipale.textBox7.Text = "";
+            FSFLauncherCore.fenetrePrincipale.textBox8.Text = "";
+
+
 
 
         }
@@ -187,14 +191,26 @@ namespace FSFLauncherA3
                 fichierProfilXML.ReadToFollowing("nologs");
                 if (fichierProfilXML.ReadString() == "true") { FSFLauncherCore.fenetrePrincipale.checkBox10.Checked = true; }
                 fichierProfilXML.ReadToFollowing("HC");
-                if (fichierProfilXML.ReadString() == "true") { FSFLauncherCore.fenetrePrincipale.checkBox_HeadlessClient.Checked = true;
-                                                               fichierProfilXML.ReadToFollowing("HCPort");
-                                                               FSFLauncherCore.fenetrePrincipale.textBox2.Text = fichierProfilXML.ReadString();
-                                                               fichierProfilXML.ReadToFollowing("HCPassWord");
-                                                               FSFLauncherCore.fenetrePrincipale.textBox3.Text = fichierProfilXML.ReadString(); }
+                if (fichierProfilXML.ReadString() == "true")
+                {
+                    FSFLauncherCore.fenetrePrincipale.checkBox_HeadlessClient.Checked = true;
+                    fichierProfilXML.ReadToFollowing("HCPort");
+                    FSFLauncherCore.fenetrePrincipale.textBox2.Text = fichierProfilXML.ReadString();
+                    fichierProfilXML.ReadToFollowing("HCPassWord");
+                    FSFLauncherCore.fenetrePrincipale.textBox3.Text = fichierProfilXML.ReadString();
+                }
                 fichierProfilXML.ReadToFollowing("other");
-                string otherCMD =  fichierProfilXML.ReadString();
-                if (otherCMD != "") { FSFLauncherCore.fenetrePrincipale.checkBox13.Checked = true; FSFLauncherCore.fenetrePrincipale.textBox4.Text = otherCMD;} 
+                string otherCMD = fichierProfilXML.ReadString();
+                if (otherCMD != "") { FSFLauncherCore.fenetrePrincipale.checkBox13.Checked = true; FSFLauncherCore.fenetrePrincipale.textBox4.Text = otherCMD; }
+                if (FSFLauncherCore.fenetrePrincipale.checkBox3.Checked)
+                {
+                    fichierProfilXML.ReadToFollowing("windowX");
+                    string windowX = fichierProfilXML.ReadString();
+                    if (windowX != "") { FSFLauncherCore.fenetrePrincipale.textBox7.Text = windowX; }
+                    fichierProfilXML.ReadToFollowing("windowY");
+                    string windowY = fichierProfilXML.ReadString();
+                    if (windowY != "") { FSFLauncherCore.fenetrePrincipale.textBox8.Text = windowY; }
+                }
             }
             fichierProfilXML.Close();
         }

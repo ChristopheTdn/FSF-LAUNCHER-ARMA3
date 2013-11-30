@@ -302,7 +302,7 @@ namespace FSFLauncherA3
                               FichierProfilXML.WriteElementString("HCPassWord", "");                            
                           }
             if (fenetrePrincipale.checkBox13.Checked) { FichierProfilXML.WriteElementString("other", fenetrePrincipale.textBox4.Text); } else { FichierProfilXML.WriteElementString("other", ""); }
-
+            if (fenetrePrincipale.checkBox3.Checked) { FichierProfilXML.WriteElementString("windowX", fenetrePrincipale.textBox7.Text); FichierProfilXML.WriteElementString("windowY", fenetrePrincipale.textBox8.Text); } else { FichierProfilXML.WriteElementString("windowX", ""); FichierProfilXML.WriteElementString("windowY", ""); }
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.Flush(); //vide le buffer
@@ -571,7 +571,13 @@ namespace FSFLauncherA3
             if (fenetrePrincipale.checkBox4.Checked) { listArguments += "-world=empty "; }
             if (fenetrePrincipale.checkBox2.Checked) { listArguments += "-noPause "; }
             if (fenetrePrincipale.checkBox1.Checked) { listArguments += "-nosplash "; }
-            if (fenetrePrincipale.checkBox3.Checked) { listArguments += "-window "; }
+            if (fenetrePrincipale.checkBox3.Checked) {
+                listArguments += "-window ";
+                if (fenetrePrincipale.textBox7.Text != "") { listArguments += "-X=" + fenetrePrincipale.textBox7.Text + " ";}
+                if (fenetrePrincipale.textBox8.Text != "") { listArguments += "-Y=" + fenetrePrincipale.textBox8.Text + " ";}
+                                                     }
+
+
             if (fenetrePrincipale.checkBox6.Checked) { listArguments += "-maxmem=" + fenetrePrincipale.textBox5.Text + " "; }
             if (fenetrePrincipale.checkBox7.Checked) { listArguments += "-cpuCount=" + fenetrePrincipale.textBox6.Text + " "; }
             if (fenetrePrincipale.checkBox8.Checked) { listArguments += "-noCB "; }
