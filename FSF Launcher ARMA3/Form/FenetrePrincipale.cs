@@ -907,10 +907,6 @@ namespace FSFLauncherA3
             MessageBox.Show("Liste des MODS exportée", "Exportation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void button18_Click_4(object sender, EventArgs e)
-        {
-            ProgExterne.lancerTeamspeak3();
-        }
 
         private void radioButton1_CheckedChanged_2(object sender, EventArgs e)
         {
@@ -1122,10 +1118,6 @@ namespace FSFLauncherA3
             }
         }
 
-        private void button19_Click_2(object sender, EventArgs e)
-        {
-            ProgExterne.ReinstallTS3();
-        }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {

@@ -47,10 +47,7 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.tabControl2.TabPages.Remove(FSFLauncherCore.fenetrePrincipale.ModsFSF);
                 FSFLauncherCore.fenetrePrincipale.tabControl2.TabPages.Remove(FSFLauncherCore.fenetrePrincipale.SynchroZONE);
                 FSFLauncherCore.fenetrePrincipale.pictureBox6.Visible = false;
-                FSFLauncherCore.fenetrePrincipale.pictureBox16.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.pictureBox36.Visible = false;
-                FSFLauncherCore.fenetrePrincipale.button18.Visible = false;
-                FSFLauncherCore.fenetrePrincipale.button19.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button40.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button39.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button38.Visible = false;                
@@ -139,9 +136,6 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.textBox4.Text = "";
             FSFLauncherCore.fenetrePrincipale.textBox7.Text = "";
             FSFLauncherCore.fenetrePrincipale.textBox8.Text = "";
-
-
-
 
         }
         static public void genereTabParam()
@@ -391,8 +385,6 @@ namespace FSFLauncherA3
             FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "langage", langue);
         }
         #endregion
-
-
 
         /*
          *    Gestion des profils
