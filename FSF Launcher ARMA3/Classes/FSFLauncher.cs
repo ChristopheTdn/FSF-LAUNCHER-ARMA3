@@ -616,8 +616,8 @@ namespace FSFLauncherA3
                 fenetrePrincipale.button37.Enabled = false;
                 fenetrePrincipale.button40.Enabled = false;
                 generationLigneArguments();
-                if (serveur == "server1") { serveur = "-connect=188.165.206.141 -port=2532 -password=honneur "; };
-                if (serveur == "mapping") { serveur = "-connect=188.165.206.141 -port=2542 -password=patrie "; };
+                if (serveur == "server1") { serveur = @"-connect=188.165.206.141 -port=2532 -password=""honneur"" "; };
+                if (serveur == "mapping") { serveur = @"-connect=188.165.206.141 -port=2542 -password=""patrie"" "; };
                 ProgExterne.lancerFraps();
                 ProgExterne.lancerTrackIR();
 
