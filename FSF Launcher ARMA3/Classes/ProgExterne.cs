@@ -192,7 +192,7 @@ namespace FSFLauncherA3
 
                     
                     
-                var infoBox = MessageBox.Show("Le TS3 dédié à ACRE a été reinstallé dans sa version 3.13.1.", "TS3 reinstallé", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var infoBox = MessageBox.Show("Le TS3 dédié à TASK FORCE RADIO a été reinstallé dans sa version 3.13.1.", "TS3 reinstallé", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {
