@@ -346,7 +346,7 @@ namespace FSFLauncherA3
                 Directory.CreateDirectory(cheminARMA3 + @"\@FSF\" + repertoireSource);
             }
 
-            string[] tableauRepertoire = Directory.GetDirectories(cheminARMA3 + @"\@FSF\" + repertoireSource + @"\", "Addons*", SearchOption.AllDirectories);
+            string[] tableauRepertoire = Directory.GetDirectories(cheminARMA3 + @"\@FSF\" + repertoireSource + @"\", "Add*", SearchOption.AllDirectories);
 
             foreach (var ligne in tableauRepertoire)
             {
@@ -376,7 +376,7 @@ namespace FSFLauncherA3
             List<string> listeRepertoire = new List<string>();
             try
             {
-                string[] tableauRepertoire = Directory.GetDirectories(repertoireSource, "Addons*", SearchOption.AllDirectories);
+                string[] tableauRepertoire = Directory.GetDirectories(repertoireSource, "Add*", SearchOption.AllDirectories);
 
                 foreach (var ligne in tableauRepertoire)
                 {
