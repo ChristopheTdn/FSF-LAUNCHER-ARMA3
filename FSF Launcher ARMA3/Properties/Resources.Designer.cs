@@ -93,6 +93,16 @@ namespace FSFLauncherA3.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AlphaOne {
+            get {
+                object obj = ResourceManager.GetObject("AlphaOne", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blasonfsfA3 {
             get {
                 object obj = ResourceManager.GetObject("blasonfsfA3", resourceCulture);
@@ -106,6 +116,46 @@ namespace FSFLauncherA3.Properties {
         internal static System.Drawing.Bitmap boite {
             get {
                 object obj = ResourceManager.GetObject("boite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CE {
+            get {
+                object obj = ResourceManager.GetObject("CE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CE_desert {
+            get {
+                object obj = ResourceManager.GetObject("CE_desert", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CE_mixte {
+            get {
+                object obj = ResourceManager.GetObject("CE_mixte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CE_urbain {
+            get {
+                object obj = ResourceManager.GetObject("CE_urbain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +326,56 @@ namespace FSFLauncherA3.Properties {
         internal static System.Drawing.Bitmap logofsf {
             get {
                 object obj = ResourceManager.GetObject("logofsf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAK_CCE_Mixte {
+            get {
+                object obj = ResourceManager.GetObject("MAK_CCE_Mixte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAK_CCE_std {
+            get {
+                object obj = ResourceManager.GetObject("MAK_CCE_std", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAK_DAG {
+            get {
+                object obj = ResourceManager.GetObject("MAK_DAG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAK_DPM_ARID {
+            get {
+                object obj = ResourceManager.GetObject("MAK_DPM_ARID", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAK_DPM_TROPIC {
+            get {
+                object obj = ResourceManager.GetObject("MAK_DPM_TROPIC", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

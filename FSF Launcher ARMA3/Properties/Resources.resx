@@ -238,4 +238,34 @@
   <data name="TaskForceRadio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\gfx\TaskForceRadio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AlphaOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\AlphaOne.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\CE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CE_desert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\CE desert.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CE_mixte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\CE mixte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CE_urbain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\CE urbain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAK_CCE_Mixte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\MAK CCE Mixte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAK_CCE_std" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\MAK CCE std.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAK_DAG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\MAK DAG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAK_DPM_ARID" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\MAK DPM ARID.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAK_DPM_TROPIC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\gfx\camo_image\MAK DPM TROPIC.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -4249,13 +4249,13 @@ Brainbug, Alpha-Kilo</value>
     <value>160, 76</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 17</value>
+    <value>126, 17</value>
   </data>
   <data name="label20.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
   <data name="label20.Text" xml:space="preserve">
-    <value>Ghost, Skaven</value>
+    <value>Dinamo, Ghost, Skaven</value>
   </data>
   <data name="&gt;&gt;label20.Name" xml:space="preserve">
     <value>label20</value>

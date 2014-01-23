@@ -1219,6 +1219,47 @@ namespace FSFLauncherA3
             textBox8.Enabled = checkBox3.Checked;
         }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox2.Text)
+            {
+                case "AlphaOne":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.AlphaOne;
+                    break;
+                case "CE Desert":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.CE_desert;
+                    break;
+                case "CE Mixte":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.CE_mixte;
+                    break;
+                case "CE Standard":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.CE;
+                    break;
+                case "CE Urban":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.CE_urbain;
+                    break;
+                case "MAK CCE Mixte":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_CCE_Mixte;
+                    break;
+                case "MAK CCE Std":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_CCE_std;
+                    break;
+                case "MAK DAG":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_DAG;
+                    break;
+                case "MAK DPM ARID":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_DPM_ARID;
+                    break;
+                case "MAK DPM TROPICAL":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_DPM_TROPIC;
+                    break;  
+                default:
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.logofsf;
+                    break;
+            }
+
+        }
+
     }
 }
     
