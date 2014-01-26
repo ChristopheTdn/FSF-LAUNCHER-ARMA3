@@ -123,16 +123,6 @@ namespace FSFLauncherA3.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CE {
-            get {
-                object obj = ResourceManager.GetObject("CE", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap CE_desert {
             get {
                 object obj = ResourceManager.GetObject("CE_desert", resourceCulture);
@@ -146,6 +136,16 @@ namespace FSFLauncherA3.Properties {
         internal static System.Drawing.Bitmap CE_mixte {
             get {
                 object obj = ResourceManager.GetObject("CE_mixte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CE_Standard {
+            get {
+                object obj = ResourceManager.GetObject("CE_Standard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

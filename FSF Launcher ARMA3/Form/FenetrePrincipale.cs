@@ -1233,7 +1233,7 @@ namespace FSFLauncherA3
                     pictureBox1.Image = FSFLauncherA3.Properties.Resources.CE_mixte;
                     break;
                 case "CE Standard":
-                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.CE;
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.CE_Standard;
                     break;
                 case "CE Urban":
                     pictureBox1.Image = FSFLauncherA3.Properties.Resources.CE_urbain;

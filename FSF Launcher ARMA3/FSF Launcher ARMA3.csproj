@@ -36,8 +36,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>220</ApplicationRevision>
-    <ApplicationVersion>1.01.0123.%2a</ApplicationVersion>
+    <ApplicationRevision>221</ApplicationRevision>
+    <ApplicationVersion>1.01.0126.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -355,6 +355,7 @@
     <None Include="gfx\camo_image\MAK DAG.jpg" />
     <None Include="gfx\camo_image\MAK DPM ARID.jpg" />
     <None Include="gfx\camo_image\MAK DPM TROPIC.jpg" />
+    <None Include="gfx\camo_image\CE Standard.jpg" />
     <Content Include="gfx\profil.png" />
     <None Include="gfx\royaumeunis.png" />
     <None Include="gfx\russe.png" />
