@@ -54,6 +54,9 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.button35.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;
                 FSFLauncherCore.fenetrePrincipale.groupBox3.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.button37.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.button40.Visible = false;
+
             }
             else
             {
