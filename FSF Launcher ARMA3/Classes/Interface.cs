@@ -41,10 +41,6 @@ namespace FSFLauncherA3
 
             ProgExterne.ValideProgExt();
 
-            //Efface bouton server et mapping en attendant correction du bug
-            FSFLauncherCore.fenetrePrincipale.button40.Visible = false;              
-            FSFLauncherCore.fenetrePrincipale.button37.Visible = false;
-
             // isFSF
             if (!FSFLauncherCore.isFSFValid())
             {
