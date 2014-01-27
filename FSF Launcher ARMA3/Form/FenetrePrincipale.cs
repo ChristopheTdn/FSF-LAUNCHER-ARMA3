@@ -574,15 +574,14 @@ namespace FSFLauncherA3
         void configureInstallationMODS()
         {
             string filename;
-          
-            // Test Acre
-            filename = FSFLauncherCore.cheminARMA3 + @"\userconfig\acre\acre_clientside_config.hpp";
+            // Test Raven A
+            filename = FSFLauncherCore.cheminARMA3 + @"\userconfig\RQ11RAVEN\raven_keys.hpp";
             if (!File.Exists(filename)) //Si le fichier n existe pas
             {
                 try
                 {
                     //Déplacement du dossier 
-                    CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@FSF_TOOLS\ATTENTION (copier le contenu de ce repertoire a la racine du jeu)\userconfig\acre", FSFLauncherCore.cheminARMA3 + @"\userconfig");
+                    CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEST\@RQ-11_RAVEN_AB_A3\userconfig\RQ11RAVEN", FSFLauncherCore.cheminARMA3 + @"\userconfig");
                 }
                 catch
                 {

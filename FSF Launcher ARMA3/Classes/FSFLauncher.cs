@@ -606,7 +606,6 @@ namespace FSFLauncherA3
             fenetrePrincipale.WindowState = FormWindowState.Minimized;
         }
     }
- 
        static public void lancerJeu(string serveur)
         {
             
