@@ -1251,7 +1251,13 @@ namespace FSFLauncherA3
                     break;
                 case "MAK DPM TROPICAL":
                     pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_DPM_TROPIC;
-                    break;  
+                    break;
+                case "MAK Tiger Green":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_Tiger_Green;
+                    break;
+                case "MAK Tiger Golden":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_Tiger_Golden;
+                    break; 
                 default:
                     pictureBox1.Image = FSFLauncherA3.Properties.Resources.logofsf;
                     break;
