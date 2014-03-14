@@ -36,8 +36,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>225</ApplicationRevision>
-    <ApplicationVersion>1.01.0217.%2a</ApplicationVersion>
+    <ApplicationRevision>226</ApplicationRevision>
+    <ApplicationVersion>1.01.0314.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -300,7 +300,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="dll\WinSCPnet.dll" />
     <None Include="gfx\point_exclamation.png" />
     <None Include="gfx\espagne.png" />
     <None Include="gfx\italie.png" />
@@ -334,6 +333,7 @@
     <None Include="gfx\helmet\next-Helmet.png" />
     <None Include="gfx\logo-fsf.png" />
     <None Include="dll\Infralution.Localization.dll" />
+    <Content Include="dll\WinSCPnet.dll" />
     <Content Include="gfx\ajouter-vert-plus-icone-9105-128.png" />
     <None Include="gfx\ajouterListe.png" />
     <None Include="gfx\blasonfsfA3.png" />
