@@ -52,6 +52,12 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.button38.Visible = false;  
                 FSFLauncherCore.fenetrePrincipale.button36.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button35.Visible = false;
+                // TS3 version 3.0.14
+                FSFLauncherCore.fenetrePrincipale.button18.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.button19.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.label26.Visible = false;
+                FSFLauncherCore.fenetrePrincipale.pictureBox26.Visible = false;
+
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;
                 FSFLauncherCore.fenetrePrincipale.groupBox3.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button37.Visible = false;

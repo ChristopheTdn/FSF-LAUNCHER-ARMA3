@@ -232,6 +232,10 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.button18 = new System.Windows.Forms.Button();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.button19 = new System.Windows.Forms.Button();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -299,6 +303,7 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl2
@@ -1077,6 +1082,10 @@
             // progExterne
             // 
             this.progExterne.BackColor = System.Drawing.Color.Gainsboro;
+            this.progExterne.Controls.Add(this.button19);
+            this.progExterne.Controls.Add(this.label26);
+            this.progExterne.Controls.Add(this.pictureBox16);
+            this.progExterne.Controls.Add(this.button18);
             this.progExterne.Controls.Add(this.button36);
             this.progExterne.Controls.Add(this.pictureBox36);
             this.progExterne.Controls.Add(this.button35);
@@ -1857,6 +1866,31 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
+            // button18
+            // 
+            resources.ApplyResources(this.button18, "button18");
+            this.button18.Name = "button18";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click_1);
+            // 
+            // pictureBox16
+            // 
+            resources.ApplyResources(this.pictureBox16, "pictureBox16");
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.TabStop = false;
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // button19
+            // 
+            resources.ApplyResources(this.button19, "button19");
+            this.button19.Name = "button19";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click_2);
+            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -1955,6 +1989,7 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2164,6 +2199,10 @@
         internal System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
+        internal System.Windows.Forms.Label label26;
+        internal System.Windows.Forms.PictureBox pictureBox16;
+        internal System.Windows.Forms.Button button18;
+        internal System.Windows.Forms.Button button19;
     }
 }
 

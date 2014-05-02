@@ -1265,6 +1265,16 @@ namespace FSFLauncherA3
 
         }
 
+        private void button18_Click_1(object sender, EventArgs e)
+        {
+            ProgExterne.ReinstallTS3TaskForce3014();
+        }
+
+        private void button19_Click_2(object sender, EventArgs e)
+        {
+            ProgExterne.lancerTeamspeak3TaskForce3014();
+        }
+
     }
 }
     
