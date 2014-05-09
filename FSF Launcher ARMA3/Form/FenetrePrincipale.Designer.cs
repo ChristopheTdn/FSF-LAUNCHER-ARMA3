@@ -122,9 +122,9 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.progExterne = new System.Windows.Forms.TabPage();
-            this.button36 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.button35 = new System.Windows.Forms.Button();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.button38 = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -232,10 +232,6 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.button18 = new System.Windows.Forms.Button();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -303,7 +299,6 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl2
@@ -1083,12 +1078,8 @@
             // 
             this.progExterne.BackColor = System.Drawing.Color.Gainsboro;
             this.progExterne.Controls.Add(this.button19);
-            this.progExterne.Controls.Add(this.label26);
-            this.progExterne.Controls.Add(this.pictureBox16);
             this.progExterne.Controls.Add(this.button18);
-            this.progExterne.Controls.Add(this.button36);
             this.progExterne.Controls.Add(this.pictureBox36);
-            this.progExterne.Controls.Add(this.button35);
             this.progExterne.Controls.Add(this.pictureBox23);
             this.progExterne.Controls.Add(this.button38);
             this.progExterne.Controls.Add(this.pictureBox6);
@@ -1098,12 +1089,19 @@
             this.progExterne.Name = "progExterne";
             this.progExterne.Click += new System.EventHandler(this.progExterne_Click);
             // 
-            // button36
+            // button19
             // 
-            resources.ApplyResources(this.button36, "button36");
-            this.button36.Name = "button36";
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Click += new System.EventHandler(this.button36_Click);
+            resources.ApplyResources(this.button19, "button19");
+            this.button19.Name = "button19";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click_2);
+            // 
+            // button18
+            // 
+            resources.ApplyResources(this.button18, "button18");
+            this.button18.Name = "button18";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click_1);
             // 
             // pictureBox36
             // 
@@ -1111,13 +1109,6 @@
             this.pictureBox36.Image = global::FSFLauncherA3.Properties.Resources.TaskForceRadio;
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.TabStop = false;
-            // 
-            // button35
-            // 
-            resources.ApplyResources(this.button35, "button35");
-            this.button35.Name = "button35";
-            this.button35.UseVisualStyleBackColor = true;
-            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // pictureBox23
             // 
@@ -1866,31 +1857,6 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
-            // button18
-            // 
-            resources.ApplyResources(this.button18, "button18");
-            this.button18.Name = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click_1);
-            // 
-            // pictureBox16
-            // 
-            resources.ApplyResources(this.pictureBox16, "pictureBox16");
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.TabStop = false;
-            // 
-            // label26
-            // 
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.Name = "label26";
-            // 
-            // button19
-            // 
-            resources.ApplyResources(this.button19, "button19");
-            this.button19.Name = "button19";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click_2);
-            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -1989,7 +1955,6 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2188,9 +2153,7 @@
         internal System.Windows.Forms.PictureBox pictureBox35;
         internal System.Windows.Forms.Button button33;
         internal System.Windows.Forms.Button button34;
-        internal System.Windows.Forms.Button button35;
         internal System.Windows.Forms.PictureBox pictureBox36;
-        internal System.Windows.Forms.Button button36;
         internal System.Windows.Forms.TextBox textBox4;
         internal System.Windows.Forms.CheckBox checkBox13;
         internal System.Windows.Forms.Button button40;
@@ -2199,8 +2162,6 @@
         internal System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
-        internal System.Windows.Forms.Label label26;
-        internal System.Windows.Forms.PictureBox pictureBox16;
         internal System.Windows.Forms.Button button18;
         internal System.Windows.Forms.Button button19;
     }

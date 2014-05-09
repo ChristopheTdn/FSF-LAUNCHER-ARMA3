@@ -1192,15 +1192,7 @@ namespace FSFLauncherA3
             Interface.genereTab();
         }
 
-        private void button35_Click(object sender, EventArgs e)
-        {
-            ProgExterne.lancerTeamspeak3TaskForce();
-        }
 
-        private void button36_Click(object sender, EventArgs e)
-        {
-            ProgExterne.ReinstallTS3TaskForce();
-        }
 
         private void button37_Click_1(object sender, EventArgs e)
         {
