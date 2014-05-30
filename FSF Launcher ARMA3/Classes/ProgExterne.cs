@@ -120,9 +120,6 @@ namespace FSFLauncherA3
         static public void ValideTEAMSPEAKTeamForce3014()
         {
 
-            FSFLauncherCore.fenetrePrincipale.button18.Visible = false;
-            FSFLauncherCore.fenetrePrincipale.button19.Visible = false;
-
             FSFLauncherCore.fenetrePrincipale.button18.Enabled = false;
             FSFLauncherCore.fenetrePrincipale.button19.Enabled = false;
             if (testTeamSpeakExistTaskForce3014())
@@ -134,15 +131,15 @@ namespace FSFLauncherA3
             }
             else
             {
-                if (File.Exists(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.14\TeamSpeak3\ts3client_win64.exe") && (File.Exists(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@task_force_radio_091\TeamSpeak 3 Client\plugins\task_force_radio_win64.dll"))) //Si le fichier existe 
+                if (File.Exists(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.14\TeamSpeak3\ts3client_win64.exe") && (File.Exists(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@task_force_radio_092\TeamSpeak 3 Client\plugins\task_force_radio_win64.dll"))) //Si le fichier existe 
                 {
                     try
                     {
                         FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.14\TeamSpeak3\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3014\");
-                        FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@task_force_radio_091\TeamSpeak 3 Client\plugins\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3014\TeamSpeak3\");
+                        FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@task_force_radio_092\TeamSpeak 3 Client\plugins\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3014\TeamSpeak3\");
                         if (!File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\task_force_radio\radio_keys.hpp"))
                         {
-                            FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@task_force_radio_091\userconfig\task_force_radio\", FSFLauncherCore.cheminARMA3 + @"\userconfig\");
+                            FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@task_force_radio_092\userconfig\task_force_radio\", FSFLauncherCore.cheminARMA3 + @"\userconfig\");
                         };
                     }
                     catch
@@ -200,7 +197,7 @@ namespace FSFLauncherA3
             try
             {
                 FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.14\TeamSpeak3\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3014\");
-                FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEST\@task_force_radio_090\TeamSpeak 3 Client\plugins\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3014\TeamSpeak3\");
+                FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@task_force_radio_092\TeamSpeak 3 Client\plugins\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3014\TeamSpeak3\");
                 if (!File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\task_force_radio\radio_keys.hpp"))
                 {
                     FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEST\@task_force_radio\userconfig\task_force_radio\", FSFLauncherCore.cheminARMA3 + @"\userconfig\");
