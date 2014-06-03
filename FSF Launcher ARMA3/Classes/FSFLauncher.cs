@@ -303,6 +303,8 @@ namespace FSFLauncherA3
                           }
             if (fenetrePrincipale.checkBox13.Checked) { FichierProfilXML.WriteElementString("other", fenetrePrincipale.textBox4.Text); } else { FichierProfilXML.WriteElementString("other", ""); }
             if (fenetrePrincipale.checkBox3.Checked) { FichierProfilXML.WriteElementString("windowX", fenetrePrincipale.textBox7.Text); FichierProfilXML.WriteElementString("windowY", fenetrePrincipale.textBox8.Text); } else { FichierProfilXML.WriteElementString("windowX", ""); FichierProfilXML.WriteElementString("windowY", ""); }
+            if (fenetrePrincipale.checkBox_EnableHT.Checked) { FichierProfilXML.WriteElementString("enableHT", "true"); } else { FichierProfilXML.WriteElementString("enableHT", ""); }
+
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.Flush(); //vide le buffer
@@ -587,6 +589,7 @@ namespace FSFLauncherA3
             if (fenetrePrincipale.checkBox21.Checked) { listArguments += "-exThreads=" + fenetrePrincipale.comboBox3.Text + " "; }
             if (fenetrePrincipale.checkBox_HeadlessClient.Checked) { listArguments += @"-name=""HeadLess Client"" -localhost=127.0.0.1 -connect=localhost -port="+fenetrePrincipale.textBox2.Text+" -password="+fenetrePrincipale.textBox3.Text+" -client -nosound "; }
             if (fenetrePrincipale.checkBox13.Checked) { listArguments += " " + fenetrePrincipale.textBox4.Text + " "; }
+            if (fenetrePrincipale.checkBox_EnableHT.Checked) { listArguments += "-enableHT "; }
             listArguments += @"""" + listMODS + @"""";
         }
 

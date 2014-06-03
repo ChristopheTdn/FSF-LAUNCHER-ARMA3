@@ -135,6 +135,7 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.checkBox10.Checked = false;
             FSFLauncherCore.fenetrePrincipale.checkBox24.Checked = false;
             FSFLauncherCore.fenetrePrincipale.checkBox_HeadlessClient.Checked = false;
+            FSFLauncherCore.fenetrePrincipale.checkBox_EnableHT.Checked = false;
             FSFLauncherCore.fenetrePrincipale.textBox2.Text = "";
             FSFLauncherCore.fenetrePrincipale.textBox3.Text = "";
             FSFLauncherCore.fenetrePrincipale.textBox4.Text = "";
@@ -209,6 +210,9 @@ namespace FSFLauncherA3
                     string windowY = fichierProfilXML.ReadString();
                     if (windowY != "") { FSFLauncherCore.fenetrePrincipale.textBox8.Text = windowY; }
                 }
+                fichierProfilXML.ReadToFollowing("enableHT");
+                if (fichierProfilXML.ReadString() == "true") { FSFLauncherCore.fenetrePrincipale.checkBox_EnableHT.Checked = true; }
+
             }
             fichierProfilXML.Close();
         }

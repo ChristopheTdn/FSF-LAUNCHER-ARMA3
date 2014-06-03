@@ -232,6 +232,7 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.checkBox_EnableHT = new System.Windows.Forms.CheckBox();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -904,6 +905,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkBox_EnableHT);
             this.groupBox2.Controls.Add(this.pictureBox30);
             this.groupBox2.Controls.Add(this.pictureBox28);
             this.groupBox2.Controls.Add(this.pictureBox26);
@@ -1857,6 +1859,13 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
+            // checkBox_EnableHT
+            // 
+            resources.ApplyResources(this.checkBox_EnableHT, "checkBox_EnableHT");
+            this.checkBox_EnableHT.Name = "checkBox_EnableHT";
+            this.toolTip1.SetToolTip(this.checkBox_EnableHT, resources.GetString("checkBox_EnableHT.ToolTip"));
+            this.checkBox_EnableHT.UseVisualStyleBackColor = true;
+            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -2164,6 +2173,7 @@
         private System.Windows.Forms.Label label24;
         internal System.Windows.Forms.Button button18;
         internal System.Windows.Forms.Button button19;
+        internal System.Windows.Forms.CheckBox checkBox_EnableHT;
     }
 }
 
