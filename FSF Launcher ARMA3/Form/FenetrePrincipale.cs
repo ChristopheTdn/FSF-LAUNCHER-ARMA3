@@ -1267,6 +1267,16 @@ namespace FSFLauncherA3
             ProgExterne.lancerTeamspeak3TaskForce3014();
         }
 
+        private void button35_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.lancerJeu("newofficiel");
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.lancerJeu("newmapping");
+        }
+
     }
 }
     

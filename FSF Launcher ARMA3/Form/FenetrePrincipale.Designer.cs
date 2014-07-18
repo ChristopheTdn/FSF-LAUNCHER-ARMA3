@@ -101,6 +101,7 @@
             this.ctrlListModPrioritaire = new System.Windows.Forms.ListBox();
             this.Options = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkBox_EnableHT = new System.Windows.Forms.CheckBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
@@ -232,7 +233,8 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.checkBox_EnableHT = new System.Windows.Forms.CheckBox();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -928,6 +930,13 @@
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // checkBox_EnableHT
+            // 
+            resources.ApplyResources(this.checkBox_EnableHT, "checkBox_EnableHT");
+            this.checkBox_EnableHT.Name = "checkBox_EnableHT";
+            this.toolTip1.SetToolTip(this.checkBox_EnableHT, resources.GetString("checkBox_EnableHT.ToolTip"));
+            this.checkBox_EnableHT.UseVisualStyleBackColor = true;
             // 
             // pictureBox30
             // 
@@ -1859,17 +1868,26 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
-            // checkBox_EnableHT
+            // button35
             // 
-            resources.ApplyResources(this.checkBox_EnableHT, "checkBox_EnableHT");
-            this.checkBox_EnableHT.Name = "checkBox_EnableHT";
-            this.toolTip1.SetToolTip(this.checkBox_EnableHT, resources.GetString("checkBox_EnableHT.ToolTip"));
-            this.checkBox_EnableHT.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.button35, "button35");
+            this.button35.Name = "button35";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
+            // 
+            // button36
+            // 
+            resources.ApplyResources(this.button36, "button36");
+            this.button36.Name = "button36";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button36);
+            this.Controls.Add(this.button35);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button40);
             this.Controls.Add(this.button37);
@@ -2174,6 +2192,8 @@
         internal System.Windows.Forms.Button button18;
         internal System.Windows.Forms.Button button19;
         internal System.Windows.Forms.CheckBox checkBox_EnableHT;
+        internal System.Windows.Forms.Button button35;
+        internal System.Windows.Forms.Button button36;
     }
 }
 

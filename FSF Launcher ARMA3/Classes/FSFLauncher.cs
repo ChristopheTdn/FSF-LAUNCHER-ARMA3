@@ -620,6 +620,8 @@ namespace FSFLauncherA3
                 generationLigneArguments();
                 if (serveur == "server1") { serveur = @"-connect=188.165.206.141 -port=2532 -password=honneur "; };
                 if (serveur == "mapping") { serveur = @"-connect=188.165.206.141 -port=2542 -password=patrie "; };
+                if (serveur == "newofficiel") { serveur = @"-connect=37.59.52.201 -port=4442 -password=honneur "; };
+                if (serveur == "newmapping") { serveur = @"-connect=37.59.52.201 -port=3302 -password=patrie "; };
                 ProgExterne.lancerFraps();
                 ProgExterne.lancerTrackIR();
 
