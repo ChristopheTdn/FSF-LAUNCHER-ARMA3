@@ -226,8 +226,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
@@ -1842,20 +1840,6 @@
             this.label9.Name = "label9";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // button37
-            // 
-            resources.ApplyResources(this.button37, "button37");
-            this.button37.Name = "button37";
-            this.button37.UseVisualStyleBackColor = true;
-            this.button37.Click += new System.EventHandler(this.button37_Click_1);
-            // 
-            // button40
-            // 
-            resources.ApplyResources(this.button40, "button40");
-            this.button40.Name = "button40";
-            this.button40.UseVisualStyleBackColor = true;
-            this.button40.Click += new System.EventHandler(this.button40_Click);
-            // 
             // openFileDialog2
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
@@ -1889,8 +1873,6 @@
             this.Controls.Add(this.button36);
             this.Controls.Add(this.button35);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button40);
-            this.Controls.Add(this.button37);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox3);
@@ -2183,8 +2165,6 @@
         internal System.Windows.Forms.PictureBox pictureBox36;
         internal System.Windows.Forms.TextBox textBox4;
         internal System.Windows.Forms.CheckBox checkBox13;
-        internal System.Windows.Forms.Button button40;
-        internal System.Windows.Forms.Button button37;
         internal System.Windows.Forms.TextBox textBox8;
         internal System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label25;
