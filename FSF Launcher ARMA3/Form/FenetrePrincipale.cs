@@ -1259,12 +1259,12 @@ namespace FSFLauncherA3
 
         private void button18_Click_1(object sender, EventArgs e)
         {
-            ProgExterne.ReinstallTS3TaskForce3014();
+            ProgExterne.ReinstallTS3TaskForce3016();
         }
 
         private void button19_Click_2(object sender, EventArgs e)
         {
-            ProgExterne.lancerTeamspeak3TaskForce3014();
+            ProgExterne.lancerTeamspeak3TaskForce3016();
         }
 
         private void button35_Click(object sender, EventArgs e)
