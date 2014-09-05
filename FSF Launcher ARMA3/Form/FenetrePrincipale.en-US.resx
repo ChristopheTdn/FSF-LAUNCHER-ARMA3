@@ -460,17 +460,32 @@
   <data name="button25.Text" xml:space="preserve">
     <value>Mapping</value>
   </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 591</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 28</value>
+  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 598</value>
   </data>
   <data name="button35.Location" type="System.Drawing.Point, System.Drawing">
     <value>372, 616</value>
   </data>
+  <data name="button35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 25</value>
+  </data>
   <data name="button35.Text" xml:space="preserve">
     <value>Official</value>
   </data>
   <data name="button36.Location" type="System.Drawing.Point, System.Drawing">
     <value>439, 616</value>
+  </data>
+  <data name="button36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 25</value>
+  </data>
+  <data name="button37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

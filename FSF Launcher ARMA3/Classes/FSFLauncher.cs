@@ -553,7 +553,7 @@ namespace FSFLauncherA3
         #region Serveur
 
 
-        static public void generationLigneArguments()
+        static public void generationLigneArguments(string profil)
         {
             listMODS = "-MOD=";
             listArguments = "";
@@ -590,8 +590,10 @@ namespace FSFLauncherA3
             if (fenetrePrincipale.checkBox_HeadlessClient.Checked) { listArguments += @"-name=""HeadLess Client"" -localhost=127.0.0.1 -connect=localhost -port="+fenetrePrincipale.textBox2.Text+" -password="+fenetrePrincipale.textBox3.Text+" -client -nosound "; }
             if (fenetrePrincipale.checkBox13.Checked) { listArguments += " " + fenetrePrincipale.textBox4.Text + " "; }
             if (fenetrePrincipale.checkBox_EnableHT.Checked) { listArguments += "-enableHT "; }
-            listArguments += @"""" + listMODS + @"""";
-        }
+
+            if (profil == "public") { listArguments += @""" -MOD="" "; } else { listArguments += @""""+listMODS+@""" "; };
+
+            }
 
         #endregion
 
@@ -617,9 +619,10 @@ namespace FSFLauncherA3
                 fenetrePrincipale.button1.Enabled = false;
                 fenetrePrincipale.button35.Enabled = false;
                 fenetrePrincipale.button36.Enabled = false;
-                generationLigneArguments();
+                generationLigneArguments(serveur);
                 if (serveur == "newofficiel") { serveur = @"-connect=37.59.52.201 -port=4442 -password=honneur "; };
                 if (serveur == "newmapping") { serveur = @"-connect=37.59.52.201 -port=3302 -password=patrie "; };
+                if (serveur == "public") { serveur = @"-connect=37.59.52.201 -port=2902 -password= "; };
                 ProgExterne.lancerFraps();
                 ProgExterne.lancerTrackIR();
 

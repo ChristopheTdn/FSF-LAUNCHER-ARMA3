@@ -1277,6 +1277,11 @@ namespace FSFLauncherA3
             FSFLauncherCore.lancerJeu("newmapping");
         }
 
+        private void button37_Click_2(object sender, EventArgs e)
+        {
+            FSFLauncherCore.lancerJeu("public");
+        }
+
     }
 }
     
