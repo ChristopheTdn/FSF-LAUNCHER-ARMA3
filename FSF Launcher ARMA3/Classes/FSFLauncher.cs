@@ -887,7 +887,7 @@ namespace FSFLauncherA3
         }
         static public void synchroRsync(string typeSynchro, Button BoutonSender)
         {
-            DirectoryInfo localDir = new DirectoryInfo(@"H:\steam\SteamApps\common\Arma 3\@FSF");
+            DirectoryInfo localDir = new DirectoryInfo(cheminARMA3+@"\@FSF");
             FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
             //String remoteServer = "127.0.0.1";
             String remoteServer = "server2.clan-fsf.fr";

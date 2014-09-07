@@ -182,7 +182,7 @@ namespace RSync
             FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button35.Enabled = true;
             FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button36.Enabled = true;
             FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button37.Enabled = true;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button40.Enabled = false;
+            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button40.Enabled = true;
         }
 
         private void getInfo()
