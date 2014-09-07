@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="FSFLauncherA3.exe" version="1.02.0905.235" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="FSFLauncherA3.exe" version="1.02.0907.238" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="Projet1.ico" asmv2:publisher="Clan F.S.F" co.v1:suiteName="FSF Developpement" asmv2:product="FSF Launcher Arma 3 Edition" asmv2:supportUrl="http://www.clan-fsf.fr/" co.v1:errorReportUrl="https://code.google.com/p/fsf-launcher-a3/issues/list" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FSFLauncherA3.exe" size="2467840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FSFLauncherA3.exe" size="2447872">
       <assemblyIdentity name="FSFLauncherA3" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>SNU/w+d/wjy/eZMo+EF0cKUF+bI=</dsig:DigestValue>
+        <dsig:DigestValue>DQn6QqxXcELc/tP0fBP8n8vLJOQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,7 +63,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9WCM6KzaskvBM3JP8/EFBfK8zf4=</dsig:DigestValue>
+        <dsig:DigestValue>cbqKZIR1WRyWkor15mvLJxkwC8M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -75,7 +75,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>RDc3uUQLQtJiSXaMEsjvHoPy+vs=</dsig:DigestValue>
+        <dsig:DigestValue>X6cr1voYS5UpzRlN9RzNckXL3QA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -87,7 +87,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>maat1Ow3+QzEr04vHh6TNI5s7uI=</dsig:DigestValue>
+        <dsig:DigestValue>EbjZJHECBpMQpDfLSWuMmUrmJTs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -99,7 +99,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vxFMVRoyKrVFOyZ06/PAR1qL8uA=</dsig:DigestValue>
+        <dsig:DigestValue>wuxOHIKucrVKml/WJ2TcnJnbSKg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -111,7 +111,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>KJtt6VKRhqv47vD5oI9zz4JWEw4=</dsig:DigestValue>
+        <dsig:DigestValue>x9r1Yvh0rVbuR462PwYKX6oBnCo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -123,7 +123,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>V+tZplU49OQcnwiw8VGcsLd1ego=</dsig:DigestValue>
+        <dsig:DigestValue>1ip+3xmWdDyMtATrv0Pg3wmZJnM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -135,7 +135,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>7sNIQrIJqptMUZD36ovsy8QrgXQ=</dsig:DigestValue>
+        <dsig:DigestValue>l/0xIJT3Ey/hDUpCabkHUxuIA3o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -147,7 +147,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>307S6XySjtCh83UIg6EZexHDrGo=</dsig:DigestValue>
+        <dsig:DigestValue>IOWMSOXYNf0YoIEq5EKv6B0DIts=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -218,6 +218,132 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>YlqVMgQbv59SSCFvX/5zgMNlINM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\cwrsync.cmd" size="1756">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gGZDnhjvO42wFcxI7qQKyxzrRzc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\cygcrypto-1.0.0.dll" size="1944064">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Q/UbXqcrToYIwu2mzWtR/8bnQT8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\cyggcc_s-1.dll" size="103453">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>iwfiA+LB3BLgpLpRbz3AaLlNc4E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\cygiconv-2.dll" size="1008654">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>aI4K+6PB03tQCOFsiOY6oNXCYMY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\cygssp-0.dll" size="10781">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>npZscqylLK+Mahb2npiWOpu555M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\cygwin1.dll" size="3193245">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gabGbhxCplMwmaYpI0llGEidGiE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\cygz.dll" size="74269">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>paTjviHIO20tvhW1ly1+7XNooBc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\README.cwrsync.txt" size="1118">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NwXKbWa0DrdAydRcE9edoBKx5oM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\README.rsync.txt" size="4170">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>V8+Lg7YUrOW+mlbprZTb2hmo0ic=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\rsync.exe" size="439822">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jDslsJLAFXbDCeYgyo1WuHTwfEI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\rsync.html" size="189690">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eI633S1WHZvKPdr1Wb5FTQFhYlY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\rsyncd.conf.html" size="49707">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cTtL+z8GwuYGlJQLdn/5Nqsvohs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\ssh.exe" size="658958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>X/Bn5ul/wLRXM/m91XqN26S+xVQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rsync\ssh-keygen.exe" size="432142">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vra5V4TVG9pdJ/LlDCz5cJcOXEU=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

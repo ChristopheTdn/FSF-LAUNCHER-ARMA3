@@ -34,24 +34,9 @@ namespace FSFLauncherA3
             Control.CheckForIllegalCrossThreadCalls = false;
 
            
-            // Gestion WINSCP
+            
 
-            if (File.Exists("WinSCP.exe")) //Si le fichier existe 
-            {
-                button26.Visible = false;
-                progressBar1.Visible = false;
-                pictureBox17.Visible = false;
-                button25.Enabled = true;
-                button16.Enabled = true;
-            }
-            else
-            {
-                button26.Enabled = true;
-                button26.Visible = true;
-                pictureBox17.Visible = true;
-                button25.Enabled = false;
-                button16.Enabled = false;
-            }
+
 
             // PREPARATION INITIALISATION INTERFACE
             FSFLauncherCore.fenetrePrincipale = this;
@@ -594,32 +579,8 @@ namespace FSFLauncherA3
             FileInfo f = new FileInfo(cheminFichier);
             return f.Length.ToString();
         }
-        void telechargeFichier(string cheminFichier, string nomFichier)
-        {
-            WebClient client = new WebClient();
-            client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(client_DownloadProgressChanged);
-            client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
-            // Starts the download
-            client.DownloadFileAsync(new Uri(cheminFichier + nomFichier), FSFLauncherCore.repertoireCourant + @"/" + nomFichier);
-            button26.Text = "Téléchargement...";
-            button26.Enabled = false;
-        }
-        void client_DownloadProgressChanged(object sender, System.Net.DownloadProgressChangedEventArgs e)
-        {
-            double bytesIn = double.Parse(e.BytesReceived.ToString());
-            double totalBytes = double.Parse(e.TotalBytesToReceive.ToString());
-            double percentage = bytesIn / totalBytes * 100;
-            progressBar1.Value = int.Parse(Math.Truncate(percentage).ToString());
-        }
-        void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            button26.Visible = false;
-            progressBar1.Visible = false;
-            pictureBox17.Visible = false;
-            button25.Enabled = true;
-            button16.Enabled = true;
-        }
-
+ 
+     
         /*
          * 
          * 
@@ -861,11 +822,6 @@ namespace FSFLauncherA3
             }
 
         }
-        private void button26_Click(object sender, EventArgs e)
-        {
-            telechargeFichier("http://www.clan-gign.net/FSFLauncherA3/", "WinSCP.exe");
-        }
-
 
         private void Priorité_Enter(object sender, EventArgs e)
         {
@@ -1106,7 +1062,7 @@ namespace FSFLauncherA3
             if (FSFLauncherCore.dialogueReponse)
             {
                 FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "officielle");
-                FSFLauncherCore.synchro("officielle");
+                FSFLauncherCore.synchroRsync("SYNCHRO_OFFICIELLE", (Button)sender);
                 Interface.initialiseListeProfil();
                 initialiseProfilActif();
                 configureInstallationMODS();
@@ -1280,6 +1236,25 @@ namespace FSFLauncherA3
         private void button37_Click_2(object sender, EventArgs e)
         {
             FSFLauncherCore.lancerJeu("public");
+        }
+
+        private void button40_Click_1(object sender, EventArgs e)
+        {
+            Form dialogue = new Dial_LanceSynchroBeta();
+            dialogue.ShowDialog();
+            if (FSFLauncherCore.dialogueReponse)
+            {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "beta");
+                FSFLauncherCore.synchroRsync("SYNCHRO_BETA",(Button)sender);
+                Interface.initialiseListeProfil();
+                initialiseProfilActif();
+                configureInstallationMODS();
+            }
+            else
+            {
+                textBox11.Text = "Break...";
+            }
+
         }
 
     }

@@ -49,3 +49,17 @@ E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\de-DE\FSFLauncherA3.resources.dll
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.de-DE.resources
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\de-DE\FSFLauncherA3.resources.dll
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cwrsync.cmd
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygcrypto-1.0.0.dll
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cyggcc_s-1.dll
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygiconv-2.dll
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygssp-0.dll
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygwin1.dll
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygz.dll
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\README.cwrsync.txt
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\README.rsync.txt
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\rsync.exe
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\rsync.html
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\rsyncd.conf.html
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\ssh-keygen.exe
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\ssh.exe

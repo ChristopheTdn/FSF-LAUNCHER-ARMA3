@@ -619,6 +619,7 @@ namespace FSFLauncherA3
                 fenetrePrincipale.button1.Enabled = false;
                 fenetrePrincipale.button35.Enabled = false;
                 fenetrePrincipale.button36.Enabled = false;
+                fenetrePrincipale.button37.Enabled = false;
                 generationLigneArguments(serveur);
                 if (serveur == "newofficiel") { serveur = @"-connect=37.59.52.201 -port=4442 -password=honneur "; };
                 if (serveur == "newmapping") { serveur = @"-connect=37.59.52.201 -port=3302 -password=patrie "; };
@@ -884,7 +885,17 @@ namespace FSFLauncherA3
             fenetrePrincipale.progressBar2.Value = int.Parse(Math.Truncate(e.FileProgress * 100).ToString());
             fenetrePrincipale.progressBar3.Value = int.Parse(Math.Truncate(e.OverallProgress * 100).ToString());
         }
+        static public void synchroRsync(string typeSynchro, Button BoutonSender)
+        {
+            DirectoryInfo localDir = new DirectoryInfo(@"H:\steam\SteamApps\common\Arma 3\@FSF");
+            FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
+            //String remoteServer = "127.0.0.1";
+            String remoteServer = "server2.clan-fsf.fr";
+            string remoteDir = typeSynchro;
+            new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
 
+
+        }
         #endregion
 
         /*
