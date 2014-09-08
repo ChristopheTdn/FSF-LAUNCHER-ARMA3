@@ -5197,6 +5197,9 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="button40.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
   <data name="button40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>

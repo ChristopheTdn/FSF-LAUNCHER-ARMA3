@@ -53,17 +53,15 @@ namespace RSync
 
             outputBox.Clear();
 
+
             button.Visible = false;
             cancelButton = new Button();
             cancelButton.Size = button.Size;
             cancelButton.Location = button.Location;
-            cancelButton.Left = button.Location.X + 35;
-            cancelButton.Top = button.Location.Y + 130;
             cancelButton.Text = "Abandonner";
+            cancelButton.FlatStyle = FlatStyle.System;
             cancelButton.Click += button_Cancel;
-            form.Controls.Add(cancelButton);
-            cancelButton.BringToFront();
-
+            button.Parent.Controls.Add(cancelButton);
             new Thread(execute).Start();
         }
 
