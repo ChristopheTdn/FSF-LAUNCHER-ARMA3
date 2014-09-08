@@ -32,11 +32,7 @@ namespace FSFLauncherA3
             // Affiche version 
 
             FSFLauncherCore.fenetrePrincipale.label31.Text = AfficheVersionProgramme();
-
-            // Affiche Version Synchro Effective
-
-            FSFLauncherCore.fenetrePrincipale.label15.Text = versionSynchroEnLignes("@FSF_OFFICIELLE");
-            FSFLauncherCore.fenetrePrincipale.label10.Text = versionSynchroEnLignes("@FSF");
+            
             // bouton prog externe
 
             ProgExterne.ValideProgExt();
@@ -50,14 +46,13 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.pictureBox36.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button39.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button38.Visible = false;
-
                 FSFLauncherCore.fenetrePrincipale.button35.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button36.Visible = false; 
+
                 // TS3 version 3.0.14
                 FSFLauncherCore.fenetrePrincipale.button18.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button19.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.pictureBox26.Visible = false;
-
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;
                 FSFLauncherCore.fenetrePrincipale.groupBox3.Visible = false;
 
@@ -65,9 +60,9 @@ namespace FSFLauncherA3
             else
             {
                 AlerteVersionArma3();
-                AlerteVersionSynchro();
+                tailleSynchroEnLigne();
             }
-
+            AfficheSynchroActive();
         }
         static public void genereTab()
         {
@@ -264,39 +259,18 @@ namespace FSFLauncherA3
                 return "";
             }
         }
-        static private string VersionSynchro()
+        static public void tailleSynchroEnLigne()
         {
-            string VersionSynchro;
-            try
-            {
-                XmlTextReader fichierInfoServer = new XmlTextReader(FSFLauncherCore.cheminARMA3 +@"\@FSF\version.xml");
-                fichierInfoServer.ReadToFollowing("VERSION");
-                VersionSynchro = fichierInfoServer.ReadString();
-                fichierInfoServer.Close();
-            }
-            catch
-            {
-                return "null";
-            }
-            return VersionSynchro;
-        }
-        static public string versionSynchroEnLignes(string Rep)
-        {
-            string VersionSynchroEnLigne="?";
-            string repertoireDistant = @"/" + Rep + @"/";
-            try
-            {
-                string link = @"ftp://" + FSFLauncherCore.constLoginFTP + ":" + FSFLauncherCore.constMdpFTP + @"@" + FSFLauncherCore.constCheminFTP + repertoireDistant + "version.xml";
-                XmlTextReader fichierInfoServer = new XmlTextReader(link);
-                fichierInfoServer.ReadToFollowing("VERSION");
-                VersionSynchroEnLigne = fichierInfoServer.ReadString();
-                fichierInfoServer.Close();
-            }
-            catch
-            {
-            
-            }
-            return VersionSynchroEnLigne;
+            //  taille DL en ligne
+            DirectoryInfo localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF");
+            FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
+            //String remoteServer = "127.0.0.1";
+            String remoteServer = "server2.clan-fsf.fr";
+            string remoteDir = "SYNCHRO_" + FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro").ToUpper();
+            FSFLauncherCore.fenetrePrincipale.label8.Text ="???";
+            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(FSFLauncherCore.fenetrePrincipale, FSFLauncherCore.fenetrePrincipale.button40, FSFLauncherCore.fenetrePrincipale.textBox11, FSFLauncherCore.fenetrePrincipale.progressBar2, FSFLauncherCore.fenetrePrincipale.progressBar3, rsyncExe, remoteServer, remoteDir, localDir);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
+            rSyncCall.setTotalSize(FSFLauncherCore.fenetrePrincipale.label8);
+            return;
 
         }
         static public void AlerteVersionArma3()
@@ -328,52 +302,24 @@ namespace FSFLauncherA3
             }
 
         }
-        static public void AlerteVersionSynchro()
+        static public void AfficheSynchroActive()
         {
-            string VersionSynchroEnLigne;
-            string repertoireDistant=@"/";
             FSFLauncherCore.fenetrePrincipale.pictureBox31.Image = FSFLauncherA3.Properties.Resources.off;
             FSFLauncherCore.fenetrePrincipale.pictureBox32.Image = FSFLauncherA3.Properties.Resources.off;
-            try
+            switch (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro"))
             {
-                if (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro") == "beta")
-                {
-                    repertoireDistant = @"/@FSF/";
-                    FSFLauncherCore.fenetrePrincipale.pictureBox32.Image = FSFLauncherA3.Properties.Resources.on;
-                }
-                if (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro") == "officielle")
-                {
-                    repertoireDistant = @"/@FSF_OFFICIELLE/";
-                    FSFLauncherCore.fenetrePrincipale.pictureBox31.Image = FSFLauncherA3.Properties.Resources.on;
-                }
-                string link = @"ftp://" + FSFLauncherCore.constLoginFTP + ":" + FSFLauncherCore.constMdpFTP + @"@" + FSFLauncherCore.constCheminFTP + repertoireDistant + "version.xml";
-                XmlTextReader fichierInfoServer = new XmlTextReader(link);
-                fichierInfoServer.ReadToFollowing("VERSION");
-                VersionSynchroEnLigne = fichierInfoServer.ReadString();
-                fichierInfoServer.Close();
-
-                if (VersionSynchroEnLigne == VersionSynchro())
-                {
-                    FSFLauncherCore.fenetrePrincipale.label8.Text = VersionSynchro();
-                    FSFLauncherCore.fenetrePrincipale.toolTip1.SetToolTip(FSFLauncherCore.fenetrePrincipale.pictureBox25, "Synchro (FSF server) : " + VersionSynchroEnLigne + Environment.NewLine);
-                    FSFLauncherCore.fenetrePrincipale.pictureBox25.Image = FSFLauncherA3.Properties.Resources.valide;
-                    FSFLauncherCore.fenetrePrincipale.label8.ForeColor = System.Drawing.Color.Black;
-                }
-                else
-                {
-                    FSFLauncherCore.fenetrePrincipale.label8.Text = VersionSynchro();
-                    FSFLauncherCore.fenetrePrincipale.toolTip1.SetToolTip(FSFLauncherCore.fenetrePrincipale.pictureBox25, "Synchro (FSF server) : " + VersionSynchroEnLigne);
-                    FSFLauncherCore.fenetrePrincipale.pictureBox25.Image = FSFLauncherA3.Properties.Resources.delete;
-                    FSFLauncherCore.fenetrePrincipale.label8.ForeColor = System.Drawing.Color.Red;
-                }
-
-            }
-            catch (Exception e)
-            {
-                FSFLauncherCore.fenetrePrincipale.label1.Text = e.ToString();
+                case "beta" :
+                   FSFLauncherCore.fenetrePrincipale.pictureBox31.Image = FSFLauncherA3.Properties.Resources.off;
+                   FSFLauncherCore.fenetrePrincipale.pictureBox32.Image = FSFLauncherA3.Properties.Resources.on;
+                    break;
+               case "officielle" :
+                   FSFLauncherCore.fenetrePrincipale.pictureBox31.Image = FSFLauncherA3.Properties.Resources.on;
+                   FSFLauncherCore.fenetrePrincipale.pictureBox32.Image = FSFLauncherA3.Properties.Resources.off;
+                    break;
             }
 
         }
+        
 
         /*
          *    LANGAGE

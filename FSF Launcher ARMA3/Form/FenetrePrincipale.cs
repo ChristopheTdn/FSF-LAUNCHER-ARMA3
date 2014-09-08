@@ -20,7 +20,7 @@ namespace FSFLauncherA3
     public partial class FenetrePrincipale : Form
     {
         Form splashscreen = new SplashScreen();
-        string[] argumentFSFLauncher;       
+        string[] argumentFSFLauncher;
 
         public FenetrePrincipale(string [] args)
         {
@@ -33,8 +33,8 @@ namespace FSFLauncherA3
         {        
             Control.CheckForIllegalCrossThreadCalls = false;
 
-           
-            
+
+            label8.TextChanged += label8_TextChanged;
 
 
 
@@ -60,6 +60,22 @@ namespace FSFLauncherA3
             splashscreen.ShowDialog();
             if (argumentFSFLauncher.Length > 0) ResidentAdmin.initialiseTrayIcon();
         }
+
+        void label8_TextChanged(object sender, EventArgs e)
+        {
+            if (FSFLauncherCore.fenetrePrincipale.label8.Text == "0,000 Mo")
+            {
+                FSFLauncherCore.fenetrePrincipale.label8.Text = "A jours";
+                FSFLauncherCore.fenetrePrincipale.pictureBox25.Image = FSFLauncherA3.Properties.Resources.valide;
+                FSFLauncherCore.fenetrePrincipale.label8.ForeColor = System.Drawing.Color.Black;
+            }
+            else
+            {
+                FSFLauncherCore.fenetrePrincipale.pictureBox25.Image = FSFLauncherA3.Properties.Resources.delete;
+                FSFLauncherCore.fenetrePrincipale.label8.ForeColor = System.Drawing.Color.Red;
+            }
+        }
+        
 
 
         /***********************************
@@ -804,25 +820,6 @@ namespace FSFLauncherA3
             System.Diagnostics.Process.Start("http://www.clan-fsf.fr");
         }
 
-        private void button25_Click(object sender, EventArgs e)
-        {
-            Form dialogue = new Dial_LanceSynchroBeta();
-            dialogue.ShowDialog();
-            if (FSFLauncherCore.dialogueReponse)
-            {
-                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "beta");
-                FSFLauncherCore.synchro("beta");
-                Interface.initialiseListeProfil();
-                initialiseProfilActif();
-                configureInstallationMODS();
-            }
-            else
-            {
-                textBox11.Text = "Break...";
-            }
-
-        }
-
         private void Priorité_Enter(object sender, EventArgs e)
         {
             Priority.actualisePrioriteMods();
@@ -1062,6 +1059,7 @@ namespace FSFLauncherA3
             if (FSFLauncherCore.dialogueReponse)
             {
                 FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "officielle");
+                Interface.AfficheSynchroActive();
                 FSFLauncherCore.synchroRsync("SYNCHRO_OFFICIELLE", (Button)sender);
                 Interface.initialiseListeProfil();
                 initialiseProfilActif();
@@ -1205,7 +1203,19 @@ namespace FSFLauncherA3
                     break;
                 case "MAK Tiger Golden":
                     pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_Tiger_Golden;
-                    break; 
+                    break;
+                case "MAK RU RASTR":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_RU_Rastr;
+                    break;
+                case "MAK RU SURPAT":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_RU_Surpat;
+                    break;
+                case "MAK RU VSR":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_RU_VSR;
+                    break;
+                case "MAK RU KAMYSH":
+                    pictureBox1.Image = FSFLauncherA3.Properties.Resources.MAK_RU_Kamish;
+                    break;
                 default:
                     pictureBox1.Image = FSFLauncherA3.Properties.Resources.logofsf;
                     break;
@@ -1246,6 +1256,7 @@ namespace FSFLauncherA3
             {
                 FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "beta");
                 FSFLauncherCore.synchroRsync("SYNCHRO_BETA",(Button)sender);
+                Interface.AfficheSynchroActive();
                 Interface.initialiseListeProfil();
                 initialiseProfilActif();
                 configureInstallationMODS();
@@ -1256,6 +1267,7 @@ namespace FSFLauncherA3
             }
 
         }
+
 
     }
 }

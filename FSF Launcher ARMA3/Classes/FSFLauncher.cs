@@ -126,7 +126,7 @@ namespace FSFLauncherA3
         private static void TimerSynchroEvent(Object myObject, EventArgs myEventArgs)
         {
             timerSynchro.Stop();
-            Interface.AlerteVersionSynchro();
+            Interface.tailleSynchroEnLigne();
             timerSynchro.Start();
         }
         
@@ -685,172 +685,6 @@ namespace FSFLauncherA3
          *           SYNCHRONISATION      
          */
         #region Synchronisation
-        static public void synchro(string typeSynchro)
-        {
-            try
-            {
-                string repertoireLocal = FSFLauncherCore.cheminARMA3 + @"\@FSF\";
-                string repertoireDistant="";
-
-                fenetrePrincipale.textBox11.Text = "Synchronisation procedure " + typeSynchro + " en cours :" + Environment.NewLine;
-                fenetrePrincipale.textBox11.Text += "────────────────────────────" + Environment.NewLine;
-                fenetrePrincipale.textBox11.Text += Environment.NewLine + "IMPORTANT : " + Environment.NewLine + "Pour stopper la synchronisation en cours, il vous faut Arreter le processus WinSCP.exe en faisant appel à la combinaison de touche" + Environment.NewLine + " CTRL + MAJ + ESC (onglet processus)." + Environment.NewLine;
-                // Setup session options
-                SessionOptions sessionOptions = new SessionOptions { };
-                switch (typeSynchro)
-                {
-                    case "beta":
-                        SessionOptions sessionOptions1 = new SessionOptions
-                        {
-                            Protocol = Protocol.Ftp,
-                            HostName = constCheminFTP,
-                            UserName = constLoginFTP,
-                            Password = constMdpFTP
-
-                        };
-                        repertoireDistant = "/@FSF/";
-                        sessionOptions = sessionOptions1;
-
-                        break;
-                    case "officielle":
-                        SessionOptions sessionOptions2 = new SessionOptions
-                        {
-                            Protocol = Protocol.Ftp,
-                            HostName = constCheminFTP,
-                            UserName = constLoginFTP,
-                            Password = constMdpFTP
-
-                        };
-                        repertoireDistant = "/@FSF_OFFICIELLE/";
-                        sessionOptions = sessionOptions2;
-                        break;
-                }
-
-                using (Session session = new Session())
-                {
-                    switch (typeSynchro)
-                    {
-                        default:
-                            Directory.CreateDirectory(repertoireLocal + "@TEMPLATE");
-                            Directory.CreateDirectory(repertoireLocal + "@CLIENT");
-                            Directory.CreateDirectory(repertoireLocal + "@TEST");
-                            Directory.CreateDirectory(repertoireLocal + "@UNITS");
-                            Directory.CreateDirectory(repertoireLocal + "@MATERIEL");
-                            Directory.CreateDirectory(repertoireLocal + "@ISLANDS");
-                            Directory.CreateDirectory(repertoireLocal + "@FRAMEWORK");
-                            break;
-                    }
-                    // Will continuously report progress of synchronization
-                    session.FileTransferred += FileTransferred;
-                    session.FileTransferProgress += FileTransferProgress;
-
-                    // session log
-                    session.DebugLogPath = FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\log.txt";
-                    // Connect
-                    session.Open(sessionOptions);
-                    TransferOptions transferOptions = new TransferOptions();
-                    transferOptions.TransferMode = TransferMode.Binary;
-
-                    SynchronizationResult synchronizationResult;
-
-                        fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @TEMPLATE     ******" + Environment.NewLine);
-                        synchronizationResult =
-                            session.SynchronizeDirectories(
-                                SynchronizationMode.Local,
-                                repertoireLocal + "@TEMPLATE",
-                                repertoireDistant + "@TEMPLATE",
-                                true,
-                                false,
-                                SynchronizationCriteria.Size);
-                        effaceProgressBar();
-
-
-                        fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @FRAMEWORK     ******" + Environment.NewLine);
-                        synchronizationResult =
-                            session.SynchronizeDirectories(
-                                SynchronizationMode.Local,
-                                repertoireLocal + "@FRAMEWORK",
-                                repertoireDistant + "@FRAMEWORK",
-                                true,
-                                false,
-                                SynchronizationCriteria.Size);
-                        effaceProgressBar();
-                                        
-
-                        fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @CLIENT     ******" + Environment.NewLine);
-                        synchronizationResult =
-                            session.SynchronizeDirectories(
-                                SynchronizationMode.Local,
-                                repertoireLocal + "@CLIENT",
-                                repertoireDistant + "@CLIENT",
-                                true,
-                                false,
-                                SynchronizationCriteria.Size);
-                        effaceProgressBar();
-
-                        fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @TEST     ******" + Environment.NewLine);
-                        synchronizationResult =
-                            session.SynchronizeDirectories(
-                                SynchronizationMode.Local,
-                                repertoireLocal + "@TEST",
-                                repertoireDistant + "@TEST",
-                                true,
-                                false,
-                                SynchronizationCriteria.Size);
-                        effaceProgressBar();
-                        
-                        fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @UNITS     ******" + Environment.NewLine);
-                        synchronizationResult =
-                            session.SynchronizeDirectories(
-                                SynchronizationMode.Local,
-                                repertoireLocal + "@UNITS",
-                                repertoireDistant + "@UNITS",
-                                true,
-                                false,
-                                SynchronizationCriteria.Size);
-                        effaceProgressBar();
-
-                        fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @MATERIEL     ******" + Environment.NewLine);
-                        synchronizationResult =
-                            session.SynchronizeDirectories(
-                                SynchronizationMode.Local,
-                                repertoireLocal + "@MATERIEL",
-                                repertoireDistant + "@MATERIEL",
-                                true,
-                                false,
-                                SynchronizationCriteria.Size);
-                        effaceProgressBar();
-
-                        fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @ISLANDS     ******" + Environment.NewLine);
-                        synchronizationResult =
-                            session.SynchronizeDirectories(
-                                SynchronizationMode.Local,
-                                repertoireLocal + "@ISLANDS",
-                                repertoireDistant + "@ISLANDS",
-                                true,
-                                false,
-                                SynchronizationCriteria.Size);
-                        effaceProgressBar();
-
-                        // Throw on any error
-                        synchronizationResult.Check();
-                        fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "->fichier " + repertoireLocal + "Organisation.txt mis a jour." + Environment.NewLine);
-
-                        downloadnouvelleVersion("Organisation.txt", FSFLauncherCore.constCheminFTP + repertoireDistant, FSFLauncherCore.constLoginFTP, FSFLauncherCore.constMdpFTP, repertoireLocal);
-                        downloadnouvelleVersion("version.xml", FSFLauncherCore.constCheminFTP + repertoireDistant, FSFLauncherCore.constLoginFTP, FSFLauncherCore.constMdpFTP, repertoireLocal);
-
-                }
-            }
-            catch (Exception z)
-            {
-                fenetrePrincipale.textBox11.Text += "Error: " + z;
-            }
-            fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "_______________" + Environment.NewLine);
-            fenetrePrincipale.textBox11.Text += "Fin de la synchro";
-            Interface.AlerteVersionArma3();
-            Interface.AlerteVersionSynchro();
-
-        }
         static private void effaceProgressBar()
         {
             fenetrePrincipale.label11.Text = "";
@@ -892,8 +726,14 @@ namespace FSFLauncherA3
             //String remoteServer = "127.0.0.1";
             String remoteServer = "server2.clan-fsf.fr";
             string remoteDir = typeSynchro;
-            new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
-
+            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, FSFLauncherCore.fenetrePrincipale.progressBar2, FSFLauncherCore.fenetrePrincipale.progressBar3, rsyncExe, remoteServer, remoteDir, localDir);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
+            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button16);
+            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button1);
+            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button35);
+            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button36);
+            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button37);
+            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button40);
+            rSyncCall.start();
 
         }
         #endregion

@@ -199,9 +199,7 @@
             this.button40 = new System.Windows.Forms.Button();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -1627,9 +1625,7 @@
             this.groupBox8.Controls.Add(this.button40);
             this.groupBox8.Controls.Add(this.pictureBox32);
             this.groupBox8.Controls.Add(this.pictureBox31);
-            this.groupBox8.Controls.Add(this.label10);
             this.groupBox8.Controls.Add(this.label16);
-            this.groupBox8.Controls.Add(this.label15);
             this.groupBox8.Controls.Add(this.button16);
             this.groupBox8.Controls.Add(this.label1);
             resources.ApplyResources(this.groupBox8, "groupBox8");
@@ -1657,22 +1653,10 @@
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.TabStop = false;
             // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Name = "label10";
-            // 
             // label16
             // 
             resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Name = "label15";
             // 
             // button16
             // 
@@ -2111,8 +2095,6 @@
         private System.Windows.Forms.Label label9;
         internal System.Windows.Forms.Button button16;
         internal System.Windows.Forms.Label label1;
-        internal System.Windows.Forms.Label label10;
-        internal System.Windows.Forms.Label label15;
         internal System.Windows.Forms.PictureBox pictureBox32;
         internal System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.TabPage tabPage5;

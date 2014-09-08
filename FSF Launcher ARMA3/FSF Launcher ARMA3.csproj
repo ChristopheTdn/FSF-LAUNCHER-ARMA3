@@ -36,8 +36,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>242</ApplicationRevision>
-    <ApplicationVersion>1.02.0907.%2a</ApplicationVersion>
+    <ApplicationRevision>243</ApplicationRevision>
+    <ApplicationVersion>1.50.0908.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -277,6 +277,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\MAK RU Kamish.jpg" />
+    <None Include="Resources\MAK RU Rastr.jpg" />
+    <None Include="Resources\MAK RU Surpat.jpg" />
+    <None Include="Resources\MAK RU VSR.jpg" />
+    <None Include="gfx\camo_image\MAK RU VSR.jpg" />
+    <None Include="gfx\camo_image\MAK RU Kamish.jpg" />
+    <None Include="gfx\camo_image\MAK RU Rastr.jpg" />
+    <None Include="gfx\camo_image\MAK RU Surpat.jpg" />
     <Content Include="rsync\cwrsync.cmd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

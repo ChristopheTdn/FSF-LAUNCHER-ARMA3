@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -22,7 +23,9 @@ namespace RSync
         private ProgressBar progressTotal;
         private Button cancelButton;
 
-        private long totalSize;
+        private ArrayList controlsToDisable = new ArrayList();
+
+        private long totalSize = 0;
 
         public RSyncCall(Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir)
         {
@@ -41,18 +44,15 @@ namespace RSync
             String rsyncLocalDir = "/cygdrive/" + localDir.FullName.Replace(":\\", "/").Replace('\\', '/');
             this.arguments = "-rvza --progress --delete-after --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
             this.dryArguments = "-rvzan --stats --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+        }
 
-            new Thread(getInfo).Start();
+        public void start()
+        {
+            disableControls();
 
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button1.Enabled = false;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button16.Enabled = false;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button35.Enabled = false;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button36.Enabled = false;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button37.Enabled = false;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button40.Enabled = false;
+            new Thread(() => getInfo(null)).Start();
 
             outputBox.Clear();
-
 
             button.Visible = false;
             cancelButton = new Button();
@@ -65,11 +65,38 @@ namespace RSync
             new Thread(execute).Start();
         }
 
+        public void setTotalSize(Control c)
+        {
+            new Thread(() => getInfo(c)).Start();
+        }
+
+        public void addControlToDisable(Control control)
+        {
+            controlsToDisable.Add(control);
+        }
+
+        private void disableControls()
+        {
+            foreach (Control c in controlsToDisable)
+            {
+                c.Enabled = false;
+            }
+        }
+
+        private void enableControls()
+        {
+            foreach (Control c in controlsToDisable)
+            {
+                c.Enabled = true;
+            }
+            totalSize = 0;
+        }
+
         private void button_Cancel(object sender, EventArgs e)
         {
             killProcess("rsync");
             button.Visible = true;
-            form.Controls.Remove(cancelButton);
+            button.Parent.Controls.Remove(cancelButton);
             outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour arrêtée !"+ Environment.NewLine);
         }
 
@@ -89,13 +116,14 @@ namespace RSync
                     }
                 }
             }
+            enableControls();
         }
 
         private void execute()
         {
             long startTime = DateTime.Now.Ticks;
             long last = 0;
-            long downloaded = 0;
+            long downloaded = 0; 
             Process process;
             ProcessStartInfo processStartInfo;
             processStartInfo = new ProcessStartInfo();
@@ -105,7 +133,7 @@ namespace RSync
             processStartInfo.UseShellExecute = false;
             processStartInfo.Arguments = arguments;
             processStartInfo.FileName = exeName;
-
+   
             process = new Process();
             process.StartInfo = processStartInfo;
             process.EnableRaisingEvents = true;
@@ -123,7 +151,6 @@ namespace RSync
                                 if (s.IndexOf("%") > -1)
                                 {
                                     progressBar.Value = Int32.Parse(s.Substring(0, s.Length - 1));
-                                    FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label11.Text = "Fichier :" + progressBar.Value.ToString() + " % ";
                                 }
                                 if (s.IndexOf(",") > -1)
                                 {
@@ -132,7 +159,6 @@ namespace RSync
                                         last = long.Parse(s.Replace(",", ""));
                                         double dl = Convert.ToDouble(((double)(downloaded + last)) / totalSize);
                                         progressTotal.Value = (int)(dl * 100);
-                                        FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label19.Text = "progression totale :"+progressTotal.Value.ToString() +" %";
                                     }
                                     catch (System.FormatException)
                                     {
@@ -165,25 +191,14 @@ namespace RSync
             form.Invoke((MethodInvoker)delegate()
             {
                 button.Visible = true;
-                form.Controls.Remove(cancelButton);
-                outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour terminée !" + Environment.NewLine);
+                button.Parent.Controls.Remove(cancelButton);
+                outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour terminée !"+ Environment.NewLine);
+                enableControls();
             });
-            FSFLauncherA3.Interface.AlerteVersionArma3();
-            FSFLauncherA3.Interface.AlerteVersionSynchro();
-            progressBar.Value = 0;
-            progressTotal.Value = 0;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label19.Text = "";
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label11.Text = "";
-
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button1.Enabled = true;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button16.Enabled = true;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button35.Enabled = true;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button36.Enabled = true;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button37.Enabled = true;
-            FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.button40.Enabled = true;
+            getInfo(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label8);
         }
 
-        private void getInfo()
+        private void getInfo(Control c)
         {
             Process process;
             ProcessStartInfo processStartInfo;
@@ -216,6 +231,8 @@ namespace RSync
                                         totalSize = long.Parse(s.Replace(",", ""));
                                     }
                                 }
+                                if(c!=null)
+                                    c.Text = String.Format("{0:0.000} Mo", ((float)totalSize / 1000000));
                             }
                         }
                     });
@@ -229,3 +246,7 @@ namespace RSync
         }
     }
 }
+
+
+
+
