@@ -63,7 +63,7 @@ namespace FSFLauncherA3
 
         void label8_TextChanged(object sender, EventArgs e)
         {
-            if (FSFLauncherCore.fenetrePrincipale.label8.Text == "0,000 Mo")
+            if (FSFLauncherCore.fenetrePrincipale.label8.Text.Replace(",",".") == "0.000 Mo")
             {
                 FSFLauncherCore.fenetrePrincipale.label8.Text = "A jours";
                 FSFLauncherCore.fenetrePrincipale.pictureBox25.Image = FSFLauncherA3.Properties.Resources.valide;
