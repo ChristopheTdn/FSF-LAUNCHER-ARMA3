@@ -23,11 +23,18 @@ namespace RSync
         private ProgressBar progressTotal;
         private Button cancelButton;
 
+        private Control outputDisplaySize;
+
         private ArrayList controlsToDisable = new ArrayList();
 
         private long totalSize = 0;
 
         public RSyncCall(Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir)
+            : this(form, button, outputBox, progressTotal, progressBar, exeName, ip, rsyncRemoteDir, localDir, null)
+        {
+        }
+
+        public RSyncCall(Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir, Control outputDisplaySize)
         {
             this.form = form;
             this.button = button;
@@ -35,6 +42,7 @@ namespace RSync
             this.progressTotal = progressTotal;
             this.progressBar = progressBar;
             this.exeName = exeName.FullName;
+            this.outputDisplaySize = outputDisplaySize;
             //"-r -v -z --progress --size-only --chmod=ugo=rwX \"127.0.0.1::RSYNCSERVER\" \"/TESTRSYNC_CLIENT\"");  
             /*
             Il est recommandé d'utiliser :
@@ -42,24 +50,22 @@ namespace RSync
             --chmod=ugo=rwX est important sinon vous ne pourrez pas relire les fichiers dans la destination (droits NTFS verrouillés sans cette option)
             */
             String rsyncLocalDir = "/cygdrive/" + localDir.FullName.Replace(":\\", "/").Replace('\\', '/');
-            this.arguments = "-rvza --progress --delete-after --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
-            this.dryArguments = "-rvzan --stats --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+            this.arguments = "-vza --partial --inplace --progress --delete --bwlimit=0 --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+            this.dryArguments = "-vzan --stats --partial --inplace --progress --delete --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
         }
 
         public void start()
         {
             disableControls();
 
-            new Thread(() => getInfo(null)).Start();
-
+            getInfo();
             outputBox.Clear();
-
             button.Visible = false;
             cancelButton = new Button();
             cancelButton.Size = button.Size;
             cancelButton.Location = button.Location;
-            cancelButton.Text = "Abandonner";
             cancelButton.FlatStyle = FlatStyle.System;
+            cancelButton.Text = "Abandonner";
             cancelButton.Click += button_Cancel;
             button.Parent.Controls.Add(cancelButton);
             new Thread(execute).Start();
@@ -67,7 +73,8 @@ namespace RSync
 
         public void setTotalSize(Control c)
         {
-            new Thread(() => getInfo(c)).Start();
+            outputDisplaySize = c;
+            getInfo();
         }
 
         public void addControlToDisable(Control control)
@@ -97,7 +104,7 @@ namespace RSync
             killProcess("rsync");
             button.Visible = true;
             button.Parent.Controls.Remove(cancelButton);
-            outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour arrêtée !"+ Environment.NewLine);
+            outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour arrêtée !" + Environment.NewLine); 
         }
 
         private void killProcess(String processName)
@@ -123,7 +130,7 @@ namespace RSync
         {
             long startTime = DateTime.Now.Ticks;
             long last = 0;
-            long downloaded = 0; 
+            long downloaded = 0;
             Process process;
             ProcessStartInfo processStartInfo;
             processStartInfo = new ProcessStartInfo();
@@ -133,7 +140,7 @@ namespace RSync
             processStartInfo.UseShellExecute = false;
             processStartInfo.Arguments = arguments;
             processStartInfo.FileName = exeName;
-   
+
             process = new Process();
             process.StartInfo = processStartInfo;
             process.EnableRaisingEvents = true;
@@ -177,7 +184,7 @@ namespace RSync
                         else
                         {
                             if (e.Data != null && e.Data.Length > 0)
-                                outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] " + e.Data + Environment.NewLine);
+                                outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] " + e.Data +Environment.NewLine);
                         }
                     });
                 }
@@ -192,14 +199,21 @@ namespace RSync
             {
                 button.Visible = true;
                 button.Parent.Controls.Remove(cancelButton);
-                outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour terminée !"+ Environment.NewLine);
+                outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour terminée !"+Environment.NewLine);
                 enableControls();
+                getInfo();
             });
-            getInfo(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label8);
         }
 
-        private void getInfo(Control c)
+        public void getInfo()
         {
+            new Thread(getTInfo).Start();
+        }
+
+        private void getTInfo()
+        {
+            if (outputDisplaySize == null) return;
+
             Process process;
             ProcessStartInfo processStartInfo;
             processStartInfo = new ProcessStartInfo();
@@ -231,8 +245,8 @@ namespace RSync
                                         totalSize = long.Parse(s.Replace(",", ""));
                                     }
                                 }
-                                if(c!=null)
-                                    c.Text = String.Format("{0:0.000} Mo", ((float)totalSize / 1000000));
+
+                                outputDisplaySize.Text = String.Format("{0:0.000} Mo", ((float)totalSize / 1000000));
                             }
                         }
                     });
@@ -246,7 +260,3 @@ namespace RSync
         }
     }
 }
-
-
-
-

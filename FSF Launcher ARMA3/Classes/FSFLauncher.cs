@@ -726,7 +726,8 @@ namespace FSFLauncherA3
             //String remoteServer = "127.0.0.1";
             String remoteServer = "server2.clan-fsf.fr";
             string remoteDir = typeSynchro;
-            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, FSFLauncherCore.fenetrePrincipale.progressBar2, FSFLauncherCore.fenetrePrincipale.progressBar3, rsyncExe, remoteServer, remoteDir, localDir);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
+            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, FSFLauncherCore.fenetrePrincipale.progressBar2, FSFLauncherCore.fenetrePrincipale.progressBar3, rsyncExe, remoteServer, remoteDir, localDir, FSFLauncherCore.fenetrePrincipale.label8);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
+            rSyncCall.setTotalSize(FSFLauncherCore.fenetrePrincipale.label8);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button16);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button1);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button35);
@@ -734,7 +735,6 @@ namespace FSFLauncherA3
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button37);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button40);
             rSyncCall.start();
-
         }
         #endregion
 

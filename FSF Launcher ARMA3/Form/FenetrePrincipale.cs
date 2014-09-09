@@ -65,7 +65,7 @@ namespace FSFLauncherA3
         {
             if (FSFLauncherCore.fenetrePrincipale.label8.Text.Replace(",",".") == "0.000 Mo")
             {
-                FSFLauncherCore.fenetrePrincipale.label8.Text = "A jours";
+                FSFLauncherCore.fenetrePrincipale.label8.Text = "A jour";
                 FSFLauncherCore.fenetrePrincipale.pictureBox25.Image = FSFLauncherA3.Properties.Resources.valide;
                 FSFLauncherCore.fenetrePrincipale.label8.ForeColor = System.Drawing.Color.Black;
             }
