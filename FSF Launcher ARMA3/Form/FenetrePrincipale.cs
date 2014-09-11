@@ -35,7 +35,7 @@ namespace FSFLauncherA3
 
 
             label8.TextChanged += label8_TextChanged;
-
+            labelSynchronisationInvisible.EnabledChanged += labelSynchronisationInvisible_EnabledChanged;
 
 
             // PREPARATION INITIALISATION INTERFACE
@@ -59,6 +59,17 @@ namespace FSFLauncherA3
             Interface.dessineInterface();
             splashscreen.ShowDialog();
             if (argumentFSFLauncher.Length > 0) ResidentAdmin.initialiseTrayIcon();
+        }
+
+        void labelSynchronisationInvisible_EnabledChanged(object sender, EventArgs e)
+        {
+            if (labelSynchronisationInvisible.Enabled == true)
+            {
+                FSFLauncherA3.Interface.AfficheSynchroActive();
+                FSFLauncherA3.Interface.initialiseListeProfil();
+                FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.initialiseProfilActif();
+                FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.configureInstallationMODS();
+            }
         }
 
         void label8_TextChanged(object sender, EventArgs e)

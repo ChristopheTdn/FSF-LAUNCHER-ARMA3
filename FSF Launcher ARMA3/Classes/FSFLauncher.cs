@@ -735,6 +735,7 @@ namespace FSFLauncherA3
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button37);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button40);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.comboBox4);
+            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.labelSynchronisationInvisible);
             rSyncCall.start();
             
  

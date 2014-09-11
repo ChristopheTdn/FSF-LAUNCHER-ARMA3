@@ -229,6 +229,7 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.labelSynchronisationInvisible = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1581,6 +1582,7 @@
             // SynchroZONE
             // 
             this.SynchroZONE.BackColor = System.Drawing.Color.Gainsboro;
+            this.SynchroZONE.Controls.Add(this.labelSynchronisationInvisible);
             this.SynchroZONE.Controls.Add(this.label19);
             this.SynchroZONE.Controls.Add(this.progressBar3);
             this.SynchroZONE.Controls.Add(this.progressBar2);
@@ -1831,6 +1833,11 @@
             // cultureManager1
             // 
             this.cultureManager1.ManagedControl = this;
+            // 
+            // labelSynchronisationInvisible
+            // 
+            resources.ApplyResources(this.labelSynchronisationInvisible, "labelSynchronisationInvisible");
+            this.labelSynchronisationInvisible.Name = "labelSynchronisationInvisible";
             // 
             // FenetrePrincipale
             // 
@@ -2136,6 +2143,7 @@
         internal System.Windows.Forms.Button button36;
         internal System.Windows.Forms.Button button37;
         public System.Windows.Forms.Button button40;
+        public System.Windows.Forms.Label labelSynchronisationInvisible;
     }
 }
 

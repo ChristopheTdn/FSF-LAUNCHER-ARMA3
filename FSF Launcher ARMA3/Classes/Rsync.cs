@@ -204,12 +204,7 @@ namespace RSync
                 progressBar.Value = 0;
                 enableControls();
                 getInfo();
-                //// PARTIE EXTERNE 
-
-                FSFLauncherA3.Interface.AfficheSynchroActive();
-                FSFLauncherA3.Interface.initialiseListeProfil();
-                FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.initialiseProfilActif();
-                FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.configureInstallationMODS();
+                
                 
 
             });
