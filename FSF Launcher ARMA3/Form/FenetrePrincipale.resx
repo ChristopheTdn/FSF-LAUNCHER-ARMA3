@@ -5063,16 +5063,16 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 420</value>
+    <value>33, 423</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 13</value>
+    <value>179, 13</value>
   </data>
   <data name="label19.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
   <data name="label19.Text" xml:space="preserve">
-    <value>                                       </value>
+    <value>Progression Fichier en cours :       </value>
   </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
@@ -5090,10 +5090,10 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="progressBar3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 420</value>
+    <value>218, 423</value>
   </data>
   <data name="progressBar3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 13</value>
+    <value>243, 13</value>
   </data>
   <data name="progressBar3.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -5114,10 +5114,10 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="progressBar2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 439</value>
+    <value>218, 451</value>
   </data>
   <data name="progressBar2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 13</value>
+    <value>243, 17</value>
   </data>
   <data name="progressBar2.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -5141,16 +5141,16 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 439</value>
+    <value>33, 455</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 13</value>
+    <value>219, 13</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>                                                </value>
+    <value>Progression Totale :                                     </value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>

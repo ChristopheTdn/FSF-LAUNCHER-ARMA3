@@ -104,7 +104,7 @@ namespace RSync
             killProcess("rsync");
             button.Visible = true;
             button.Parent.Controls.Remove(cancelButton);
-            outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour arrêtée !" + Environment.NewLine); 
+            outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour arrêtée !" + Environment.NewLine);
         }
 
         private void killProcess(String processName)
@@ -200,11 +200,20 @@ namespace RSync
                 button.Visible = true;
                 button.Parent.Controls.Remove(cancelButton);
                 outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour terminée !"+Environment.NewLine);
+                progressTotal.Value = 0;
+                progressBar.Value = 0;
                 enableControls();
                 getInfo();
+                //// PARTIE EXTERNE 
+
+                FSFLauncherA3.Interface.AfficheSynchroActive();
+                FSFLauncherA3.Interface.initialiseListeProfil();
+                FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.initialiseProfilActif();
+                FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.configureInstallationMODS();
+                
+
             });
         }
-
         public void getInfo()
         {
             new Thread(getTInfo).Start();

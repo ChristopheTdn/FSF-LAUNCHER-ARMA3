@@ -113,7 +113,7 @@ namespace FSFLauncherA3
             if (langue == "es-ES") { radioButton4.Checked = true; };
         }
         
-        void initialiseProfilActif()
+        public void initialiseProfilActif()
         {
             comboBox4.SelectedIndex = 0;
             int indexNom = 0;          
@@ -572,7 +572,7 @@ namespace FSFLauncherA3
                 return false;
             }
         }
-        void configureInstallationMODS()
+        public void configureInstallationMODS()
         {
             string filename;
             // Test Raven A
