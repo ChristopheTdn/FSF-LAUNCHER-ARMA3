@@ -190,6 +190,7 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.SynchroZONE = new System.Windows.Forms.TabPage();
+            this.labelSynchronisationInvisible = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
@@ -229,7 +230,8 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.labelSynchronisationInvisible = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.LabelVitesseSynchro = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1582,6 +1584,8 @@
             // SynchroZONE
             // 
             this.SynchroZONE.BackColor = System.Drawing.Color.Gainsboro;
+            this.SynchroZONE.Controls.Add(this.LabelVitesseSynchro);
+            this.SynchroZONE.Controls.Add(this.label10);
             this.SynchroZONE.Controls.Add(this.labelSynchronisationInvisible);
             this.SynchroZONE.Controls.Add(this.label19);
             this.SynchroZONE.Controls.Add(this.progressBar3);
@@ -1592,6 +1596,11 @@
             this.SynchroZONE.Controls.Add(this.textBox11);
             resources.ApplyResources(this.SynchroZONE, "SynchroZONE");
             this.SynchroZONE.Name = "SynchroZONE";
+            // 
+            // labelSynchronisationInvisible
+            // 
+            resources.ApplyResources(this.labelSynchronisationInvisible, "labelSynchronisationInvisible");
+            this.labelSynchronisationInvisible.Name = "labelSynchronisationInvisible";
             // 
             // label19
             // 
@@ -1834,10 +1843,15 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
-            // labelSynchronisationInvisible
+            // label10
             // 
-            resources.ApplyResources(this.labelSynchronisationInvisible, "labelSynchronisationInvisible");
-            this.labelSynchronisationInvisible.Name = "labelSynchronisationInvisible";
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // LabelVitesseSynchro
+            // 
+            resources.ApplyResources(this.LabelVitesseSynchro, "LabelVitesseSynchro");
+            this.LabelVitesseSynchro.Name = "LabelVitesseSynchro";
             // 
             // FenetrePrincipale
             // 
@@ -2144,6 +2158,8 @@
         internal System.Windows.Forms.Button button37;
         public System.Windows.Forms.Button button40;
         public System.Windows.Forms.Label labelSynchronisationInvisible;
+        internal System.Windows.Forms.Label LabelVitesseSynchro;
+        internal System.Windows.Forms.Label label10;
     }
 }
 

@@ -459,6 +459,66 @@
   <data name="&gt;&gt;Options.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="LabelVitesseSynchro.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelVitesseSynchro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LabelVitesseSynchro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 479</value>
+  </data>
+  <data name="LabelVitesseSynchro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 13</value>
+  </data>
+  <data name="LabelVitesseSynchro.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="LabelVitesseSynchro.Text" xml:space="preserve">
+    <value>0.00Kb/s                     </value>
+  </data>
+  <data name="&gt;&gt;LabelVitesseSynchro.Name" xml:space="preserve">
+    <value>LabelVitesseSynchro</value>
+  </data>
+  <data name="&gt;&gt;LabelVitesseSynchro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelVitesseSynchro.Parent" xml:space="preserve">
+    <value>SynchroZONE</value>
+  </data>
+  <data name="&gt;&gt;LabelVitesseSynchro.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 479</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 13</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Vitesse :                                     </value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>SynchroZONE</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="labelSynchronisationInvisible.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -469,7 +529,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelSynchronisationInvisible.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 479</value>
+    <value>334, 479</value>
   </data>
   <data name="labelSynchronisationInvisible.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 13</value>
@@ -493,7 +553,7 @@
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;labelSynchronisationInvisible.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -523,7 +583,7 @@
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="progressBar3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -547,7 +607,7 @@
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="progressBar2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -571,7 +631,7 @@
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -580,7 +640,7 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 455</value>
+    <value>79, 455</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 13</value>
@@ -601,7 +661,7 @@
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -634,7 +694,7 @@
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;button40.Name" xml:space="preserve">
     <value>button40</value>
@@ -730,7 +790,7 @@
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;groupBox8.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="textBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 236</value>
@@ -757,7 +817,7 @@
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;textBox11.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="SynchroZONE.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
