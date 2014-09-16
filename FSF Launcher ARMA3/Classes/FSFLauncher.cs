@@ -126,7 +126,7 @@ namespace FSFLauncherA3
         private static void TimerSynchroEvent(Object myObject, EventArgs myEventArgs)
         {
             timerSynchro.Stop();
-            Interface.tailleSynchroEnLigne();
+            Interface.tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label8,"");
             timerSynchro.Start();
         }
         
@@ -685,13 +685,7 @@ namespace FSFLauncherA3
          *           SYNCHRONISATION      
          */
         #region Synchronisation
-        static private void effaceProgressBar()
-        {
-            fenetrePrincipale.label11.Text = "";
-            fenetrePrincipale.label19.Text = "";
-            fenetrePrincipale.progressBar2.Value = 0;
-            fenetrePrincipale.progressBar3.Value = 0;
-        }
+ 
         static public void FileTransferred(object sender, TransferEventArgs e)
         {
             if (e.Error == null)
@@ -711,35 +705,27 @@ namespace FSFLauncherA3
                 }
             }
         }
-        static public void FileTransferProgress(object sender, FileTransferProgressEventArgs e)
-        {
 
-            fenetrePrincipale.label11.Text = ": " + e.FileName.Replace(cheminARMA3, "");
-            fenetrePrincipale.label19.Text = ": " + Path.GetDirectoryName(e.Directory).Replace (cheminARMA3,"");
-            fenetrePrincipale.progressBar2.Value = int.Parse(Math.Truncate(e.FileProgress * 100).ToString());
-            fenetrePrincipale.progressBar3.Value = int.Parse(Math.Truncate(e.OverallProgress * 100).ToString());
-        }
-        static public void synchroRsync(string typeSynchro, Button BoutonSender)
+
+        static public void synchroRsyncSpec(string NomRep, Button BoutonSender, ProgressBar ProgressDetail,ProgressBar ProgressGeneral,Control labelTailleSynchro,Control labelVitesseSynchro)
         {
-            DirectoryInfo localDir = new DirectoryInfo(cheminARMA3+@"\@FSF");
+            DirectoryInfo localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF\" + NomRep);
             FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
             //String remoteServer = "127.0.0.1";
             String remoteServer = "server2.clan-fsf.fr";
-            string remoteDir = typeSynchro;
-            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, FSFLauncherCore.fenetrePrincipale.progressBar2, FSFLauncherCore.fenetrePrincipale.progressBar3, rsyncExe, remoteServer, remoteDir, localDir, FSFLauncherCore.fenetrePrincipale.label8,FSFLauncherCore.fenetrePrincipale.LabelVitesseSynchro);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
-            rSyncCall.setTotalSize(FSFLauncherCore.fenetrePrincipale.label8);
+            string remoteDir = "SYNCHRO_" + FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro").ToUpper() + NomRep.ToUpper(); ;
+            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, ProgressDetail,ProgressGeneral, rsyncExe, remoteServer, remoteDir, localDir, labelTailleSynchro, labelVitesseSynchro);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
+            rSyncCall.setTotalSize(labelTailleSynchro);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button16);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button1);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button35);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button36);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button37);
-            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button40);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.comboBox4);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.labelSynchronisationInvisible);
             rSyncCall.start();
-            
- 
         }
+
         #endregion
 
         /*

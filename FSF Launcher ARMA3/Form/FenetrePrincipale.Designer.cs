@@ -190,20 +190,52 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.SynchroZONE = new System.Windows.Forms.TabPage();
-            this.labelSynchronisationInvisible = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button40 = new System.Windows.Forms.Button();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.progressBar15 = new System.Windows.Forms.ProgressBar();
+            this.progressBar16 = new System.Windows.Forms.ProgressBar();
+            this.progressBar13 = new System.Windows.Forms.ProgressBar();
+            this.progressBar14 = new System.Windows.Forms.ProgressBar();
+            this.progressBar10 = new System.Windows.Forms.ProgressBar();
+            this.progressBar12 = new System.Windows.Forms.ProgressBar();
+            this.progressBar8 = new System.Windows.Forms.ProgressBar();
+            this.progressBar9 = new System.Windows.Forms.ProgressBar();
+            this.progressBar6 = new System.Windows.Forms.ProgressBar();
+            this.progressBar7 = new System.Windows.Forms.ProgressBar();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar5 = new System.Windows.Forms.ProgressBar();
+            this.progressBar11 = new System.Windows.Forms.ProgressBar();
+            this.label51 = new System.Windows.Forms.Label();
+            this.button45 = new System.Windows.Forms.Button();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.labelSynchronisationInvisible = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -230,8 +262,9 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.label10 = new System.Windows.Forms.Label();
-            this.LabelVitesseSynchro = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -291,13 +324,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SynchroZONE.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl2
@@ -1584,90 +1615,60 @@
             // SynchroZONE
             // 
             this.SynchroZONE.BackColor = System.Drawing.Color.Gainsboro;
-            this.SynchroZONE.Controls.Add(this.LabelVitesseSynchro);
-            this.SynchroZONE.Controls.Add(this.label10);
-            this.SynchroZONE.Controls.Add(this.labelSynchronisationInvisible);
-            this.SynchroZONE.Controls.Add(this.label19);
-            this.SynchroZONE.Controls.Add(this.progressBar3);
-            this.SynchroZONE.Controls.Add(this.progressBar2);
-            this.SynchroZONE.Controls.Add(this.label11);
+            this.SynchroZONE.Controls.Add(this.groupBox4);
+            this.SynchroZONE.Controls.Add(this.button45);
             this.SynchroZONE.Controls.Add(this.label14);
-            this.SynchroZONE.Controls.Add(this.groupBox8);
+            this.SynchroZONE.Controls.Add(this.button44);
+            this.SynchroZONE.Controls.Add(this.button43);
             this.SynchroZONE.Controls.Add(this.textBox11);
+            this.SynchroZONE.Controls.Add(this.button16);
+            this.SynchroZONE.Controls.Add(this.button42);
+            this.SynchroZONE.Controls.Add(this.labelSynchronisationInvisible);
+            this.SynchroZONE.Controls.Add(this.button41);
+            this.SynchroZONE.Controls.Add(this.label15);
+            this.SynchroZONE.Controls.Add(this.button26);
+            this.SynchroZONE.Controls.Add(this.label26);
+            this.SynchroZONE.Controls.Add(this.button25);
+            this.SynchroZONE.Controls.Add(this.label27);
+            this.SynchroZONE.Controls.Add(this.progressBar15);
+            this.SynchroZONE.Controls.Add(this.label28);
+            this.SynchroZONE.Controls.Add(this.progressBar16);
+            this.SynchroZONE.Controls.Add(this.label29);
+            this.SynchroZONE.Controls.Add(this.progressBar13);
+            this.SynchroZONE.Controls.Add(this.label30);
+            this.SynchroZONE.Controls.Add(this.progressBar14);
+            this.SynchroZONE.Controls.Add(this.label38);
+            this.SynchroZONE.Controls.Add(this.progressBar10);
+            this.SynchroZONE.Controls.Add(this.label39);
+            this.SynchroZONE.Controls.Add(this.progressBar12);
+            this.SynchroZONE.Controls.Add(this.label40);
+            this.SynchroZONE.Controls.Add(this.progressBar8);
+            this.SynchroZONE.Controls.Add(this.label42);
+            this.SynchroZONE.Controls.Add(this.progressBar9);
+            this.SynchroZONE.Controls.Add(this.label43);
+            this.SynchroZONE.Controls.Add(this.progressBar6);
+            this.SynchroZONE.Controls.Add(this.label44);
+            this.SynchroZONE.Controls.Add(this.progressBar7);
+            this.SynchroZONE.Controls.Add(this.progressBar4);
+            this.SynchroZONE.Controls.Add(this.progressBar1);
+            this.SynchroZONE.Controls.Add(this.label45);
+            this.SynchroZONE.Controls.Add(this.progressBar5);
+            this.SynchroZONE.Controls.Add(this.label46);
+            this.SynchroZONE.Controls.Add(this.progressBar11);
+            this.SynchroZONE.Controls.Add(this.label47);
+            this.SynchroZONE.Controls.Add(this.label51);
+            this.SynchroZONE.Controls.Add(this.label48);
+            this.SynchroZONE.Controls.Add(this.label52);
+            this.SynchroZONE.Controls.Add(this.label49);
+            this.SynchroZONE.Controls.Add(this.label53);
+            this.SynchroZONE.Controls.Add(this.label50);
             resources.ApplyResources(this.SynchroZONE, "SynchroZONE");
             this.SynchroZONE.Name = "SynchroZONE";
-            // 
-            // labelSynchronisationInvisible
-            // 
-            resources.ApplyResources(this.labelSynchronisationInvisible, "labelSynchronisationInvisible");
-            this.labelSynchronisationInvisible.Name = "labelSynchronisationInvisible";
-            // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
-            // 
-            // progressBar3
-            // 
-            resources.ApplyResources(this.progressBar3, "progressBar3");
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Step = 100;
-            this.progressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            // 
-            // progressBar2
-            // 
-            resources.ApplyResources(this.progressBar2, "progressBar2");
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Step = 100;
-            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
             // 
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.button40);
-            this.groupBox8.Controls.Add(this.pictureBox32);
-            this.groupBox8.Controls.Add(this.pictureBox31);
-            this.groupBox8.Controls.Add(this.label16);
-            this.groupBox8.Controls.Add(this.button16);
-            this.groupBox8.Controls.Add(this.label1);
-            resources.ApplyResources(this.groupBox8, "groupBox8");
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.TabStop = false;
-            // 
-            // button40
-            // 
-            resources.ApplyResources(this.button40, "button40");
-            this.button40.Name = "button40";
-            this.button40.UseVisualStyleBackColor = true;
-            this.button40.Click += new System.EventHandler(this.button40_Click_1);
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Image = global::FSFLauncherA3.Properties.Resources.off;
-            resources.ApplyResources(this.pictureBox32, "pictureBox32");
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.TabStop = false;
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Image = global::FSFLauncherA3.Properties.Resources.off;
-            resources.ApplyResources(this.pictureBox31, "pictureBox31");
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.TabStop = false;
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
             // 
             // button16
             // 
@@ -1676,15 +1677,267 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
-            // label1
+            // progressBar15
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.progressBar15, "progressBar15");
+            this.progressBar15.Name = "progressBar15";
+            this.progressBar15.Step = 100;
+            this.progressBar15.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar16
+            // 
+            resources.ApplyResources(this.progressBar16, "progressBar16");
+            this.progressBar16.Name = "progressBar16";
+            this.progressBar16.Step = 100;
+            this.progressBar16.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar13
+            // 
+            resources.ApplyResources(this.progressBar13, "progressBar13");
+            this.progressBar13.Name = "progressBar13";
+            this.progressBar13.Step = 100;
+            this.progressBar13.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar14
+            // 
+            resources.ApplyResources(this.progressBar14, "progressBar14");
+            this.progressBar14.Name = "progressBar14";
+            this.progressBar14.Step = 100;
+            this.progressBar14.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar10
+            // 
+            resources.ApplyResources(this.progressBar10, "progressBar10");
+            this.progressBar10.Name = "progressBar10";
+            this.progressBar10.Step = 100;
+            this.progressBar10.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar12
+            // 
+            resources.ApplyResources(this.progressBar12, "progressBar12");
+            this.progressBar12.Name = "progressBar12";
+            this.progressBar12.Step = 100;
+            this.progressBar12.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar8
+            // 
+            resources.ApplyResources(this.progressBar8, "progressBar8");
+            this.progressBar8.Name = "progressBar8";
+            this.progressBar8.Step = 100;
+            this.progressBar8.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar9
+            // 
+            resources.ApplyResources(this.progressBar9, "progressBar9");
+            this.progressBar9.Name = "progressBar9";
+            this.progressBar9.Step = 100;
+            this.progressBar9.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar6
+            // 
+            resources.ApplyResources(this.progressBar6, "progressBar6");
+            this.progressBar6.Name = "progressBar6";
+            this.progressBar6.Step = 100;
+            this.progressBar6.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar7
+            // 
+            resources.ApplyResources(this.progressBar7, "progressBar7");
+            this.progressBar7.Name = "progressBar7";
+            this.progressBar7.Step = 100;
+            this.progressBar7.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar1
+            // 
+            resources.ApplyResources(this.progressBar1, "progressBar1");
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Step = 100;
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar5
+            // 
+            resources.ApplyResources(this.progressBar5, "progressBar5");
+            this.progressBar5.Name = "progressBar5";
+            this.progressBar5.Step = 100;
+            this.progressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar11
+            // 
+            resources.ApplyResources(this.progressBar11, "progressBar11");
+            this.progressBar11.Name = "progressBar11";
+            this.progressBar11.Step = 100;
+            this.progressBar11.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // label51
+            // 
+            resources.ApplyResources(this.label51, "label51");
+            this.label51.Name = "label51";
+            // 
+            // button45
+            // 
+            resources.ApplyResources(this.button45, "button45");
+            this.button45.Name = "button45";
+            this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
+            // 
+            // label52
+            // 
+            resources.ApplyResources(this.label52, "label52");
+            this.label52.Name = "label52";
+            // 
+            // label53
+            // 
+            resources.ApplyResources(this.label53, "label53");
+            this.label53.Name = "label53";
+            // 
+            // label50
+            // 
+            resources.ApplyResources(this.label50, "label50");
+            this.label50.Name = "label50";
+            // 
+            // label49
+            // 
+            resources.ApplyResources(this.label49, "label49");
+            this.label49.Name = "label49";
+            // 
+            // label48
+            // 
+            resources.ApplyResources(this.label48, "label48");
+            this.label48.Name = "label48";
+            // 
+            // label47
+            // 
+            resources.ApplyResources(this.label47, "label47");
+            this.label47.Name = "label47";
+            // 
+            // label46
+            // 
+            resources.ApplyResources(this.label46, "label46");
+            this.label46.Name = "label46";
+            // 
+            // label45
+            // 
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.Name = "label45";
+            // 
+            // progressBar4
+            // 
+            resources.ApplyResources(this.progressBar4, "progressBar4");
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Step = 100;
+            this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // button44
+            // 
+            resources.ApplyResources(this.button44, "button44");
+            this.button44.Name = "button44";
+            this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
+            // 
+            // button43
+            // 
+            resources.ApplyResources(this.button43, "button43");
+            this.button43.Name = "button43";
+            this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
+            // 
+            // button42
+            // 
+            resources.ApplyResources(this.button42, "button42");
+            this.button42.Name = "button42";
+            this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
+            // 
+            // button41
+            // 
+            resources.ApplyResources(this.button41, "button41");
+            this.button41.Name = "button41";
+            this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
+            // 
+            // button26
+            // 
+            resources.ApplyResources(this.button26, "button26");
+            this.button26.Name = "button26";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // button25
+            // 
+            resources.ApplyResources(this.button25, "button25");
+            this.button25.Name = "button25";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Name = "label43";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.Name = "label38";
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.Name = "label28";
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
             // 
             // textBox11
             // 
             resources.ApplyResources(this.textBox11, "textBox11");
             this.textBox11.Name = "textBox11";
+            // 
+            // labelSynchronisationInvisible
+            // 
+            resources.ApplyResources(this.labelSynchronisationInvisible, "labelSynchronisationInvisible");
+            this.labelSynchronisationInvisible.Name = "labelSynchronisationInvisible";
             // 
             // label31
             // 
@@ -1843,15 +2096,29 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
-            // label10
+            // groupBox4
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
+            this.groupBox4.Controls.Add(this.radioButton8);
+            this.groupBox4.Controls.Add(this.radioButton7);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
             // 
-            // LabelVitesseSynchro
+            // radioButton7
             // 
-            resources.ApplyResources(this.LabelVitesseSynchro, "LabelVitesseSynchro");
-            this.LabelVitesseSynchro.Name = "LabelVitesseSynchro";
+            resources.ApplyResources(this.radioButton7, "radioButton7");
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.TabStop = true;
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            // 
+            // radioButton8
+            // 
+            resources.ApplyResources(this.radioButton8, "radioButton8");
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.TabStop = true;
+            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
             // 
             // FenetrePrincipale
             // 
@@ -1942,15 +2209,13 @@
             this.groupBox1.PerformLayout();
             this.SynchroZONE.ResumeLayout(false);
             this.SynchroZONE.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1991,10 +2256,6 @@
         internal System.Windows.Forms.RadioButton radioButton20;
         internal System.Windows.Forms.ComboBox comboBox2;
         internal System.Windows.Forms.TextBox textBox11;
-        internal System.Windows.Forms.Label label11;
-        internal System.Windows.Forms.ProgressBar progressBar3;
-        internal System.Windows.Forms.ProgressBar progressBar2;
-        internal System.Windows.Forms.Label label19;
         internal System.Windows.Forms.PictureBox pictureBox1;
         internal System.Windows.Forms.TabPage ModsFSF;
         internal System.Windows.Forms.TabPage Options;
@@ -2041,7 +2302,6 @@
         internal System.Windows.Forms.LinkLabel linkLabel3;
         internal System.Windows.Forms.Label label2;
         internal System.Windows.Forms.PictureBox pictureBox13;
-        internal System.Windows.Forms.Label label16;
         internal System.Windows.Forms.Button button30;
         internal System.Windows.Forms.Button button29;
         internal System.Windows.Forms.Button button32;
@@ -2050,7 +2310,6 @@
         internal System.Windows.Forms.Label label12;
         internal System.Windows.Forms.Label label17;
         internal System.Windows.Forms.Label label20;
-        internal System.Windows.Forms.GroupBox groupBox8;
         internal System.Windows.Forms.Label label14;
         internal System.Windows.Forms.TabPage tabPage8;
         internal System.Windows.Forms.Button button13;
@@ -2115,9 +2374,6 @@
         internal System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label9;
         internal System.Windows.Forms.Button button16;
-        internal System.Windows.Forms.Label label1;
-        internal System.Windows.Forms.PictureBox pictureBox32;
-        internal System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.TabPage tabPage5;
         internal System.Windows.Forms.PictureBox pictureBox33;
         internal System.Windows.Forms.Button button20;
@@ -2156,10 +2412,52 @@
         internal System.Windows.Forms.Button button35;
         internal System.Windows.Forms.Button button36;
         internal System.Windows.Forms.Button button37;
-        public System.Windows.Forms.Button button40;
         public System.Windows.Forms.Label labelSynchronisationInvisible;
-        internal System.Windows.Forms.Label LabelVitesseSynchro;
-        internal System.Windows.Forms.Label label10;
+        internal System.Windows.Forms.Label label44;
+        internal System.Windows.Forms.Label label43;
+        internal System.Windows.Forms.Label label42;
+        internal System.Windows.Forms.Label label40;
+        internal System.Windows.Forms.Label label39;
+        internal System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label15;
+        internal System.Windows.Forms.ProgressBar progressBar4;
+        public System.Windows.Forms.Button button44;
+        public System.Windows.Forms.Button button43;
+        public System.Windows.Forms.Button button42;
+        public System.Windows.Forms.Button button41;
+        public System.Windows.Forms.Button button26;
+        public System.Windows.Forms.Button button25;
+        internal System.Windows.Forms.Label label50;
+        internal System.Windows.Forms.Label label49;
+        internal System.Windows.Forms.Label label48;
+        internal System.Windows.Forms.Label label47;
+        internal System.Windows.Forms.Label label46;
+        internal System.Windows.Forms.Label label45;
+        internal System.Windows.Forms.Label label51;
+        public System.Windows.Forms.Button button45;
+        internal System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        internal System.Windows.Forms.ProgressBar progressBar15;
+        internal System.Windows.Forms.ProgressBar progressBar16;
+        internal System.Windows.Forms.ProgressBar progressBar13;
+        internal System.Windows.Forms.ProgressBar progressBar14;
+        internal System.Windows.Forms.ProgressBar progressBar10;
+        internal System.Windows.Forms.ProgressBar progressBar12;
+        internal System.Windows.Forms.ProgressBar progressBar8;
+        internal System.Windows.Forms.ProgressBar progressBar9;
+        internal System.Windows.Forms.ProgressBar progressBar6;
+        internal System.Windows.Forms.ProgressBar progressBar7;
+        internal System.Windows.Forms.ProgressBar progressBar1;
+        internal System.Windows.Forms.ProgressBar progressBar5;
+        internal System.Windows.Forms.ProgressBar progressBar11;
+        private System.Windows.Forms.GroupBox groupBox4;
+        internal System.Windows.Forms.RadioButton radioButton8;
+        internal System.Windows.Forms.RadioButton radioButton7;
     }
 }
 

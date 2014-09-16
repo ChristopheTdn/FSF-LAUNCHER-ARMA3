@@ -35,6 +35,14 @@ namespace FSFLauncherA3
 
 
             label8.TextChanged += label8_TextChanged;
+
+            label45.TextChanged += label45_TextChanged;
+            label46.TextChanged += label46_TextChanged;
+            label47.TextChanged += label47_TextChanged;
+            label48.TextChanged += label48_TextChanged;
+            label49.TextChanged += label49_TextChanged;
+            label50.TextChanged += label50_TextChanged;
+            label51.TextChanged += label51_TextChanged;
             labelSynchronisationInvisible.EnabledChanged += labelSynchronisationInvisible_EnabledChanged;
 
 
@@ -61,6 +69,8 @@ namespace FSFLauncherA3
             if (argumentFSFLauncher.Length > 0) ResidentAdmin.initialiseTrayIcon();
         }
 
+
+
         void labelSynchronisationInvisible_EnabledChanged(object sender, EventArgs e)
         {
             if (labelSynchronisationInvisible.Enabled == true)
@@ -74,6 +84,7 @@ namespace FSFLauncherA3
 
         void label8_TextChanged(object sender, EventArgs e)
         {
+            // Taille generale
             if (FSFLauncherCore.fenetrePrincipale.label8.Text.Replace(",",".") == "0.000 Mo")
             {
                 FSFLauncherCore.fenetrePrincipale.label8.Text = "A jour";
@@ -86,9 +97,100 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.label8.ForeColor = System.Drawing.Color.Red;
             }
         }
-        
 
 
+                void label45_TextChanged(object sender, EventArgs e)
+                {
+                    // Taille generale
+                    if (FSFLauncherCore.fenetrePrincipale.label45.Text.Replace(",", ".") == "0.000 Mo")
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label45.Text = "A jour";
+                        FSFLauncherCore.fenetrePrincipale.label45.ForeColor = System.Drawing.Color.Black;
+                    }
+                    else
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label45.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
+                void label46_TextChanged(object sender, EventArgs e)
+                {
+                    // Taille generale
+                    if (FSFLauncherCore.fenetrePrincipale.label46.Text.Replace(",", ".") == "0.000 Mo")
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label46.Text = "A jour";
+                        FSFLauncherCore.fenetrePrincipale.label46.ForeColor = System.Drawing.Color.Black;
+                    }
+                    else
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label46.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
+                void label47_TextChanged(object sender, EventArgs e)
+                {
+                    // Taille generale
+                    if (FSFLauncherCore.fenetrePrincipale.label47.Text.Replace(",", ".") == "0.000 Mo")
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label47.Text = "A jour";
+                        FSFLauncherCore.fenetrePrincipale.label47.ForeColor = System.Drawing.Color.Black;
+                    }
+                    else
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label47.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
+                void label48_TextChanged(object sender, EventArgs e)
+                {
+                    // Taille generale
+                    if (FSFLauncherCore.fenetrePrincipale.label48.Text.Replace(",", ".") == "0.000 Mo")
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label48.Text = "A jour";
+                        FSFLauncherCore.fenetrePrincipale.label48.ForeColor = System.Drawing.Color.Black;
+                    }
+                    else
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label48.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
+                void label49_TextChanged(object sender, EventArgs e)
+                {
+                    // Taille generale
+                    if (FSFLauncherCore.fenetrePrincipale.label49.Text.Replace(",", ".") == "0.000 Mo")
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label49.Text = "A jour";
+                        FSFLauncherCore.fenetrePrincipale.label49.ForeColor = System.Drawing.Color.Black;
+                    }
+                    else
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label49.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
+
+                void label50_TextChanged(object sender, EventArgs e)
+                {
+                    // Taille generale
+                    if (FSFLauncherCore.fenetrePrincipale.label50.Text.Replace(",", ".") == "0.000 Mo")
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label50.Text = "A jour";
+                        FSFLauncherCore.fenetrePrincipale.label50.ForeColor = System.Drawing.Color.Black;
+                    }
+                    else
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label50.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
+                void label51_TextChanged(object sender, EventArgs e)
+                {
+                    // Taille generale
+                    if (FSFLauncherCore.fenetrePrincipale.label51.Text.Replace(",", ".") == "0.000 Mo")
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label51.Text = "A jour";
+                        FSFLauncherCore.fenetrePrincipale.label51.ForeColor = System.Drawing.Color.Black;
+                    }
+                    else
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label51.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
         /***********************************
          
                 Procedures PERSO
@@ -1063,24 +1165,7 @@ namespace FSFLauncherA3
             splashscreen.Close();
         }
 
-        private void button16_Click(object sender, EventArgs e)
-        {
-            Form dialogue = new Dial_LanceSynchroOfficielle();
-            dialogue.ShowDialog();
-            if (FSFLauncherCore.dialogueReponse)
-            {
-                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "officielle");
-                Interface.AfficheSynchroActive();
-                FSFLauncherCore.synchroRsync("SYNCHRO_OFFICIELLE", (Button)sender);
-                Interface.initialiseListeProfil();
-                initialiseProfilActif();
-                configureInstallationMODS();
-            }
-            else
-            {
-                textBox11.Text = "Break...";
-            }
-        }
+
 
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -1261,25 +1346,70 @@ namespace FSFLauncherA3
 
         private void button40_Click_1(object sender, EventArgs e)
         {
-            Form dialogue = new Dial_LanceSynchroBeta();
-            dialogue.ShowDialog();
-            if (FSFLauncherCore.dialogueReponse)
-            {
-                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "beta");
-                FSFLauncherCore.synchroRsync("SYNCHRO_BETA",(Button)sender);
-                Interface.AfficheSynchroActive();
-                Interface.initialiseListeProfil();
-                initialiseProfilActif();
-                configureInstallationMODS();
-            }
-            else
-            {
-                textBox11.Text = "Break...";
-            }
+        }
+        private void button16_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.synchroRsyncSpec("@TEMPLATE", button25, progressBar11, progressBar4, label45, label38);
+            FSFLauncherCore.synchroRsyncSpec("@ISLANDS", button26, progressBar1, progressBar5, label46, label39);
+            FSFLauncherCore.synchroRsyncSpec("@MATERIEL", button41, progressBar6, progressBar7, label47, label40);
+            FSFLauncherCore.synchroRsyncSpec("@UNITS", button42, progressBar8, progressBar9, label48, label42);
+            FSFLauncherCore.synchroRsyncSpec("@CLIENT", button43, progressBar10, progressBar12, label49, label43);
+            FSFLauncherCore.synchroRsyncSpec("@TEST", button44, progressBar13, progressBar14, label50, label44);
+            FSFLauncherCore.synchroRsyncSpec("@FRAMEWORK", button45, progressBar16, progressBar15, label51, label52);
 
         }
+        private void button25_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.synchroRsyncSpec("@TEMPLATE", (Button)sender, progressBar11, progressBar4, label45, label38);
+        }
 
+        private void button26_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.synchroRsyncSpec("@ISLANDS", (Button)sender, progressBar1, progressBar5, label46, label39);
+        }
 
+        private void button41_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.synchroRsyncSpec("@MATERIEL", (Button)sender, progressBar6, progressBar7, label47, label40);
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.synchroRsyncSpec("@UNITS", (Button)sender, progressBar8, progressBar9, label48, label42);
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.synchroRsyncSpec("@CLIENT", (Button)sender, progressBar10, progressBar12, label49, label43);
+        }
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.synchroRsyncSpec("@TEST", (Button)sender, progressBar13, progressBar14, label50, label44);
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+             FSFLauncherCore.synchroRsyncSpec("@FRAMEWORK", (Button)sender, progressBar16, progressBar15, label51, label52);
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton7.Checked)
+            {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "officielle");
+                Interface.dessineInterface();
+            }
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton8.Checked)
+            {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "beta");
+                Interface.dessineInterface();
+            }
+        }
     }
 }
     

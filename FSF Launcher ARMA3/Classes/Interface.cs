@@ -60,7 +60,14 @@ namespace FSFLauncherA3
             else
             {
                 AlerteVersionArma3();
-                tailleSynchroEnLigne();
+                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label8,"");
+                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label45, "@TEMPLATE");
+                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label46, "@ISLANDS");
+                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label47, "@MATERIEL");
+                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label48, "@UNITS");
+                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label49, "@CLIENT");
+                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label50, "@TEST");
+                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label51, "@FRAMEWORK");
             }
             AfficheSynchroActive();
         }
@@ -259,17 +266,18 @@ namespace FSFLauncherA3
                 return "";
             }
         }
-        static public void tailleSynchroEnLigne()
+        static public void tailleSynchroEnLigne(Control c,string SyncType)
         {
             //  taille DL en ligne
-            DirectoryInfo localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF");
+            DirectoryInfo localDir;
+            if (SyncType != "") { localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF\" + SyncType); } else { localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF"); };
             FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
             //String remoteServer = "127.0.0.1";
             String remoteServer = "server2.clan-fsf.fr";
-            string remoteDir = "SYNCHRO_" + FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro").ToUpper();
-            FSFLauncherCore.fenetrePrincipale.label8.Text ="????";
-            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(FSFLauncherCore.fenetrePrincipale, FSFLauncherCore.fenetrePrincipale.button40, FSFLauncherCore.fenetrePrincipale.textBox11, FSFLauncherCore.fenetrePrincipale.progressBar2, FSFLauncherCore.fenetrePrincipale.progressBar3, rsyncExe, remoteServer, remoteDir, localDir, FSFLauncherCore.fenetrePrincipale.label8);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
-            rSyncCall.setTotalSize(FSFLauncherCore.fenetrePrincipale.label8);
+            string remoteDir = "SYNCHRO_" + FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro").ToUpper() + SyncType.ToUpper();
+            c.Text ="????";
+            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(FSFLauncherCore.fenetrePrincipale, null, FSFLauncherCore.fenetrePrincipale.textBox11,null, null, rsyncExe, remoteServer, remoteDir, localDir, c);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
+            rSyncCall.setTotalSize(c);
             return;
 
         }
@@ -304,17 +312,13 @@ namespace FSFLauncherA3
         }
         static public void AfficheSynchroActive()
         {
-            FSFLauncherCore.fenetrePrincipale.pictureBox31.Image = FSFLauncherA3.Properties.Resources.off;
-            FSFLauncherCore.fenetrePrincipale.pictureBox32.Image = FSFLauncherA3.Properties.Resources.off;
-            switch (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro"))
+             switch (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro"))
             {
                 case "beta" :
-                   FSFLauncherCore.fenetrePrincipale.pictureBox31.Image = FSFLauncherA3.Properties.Resources.off;
-                   FSFLauncherCore.fenetrePrincipale.pictureBox32.Image = FSFLauncherA3.Properties.Resources.on;
+                    FSFLauncherCore.fenetrePrincipale.radioButton8.Checked = true;
                     break;
                case "officielle" :
-                   FSFLauncherCore.fenetrePrincipale.pictureBox31.Image = FSFLauncherA3.Properties.Resources.on;
-                   FSFLauncherCore.fenetrePrincipale.pictureBox32.Image = FSFLauncherA3.Properties.Resources.off;
+                    FSFLauncherCore.fenetrePrincipale.radioButton7.Checked = true;
                     break;
             }
 
