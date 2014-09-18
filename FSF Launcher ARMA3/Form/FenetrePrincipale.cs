@@ -1349,13 +1349,14 @@ namespace FSFLauncherA3
         }
         private void button16_Click(object sender, EventArgs e)
         {
-            FSFLauncherCore.synchroRsyncSpec("@TEMPLATE", button25, progressBar11, progressBar4, label45, label38);
-            FSFLauncherCore.synchroRsyncSpec("@ISLANDS", button26, progressBar1, progressBar5, label46, label39);
-            FSFLauncherCore.synchroRsyncSpec("@MATERIEL", button41, progressBar6, progressBar7, label47, label40);
-            FSFLauncherCore.synchroRsyncSpec("@UNITS", button42, progressBar8, progressBar9, label48, label42);
-            FSFLauncherCore.synchroRsyncSpec("@CLIENT", button43, progressBar10, progressBar12, label49, label43);
-            FSFLauncherCore.synchroRsyncSpec("@TEST", button44, progressBar13, progressBar14, label50, label44);
-            FSFLauncherCore.synchroRsyncSpec("@FRAMEWORK", button45, progressBar16, progressBar15, label51, label52);
+            FSFLauncherCore.synchroRsyncSpec("", button16, null, null, null, null);
+            if (button25.Visible==true) FSFLauncherCore.synchroRsyncSpec("@TEMPLATE", button25, progressBar11, progressBar4, label45, label38);
+            if (button26.Visible == true) FSFLauncherCore.synchroRsyncSpec("@ISLANDS", button26, progressBar1, progressBar5, label46, label39);
+            if (button41.Visible == true) FSFLauncherCore.synchroRsyncSpec("@MATERIEL", button41, progressBar6, progressBar7, label47, label40);
+            if (button42.Visible == true) FSFLauncherCore.synchroRsyncSpec("@UNITS", button42, progressBar8, progressBar9, label48, label42);
+            if (button43.Visible == true) FSFLauncherCore.synchroRsyncSpec("@CLIENT", button43, progressBar10, progressBar12, label49, label43);
+            if (button44.Visible == true) FSFLauncherCore.synchroRsyncSpec("@TEST", button44, progressBar13, progressBar14, label50, label44);
+            if (button45.Visible == true) FSFLauncherCore.synchroRsyncSpec("@FRAMEWORK", button45, progressBar16, progressBar15, label51, label52);
 
         }
         private void button25_Click(object sender, EventArgs e)

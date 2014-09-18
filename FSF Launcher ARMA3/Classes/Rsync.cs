@@ -30,12 +30,12 @@ namespace RSync
 
         private long totalSize = 0;
 
-        public RSyncCall(Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir, Control transferRate)
-            : this(form, button, outputBox, progressTotal, progressBar, exeName, ip, rsyncRemoteDir, localDir, null, transferRate)
+        public RSyncCall(string arguments,Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir, Control transferRate)
+            : this(arguments, form, button, outputBox, progressTotal, progressBar, exeName, ip, rsyncRemoteDir, localDir, null, transferRate)
         {
         }
 
-        public RSyncCall(Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir, Control outputDisplaySize, Control transferRate)
+        public RSyncCall(string arguments,Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir, Control outputDisplaySize, Control transferRate)
         {
             this.form = form;
             this.button = button;
@@ -52,8 +52,8 @@ namespace RSync
             --chmod=ugo=rwX est important sinon vous ne pourrez pas relire les fichiers dans la destination (droits NTFS verrouillés sans cette option)
             */
             String rsyncLocalDir = "/cygdrive/" + localDir.FullName.Replace(":\\", "/").Replace('\\', '/');
-            this.arguments = "-vza --partial --inplace --progress --delete --bwlimit=0 --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
-            this.dryArguments = "-vzan --stats --partial --inplace --progress --delete --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+            this.arguments = "-"+arguments+" --partial --inplace --progress --delete --bwlimit=0 --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+            this.dryArguments =  "-"+ arguments + "n --stats --partial --inplace --progress --delete --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
         }
 
         public void start()
@@ -157,7 +157,7 @@ namespace RSync
                             String[] a = e.Data.Split(new char[] { ' ' });
                             foreach (String s in a)
                             {
-                                if (s.IndexOf("%") > -1)
+                                if (s.IndexOf("%") > -1 && progressBar != null)
                                 {
                                     progressBar.Value = Int32.Parse(s.Substring(0, s.Length - 1));
                                 }
@@ -165,7 +165,7 @@ namespace RSync
                                 {
                                     transferRate.Text = s;
                                 }
-                                if (s.IndexOf(",") > -1)
+                                if (s.IndexOf(",") > -1 && progressTotal != null)
                                 {
                                     try
                                     {
@@ -208,9 +208,9 @@ namespace RSync
                 outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour terminée !" + Environment.NewLine);
                 enableControls();
                 getInfo();
-                progressBar.Value = 0;
-                progressTotal.Value = 0;
-                transferRate.Text = "0.00Kb/s";
+                if (progressBar != null) progressBar.Value = 0;
+                if (progressTotal != null) progressTotal.Value = 0;
+                if (transferRate != null) transferRate.Text = "0.00Kb/s";
                 
             });
         }
