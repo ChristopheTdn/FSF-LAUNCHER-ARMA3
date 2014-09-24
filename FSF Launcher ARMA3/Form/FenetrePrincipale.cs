@@ -76,9 +76,8 @@ namespace FSFLauncherA3
             if (labelSynchronisationInvisible.Enabled == true)
             {
                 FSFLauncherA3.Interface.AfficheSynchroActive();
-                FSFLauncherA3.Interface.initialiseListeProfil();
-                FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.initialiseProfilActif();
-                FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.configureInstallationMODS();
+                Interface.dessineInterface();
+                Interface.genereTab();
             }
         }
 

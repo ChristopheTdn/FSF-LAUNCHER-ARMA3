@@ -715,7 +715,7 @@ namespace FSFLauncherA3
             String remoteServer = "server2.clan-fsf.fr";
             string remoteDir = "SYNCHRO_" + FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro").ToUpper() + NomRep.ToUpper();
             string arguments = "vza";
-            if (NomRep == "") { arguments = "vza"; localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF"); };
+            if (NomRep == "") { arguments = "za"; localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF"); };
             RSync.RSyncCall rSyncCall = new RSync.RSyncCall(arguments, FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, ProgressDetail, ProgressGeneral, rsyncExe, remoteServer, remoteDir, localDir, labelTailleSynchro, labelVitesseSynchro);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
             rSyncCall.setTotalSize(labelTailleSynchro);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button16);

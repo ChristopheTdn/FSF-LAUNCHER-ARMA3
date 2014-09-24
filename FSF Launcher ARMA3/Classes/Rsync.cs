@@ -238,15 +238,17 @@ namespace RSync
             process.StartInfo = processStartInfo;
             process.EnableRaisingEvents = true;
             process.OutputDataReceived += new DataReceivedEventHandler
-            (
+            (   
                 delegate(object sender, DataReceivedEventArgs e)
                 {
                     form.Invoke((MethodInvoker)delegate()
                     {
+
                         if (e.Data != null)
-                        {
+                        {    
                             if (e.Data.StartsWith("Total transferred file size: "))
                             {
+                                
                                 String[] a = e.Data.Split(new char[] { ' ' });
                                 foreach (String s in a)
                                 {
@@ -258,6 +260,7 @@ namespace RSync
 
                                 outputDisplaySize.Text = String.Format("{0:0.000} Mo", ((float)totalSize / 1000000));
                             }
+
                         }
                     });
                 }
