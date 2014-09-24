@@ -22,6 +22,7 @@ namespace RSync
         private ProgressBar progressBar;
         private ProgressBar progressTotal;
         private Button cancelButton;
+        private String aEffacer;
 
         private Control outputDisplaySize;
         private Control transferRate;
@@ -245,7 +246,11 @@ namespace RSync
                     {
 
                         if (e.Data != null)
-                        {    
+                        {
+                            if (e.Data.StartsWith("deleting"))
+                            {
+                                aEffacer = "*";
+                            }
                             if (e.Data.StartsWith("Total transferred file size: "))
                             {
                                 
@@ -258,7 +263,7 @@ namespace RSync
                                     }
                                 }
 
-                                outputDisplaySize.Text = String.Format("{0:0.000} Mo", ((float)totalSize / 1000000));
+                                outputDisplaySize.Text = String.Format("{0:0.000} Mo"+aEffacer, ((float)totalSize / 1000000));
                             }
 
                         }
