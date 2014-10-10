@@ -16,17 +16,6 @@ namespace FSFLauncherA3
             ValideFRAPS();
             ValideTRACKIR();
             ValideTEAMSPEAKTeamForce3016();
-            // efface ancienne version de Teamspeack
-            if (Directory.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce"))
-            {
-                try
-                {
-                    Directory.Delete(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce", true);
-                }
-                catch
-                {
-                };
-            };
         }
 
         // FRAPS
@@ -198,13 +187,8 @@ namespace FSFLauncherA3
             {
                 FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@CLIENT\TeamSpeak3\3.0.16\TeamSpeak3\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3016\");
                 FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@task_force_radio_092\TeamSpeak 3 Client\plugins\", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3016\TeamSpeak3\");
-                if (!File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\task_force_radio\radio_keys.hpp"))
-                {
-                    FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEST\@task_force_radio\userconfig\task_force_radio\", FSFLauncherCore.cheminARMA3 + @"\userconfig\");
-                };
-
-
-
+                FSFLauncherCore.CopyDir(FSFLauncherCore.cheminARMA3 + @"\@FSF\@TEMPLATE\@task_force_radio_092\userconfig\task_force_radio\", FSFLauncherCore.cheminARMA3 + @"\userconfig\");
+  
                 var infoBox = MessageBox.Show("Le TS3 dédié à TASK FORCE RADIO a été reinstallé dans sa version 3.0.16.", "TS3 reinstallé", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
