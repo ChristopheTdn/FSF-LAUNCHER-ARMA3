@@ -53,8 +53,8 @@ namespace RSync
             --chmod=ugo=rwX est important sinon vous ne pourrez pas relire les fichiers dans la destination (droits NTFS verrouillés sans cette option)
             */
             String rsyncLocalDir = "/cygdrive/" + localDir.FullName.Replace(":\\", "/").Replace('\\', '/');
-            this.arguments = "-"+arguments+" --partial --inplace --progress --delete --bwlimit=0 --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
-            this.dryArguments =  "-"+ arguments + "n --stats --partial --inplace --progress --delete --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+            this.arguments =  arguments + " --partial --inplace --progress --delete --bwlimit=0 --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+            this.dryArguments = arguments + "n --stats --partial --inplace --progress --delete --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
         }
 
         public void start()
