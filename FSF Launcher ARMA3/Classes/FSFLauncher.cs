@@ -119,14 +119,15 @@ namespace FSFLauncherA3
             if (isFSFValid())
            {
                timerSynchro.Tick += new EventHandler(TimerSynchroEvent);
-               timerSynchro.Interval = 300000; // 5 min
+               timerSynchro.Interval = 30000; // 5 min
                timerSynchro.Start();
            }
         }
         private static void TimerSynchroEvent(Object myObject, EventArgs myEventArgs)
         {
-            timerSynchro.Stop();
-            Interface.tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label8,"");
+            timerSynchro.Stop();            
+            Interface.AlerteVersionArma3();
+            FSFLauncherCore.synchroRsyncTaille("", FSFLauncherCore.fenetrePrincipale.button16, null, null, FSFLauncherCore.fenetrePrincipale.label8, null);
             timerSynchro.Start();
         }
         
@@ -706,6 +707,29 @@ namespace FSFLauncherA3
             }
         }
 
+        static public void synchroRsyncTaille(string NomRep, Button BoutonSender, ProgressBar ProgressDetail, ProgressBar ProgressGeneral, Control labelTailleSynchro, Control labelVitesseSynchro)
+        {
+            DirectoryInfo localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF\" + NomRep);
+            FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
+            //String remoteServer = "127.0.0.1";
+            String remoteServer = "server2.clan-fsf.fr";
+            string arguments = "-vza";
+            string remoteDir = NomRep.ToUpper();
+            if (NomRep == "")
+            {
+                remoteDir = "@FSF";
+                if (FSFLauncherCore.fenetrePrincipale.checkBox14.Checked){
+                arguments = " -za";
+                }
+                else {
+                    arguments = "--exclude '@TEST/' -za";
+                }
+                localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF");
+            };
+
+            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(arguments, FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, ProgressDetail, ProgressGeneral, rsyncExe, remoteServer, remoteDir, localDir, labelTailleSynchro, labelVitesseSynchro);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
+            rSyncCall.setTotalSize(labelTailleSynchro);
+        }
 
         static public void synchroRsyncSpec(string NomRep, Button BoutonSender, ProgressBar ProgressDetail,ProgressBar ProgressGeneral,Control labelTailleSynchro,Control labelVitesseSynchro)
         {
@@ -713,11 +737,15 @@ namespace FSFLauncherA3
             FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
             //String remoteServer = "127.0.0.1";
             String remoteServer = "server2.clan-fsf.fr";
-            string remoteDir = "SYNCHRO_" + FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro").ToUpper() + NomRep.ToUpper();
             string arguments = "-vza";
-            if (NomRep == "") { arguments = "--exclude '@CLIENT/' --exclude '@FRAMEWORK/' --exclude '@ISLANDS/' --exclude '@MATERIEL/' --exclude '@TEMPLATE/' --exclude '@UNITS/' -za"; localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF"); };
+            string remoteDir = NomRep.ToUpper();
+            if (NomRep == "") {
+                remoteDir = "@FSF";
+                arguments = "--exclude '@TEST/' --exclude '@CLIENT/' --exclude '@FRAMEWORK/' --exclude '@ISLANDS/' --exclude '@MATERIEL/' --exclude '@TEMPLATE/' --exclude '@UNITS/' -za";
+                localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF");
+                              };
+
             RSync.RSyncCall rSyncCall = new RSync.RSyncCall(arguments, FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, ProgressDetail, ProgressGeneral, rsyncExe, remoteServer, remoteDir, localDir, labelTailleSynchro, labelVitesseSynchro);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
-            rSyncCall.setTotalSize(labelTailleSynchro);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button16);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button1);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button35);

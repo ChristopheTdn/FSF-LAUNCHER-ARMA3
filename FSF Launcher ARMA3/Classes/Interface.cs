@@ -55,19 +55,11 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.pictureBox26.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button17.Visible = true;
                 FSFLauncherCore.fenetrePrincipale.groupBox3.Visible = false;
-
             }
             else
             {
                 AlerteVersionArma3();
-                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label8,"");
-                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label45, "@TEMPLATE");
-                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label46, "@ISLANDS");
-                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label47, "@MATERIEL");
-                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label48, "@UNITS");
-                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label49, "@CLIENT");
-                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label50, "@TEST");
-                tailleSynchroEnLigne(FSFLauncherA3.FSFLauncherCore.fenetrePrincipale.label51, "@FRAMEWORK");
+                testToutesTaillesSynchroEnLigne();
             }
             AfficheSynchroActive();
         }
@@ -266,20 +258,38 @@ namespace FSFLauncherA3
                 return "";
             }
         }
+        static public void testToutesTaillesSynchroEnLigne()
+            
+        {
+            FSFLauncherCore.synchroRsyncTaille("", FSFLauncherCore.fenetrePrincipale.button16, null, null, FSFLauncherCore.fenetrePrincipale.label8, null);
+            FSFLauncherCore.synchroRsyncTaille("@TEMPLATE", FSFLauncherCore.fenetrePrincipale.button25, null, null, FSFLauncherCore.fenetrePrincipale.label45, null);
+            FSFLauncherCore.synchroRsyncTaille("@ISLANDS", FSFLauncherCore.fenetrePrincipale.button26, null, null, FSFLauncherCore.fenetrePrincipale.label46, null);
+            FSFLauncherCore.synchroRsyncTaille("@MATERIEL", FSFLauncherCore.fenetrePrincipale.button41, null, null, FSFLauncherCore.fenetrePrincipale.label47, null);
+            FSFLauncherCore.synchroRsyncTaille("@UNITS", FSFLauncherCore.fenetrePrincipale.button42, null, null, FSFLauncherCore.fenetrePrincipale.label48, null);
+            FSFLauncherCore.synchroRsyncTaille("@CLIENT", FSFLauncherCore.fenetrePrincipale.button43, null, null, FSFLauncherCore.fenetrePrincipale.label49, null);
+            FSFLauncherCore.synchroRsyncTaille("@TEST", FSFLauncherCore.fenetrePrincipale.button_TESTBoutonSynchro, null, null, FSFLauncherCore.fenetrePrincipale.label_TESTTailleSynchro, null);
+            FSFLauncherCore.synchroRsyncTaille("@FRAMEWORK", FSFLauncherCore.fenetrePrincipale.button45, null, null, FSFLauncherCore.fenetrePrincipale.label51, null);
+        }
         static public void tailleSynchroEnLigne(Control c,string SyncType)
         {
             //  taille DL en ligne
             DirectoryInfo localDir;
-            if (SyncType != "") { localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF\" + SyncType); } else { localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF"); };
+            if (SyncType != "") {
+                localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF\" + SyncType);
+            }
+            else { 
+                localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF"); SyncType = "@FSF";
+            };
             FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
             //String remoteServer = "127.0.0.1";
             String remoteServer = "server2.clan-fsf.fr";
-            string remoteDir = "SYNCHRO_" + FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro").ToUpper() + SyncType.ToUpper();
+            string remoteDir = SyncType;
             c.Text ="????";
-            RSync.RSyncCall rSyncCall = new RSync.RSyncCall("-vza",FSFLauncherCore.fenetrePrincipale, null, FSFLauncherCore.fenetrePrincipale.textBox11,null, null, rsyncExe, remoteServer, remoteDir, localDir, c);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
-            rSyncCall.setTotalSize(c);
+            string excludeFile = "";
+            if (FSFLauncherCore.fenetrePrincipale.checkBox14.Checked) { excludeFile = " --exclude '@TEST/' "; }
+            RSync.RSyncCall rSyncCallInit = new RSync.RSyncCall("-vza " + excludeFile, FSFLauncherCore.fenetrePrincipale, null, FSFLauncherCore.fenetrePrincipale.textBox11, null, null, rsyncExe, remoteServer, remoteDir, localDir, c, null);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
+            rSyncCallInit.setTotalSize(c);
             return;
-
         }
         static public void AlerteVersionArma3()
         {
@@ -301,8 +311,7 @@ namespace FSFLauncherA3
                     FSFLauncherCore.fenetrePrincipale.toolTip1.SetToolTip(FSFLauncherCore.fenetrePrincipale.pictureBox24, "Version (FSF server) : " + VersionServeur );
                     FSFLauncherCore.fenetrePrincipale.pictureBox24.Image = FSFLauncherA3.Properties.Resources.delete;
                     FSFLauncherCore.fenetrePrincipale.label7.ForeColor = System.Drawing.Color.Red;
-                }
-               
+                }               
             }
             catch
             {
@@ -315,13 +324,12 @@ namespace FSFLauncherA3
              switch (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro"))
             {
                 case "beta" :
-                    FSFLauncherCore.fenetrePrincipale.radioButton8.Checked = true;
+                    FSFLauncherCore.fenetrePrincipale.checkBox14.Checked = true;
                     break;
                case "officielle" :
-                    FSFLauncherCore.fenetrePrincipale.radioButton7.Checked = true;
+                    FSFLauncherCore.fenetrePrincipale.checkBox14.Checked = false;
                     break;
             }
-
         }
         
 

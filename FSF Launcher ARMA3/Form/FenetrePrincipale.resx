@@ -5056,62 +5056,32 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;Options.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="radioButton8.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBox14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButton8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="checkBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 26</value>
   </data>
-  <data name="radioButton8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 34</value>
+  <data name="checkBox14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 17</value>
   </data>
-  <data name="radioButton8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 17</value>
+  <data name="checkBox14.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
   </data>
-  <data name="radioButton8.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="checkBox14.Text" xml:space="preserve">
+    <value>Synchro Beta</value>
   </data>
-  <data name="radioButton8.Text" xml:space="preserve">
-    <value>BETA</value>
+  <data name="&gt;&gt;checkBox14.Name" xml:space="preserve">
+    <value>checkBox14</value>
   </data>
-  <data name="&gt;&gt;radioButton8.Name" xml:space="preserve">
-    <value>radioButton8</value>
+  <data name="&gt;&gt;checkBox14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButton8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;checkBox14.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;radioButton8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBox14.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="radioButton7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radioButton7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 17</value>
-  </data>
-  <data name="radioButton7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 17</value>
-  </data>
-  <data name="radioButton7.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="radioButton7.Text" xml:space="preserve">
-    <value>OFFICIELLE</value>
-  </data>
-  <data name="&gt;&gt;radioButton7.Name" xml:space="preserve">
-    <value>radioButton7</value>
-  </data>
-  <data name="&gt;&gt;radioButton7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButton7.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;radioButton7.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>298, 7</value>
@@ -5144,7 +5114,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="button45.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 280</value>
+    <value>356, 250</value>
   </data>
   <data name="button45.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 19</value>
@@ -5200,34 +5170,37 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button44.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="button_TESTBoutonSynchro.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="button44.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button_TESTBoutonSynchro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button44.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 252</value>
+  <data name="button_TESTBoutonSynchro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 274</value>
   </data>
-  <data name="button44.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button_TESTBoutonSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 19</value>
   </data>
-  <data name="button44.TabIndex" type="System.Int32, mscorlib">
+  <data name="button_TESTBoutonSynchro.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
   </data>
-  <data name="button44.Text" xml:space="preserve">
+  <data name="button_TESTBoutonSynchro.Text" xml:space="preserve">
     <value>Lancer</value>
   </data>
-  <data name="&gt;&gt;button44.Name" xml:space="preserve">
-    <value>button44</value>
+  <data name="button_TESTBoutonSynchro.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;button44.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_TESTBoutonSynchro.Name" xml:space="preserve">
+    <value>button_TESTBoutonSynchro</value>
+  </data>
+  <data name="&gt;&gt;button_TESTBoutonSynchro.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button44.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button_TESTBoutonSynchro.Parent" xml:space="preserve">
     <value>SynchroZONE</value>
   </data>
-  <data name="&gt;&gt;button44.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_TESTBoutonSynchro.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="button43.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -5527,41 +5500,44 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;button25.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label_TESTSynchro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label_TESTSynchro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 255</value>
+  <data name="label_TESTSynchro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 277</value>
   </data>
-  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="label_TESTSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 13</value>
   </data>
-  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_TESTSynchro.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="label27.Text" xml:space="preserve">
+  <data name="label_TESTSynchro.Text" xml:space="preserve">
     <value>@TEST :</value>
   </data>
-  <data name="&gt;&gt;label27.Name" xml:space="preserve">
-    <value>label27</value>
+  <data name="label_TESTSynchro.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_TESTSynchro.Name" xml:space="preserve">
+    <value>label_TESTSynchro</value>
+  </data>
+  <data name="&gt;&gt;label_TESTSynchro.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_TESTSynchro.Parent" xml:space="preserve">
     <value>SynchroZONE</value>
   </data>
-  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_TESTSynchro.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
   <data name="progressBar15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 286</value>
+    <value>220, 256</value>
   </data>
   <data name="progressBar15.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5615,7 +5591,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="progressBar16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 277</value>
+    <value>220, 247</value>
   </data>
   <data name="progressBar16.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5665,28 +5641,31 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="progressBar13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="progressBar_TESTGlobalSynchro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="progressBar13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 261</value>
+  <data name="progressBar_TESTGlobalSynchro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 283</value>
   </data>
-  <data name="progressBar13.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="progressBar_TESTGlobalSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
   </data>
-  <data name="progressBar13.TabIndex" type="System.Int32, mscorlib">
+  <data name="progressBar_TESTGlobalSynchro.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
   </data>
-  <data name="&gt;&gt;progressBar13.Name" xml:space="preserve">
-    <value>progressBar13</value>
+  <data name="progressBar_TESTGlobalSynchro.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;progressBar13.Type" xml:space="preserve">
+  <data name="&gt;&gt;progressBar_TESTGlobalSynchro.Name" xml:space="preserve">
+    <value>progressBar_TESTGlobalSynchro</value>
+  </data>
+  <data name="&gt;&gt;progressBar_TESTGlobalSynchro.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;progressBar13.Parent" xml:space="preserve">
+  <data name="&gt;&gt;progressBar_TESTGlobalSynchro.Parent" xml:space="preserve">
     <value>SynchroZONE</value>
   </data>
-  <data name="&gt;&gt;progressBar13.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;progressBar_TESTGlobalSynchro.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
@@ -5719,28 +5698,31 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
-  <data name="progressBar14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="progressBar__TESTFichierSynchro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="progressBar14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 252</value>
+  <data name="progressBar__TESTFichierSynchro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 274</value>
   </data>
-  <data name="progressBar14.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="progressBar__TESTFichierSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
   </data>
-  <data name="progressBar14.TabIndex" type="System.Int32, mscorlib">
+  <data name="progressBar__TESTFichierSynchro.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
   </data>
-  <data name="&gt;&gt;progressBar14.Name" xml:space="preserve">
-    <value>progressBar14</value>
+  <data name="progressBar__TESTFichierSynchro.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;progressBar14.Type" xml:space="preserve">
+  <data name="&gt;&gt;progressBar__TESTFichierSynchro.Name" xml:space="preserve">
+    <value>progressBar__TESTFichierSynchro</value>
+  </data>
+  <data name="&gt;&gt;progressBar__TESTFichierSynchro.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;progressBar14.Parent" xml:space="preserve">
+  <data name="&gt;&gt;progressBar__TESTFichierSynchro.Parent" xml:space="preserve">
     <value>SynchroZONE</value>
   </data>
-  <data name="&gt;&gt;progressBar14.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;progressBar__TESTFichierSynchro.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
   <data name="label38.AutoSize" type="System.Boolean, mscorlib">
@@ -6013,34 +5995,37 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;progressBar6.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
-  <data name="label44.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label_TESTVitesseSynchro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label44.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label_TESTVitesseSynchro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label44.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 255</value>
+  <data name="label_TESTVitesseSynchro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 277</value>
   </data>
-  <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="label_TESTVitesseSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
   </data>
-  <data name="label44.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_TESTVitesseSynchro.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
-  <data name="label44.Text" xml:space="preserve">
+  <data name="label_TESTVitesseSynchro.Text" xml:space="preserve">
     <value>0.00Kb/s</value>
   </data>
-  <data name="&gt;&gt;label44.Name" xml:space="preserve">
-    <value>label44</value>
+  <data name="label_TESTVitesseSynchro.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;label44.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_TESTVitesseSynchro.Name" xml:space="preserve">
+    <value>label_TESTVitesseSynchro</value>
+  </data>
+  <data name="&gt;&gt;label_TESTVitesseSynchro.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label44.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_TESTVitesseSynchro.Parent" xml:space="preserve">
     <value>SynchroZONE</value>
   </data>
-  <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_TESTVitesseSynchro.ZOrder" xml:space="preserve">
     <value>32</value>
   </data>
   <data name="progressBar7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -6269,7 +6254,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 283</value>
+    <value>142, 253</value>
   </data>
   <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -6335,7 +6320,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 283</value>
+    <value>290, 253</value>
   </data>
   <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -6398,7 +6383,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 283</value>
+    <value>41, 253</value>
   </data>
   <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 13</value>
@@ -6421,37 +6406,40 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;label53.ZOrder" xml:space="preserve">
     <value>45</value>
   </data>
-  <data name="label50.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label_TESTTailleSynchro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label50.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label_TESTTailleSynchro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label50.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 255</value>
+  <data name="label_TESTTailleSynchro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 277</value>
   </data>
-  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="label_TESTTailleSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
   </data>
-  <data name="label50.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_TESTTailleSynchro.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
-  <data name="label50.Text" xml:space="preserve">
+  <data name="label_TESTTailleSynchro.Text" xml:space="preserve">
     <value>00.0000.0</value>
   </data>
-  <data name="label50.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="label_TESTTailleSynchro.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;label50.Name" xml:space="preserve">
-    <value>label50</value>
+  <data name="label_TESTTailleSynchro.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;label50.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_TESTTailleSynchro.Name" xml:space="preserve">
+    <value>label_TESTTailleSynchro</value>
+  </data>
+  <data name="&gt;&gt;label_TESTTailleSynchro.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label50.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_TESTTailleSynchro.Parent" xml:space="preserve">
     <value>SynchroZONE</value>
   </data>
-  <data name="&gt;&gt;label50.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_TESTTailleSynchro.ZOrder" xml:space="preserve">
     <value>46</value>
   </data>
   <data name="SynchroZONE.Location" type="System.Drawing.Point, System.Drawing">

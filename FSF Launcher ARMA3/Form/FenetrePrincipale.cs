@@ -35,13 +35,12 @@ namespace FSFLauncherA3
 
 
             label8.TextChanged += label8_TextChanged;
-
             label45.TextChanged += label45_TextChanged;
             label46.TextChanged += label46_TextChanged;
             label47.TextChanged += label47_TextChanged;
             label48.TextChanged += label48_TextChanged;
             label49.TextChanged += label49_TextChanged;
-            label50.TextChanged += label50_TextChanged;
+            label_TESTTailleSynchro.TextChanged += label50_TextChanged;
             label51.TextChanged += label51_TextChanged;
             labelSynchronisationInvisible.EnabledChanged += labelSynchronisationInvisible_EnabledChanged;
 
@@ -167,14 +166,14 @@ namespace FSFLauncherA3
                 void label50_TextChanged(object sender, EventArgs e)
                 {
                     // Taille generale
-                    if (FSFLauncherCore.fenetrePrincipale.label50.Text.Replace(",", ".") == "0.000 Mo")
+                    if (FSFLauncherCore.fenetrePrincipale.label_TESTTailleSynchro.Text.Replace(",", ".") == "0.000 Mo")
                     {
-                        FSFLauncherCore.fenetrePrincipale.label50.Text = "A jour";
-                        FSFLauncherCore.fenetrePrincipale.label50.ForeColor = System.Drawing.Color.Black;
+                        FSFLauncherCore.fenetrePrincipale.label_TESTTailleSynchro.Text = "A jour";
+                        FSFLauncherCore.fenetrePrincipale.label_TESTTailleSynchro.ForeColor = System.Drawing.Color.Black;
                     }
                     else
                     {
-                        FSFLauncherCore.fenetrePrincipale.label50.ForeColor = System.Drawing.Color.Red;
+                        FSFLauncherCore.fenetrePrincipale.label_TESTTailleSynchro.ForeColor = System.Drawing.Color.Red;
                     }
                 }
                 void label51_TextChanged(object sender, EventArgs e)
@@ -1354,9 +1353,8 @@ namespace FSFLauncherA3
             if (button41.Visible == true) FSFLauncherCore.synchroRsyncSpec("@MATERIEL", button41, progressBar6, progressBar7, label47, label40);
             if (button42.Visible == true) FSFLauncherCore.synchroRsyncSpec("@UNITS", button42, progressBar8, progressBar9, label48, label42);
             if (button43.Visible == true) FSFLauncherCore.synchroRsyncSpec("@CLIENT", button43, progressBar10, progressBar12, label49, label43);
-            if (button44.Visible == true) FSFLauncherCore.synchroRsyncSpec("@TEST", button44, progressBar13, progressBar14, label50, label44);
+            if (button_TESTBoutonSynchro.Visible == true) FSFLauncherCore.synchroRsyncSpec("@TEST", button_TESTBoutonSynchro, progressBar_TESTGlobalSynchro, progressBar__TESTFichierSynchro, label_TESTTailleSynchro, label_TESTVitesseSynchro);
             if (button45.Visible == true) FSFLauncherCore.synchroRsyncSpec("@FRAMEWORK", button45, progressBar16, progressBar15, label51, label52);
-
         }
         private void button25_Click(object sender, EventArgs e)
         {
@@ -1385,7 +1383,7 @@ namespace FSFLauncherA3
 
         private void button44_Click(object sender, EventArgs e)
         {
-            FSFLauncherCore.synchroRsyncSpec("@TEST", (Button)sender, progressBar13, progressBar14, label50, label44);
+            FSFLauncherCore.synchroRsyncSpec("@TEST", (Button)sender, progressBar_TESTGlobalSynchro, progressBar__TESTFichierSynchro, label_TESTTailleSynchro, label_TESTVitesseSynchro);
         }
 
         private void button45_Click(object sender, EventArgs e)
@@ -1393,22 +1391,29 @@ namespace FSFLauncherA3
              FSFLauncherCore.synchroRsyncSpec("@FRAMEWORK", (Button)sender, progressBar16, progressBar15, label51, label52);
         }
 
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+ 
+        private void checkBox14_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton7.Checked)
+            if (checkBox14.Checked) {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "beta");
+                progressBar__TESTFichierSynchro.Visible = true;
+                progressBar_TESTGlobalSynchro.Visible = true;
+                label_TESTSynchro.Visible = true;
+                label_TESTTailleSynchro.Visible = true;
+                label_TESTVitesseSynchro.Visible = true;
+                button_TESTBoutonSynchro.Visible = true;                
+            }
+            else
             {
                 FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "officielle");
-                Interface.dessineInterface();
+                progressBar__TESTFichierSynchro.Visible = false;
+                progressBar_TESTGlobalSynchro.Visible = false;
+                label_TESTSynchro.Visible = false;
+                label_TESTTailleSynchro.Visible = false;
+                label_TESTVitesseSynchro.Visible = false;
+                button_TESTBoutonSynchro.Visible = false;
             }
-        }
-
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton8.Checked)
-            {
-                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "beta");
-                Interface.dessineInterface();
-            }
+            Interface.testToutesTaillesSynchroEnLigne();
         }
     }
 }

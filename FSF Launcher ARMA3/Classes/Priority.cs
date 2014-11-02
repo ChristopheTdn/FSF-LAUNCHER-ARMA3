@@ -10,12 +10,13 @@ namespace FSFLauncherA3
     {
 
         static public void actualisePrioriteMods()
-        {           // recupere tous les Mods coché dans une liste
+        {
+           // recupere tous les Mods coché dans une liste
            // Compare Liste Mods avec Liste Tab prioritaire
            
 
-                  // Efface ceux qui ne sont plus selectionné
-                  // Ajoute ceux qui manque en fin de liste
+           // Efface ceux qui ne sont plus selectionné
+           // Ajoute ceux qui manque en fin de liste
 
             // Affiche la liste par priorité dans la listeBox
            FSFLauncherCore.ListModsrealUrl.Clear();
