@@ -190,6 +190,9 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.SynchroZONE = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.checkBox14 = new System.Windows.Forms.CheckBox();
             this.button45 = new System.Windows.Forms.Button();
@@ -323,6 +326,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SynchroZONE.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -1614,6 +1618,7 @@
             // SynchroZONE
             // 
             this.SynchroZONE.BackColor = System.Drawing.Color.Gainsboro;
+            this.SynchroZONE.Controls.Add(this.groupBox5);
             this.SynchroZONE.Controls.Add(this.groupBox4);
             this.SynchroZONE.Controls.Add(this.button45);
             this.SynchroZONE.Controls.Add(this.label14);
@@ -1663,6 +1668,28 @@
             this.SynchroZONE.Controls.Add(this.label_TESTTailleSynchro);
             resources.ApplyResources(this.SynchroZONE, "SynchroZONE");
             this.SynchroZONE.Name = "SynchroZONE";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.radioButton8);
+            this.groupBox5.Controls.Add(this.radioButton7);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
+            // 
+            // radioButton8
+            // 
+            resources.ApplyResources(this.radioButton8, "radioButton8");
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
+            // 
+            // radioButton7
+            // 
+            resources.ApplyResources(this.radioButton7, "radioButton7");
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // groupBox4
             // 
@@ -2198,6 +2225,8 @@
             this.groupBox1.PerformLayout();
             this.SynchroZONE.ResumeLayout(false);
             this.SynchroZONE.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -2446,6 +2475,9 @@
         internal System.Windows.Forms.ProgressBar progressBar11;
         private System.Windows.Forms.GroupBox groupBox4;
         internal System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.GroupBox groupBox5;
+        internal System.Windows.Forms.RadioButton radioButton8;
+        internal System.Windows.Forms.RadioButton radioButton7;
     }
 }
 

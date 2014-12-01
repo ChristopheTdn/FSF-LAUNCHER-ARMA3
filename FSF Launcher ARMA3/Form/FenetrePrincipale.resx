@@ -5056,11 +5056,94 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;Options.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="radioButton8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 17</value>
+  </data>
+  <data name="radioButton8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 30</value>
+  </data>
+  <data name="radioButton8.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="radioButton8.Text" xml:space="preserve">
+    <value>Linux (Fast)
+Maj ttes les 5 mn</value>
+  </data>
+  <data name="&gt;&gt;radioButton8.Name" xml:space="preserve">
+    <value>radioButton8</value>
+  </data>
+  <data name="&gt;&gt;radioButton8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton8.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;radioButton8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButton7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 17</value>
+  </data>
+  <data name="radioButton7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 30</value>
+  </data>
+  <data name="radioButton7.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radioButton7.Text" xml:space="preserve">
+    <value>Windows (slow)
+Maj immediate</value>
+  </data>
+  <data name="&gt;&gt;radioButton7.Name" xml:space="preserve">
+    <value>radioButton7</value>
+  </data>
+  <data name="&gt;&gt;radioButton7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton7.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;radioButton7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 284</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 53</value>
+  </data>
+  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Serveurs</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>SynchroZONE</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="checkBox14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="checkBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 26</value>
+    <value>34, 21</value>
   </data>
   <data name="checkBox14.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 17</value>
@@ -5084,10 +5167,10 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>0</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 7</value>
+    <value>293, 8</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 57</value>
+    <value>163, 43</value>
   </data>
   <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -5105,7 +5188,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="button45.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -5114,7 +5197,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="button45.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 250</value>
+    <value>356, 235</value>
   </data>
   <data name="button45.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 19</value>
@@ -5135,7 +5218,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;button45.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5168,7 +5251,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="button_TESTBoutonSynchro.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -5177,7 +5260,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="button_TESTBoutonSynchro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 274</value>
+    <value>356, 259</value>
   </data>
   <data name="button_TESTBoutonSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 19</value>
@@ -5201,7 +5284,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;button_TESTBoutonSynchro.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="button43.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -5210,7 +5293,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="button43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 223</value>
+    <value>356, 208</value>
   </data>
   <data name="button43.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 19</value>
@@ -5231,10 +5314,10 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;button43.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="textBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 324</value>
+    <value>11, 343</value>
   </data>
   <data name="textBox11.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5243,7 +5326,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>Vertical</value>
   </data>
   <data name="textBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>464, 163</value>
+    <value>464, 144</value>
   </data>
   <data name="textBox11.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5258,13 +5341,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;textBox11.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="button16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 70</value>
+    <value>200, 57</value>
   </data>
   <data name="button16.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 35</value>
@@ -5285,7 +5368,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="button42.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -5294,7 +5377,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="button42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 198</value>
+    <value>356, 183</value>
   </data>
   <data name="button42.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 19</value>
@@ -5315,7 +5398,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;button42.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="labelSynchronisationInvisible.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5327,7 +5410,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="labelSynchronisationInvisible.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 308</value>
+    <value>8, 340</value>
   </data>
   <data name="labelSynchronisationInvisible.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 13</value>
@@ -5351,7 +5434,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;labelSynchronisationInvisible.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="button41.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -5360,7 +5443,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="button41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 175</value>
+    <value>356, 160</value>
   </data>
   <data name="button41.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 19</value>
@@ -5381,13 +5464,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;button41.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 127</value>
+    <value>59, 112</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 13</value>
@@ -5408,7 +5491,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="button26.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -5417,7 +5500,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="button26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 150</value>
+    <value>356, 135</value>
   </data>
   <data name="button26.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 19</value>
@@ -5438,7 +5521,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;button26.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label26.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5447,7 +5530,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 153</value>
+    <value>67, 138</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 13</value>
@@ -5468,7 +5551,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="button25.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -5477,7 +5560,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="button25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 121</value>
+    <value>356, 106</value>
   </data>
   <data name="button25.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 19</value>
@@ -5498,7 +5581,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;button25.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label_TESTSynchro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5507,7 +5590,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label_TESTSynchro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 277</value>
+    <value>88, 262</value>
   </data>
   <data name="label_TESTSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 13</value>
@@ -5531,13 +5614,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label_TESTSynchro.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="progressBar15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 256</value>
+    <value>220, 241</value>
   </data>
   <data name="progressBar15.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5555,7 +5638,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar15.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label28.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5564,7 +5647,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 201</value>
+    <value>80, 186</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -5585,13 +5668,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="progressBar16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 247</value>
+    <value>220, 232</value>
   </data>
   <data name="progressBar16.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5609,7 +5692,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar16.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5618,7 +5701,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 178</value>
+    <value>61, 163</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 13</value>
@@ -5639,13 +5722,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="progressBar_TESTGlobalSynchro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar_TESTGlobalSynchro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 283</value>
+    <value>220, 268</value>
   </data>
   <data name="progressBar_TESTGlobalSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5666,7 +5749,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar_TESTGlobalSynchro.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5675,7 +5758,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 226</value>
+    <value>75, 211</value>
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
@@ -5696,13 +5779,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="progressBar__TESTFichierSynchro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar__TESTFichierSynchro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 274</value>
+    <value>220, 259</value>
   </data>
   <data name="progressBar__TESTFichierSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5723,7 +5806,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar__TESTFichierSynchro.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="label38.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5732,7 +5815,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 124</value>
+    <value>290, 109</value>
   </data>
   <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -5753,13 +5836,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="progressBar10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 232</value>
+    <value>220, 217</value>
   </data>
   <data name="progressBar10.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5777,7 +5860,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar10.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="label39.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5786,7 +5869,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 153</value>
+    <value>290, 138</value>
   </data>
   <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -5807,13 +5890,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="progressBar12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 223</value>
+    <value>220, 208</value>
   </data>
   <data name="progressBar12.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5831,7 +5914,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar12.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="label40.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5840,7 +5923,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 178</value>
+    <value>290, 163</value>
   </data>
   <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -5861,13 +5944,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="progressBar8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 207</value>
+    <value>220, 192</value>
   </data>
   <data name="progressBar8.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5885,7 +5968,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar8.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="label42.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5894,7 +5977,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 201</value>
+    <value>290, 186</value>
   </data>
   <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -5915,13 +5998,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="progressBar9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 198</value>
+    <value>220, 183</value>
   </data>
   <data name="progressBar9.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5939,7 +6022,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar9.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="label43.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5948,7 +6031,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 226</value>
+    <value>290, 211</value>
   </data>
   <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -5969,13 +6052,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="progressBar6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 184</value>
+    <value>220, 169</value>
   </data>
   <data name="progressBar6.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -5993,7 +6076,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar6.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="label_TESTVitesseSynchro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6002,7 +6085,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label_TESTVitesseSynchro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 277</value>
+    <value>290, 262</value>
   </data>
   <data name="label_TESTVitesseSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -6026,13 +6109,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label_TESTVitesseSynchro.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
   </data>
   <data name="progressBar7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 175</value>
+    <value>220, 160</value>
   </data>
   <data name="progressBar7.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -6050,13 +6133,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar7.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>34</value>
   </data>
   <data name="progressBar4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 121</value>
+    <value>220, 106</value>
   </data>
   <data name="progressBar4.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -6074,13 +6157,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar4.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>35</value>
   </data>
   <data name="progressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 159</value>
+    <value>220, 144</value>
   </data>
   <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -6098,7 +6181,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>36</value>
   </data>
   <data name="label45.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6107,7 +6190,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 127</value>
+    <value>142, 112</value>
   </data>
   <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -6131,13 +6214,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label45.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>37</value>
   </data>
   <data name="progressBar5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 150</value>
+    <value>220, 135</value>
   </data>
   <data name="progressBar5.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -6155,7 +6238,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar5.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>38</value>
   </data>
   <data name="label46.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6164,7 +6247,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label46.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 153</value>
+    <value>142, 138</value>
   </data>
   <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -6188,13 +6271,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label46.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>39</value>
   </data>
   <data name="progressBar11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 130</value>
+    <value>220, 115</value>
   </data>
   <data name="progressBar11.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 10</value>
@@ -6212,7 +6295,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;progressBar11.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>40</value>
   </data>
   <data name="label47.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6221,7 +6304,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label47.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 178</value>
+    <value>142, 163</value>
   </data>
   <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -6245,7 +6328,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label47.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>41</value>
   </data>
   <data name="label51.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6254,7 +6337,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 253</value>
+    <value>142, 238</value>
   </data>
   <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -6278,7 +6361,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label51.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>42</value>
   </data>
   <data name="label48.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6287,7 +6370,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 201</value>
+    <value>142, 186</value>
   </data>
   <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -6311,7 +6394,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label48.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>43</value>
   </data>
   <data name="label52.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6320,7 +6403,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 253</value>
+    <value>290, 238</value>
   </data>
   <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -6341,7 +6424,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label52.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>44</value>
   </data>
   <data name="label49.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6350,7 +6433,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 226</value>
+    <value>142, 211</value>
   </data>
   <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -6374,7 +6457,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label49.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>45</value>
   </data>
   <data name="label53.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6383,7 +6466,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 253</value>
+    <value>41, 238</value>
   </data>
   <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 13</value>
@@ -6404,7 +6487,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label53.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>46</value>
   </data>
   <data name="label_TESTTailleSynchro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6413,7 +6496,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label_TESTTailleSynchro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 277</value>
+    <value>142, 262</value>
   </data>
   <data name="label_TESTTailleSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -6440,7 +6523,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>SynchroZONE</value>
   </data>
   <data name="&gt;&gt;label_TESTTailleSynchro.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>47</value>
   </data>
   <data name="SynchroZONE.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>

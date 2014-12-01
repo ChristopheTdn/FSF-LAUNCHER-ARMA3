@@ -33,7 +33,8 @@ namespace FSFLauncherA3
 
             FSFLauncherCore.fenetrePrincipale.label31.Text = AfficheVersionProgramme();
             
-            // bouton prog externe
+            // Determine Serveur
+
 
             ProgExterne.ValideProgExt();
 
@@ -62,6 +63,8 @@ namespace FSFLauncherA3
                 testToutesTaillesSynchroEnLigne();
             }
             AfficheSynchroActive();
+            AfficheServeurActif();
+
         }
         static public void genereTab()
         {
@@ -95,7 +98,6 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.radioButton21.Enabled = false;
             FSFLauncherCore.fenetrePrincipale.radioButton21.Checked = false;
             FSFLauncherCore.fenetrePrincipale.pictureBox1.Image = FSFLauncherA3.Properties.Resources.logofsf;
-
             FSFLauncherCore.fenetrePrincipale.checkedListBox8.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox7.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox1.Items.Clear();
@@ -104,9 +106,7 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.checkedListBox6.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox4.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox5.Items.Clear();
-
             FSFLauncherCore.fenetrePrincipale.checkedListBox9.Items.Clear();
-
             FSFLauncherCore.fenetrePrincipale.checkedListBox10.Items.Clear();
         }
         static public void effaceTousparamsOnglet()
@@ -270,27 +270,6 @@ namespace FSFLauncherA3
             FSFLauncherCore.synchroRsyncTaille("@TEST", FSFLauncherCore.fenetrePrincipale.button_TESTBoutonSynchro, null, null, FSFLauncherCore.fenetrePrincipale.label_TESTTailleSynchro, null);
             FSFLauncherCore.synchroRsyncTaille("@FRAMEWORK", FSFLauncherCore.fenetrePrincipale.button45, null, null, FSFLauncherCore.fenetrePrincipale.label51, null);
         }
-        static public void tailleSynchroEnLigne(Control c,string SyncType)
-        {
-            //  taille DL en ligne
-            DirectoryInfo localDir;
-            if (SyncType != "") {
-                localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF\" + SyncType);
-            }
-            else { 
-                localDir = new DirectoryInfo(FSFLauncherCore.cheminARMA3 + @"\@FSF"); SyncType = "@FSF";
-            };
-            FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
-            //String remoteServer = "127.0.0.1";
-            String remoteServer = "server2.clan-fsf.fr";
-            string remoteDir = SyncType;
-            c.Text ="????";
-            string excludeFile = "";
-            if (FSFLauncherCore.fenetrePrincipale.checkBox14.Checked) { excludeFile = " --exclude '@TEST/' "; }
-            RSync.RSyncCall rSyncCallInit = new RSync.RSyncCall("-vza " + excludeFile, FSFLauncherCore.fenetrePrincipale, null, FSFLauncherCore.fenetrePrincipale.textBox11, null, null, rsyncExe, remoteServer, remoteDir, localDir, c, null);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
-            rSyncCallInit.setTotalSize(c);
-            return;
-        }
         static public void AlerteVersionArma3()
         {
             try
@@ -331,6 +310,22 @@ namespace FSFLauncherA3
                     break;
             }
         }
+        static public void AfficheServeurActif()
+        {
+            switch (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "serveur"))
+            {
+                case "SERVEUR1":
+                    FSFLauncherCore.fenetrePrincipale.radioButton7.Checked = true;
+                    break;
+                case "SERVEUR2":
+                    FSFLauncherCore.fenetrePrincipale.radioButton8.Checked = true;
+                    break;
+                default:
+                    FSFLauncherCore.fenetrePrincipale.radioButton8.Checked = true ;
+                    break;
+            }
+        }
+
         
 
         /*

@@ -712,7 +712,7 @@ namespace FSFLauncherA3
             DirectoryInfo localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF\" + NomRep);
             FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
             //String remoteServer = "127.0.0.1";
-            String remoteServer = "server2.clan-fsf.fr";
+            String remoteServer = serveurSynchroIP();
             string arguments = "-vza";
             string remoteDir = NomRep.ToUpper();
             if (NomRep == "")
@@ -736,7 +736,7 @@ namespace FSFLauncherA3
             DirectoryInfo localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF\" + NomRep);
             FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
             //String remoteServer = "127.0.0.1";
-            String remoteServer = "server2.clan-fsf.fr";
+            String remoteServer = serveurSynchroIP();
             string arguments = "-vza";
             string remoteDir = NomRep.ToUpper();
             if (NomRep == "") {
@@ -755,7 +755,14 @@ namespace FSFLauncherA3
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.labelSynchronisationInvisible);
             rSyncCall.start();
         }
+        static public string serveurSynchroIP()
+        {
+            string ipserveur = "";
+            if (FSFLauncherCore.fenetrePrincipale.radioButton7.Checked) { ipserveur = "server2.clan-fsf.fr"; };
+            if (FSFLauncherCore.fenetrePrincipale.radioButton8.Checked) { ipserveur = "37.59.36.179"; };
 
+            return ipserveur;
+        }
         #endregion
 
         /*

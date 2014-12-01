@@ -1415,6 +1415,24 @@ namespace FSFLauncherA3
             }
             Interface.testToutesTaillesSynchroEnLigne();
         }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton7.Checked)
+            {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Serveur", "SERVEUR1");
+            }
+            Interface.testToutesTaillesSynchroEnLigne();
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton8.Checked)
+            {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Serveur", "SERVEUR2");
+            }
+            Interface.testToutesTaillesSynchroEnLigne();
+        }
     }
 }
     

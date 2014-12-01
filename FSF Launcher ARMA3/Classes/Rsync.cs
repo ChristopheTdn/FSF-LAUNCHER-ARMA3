@@ -45,16 +45,19 @@ namespace RSync
             this.progressBar = progressBar;
             this.exeName = exeName.FullName;
             this.outputDisplaySize = outputDisplaySize;
-            this.transferRate = transferRate;
+            this.transferRate = transferRate;            
             //"-r -v -z --progress --size-only --chmod=ugo=rwX \"127.0.0.1::RSYNCSERVER\" \"/TESTRSYNC_CLIENT\"");  
             /*
             Il est recommandé d'utiliser :
             --size-only car la date de modification des fichiers sous Windows n'est pas toujours fiable.
             --chmod=ugo=rwX est important sinon vous ne pourrez pas relire les fichiers dans la destination (droits NTFS verrouillés sans cette option)
-            */
+            this.arguments = arguments + " --partial --inplace --progress --delete-after --bwlimit=0 --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+            this.dryArguments = arguments + "n --stats --partial --inplace --progress --delete-after --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+ 
+             */
             String rsyncLocalDir = "/cygdrive/" + localDir.FullName.Replace(":\\", "/").Replace('\\', '/');
-            this.arguments =  arguments + " --partial --inplace --progress --delete --bwlimit=0 --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
-            this.dryArguments = arguments + "n --stats --partial --inplace --progress --delete --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+            this.arguments = arguments + " --partial --inplace --progress --delete-after --bwlimit=0 --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
+            this.dryArguments = arguments + "n --stats --partial --inplace --progress --delete-after --chmod=ugo=rwX '" + ip + "::" + rsyncRemoteDir + "' '" + rsyncLocalDir + "'";
         }
 
         public void start()
