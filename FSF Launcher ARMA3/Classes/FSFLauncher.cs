@@ -125,9 +125,12 @@ namespace FSFLauncherA3
         }
         private static void TimerSynchroEvent(Object myObject, EventArgs myEventArgs)
         {
-            timerSynchro.Stop();            
-            Interface.AlerteVersionArma3();
-            FSFLauncherCore.synchroRsyncTaille("", FSFLauncherCore.fenetrePrincipale.button16, null, null, FSFLauncherCore.fenetrePrincipale.label8, null);
+            timerSynchro.Stop();
+            if (FSFLauncherCore.fenetrePrincipale.button1.Enabled)
+            {
+                Interface.AlerteVersionArma3();
+                FSFLauncherCore.synchroRsyncTaille("", FSFLauncherCore.fenetrePrincipale.button16, null, null, FSFLauncherCore.fenetrePrincipale.label8, null);           
+            }
             timerSynchro.Start();
         }
         
@@ -627,7 +630,6 @@ namespace FSFLauncherA3
                 if (serveur == "public") { serveur = @"-connect=37.59.52.201 -port=2902 -password= "; };
                 ProgExterne.lancerFraps();
                 ProgExterne.lancerTrackIR();
-
 
                 // Lancement Jeu
 

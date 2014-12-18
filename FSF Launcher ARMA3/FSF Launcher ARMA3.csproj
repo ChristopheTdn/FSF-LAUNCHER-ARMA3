@@ -18,7 +18,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
-    <PublishUrl>ftp://www.clan-gign.net/FSFLauncherA3/</PublishUrl>
+    <PublishUrl>ftp://www.clan-gign.net/www/FSFLauncherA3/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -36,8 +36,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>266</ApplicationRevision>
-    <ApplicationVersion>1.50.1201.%2a</ApplicationVersion>
+    <ApplicationRevision>269</ApplicationRevision>
+    <ApplicationVersion>1.50.1218.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
