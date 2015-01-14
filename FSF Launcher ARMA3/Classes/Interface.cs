@@ -274,7 +274,7 @@ namespace FSFLauncherA3
         {
             try
             {
-                XmlTextReader fichierInfoServer = new XmlTextReader("http://server.clan-fsf.fr/fsfserver/infoserveur.xml");
+                XmlTextReader fichierInfoServer = new XmlTextReader("http://94.23.215.124/fsfserver/infoserveur.xml");
                 fichierInfoServer.ReadToFollowing("VERSION");
                 string VersionServeur = fichierInfoServer.ReadString();
                 fichierInfoServer.Close();

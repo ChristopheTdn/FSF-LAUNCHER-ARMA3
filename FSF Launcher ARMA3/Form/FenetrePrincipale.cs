@@ -609,7 +609,7 @@ namespace FSFLauncherA3
 
                 FichierProfilXML.Flush(); //vide le buffer
                 FichierProfilXML.Close(); // ferme le document
-                UploadConfigServeur(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml", @"ftp://ftp1.clan-fsf.fr/system/config/ImportConfigServeurA3.xml");
+                UploadConfigServeur(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml", @"ftp://94.23.215.124/system/config/ImportConfigServeurA3.xml");
             }
           }
         }
@@ -959,7 +959,7 @@ namespace FSFLauncherA3
                 FileStream fs = File.Create(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml");
                 fs.Close();
             }
-            DownloadConfigServeur("ImportConfigServeurA3.xml", "ftp://ftp1.clan-fsf.fr/system/config", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
+            DownloadConfigServeur("ImportConfigServeurA3.xml", "ftp://94.23.215.124/system/config", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
             genereTabModsImportServeur();
             MessageBox.Show("Liste des MODS importée.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
