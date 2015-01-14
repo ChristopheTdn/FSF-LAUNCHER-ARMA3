@@ -760,7 +760,7 @@ namespace FSFLauncherA3
         static public string serveurSynchroIP()
         {
             string ipserveur = "";
-            if (FSFLauncherCore.fenetrePrincipale.radioButton7.Checked) { ipserveur = "server2.clan-fsf.fr"; };
+            if (FSFLauncherCore.fenetrePrincipale.radioButton7.Checked) { ipserveur = "ns350392.ip-91-121-94.eu"; };
             if (FSFLauncherCore.fenetrePrincipale.radioButton8.Checked) { ipserveur = "37.59.36.179"; };
 
             return ipserveur;

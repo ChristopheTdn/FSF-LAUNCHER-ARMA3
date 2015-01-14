@@ -5066,14 +5066,14 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>229, 17</value>
   </data>
   <data name="radioButton8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 30</value>
+    <value>142, 30</value>
   </data>
   <data name="radioButton8.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="radioButton8.Text" xml:space="preserve">
-    <value>Linux (Fast)
-Maj ttes les 5 mn</value>
+    <value>Serveur Linux (Secours)
+Maj ttes les 30 mn</value>
   </data>
   <data name="&gt;&gt;radioButton8.Name" xml:space="preserve">
     <value>radioButton8</value>
@@ -5094,13 +5094,13 @@ Maj ttes les 5 mn</value>
     <value>47, 17</value>
   </data>
   <data name="radioButton7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 30</value>
+    <value>100, 30</value>
   </data>
   <data name="radioButton7.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="radioButton7.Text" xml:space="preserve">
-    <value>Windows (slow)
+    <value>Serveur Linux 
 Maj immediate</value>
   </data>
   <data name="&gt;&gt;radioButton7.Name" xml:space="preserve">
