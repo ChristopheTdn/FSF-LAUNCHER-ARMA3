@@ -171,7 +171,7 @@ namespace FSFLauncherA3
                 ts3TaskForce.StartInfo.UseShellExecute = true;
                 ts3TaskForce.StartInfo.Verb = "runas";
                 ts3TaskForce.StartInfo.FileName = FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3016\TeamSpeak3\ts3client_win64.exe";
-                ts3TaskForce.StartInfo.Arguments = "ts3server://94.23.215.124?password=welcome";
+                ts3TaskForce.StartInfo.Arguments = "ts3server://91.121.94.15?password=welcome";
                 //ts3TaskForce.StartInfo.CreateNoWindow = true;
                 ts3TaskForce.Start();
             }

@@ -494,7 +494,7 @@ namespace FSFLauncherA3
 
 
 
-        void DownloadConfigServeur(string nomFichier, string repertoireFTP, string repertoireLocal)
+        static public void DownloadConfigServeur(string nomFichier, string repertoireFTP, string repertoireLocal)
         {
             // parametre : nom du fichier téléchargé sur le FTP, répertoire d'emplacement dans le FTP, emplacement ou sera enregistré le fichier
             WebClient request = new WebClient();
@@ -504,7 +504,7 @@ namespace FSFLauncherA3
             file.Write(fileData, 0, fileData.Length);
             file.Close();
         }
-        void UploadConfigServeur(string nomFichier, string repertoireFTP)
+        static public void UploadConfigServeur(string nomFichier, string repertoireFTP)
         {
             // parametre : nom du fichier téléchargé sur le FTP, répertoire d'emplacement dans le FTP, emplacement ou sera enregistré le fichier
             FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create(repertoireFTP);
@@ -609,7 +609,7 @@ namespace FSFLauncherA3
 
                 FichierProfilXML.Flush(); //vide le buffer
                 FichierProfilXML.Close(); // ferme le document
-                UploadConfigServeur(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml", @"ftp://94.23.215.124/system/config/ImportConfigServeurA3.xml");
+                UploadConfigServeur(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml", @"ftp://37.59.36.179/system/config/ImportConfigServeurA3.xml");
             }
           }
         }
@@ -959,7 +959,7 @@ namespace FSFLauncherA3
                 FileStream fs = File.Create(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml");
                 fs.Close();
             }
-            DownloadConfigServeur("ImportConfigServeurA3.xml", "ftp://94.23.215.124/system/config", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
+            DownloadConfigServeur("ImportConfigServeurA3.xml", "ftp://37.59.36.179/system/listemod", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
             genereTabModsImportServeur();
             MessageBox.Show("Liste des MODS importée.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

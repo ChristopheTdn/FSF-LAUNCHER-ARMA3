@@ -274,7 +274,8 @@ namespace FSFLauncherA3
         {
             try
             {
-                XmlTextReader fichierInfoServer = new XmlTextReader("http://94.23.215.124/fsfserver/infoserveur.xml");
+                FSFLauncherA3.FenetrePrincipale.DownloadConfigServeur("versionserveurdistant.xml", "ftp://37.59.36.179", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
+                XmlTextReader fichierInfoServer = new XmlTextReader(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\versionserveurdistant.xml");
                 fichierInfoServer.ReadToFollowing("VERSION");
                 string VersionServeur = fichierInfoServer.ReadString();
                 fichierInfoServer.Close();

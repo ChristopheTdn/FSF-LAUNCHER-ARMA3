@@ -98,8 +98,8 @@ namespace FSFLauncherA3
             return;
         }    
         static public void DefinitionConstante()
-        {           
-            constCheminFTP = "ftp1.clan-fsf.fr";
+        {
+            constCheminFTP = "37.59.36.179";
             constLoginFTP = "fsflauncherA3";
             constMdpFTP = "fsflauncherA3";
             repertoireCourant = AppDomain.CurrentDomain.BaseDirectory;
