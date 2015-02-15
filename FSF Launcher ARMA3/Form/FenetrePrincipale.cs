@@ -609,7 +609,7 @@ namespace FSFLauncherA3
 
                 FichierProfilXML.Flush(); //vide le buffer
                 FichierProfilXML.Close(); // ferme le document
-                UploadConfigServeur(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml", @"ftp://37.59.36.179/system/config/ImportConfigServeurA3.xml");
+                UploadConfigServeur(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml", @"ftp://37.59.36.179/system/listemod/ImportConfigServeurA3.xml");
             }
           }
         }
@@ -966,8 +966,14 @@ namespace FSFLauncherA3
 
         private void button38_Click(object sender, EventArgs e)
         {
-            sauvegardeInfoServeur("LOCAL");
-            MessageBox.Show("Liste des MODS exportée", "Exportation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                sauvegardeInfoServeur("LOCAL");
+                MessageBox.Show("Liste des MODS exportée", "Exportation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+            }
         }
 
 
@@ -1437,6 +1443,11 @@ namespace FSFLauncherA3
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button40_Click_2(object sender, EventArgs e)
+        {
+            Interface.AfficheChangelog();
         }
     }
 }

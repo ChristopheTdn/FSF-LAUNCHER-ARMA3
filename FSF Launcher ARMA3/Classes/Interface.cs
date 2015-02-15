@@ -457,6 +457,16 @@ namespace FSFLauncherA3
         }
         #endregion
 
+        /*
+         *   CHANGELOG
+         */
 
+        #region CHANGELOG
+        static public void AfficheChangelog()
+        {
+            Form dialogue = new Dial_ChangeLog();
+            dialogue.ShowDialog();
+        }
+        #endregion
     }
 }

@@ -63,3 +63,4 @@ E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsy
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\rsyncd.conf.html
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\ssh-keygen.exe
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\ssh.exe
+E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_ChangeLog.resources

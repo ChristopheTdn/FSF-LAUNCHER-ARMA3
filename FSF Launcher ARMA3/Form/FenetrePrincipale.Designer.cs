@@ -267,6 +267,7 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.button40 = new System.Windows.Forms.Button();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1618,6 +1619,8 @@
             // SynchroZONE
             // 
             this.SynchroZONE.BackColor = System.Drawing.Color.Gainsboro;
+            this.SynchroZONE.Controls.Add(this.button40);
+            this.SynchroZONE.Controls.Add(this.button16);
             this.SynchroZONE.Controls.Add(this.groupBox5);
             this.SynchroZONE.Controls.Add(this.groupBox4);
             this.SynchroZONE.Controls.Add(this.button45);
@@ -1625,7 +1628,6 @@
             this.SynchroZONE.Controls.Add(this.button_TESTBoutonSynchro);
             this.SynchroZONE.Controls.Add(this.button43);
             this.SynchroZONE.Controls.Add(this.textBox11);
-            this.SynchroZONE.Controls.Add(this.button16);
             this.SynchroZONE.Controls.Add(this.button42);
             this.SynchroZONE.Controls.Add(this.labelSynchronisationInvisible);
             this.SynchroZONE.Controls.Add(this.button41);
@@ -2136,6 +2138,13 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
+            // button40
+            // 
+            resources.ApplyResources(this.button40, "button40");
+            this.button40.Name = "button40";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click_2);
+            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -2478,6 +2487,7 @@
         private System.Windows.Forms.GroupBox groupBox5;
         internal System.Windows.Forms.RadioButton radioButton8;
         internal System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.Button button40;
     }
 }
 
