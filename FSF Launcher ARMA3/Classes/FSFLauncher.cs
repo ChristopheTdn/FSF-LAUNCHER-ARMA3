@@ -595,7 +595,7 @@ namespace FSFLauncherA3
             if (fenetrePrincipale.checkBox13.Checked) { listArguments += " " + fenetrePrincipale.textBox4.Text + " "; }
             if (fenetrePrincipale.checkBox_EnableHT.Checked) { listArguments += "-enableHT "; }
 
-            if (profil == "public") { listArguments += @""" -MOD="" "; } else { listArguments += @""""+listMODS+@""" "; };
+            if (profil == "public") { listArguments += @" ""-MOD=@FSF\@TEMPLATE\@CBA_A3;@FSF\@TEMPLATE\@task_force_radio;@FSF\@ISLANDS\@AllInArmaTerrainPack;@FSF\@ISLANDS\@fata;@FSF\@UNITS\@RHSAFRF;@FSF\@UNITS\@RHSUSF;@FSF\@FRAMEWORK\@agm;"" "; } else { listArguments += @""""+listMODS+@""" "; };
 
             }
 

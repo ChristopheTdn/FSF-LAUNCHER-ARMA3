@@ -190,6 +190,8 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.SynchroZONE = new System.Windows.Forms.TabPage();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
@@ -200,7 +202,6 @@
             this.button_TESTBoutonSynchro = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button16 = new System.Windows.Forms.Button();
             this.button42 = new System.Windows.Forms.Button();
             this.labelSynchronisationInvisible = new System.Windows.Forms.Label();
             this.button41 = new System.Windows.Forms.Button();
@@ -267,7 +268,6 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.button40 = new System.Windows.Forms.Button();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1671,6 +1671,20 @@
             resources.ApplyResources(this.SynchroZONE, "SynchroZONE");
             this.SynchroZONE.Name = "SynchroZONE";
             // 
+            // button40
+            // 
+            resources.ApplyResources(this.button40, "button40");
+            this.button40.Name = "button40";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click_2);
+            // 
+            // button16
+            // 
+            resources.ApplyResources(this.button16, "button16");
+            this.button16.Name = "button16";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.radioButton8);
@@ -1737,13 +1751,6 @@
             // 
             resources.ApplyResources(this.textBox11, "textBox11");
             this.textBox11.Name = "textBox11";
-            // 
-            // button16
-            // 
-            resources.ApplyResources(this.button16, "button16");
-            this.button16.Name = "button16";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button42
             // 
@@ -2137,13 +2144,6 @@
             // cultureManager1
             // 
             this.cultureManager1.ManagedControl = this;
-            // 
-            // button40
-            // 
-            resources.ApplyResources(this.button40, "button40");
-            this.button40.Name = "button40";
-            this.button40.UseVisualStyleBackColor = true;
-            this.button40.Click += new System.EventHandler(this.button40_Click_2);
             // 
             // FenetrePrincipale
             // 
