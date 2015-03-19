@@ -79,6 +79,7 @@ namespace FSFLauncherA3
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox3, "@MATERIEL", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox6, "@CLIENT", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox4, "@TEST", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
+            FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox11, "@INTERCLAN", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
             // @Autre
             // Root
             FSFLauncherCore.ListeTab(FSFLauncherCore.fenetrePrincipale.checkedListBox5, "AUTRES_MODS", (FSFLauncherCore.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
@@ -270,6 +271,7 @@ namespace FSFLauncherA3
             FSFLauncherCore.synchroRsyncTaille("@CLIENT", FSFLauncherCore.fenetrePrincipale.button43, null, null, FSFLauncherCore.fenetrePrincipale.label49, null);
             FSFLauncherCore.synchroRsyncTaille("@TEST", FSFLauncherCore.fenetrePrincipale.button_TESTBoutonSynchro, null, null, FSFLauncherCore.fenetrePrincipale.label_TESTTailleSynchro, null);
             FSFLauncherCore.synchroRsyncTaille("@FRAMEWORK", FSFLauncherCore.fenetrePrincipale.button45, null, null, FSFLauncherCore.fenetrePrincipale.label51, null);
+            FSFLauncherCore.synchroRsyncTaille("@INTERCLAN", FSFLauncherCore.fenetrePrincipale.button_INTERCLANBoutonSynchro, null, null, FSFLauncherCore.fenetrePrincipale.label_INTERCLANTailleSynchro, null);
         }
         static public void AlerteVersionArma3()
         {
@@ -305,12 +307,21 @@ namespace FSFLauncherA3
              switch (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro"))
             {
                 case "beta" :
-                    FSFLauncherCore.fenetrePrincipale.checkBox14.Checked = true;
+                    FSFLauncherCore.fenetrePrincipale.checkBox_SyncBETA.Checked = true;
                     break;
                case "officielle" :
-                    FSFLauncherCore.fenetrePrincipale.checkBox14.Checked = false;
+                    FSFLauncherCore.fenetrePrincipale.checkBox_SyncBETA.Checked = false;
                     break;
             }
+             switch (FSFLauncherCore.GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "synchro_INTERCLAN"))
+             {
+                 case "true":
+                     FSFLauncherCore.fenetrePrincipale.checkBox_SyncINTERCLAN.Checked = true;
+                     break;
+                 case "false":
+                     FSFLauncherCore.fenetrePrincipale.checkBox_SyncINTERCLAN.Checked = false;
+                     break;
+             }
         }
         static public void AfficheServeurActif()
         {

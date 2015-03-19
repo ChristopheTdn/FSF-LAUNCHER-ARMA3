@@ -189,6 +189,20 @@ namespace FSFLauncherA3
                         FSFLauncherCore.fenetrePrincipale.label51.ForeColor = System.Drawing.Color.Red;
                     }
                 }
+                private void label_INTERCLANTailleSynchro_TextChanged(object sender, EventArgs e)
+                {
+                    // Taille generale
+                    if (FSFLauncherCore.fenetrePrincipale.label_INTERCLANTailleSynchro.Text.Replace(",", ".") == "0.000 Mo")
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label_INTERCLANTailleSynchro.Text = "A jour";
+                        FSFLauncherCore.fenetrePrincipale.label_INTERCLANTailleSynchro.ForeColor = System.Drawing.Color.Black;
+                    }
+                    else
+                    {
+                        FSFLauncherCore.fenetrePrincipale.label_INTERCLANTailleSynchro.ForeColor = System.Drawing.Color.Red;
+                    }
+
+                }
         /***********************************
          
                 Procedures PERSO
@@ -1400,7 +1414,7 @@ namespace FSFLauncherA3
  
         private void checkBox14_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox14.Checked) {
+            if (checkBox_SyncBETA.Checked) {
                 FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro", "beta");
                 progressBar__TESTFichierSynchro.Visible = true;
                 progressBar_TESTGlobalSynchro.Visible = true;
@@ -1449,6 +1463,40 @@ namespace FSFLauncherA3
         {
             Interface.AfficheChangelog();
         }
+
+        private void checkBox_SyncINTERCLAN_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_SyncINTERCLAN.Checked)
+            {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro_Interclan", "true");
+                progressBar_INTERCLANFichierSynchro.Visible = true;
+                progressBar_INTERCLANGlobalSynchro.Visible = true;
+                label_INTERCLANSynchro.Visible = true;
+                label_INTERCLANTailleSynchro.Visible = true;
+                label_INTERCLANVitesseSynchro.Visible = true;
+                button_INTERCLANBoutonSynchro.Visible = true;
+            }
+            else
+            {
+                FSFLauncherCore.SetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "Synchro_Interclan", "false");
+                progressBar_INTERCLANFichierSynchro.Visible = false;
+                progressBar_INTERCLANGlobalSynchro.Visible = false;
+                label_INTERCLANSynchro.Visible = false;
+                label_INTERCLANTailleSynchro.Visible = false;
+                label_INTERCLANVitesseSynchro.Visible = false;
+                button_INTERCLANBoutonSynchro.Visible = false;
+            }
+            Interface.testToutesTaillesSynchroEnLigne();
+        }
+
+        private void button_INTERCLANBoutonSynchro_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.synchroRsyncSpec("@INTERCLAN", (Button)sender, progressBar_INTERCLANGlobalSynchro, progressBar_INTERCLANFichierSynchro, label_INTERCLANTailleSynchro, label_INTERCLANVitesseSynchro);
+        }
+
+
+
+
     }
 }
     

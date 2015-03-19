@@ -395,6 +395,7 @@ namespace FSFLauncherA3
                         && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@TEMPLATE\") == -1)
                         && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@CLIENT\") == -1)
                         && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@TEST\") == -1)
+                        && (nomAAjouter.IndexOf(cheminARMA3 + @"\@FSF\@INTERCLAN\") == -1)
                         && (nomAAjouter.IndexOf(".pack") == -1)
                         && (nomAAjouter.IndexOf(".rsync") == -1)
                         )
@@ -425,6 +426,7 @@ namespace FSFLauncherA3
                 case "@MATERIEL":
                 case "@CLIENT":
                 case "@TEST":
+                case "@INTERCLAN":
                     tableauValeur = GenereListeFSF(nomRep);
                     break;
                 case "AUTRES_MODS":
@@ -480,6 +482,10 @@ namespace FSFLauncherA3
                 case "@TEST":
                     tagNameXML = "TEST";
                     filtreRepertoire = @"@FSF\@TEST\";
+                    break;
+                case "@INTERCLAN":
+                    tagNameXML = "INTERCLAN";
+                    filtreRepertoire = @"@FSF\@INTERCLAN\";
                     break;
             }
             XmlDocument fichierProfilXML = new XmlDocument();
@@ -720,7 +726,7 @@ namespace FSFLauncherA3
             if (NomRep == "")
             {
                 remoteDir = "@FSF";
-                if (FSFLauncherCore.fenetrePrincipale.checkBox14.Checked){
+                if (FSFLauncherCore.fenetrePrincipale.checkBox_SyncBETA.Checked){
                 arguments = " -za";
                 }
                 else {
@@ -743,7 +749,7 @@ namespace FSFLauncherA3
             string remoteDir = NomRep.ToUpper();
             if (NomRep == "") {
                 remoteDir = "@FSF";
-                arguments = "--exclude '@TEST/' --exclude '@CLIENT/' --exclude '@FRAMEWORK/' --exclude '@ISLANDS/' --exclude '@MATERIEL/' --exclude '@TEMPLATE/' --exclude '@UNITS/' -za";
+                arguments = "--exclude '@TEST/' --exclude '@CLIENT/' --exclude '@FRAMEWORK/' --exclude '@INTERCLAN/' --exclude '@ISLANDS/' --exclude '@MATERIEL/' --exclude '@TEMPLATE/' --exclude '@UNITS/' -za";
                 localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF");
                               };
 

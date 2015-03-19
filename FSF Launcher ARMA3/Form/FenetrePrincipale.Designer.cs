@@ -33,7 +33,7 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.ModsFSF = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.TEMPLATE = new System.Windows.Forms.TabPage();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
@@ -43,36 +43,41 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.FRAMEWORK = new System.Windows.Forms.TabPage();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ISLANDS = new System.Windows.Forms.TabPage();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.UNITS = new System.Windows.Forms.TabPage();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.MATERIEL = new System.Windows.Forms.TabPage();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.CLIENT = new System.Windows.Forms.TabPage();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.TEST = new System.Windows.Forms.TabPage();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.INTERCLAN = new System.Windows.Forms.TabPage();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
+            this.checkedListBox11 = new System.Windows.Forms.CheckedListBox();
             this.MODs = new System.Windows.Forms.TabPage();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -190,13 +195,20 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.SynchroZONE = new System.Windows.Forms.TabPage();
+            this.button_INTERCLANBoutonSynchro = new System.Windows.Forms.Button();
+            this.label_INTERCLANSynchro = new System.Windows.Forms.Label();
+            this.progressBar_INTERCLANGlobalSynchro = new System.Windows.Forms.ProgressBar();
+            this.progressBar_INTERCLANFichierSynchro = new System.Windows.Forms.ProgressBar();
+            this.label_INTERCLANVitesseSynchro = new System.Windows.Forms.Label();
+            this.label_INTERCLANTailleSynchro = new System.Windows.Forms.Label();
             this.button40 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox_SyncINTERCLAN = new System.Windows.Forms.CheckBox();
+            this.checkBox_SyncBETA = new System.Windows.Forms.CheckBox();
             this.button45 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.button_TESTBoutonSynchro = new System.Windows.Forms.Button();
@@ -271,22 +283,24 @@
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage8.SuspendLayout();
+            this.TEMPLATE.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage5.SuspendLayout();
+            this.FRAMEWORK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.ISLANDS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.tabPage2.SuspendLayout();
+            this.UNITS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.tabPage3.SuspendLayout();
+            this.MATERIEL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.tabPage7.SuspendLayout();
+            this.CLIENT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.tabPage4.SuspendLayout();
+            this.TEST.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.INTERCLAN.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.MODs.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -356,29 +370,30 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage8);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.TEMPLATE);
+            this.tabControl1.Controls.Add(this.FRAMEWORK);
+            this.tabControl1.Controls.Add(this.ISLANDS);
+            this.tabControl1.Controls.Add(this.UNITS);
+            this.tabControl1.Controls.Add(this.MATERIEL);
+            this.tabControl1.Controls.Add(this.CLIENT);
+            this.tabControl1.Controls.Add(this.TEST);
+            this.tabControl1.Controls.Add(this.INTERCLAN);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
-            // tabPage8
+            // TEMPLATE
             // 
-            this.tabPage8.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.tabPage8, "tabPage8");
-            this.tabPage8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage8.Controls.Add(this.groupBox14);
-            this.tabPage8.Controls.Add(this.groupBox13);
-            this.tabPage8.Controls.Add(this.pictureBox1);
-            this.tabPage8.Controls.Add(this.button13);
-            this.tabPage8.Controls.Add(this.button12);
-            this.tabPage8.Controls.Add(this.checkedListBox7);
-            this.tabPage8.Name = "tabPage8";
+            this.TEMPLATE.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.TEMPLATE, "TEMPLATE");
+            this.TEMPLATE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TEMPLATE.Controls.Add(this.groupBox14);
+            this.TEMPLATE.Controls.Add(this.groupBox13);
+            this.TEMPLATE.Controls.Add(this.pictureBox1);
+            this.TEMPLATE.Controls.Add(this.button13);
+            this.TEMPLATE.Controls.Add(this.button12);
+            this.TEMPLATE.Controls.Add(this.checkedListBox7);
+            this.TEMPLATE.Name = "TEMPLATE";
             // 
             // groupBox14
             // 
@@ -452,15 +467,15 @@
             this.checkedListBox7.ThreeDCheckBoxes = true;
             this.checkedListBox7.SelectedIndexChanged += new System.EventHandler(this.checkedListBox7_SelectedIndexChanged);
             // 
-            // tabPage5
+            // FRAMEWORK
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage5.Controls.Add(this.pictureBox33);
-            this.tabPage5.Controls.Add(this.button20);
-            this.tabPage5.Controls.Add(this.button21);
-            this.tabPage5.Controls.Add(this.checkedListBox8);
-            resources.ApplyResources(this.tabPage5, "tabPage5");
-            this.tabPage5.Name = "tabPage5";
+            this.FRAMEWORK.BackColor = System.Drawing.Color.Gainsboro;
+            this.FRAMEWORK.Controls.Add(this.pictureBox33);
+            this.FRAMEWORK.Controls.Add(this.button20);
+            this.FRAMEWORK.Controls.Add(this.button21);
+            this.FRAMEWORK.Controls.Add(this.checkedListBox8);
+            resources.ApplyResources(this.FRAMEWORK, "FRAMEWORK");
+            this.FRAMEWORK.Name = "FRAMEWORK";
             // 
             // pictureBox33
             // 
@@ -495,16 +510,16 @@
             this.checkedListBox8.ThreeDCheckBoxes = true;
             this.checkedListBox8.SelectedIndexChanged += new System.EventHandler(this.checkedListBox8_SelectedIndexChanged);
             // 
-            // tabPage1
+            // ISLANDS
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage1.Controls.Add(this.pictureBox7);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.checkedListBox1);
-            this.tabPage1.Name = "tabPage1";
+            this.ISLANDS.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.ISLANDS, "ISLANDS");
+            this.ISLANDS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ISLANDS.Controls.Add(this.pictureBox7);
+            this.ISLANDS.Controls.Add(this.button3);
+            this.ISLANDS.Controls.Add(this.button2);
+            this.ISLANDS.Controls.Add(this.checkedListBox1);
+            this.ISLANDS.Name = "ISLANDS";
             // 
             // pictureBox7
             // 
@@ -538,16 +553,16 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.ThreeDCheckBoxes = true;
             // 
-            // tabPage2
+            // UNITS
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage2.Controls.Add(this.pictureBox8);
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.checkedListBox2);
-            this.tabPage2.Name = "tabPage2";
+            this.UNITS.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.UNITS, "UNITS");
+            this.UNITS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UNITS.Controls.Add(this.pictureBox8);
+            this.UNITS.Controls.Add(this.button4);
+            this.UNITS.Controls.Add(this.button5);
+            this.UNITS.Controls.Add(this.checkedListBox2);
+            this.UNITS.Name = "UNITS";
             // 
             // pictureBox8
             // 
@@ -581,16 +596,16 @@
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.ThreeDCheckBoxes = true;
             // 
-            // tabPage3
+            // MATERIEL
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage3.Controls.Add(this.pictureBox9);
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.button7);
-            this.tabPage3.Controls.Add(this.checkedListBox3);
-            this.tabPage3.Name = "tabPage3";
+            this.MATERIEL.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.MATERIEL, "MATERIEL");
+            this.MATERIEL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MATERIEL.Controls.Add(this.pictureBox9);
+            this.MATERIEL.Controls.Add(this.button6);
+            this.MATERIEL.Controls.Add(this.button7);
+            this.MATERIEL.Controls.Add(this.checkedListBox3);
+            this.MATERIEL.Name = "MATERIEL";
             // 
             // pictureBox9
             // 
@@ -624,16 +639,16 @@
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.ThreeDCheckBoxes = true;
             // 
-            // tabPage7
+            // CLIENT
             // 
-            this.tabPage7.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.tabPage7, "tabPage7");
-            this.tabPage7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage7.Controls.Add(this.pictureBox10);
-            this.tabPage7.Controls.Add(this.button11);
-            this.tabPage7.Controls.Add(this.button10);
-            this.tabPage7.Controls.Add(this.checkedListBox6);
-            this.tabPage7.Name = "tabPage7";
+            this.CLIENT.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.CLIENT, "CLIENT");
+            this.CLIENT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLIENT.Controls.Add(this.pictureBox10);
+            this.CLIENT.Controls.Add(this.button11);
+            this.CLIENT.Controls.Add(this.button10);
+            this.CLIENT.Controls.Add(this.checkedListBox6);
+            this.CLIENT.Name = "CLIENT";
             // 
             // pictureBox10
             // 
@@ -667,16 +682,16 @@
             this.checkedListBox6.Name = "checkedListBox6";
             this.checkedListBox6.ThreeDCheckBoxes = true;
             // 
-            // tabPage4
+            // TEST
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage4.Controls.Add(this.pictureBox11);
-            this.tabPage4.Controls.Add(this.button8);
-            this.tabPage4.Controls.Add(this.button9);
-            this.tabPage4.Controls.Add(this.checkedListBox4);
-            this.tabPage4.Name = "tabPage4";
+            this.TEST.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.TEST, "TEST");
+            this.TEST.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TEST.Controls.Add(this.pictureBox11);
+            this.TEST.Controls.Add(this.button8);
+            this.TEST.Controls.Add(this.button9);
+            this.TEST.Controls.Add(this.checkedListBox4);
+            this.TEST.Name = "TEST";
             // 
             // pictureBox11
             // 
@@ -709,6 +724,46 @@
             this.checkedListBox4.MultiColumn = true;
             this.checkedListBox4.Name = "checkedListBox4";
             this.checkedListBox4.ThreeDCheckBoxes = true;
+            // 
+            // INTERCLAN
+            // 
+            this.INTERCLAN.BackColor = System.Drawing.Color.Gainsboro;
+            this.INTERCLAN.Controls.Add(this.pictureBox16);
+            this.INTERCLAN.Controls.Add(this.button44);
+            this.INTERCLAN.Controls.Add(this.button46);
+            this.INTERCLAN.Controls.Add(this.checkedListBox11);
+            resources.ApplyResources(this.INTERCLAN, "INTERCLAN");
+            this.INTERCLAN.Name = "INTERCLAN";
+            // 
+            // pictureBox16
+            // 
+            resources.ApplyResources(this.pictureBox16, "pictureBox16");
+            this.pictureBox16.Image = global::FSFLauncherA3.Properties.Resources.idee;
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.TabStop = false;
+            // 
+            // button44
+            // 
+            resources.ApplyResources(this.button44, "button44");
+            this.button44.Name = "button44";
+            this.button44.UseVisualStyleBackColor = true;
+            // 
+            // button46
+            // 
+            resources.ApplyResources(this.button46, "button46");
+            this.button46.Name = "button46";
+            this.button46.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox11
+            // 
+            this.checkedListBox11.BackColor = System.Drawing.Color.Gainsboro;
+            this.checkedListBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox11.CheckOnClick = true;
+            resources.ApplyResources(this.checkedListBox11, "checkedListBox11");
+            this.checkedListBox11.FormattingEnabled = true;
+            this.checkedListBox11.MultiColumn = true;
+            this.checkedListBox11.Name = "checkedListBox11";
+            this.checkedListBox11.ThreeDCheckBoxes = true;
             // 
             // MODs
             // 
@@ -1619,6 +1674,12 @@
             // SynchroZONE
             // 
             this.SynchroZONE.BackColor = System.Drawing.Color.Gainsboro;
+            this.SynchroZONE.Controls.Add(this.button_INTERCLANBoutonSynchro);
+            this.SynchroZONE.Controls.Add(this.label_INTERCLANSynchro);
+            this.SynchroZONE.Controls.Add(this.progressBar_INTERCLANGlobalSynchro);
+            this.SynchroZONE.Controls.Add(this.progressBar_INTERCLANFichierSynchro);
+            this.SynchroZONE.Controls.Add(this.label_INTERCLANVitesseSynchro);
+            this.SynchroZONE.Controls.Add(this.label_INTERCLANTailleSynchro);
             this.SynchroZONE.Controls.Add(this.button40);
             this.SynchroZONE.Controls.Add(this.button16);
             this.SynchroZONE.Controls.Add(this.groupBox5);
@@ -1671,6 +1732,43 @@
             resources.ApplyResources(this.SynchroZONE, "SynchroZONE");
             this.SynchroZONE.Name = "SynchroZONE";
             // 
+            // button_INTERCLANBoutonSynchro
+            // 
+            resources.ApplyResources(this.button_INTERCLANBoutonSynchro, "button_INTERCLANBoutonSynchro");
+            this.button_INTERCLANBoutonSynchro.Name = "button_INTERCLANBoutonSynchro";
+            this.button_INTERCLANBoutonSynchro.UseVisualStyleBackColor = true;
+            this.button_INTERCLANBoutonSynchro.Click += new System.EventHandler(this.button_INTERCLANBoutonSynchro_Click);
+            // 
+            // label_INTERCLANSynchro
+            // 
+            resources.ApplyResources(this.label_INTERCLANSynchro, "label_INTERCLANSynchro");
+            this.label_INTERCLANSynchro.Name = "label_INTERCLANSynchro";
+            // 
+            // progressBar_INTERCLANGlobalSynchro
+            // 
+            resources.ApplyResources(this.progressBar_INTERCLANGlobalSynchro, "progressBar_INTERCLANGlobalSynchro");
+            this.progressBar_INTERCLANGlobalSynchro.Name = "progressBar_INTERCLANGlobalSynchro";
+            this.progressBar_INTERCLANGlobalSynchro.Step = 100;
+            this.progressBar_INTERCLANGlobalSynchro.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar_INTERCLANFichierSynchro
+            // 
+            resources.ApplyResources(this.progressBar_INTERCLANFichierSynchro, "progressBar_INTERCLANFichierSynchro");
+            this.progressBar_INTERCLANFichierSynchro.Name = "progressBar_INTERCLANFichierSynchro";
+            this.progressBar_INTERCLANFichierSynchro.Step = 100;
+            this.progressBar_INTERCLANFichierSynchro.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // label_INTERCLANVitesseSynchro
+            // 
+            resources.ApplyResources(this.label_INTERCLANVitesseSynchro, "label_INTERCLANVitesseSynchro");
+            this.label_INTERCLANVitesseSynchro.Name = "label_INTERCLANVitesseSynchro";
+            // 
+            // label_INTERCLANTailleSynchro
+            // 
+            resources.ApplyResources(this.label_INTERCLANTailleSynchro, "label_INTERCLANTailleSynchro");
+            this.label_INTERCLANTailleSynchro.Name = "label_INTERCLANTailleSynchro";
+            this.label_INTERCLANTailleSynchro.TextChanged += new System.EventHandler(this.label_INTERCLANTailleSynchro_TextChanged);
+            // 
             // button40
             // 
             resources.ApplyResources(this.button40, "button40");
@@ -1709,17 +1807,25 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.checkBox14);
+            this.groupBox4.Controls.Add(this.checkBox_SyncINTERCLAN);
+            this.groupBox4.Controls.Add(this.checkBox_SyncBETA);
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
-            // checkBox14
+            // checkBox_SyncINTERCLAN
             // 
-            resources.ApplyResources(this.checkBox14, "checkBox14");
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
+            resources.ApplyResources(this.checkBox_SyncINTERCLAN, "checkBox_SyncINTERCLAN");
+            this.checkBox_SyncINTERCLAN.Name = "checkBox_SyncINTERCLAN";
+            this.checkBox_SyncINTERCLAN.UseVisualStyleBackColor = true;
+            this.checkBox_SyncINTERCLAN.CheckedChanged += new System.EventHandler(this.checkBox_SyncINTERCLAN_CheckedChanged);
+            // 
+            // checkBox_SyncBETA
+            // 
+            resources.ApplyResources(this.checkBox_SyncBETA, "checkBox_SyncBETA");
+            this.checkBox_SyncBETA.Name = "checkBox_SyncBETA";
+            this.checkBox_SyncBETA.UseVisualStyleBackColor = true;
+            this.checkBox_SyncBETA.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
             // button45
             // 
@@ -2170,23 +2276,25 @@
             this.tabControl2.ResumeLayout(false);
             this.ModsFSF.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
+            this.TEMPLATE.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage5.ResumeLayout(false);
+            this.FRAMEWORK.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            this.tabPage1.ResumeLayout(false);
+            this.ISLANDS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.tabPage2.ResumeLayout(false);
+            this.UNITS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.tabPage3.ResumeLayout(false);
+            this.MATERIEL.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.tabPage7.ResumeLayout(false);
+            this.CLIENT.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.tabPage4.ResumeLayout(false);
+            this.TEST.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.INTERCLAN.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.MODs.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
@@ -2338,26 +2446,26 @@
         internal System.Windows.Forms.Label label17;
         internal System.Windows.Forms.Label label20;
         internal System.Windows.Forms.Label label14;
-        internal System.Windows.Forms.TabPage tabPage8;
+        internal System.Windows.Forms.TabPage @TEMPLATE;
         internal System.Windows.Forms.Button button13;
         internal System.Windows.Forms.Button button12;
-        internal System.Windows.Forms.TabPage tabPage1;
+        internal System.Windows.Forms.TabPage @ISLANDS;
         internal System.Windows.Forms.PictureBox pictureBox7;
         internal System.Windows.Forms.Button button3;
         internal System.Windows.Forms.Button button2;
-        internal System.Windows.Forms.TabPage tabPage2;
+        internal System.Windows.Forms.TabPage @UNITS;
         internal System.Windows.Forms.PictureBox pictureBox8;
         internal System.Windows.Forms.Button button4;
         internal System.Windows.Forms.Button button5;
-        internal System.Windows.Forms.TabPage tabPage3;
+        internal System.Windows.Forms.TabPage @MATERIEL;
         internal System.Windows.Forms.PictureBox pictureBox9;
         internal System.Windows.Forms.Button button6;
         internal System.Windows.Forms.Button button7;
-        internal System.Windows.Forms.TabPage tabPage7;
+        internal System.Windows.Forms.TabPage @CLIENT;
         internal System.Windows.Forms.PictureBox pictureBox10;
         internal System.Windows.Forms.Button button11;
         internal System.Windows.Forms.Button button10;
-        internal System.Windows.Forms.TabPage tabPage4;
+        internal System.Windows.Forms.TabPage @TEST;
         internal System.Windows.Forms.PictureBox pictureBox11;
         internal System.Windows.Forms.Button button8;
         internal System.Windows.Forms.Button button9;
@@ -2401,7 +2509,7 @@
         internal System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label9;
         internal System.Windows.Forms.Button button16;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage @FRAMEWORK;
         internal System.Windows.Forms.PictureBox pictureBox33;
         internal System.Windows.Forms.Button button20;
         internal System.Windows.Forms.Button button21;
@@ -2483,11 +2591,23 @@
         internal System.Windows.Forms.ProgressBar progressBar5;
         internal System.Windows.Forms.ProgressBar progressBar11;
         private System.Windows.Forms.GroupBox groupBox4;
-        internal System.Windows.Forms.CheckBox checkBox14;
+        internal System.Windows.Forms.CheckBox checkBox_SyncBETA;
         private System.Windows.Forms.GroupBox groupBox5;
         internal System.Windows.Forms.RadioButton radioButton8;
         internal System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.TabPage INTERCLAN;
+        internal System.Windows.Forms.PictureBox pictureBox16;
+        internal System.Windows.Forms.Button button44;
+        internal System.Windows.Forms.Button button46;
+        internal System.Windows.Forms.CheckedListBox checkedListBox11;
+        public System.Windows.Forms.Button button_INTERCLANBoutonSynchro;
+        private System.Windows.Forms.Label label_INTERCLANSynchro;
+        internal System.Windows.Forms.ProgressBar progressBar_INTERCLANGlobalSynchro;
+        internal System.Windows.Forms.ProgressBar progressBar_INTERCLANFichierSynchro;
+        internal System.Windows.Forms.Label label_INTERCLANVitesseSynchro;
+        internal System.Windows.Forms.Label label_INTERCLANTailleSynchro;
+        internal System.Windows.Forms.CheckBox checkBox_SyncINTERCLAN;
     }
 }
 
