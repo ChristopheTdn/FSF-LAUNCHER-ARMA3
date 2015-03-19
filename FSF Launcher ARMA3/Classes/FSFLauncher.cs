@@ -723,16 +723,14 @@ namespace FSFLauncherA3
             String remoteServer = serveurSynchroIP();
             string arguments = "-vza";
             string remoteDir = NomRep.ToUpper();
+
             if (NomRep == "")
             {
                 remoteDir = "@FSF";
-                if (FSFLauncherCore.fenetrePrincipale.checkBox_SyncBETA.Checked){
-                arguments = " -za";
-                }
-                else {
-                    arguments = "--exclude '@TEST/' -za";
-                }
-                localDir = new DirectoryInfo(cheminARMA3 + @"\@FSF");
+                arguments = "";
+                if (!FSFLauncherCore.fenetrePrincipale.checkBox_SyncBETA.Checked) { arguments += "--exclude '@TEST/' "; }
+                if (!FSFLauncherCore.fenetrePrincipale.checkBox_SyncINTERCLAN.Checked) { arguments += "--exclude '@INTERCLAN/' "; }
+                arguments += " -za";
             };
 
             RSync.RSyncCall rSyncCall = new RSync.RSyncCall(arguments, FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, ProgressDetail, ProgressGeneral, rsyncExe, remoteServer, remoteDir, localDir, labelTailleSynchro, labelVitesseSynchro);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
