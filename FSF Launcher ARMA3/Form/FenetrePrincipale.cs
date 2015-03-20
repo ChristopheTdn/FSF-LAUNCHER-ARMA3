@@ -1182,30 +1182,6 @@ namespace FSFLauncherA3
         {
             splashscreen.Close();
         }
-
-
-
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListBox8_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListBox7_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button21_Click(object sender, EventArgs e)
         {
 
@@ -1361,10 +1337,6 @@ namespace FSFLauncherA3
         {
             FSFLauncherCore.lancerJeu("public");
         }
-
-        private void button40_Click_1(object sender, EventArgs e)
-        {
-        }
         private void button16_Click(object sender, EventArgs e)
         {
             FSFLauncherCore.synchroRsyncSpec("", button16, null, null, null, null);
@@ -1374,6 +1346,7 @@ namespace FSFLauncherA3
             if (button42.Visible == true) FSFLauncherCore.synchroRsyncSpec("@UNITS", button42, progressBar8, progressBar9, label48, label42);
             if (button43.Visible == true) FSFLauncherCore.synchroRsyncSpec("@CLIENT", button43, progressBar10, progressBar12, label49, label43);
             if (button_TESTBoutonSynchro.Visible == true) FSFLauncherCore.synchroRsyncSpec("@TEST", button_TESTBoutonSynchro, progressBar_TESTGlobalSynchro, progressBar__TESTFichierSynchro, label_TESTTailleSynchro, label_TESTVitesseSynchro);
+            if (button_INTERCLANBoutonSynchro.Visible == true) FSFLauncherCore.synchroRsyncSpec("@INTERCLAN", button_INTERCLANBoutonSynchro, progressBar_INTERCLANGlobalSynchro, progressBar_INTERCLANFichierSynchro, label_INTERCLANTailleSynchro, label_INTERCLANVitesseSynchro);
             if (button45.Visible == true) FSFLauncherCore.synchroRsyncSpec("@FRAMEWORK", button45, progressBar16, progressBar15, label51, label52);
         }
         private void button25_Click(object sender, EventArgs e)
@@ -1492,6 +1465,26 @@ namespace FSFLauncherA3
         private void button_INTERCLANBoutonSynchro_Click(object sender, EventArgs e)
         {
             FSFLauncherCore.synchroRsyncSpec("@INTERCLAN", (Button)sender, progressBar_INTERCLANGlobalSynchro, progressBar_INTERCLANFichierSynchro, label_INTERCLANTailleSynchro, label_INTERCLANVitesseSynchro);
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.SelectionneTousTAB(checkedListBox11);
+        }
+
+        private void button44_Click_1(object sender, EventArgs e)
+        {
+            FSFLauncherCore.InverseTousTAB(checkedListBox11);
+        }
+
+        private void checkedListBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ctrlListModPrioritaire_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
 

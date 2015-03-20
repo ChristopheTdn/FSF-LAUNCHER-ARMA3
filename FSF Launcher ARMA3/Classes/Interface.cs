@@ -110,6 +110,7 @@ namespace FSFLauncherA3
             FSFLauncherCore.fenetrePrincipale.checkedListBox5.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox9.Items.Clear();
             FSFLauncherCore.fenetrePrincipale.checkedListBox10.Items.Clear();
+            FSFLauncherCore.fenetrePrincipale.checkedListBox11.Items.Clear();
         }
         static public void effaceTousparamsOnglet()
         {

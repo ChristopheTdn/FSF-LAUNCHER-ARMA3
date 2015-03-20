@@ -216,6 +216,16 @@ namespace FSFLauncherA3
             }
             FichierProfilXML.WriteEndElement();
 
+            //INTERCLAN
+            FichierProfilXML.WriteStartElement("INTERCLAN");
+            if (fenetrePrincipale.checkedListBox11.CheckedItems.Count != 0)
+            {
+                for (int x = 0; x <= fenetrePrincipale.checkedListBox11.CheckedItems.Count - 1; x++)
+                {
+                    FichierProfilXML.WriteElementString("MODS", @"@FSF\@INTERCLAN\" + fenetrePrincipale.checkedListBox11.CheckedItems[x].ToString());
+                }
+            }
+            FichierProfilXML.WriteEndElement();
             //TEMPLATE
             FichierProfilXML.WriteStartElement("TEMPLATE");
             if (fenetrePrincipale.checkedListBox7.CheckedItems.Count != 0)

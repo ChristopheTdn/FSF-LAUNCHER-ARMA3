@@ -465,7 +465,6 @@
             this.checkedListBox7.MultiColumn = true;
             this.checkedListBox7.Name = "checkedListBox7";
             this.checkedListBox7.ThreeDCheckBoxes = true;
-            this.checkedListBox7.SelectedIndexChanged += new System.EventHandler(this.checkedListBox7_SelectedIndexChanged);
             // 
             // FRAMEWORK
             // 
@@ -508,7 +507,6 @@
             this.checkedListBox8.MultiColumn = true;
             this.checkedListBox8.Name = "checkedListBox8";
             this.checkedListBox8.ThreeDCheckBoxes = true;
-            this.checkedListBox8.SelectedIndexChanged += new System.EventHandler(this.checkedListBox8_SelectedIndexChanged);
             // 
             // ISLANDS
             // 
@@ -724,6 +722,7 @@
             this.checkedListBox4.MultiColumn = true;
             this.checkedListBox4.Name = "checkedListBox4";
             this.checkedListBox4.ThreeDCheckBoxes = true;
+            this.checkedListBox4.SelectedIndexChanged += new System.EventHandler(this.checkedListBox4_SelectedIndexChanged);
             // 
             // INTERCLAN
             // 
@@ -747,12 +746,14 @@
             resources.ApplyResources(this.button44, "button44");
             this.button44.Name = "button44";
             this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click_1);
             // 
             // button46
             // 
             resources.ApplyResources(this.button46, "button46");
             this.button46.Name = "button46";
             this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
             // 
             // checkedListBox11
             // 
@@ -980,6 +981,7 @@
             this.ctrlListModPrioritaire.FormattingEnabled = true;
             resources.ApplyResources(this.ctrlListModPrioritaire, "ctrlListModPrioritaire");
             this.ctrlListModPrioritaire.Name = "ctrlListModPrioritaire";
+            this.ctrlListModPrioritaire.SelectedIndexChanged += new System.EventHandler(this.ctrlListModPrioritaire_SelectedIndexChanged);
             // 
             // Options
             // 
@@ -1228,7 +1230,6 @@
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox6, resources.GetString("pictureBox6.ToolTip"));
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // checkBox11
             // 

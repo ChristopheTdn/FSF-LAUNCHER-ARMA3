@@ -100,6 +100,11 @@ namespace FSFLauncherA3
             {
                 listeModsValide.Add(ligne);
             }
+            // INTERCLAN
+            foreach (string ligne in ExtractionListeModsValides(FSFLauncherCore.fenetrePrincipale.checkedListBox11, @"@FSF\@INTERCLAN\"))
+            {
+                listeModsValide.Add(ligne);
+            }
             // Autres MODS
             foreach (string ligne in ExtractionListeModsValides(FSFLauncherCore.fenetrePrincipale.checkedListBox5, ""))
             {
