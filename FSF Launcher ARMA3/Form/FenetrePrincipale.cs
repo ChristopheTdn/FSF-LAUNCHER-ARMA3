@@ -1487,6 +1487,60 @@ namespace FSFLauncherA3
 
         }
 
+        private void Priorité_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Interclan_Info_Enter(object sender, EventArgs e)
+        {
+            interclan.init();
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(interclan.url_organisateur);
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
+                    }
+
+        private void textBox15_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox16_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label55_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+            FSFLauncherA3.ProgExterne.lancerTeamspeak3TaskForceINTERCLAN(textBox15.Text,textBox16.Text);
+        }
+
+        private void button48_Click(object sender, EventArgs e)
+        {
+            FSFLauncherCore.lancerJeu("interclan");
+        }
+
 
 
 

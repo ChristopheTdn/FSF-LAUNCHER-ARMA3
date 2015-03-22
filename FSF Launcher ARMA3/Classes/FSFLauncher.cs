@@ -610,8 +610,12 @@ namespace FSFLauncherA3
             if (fenetrePrincipale.checkBox_HeadlessClient.Checked) { listArguments += @"-name=""HeadLess Client"" -localhost=127.0.0.1 -connect=localhost -port="+fenetrePrincipale.textBox2.Text+" -password="+fenetrePrincipale.textBox3.Text+" -client -nosound "; }
             if (fenetrePrincipale.checkBox13.Checked) { listArguments += " " + fenetrePrincipale.textBox4.Text + " "; }
             if (fenetrePrincipale.checkBox_EnableHT.Checked) { listArguments += "-enableHT "; }
-
-            if (profil == "public") { listArguments += @" ""-MOD=@FSF\@TEMPLATE\@CBA_A3;@FSF\@TEMPLATE\@task_force_radio;@FSF\@ISLANDS\@AllInArmaTerrainPack;@FSF\@ISLANDS\@fata;@FSF\@UNITS\@RHSAFRF;@FSF\@UNITS\@RHSUSF;@FSF\@FRAMEWORK\@agm;"" "; } else { listArguments += @""""+listMODS+@""" "; };
+            if (profil == "public" || profil == "interclan")
+            {
+                if (profil == "public") { listArguments += @" ""-MOD=@FSF\@TEMPLATE\@CBA_A3;@FSF\@TEMPLATE\@task_force_radio;@FSF\@ISLANDS\@AllInArmaTerrainPack;@FSF\@ISLANDS\@fata;@FSF\@UNITS\@RHSAFRF;@FSF\@UNITS\@RHSUSF;@FSF\@FRAMEWORK\@agm;"" "; };
+                if (profil == "interclan") { listArguments += @" """ + FSFLauncherCore.fenetrePrincipale.textBox18.Text + @""" "; }
+            }
+            else { listArguments += @"""" + listMODS + @""" "; };
 
             }
 
@@ -644,7 +648,8 @@ namespace FSFLauncherA3
                 if (serveur == "newofficiel") { serveur = @"-connect=37.59.52.201 -port=4442 -password=honneur "; };
                 if (serveur == "newmapping") { serveur = @"-connect=37.59.52.201 -port=3302 -password=patrie "; };
                 if (serveur == "public") { serveur = @"-connect=37.59.52.201 -port=2902 -password= "; };
-                ProgExterne.lancerFraps();
+                if (serveur == "interclan") { serveur = @"-connect=" + FSFLauncherCore.fenetrePrincipale.textBox10.Text + " -port=" + FSFLauncherCore.fenetrePrincipale.textBox17.Text + " -password=" + FSFLauncherCore.fenetrePrincipale.textBox12.Text + " "; };
+                ProgExterne.lancerFraps(); 
                 ProgExterne.lancerTrackIR();
 
                 // Lancement Jeu

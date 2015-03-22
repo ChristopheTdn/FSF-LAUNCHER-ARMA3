@@ -254,6 +254,28 @@
             this.label49 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label_TESTTailleSynchro = new System.Windows.Forms.Label();
+            this.Interclan_Info = new System.Windows.Forms.TabPage();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -280,6 +302,8 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.label27 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             this.tabControl2.SuspendLayout();
             this.ModsFSF.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -343,6 +367,8 @@
             this.SynchroZONE.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.Interclan_Info.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
@@ -356,9 +382,11 @@
             this.tabControl2.Controls.Add(this.Priorité);
             this.tabControl2.Controls.Add(this.Options);
             this.tabControl2.Controls.Add(this.SynchroZONE);
+            this.tabControl2.Controls.Add(this.Interclan_Info);
             resources.ApplyResources(this.tabControl2, "tabControl2");
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Enter += new System.EventHandler(this.tabControl2_Enter);
             // 
             // ModsFSF
             // 
@@ -941,6 +969,7 @@
             resources.ApplyResources(this.Priorité, "Priorité");
             this.Priorité.Name = "Priorité";
             this.toolTip1.SetToolTip(this.Priorité, resources.GetString("Priorité.ToolTip"));
+            this.Priorité.Click += new System.EventHandler(this.Priorité_Click);
             this.Priorité.Enter += new System.EventHandler(this.Priorité_Enter);
             // 
             // button32
@@ -2095,6 +2124,160 @@
             resources.ApplyResources(this.label_TESTTailleSynchro, "label_TESTTailleSynchro");
             this.label_TESTTailleSynchro.Name = "label_TESTTailleSynchro";
             // 
+            // Interclan_Info
+            // 
+            this.Interclan_Info.BackColor = System.Drawing.Color.Gainsboro;
+            this.Interclan_Info.Controls.Add(this.textBox18);
+            this.Interclan_Info.Controls.Add(this.label27);
+            this.Interclan_Info.Controls.Add(this.pictureBox17);
+            this.Interclan_Info.Controls.Add(this.textBox17);
+            this.Interclan_Info.Controls.Add(this.label19);
+            this.Interclan_Info.Controls.Add(this.textBox12);
+            this.Interclan_Info.Controls.Add(this.textBox10);
+            this.Interclan_Info.Controls.Add(this.textBox16);
+            this.Interclan_Info.Controls.Add(this.textBox15);
+            this.Interclan_Info.Controls.Add(this.textBox13);
+            this.Interclan_Info.Controls.Add(this.textBox14);
+            this.Interclan_Info.Controls.Add(this.textBox9);
+            this.Interclan_Info.Controls.Add(this.label55);
+            this.Interclan_Info.Controls.Add(this.label54);
+            this.Interclan_Info.Controls.Add(this.label50);
+            this.Interclan_Info.Controls.Add(this.label37);
+            this.Interclan_Info.Controls.Add(this.linkLabel4);
+            this.Interclan_Info.Controls.Add(this.button48);
+            this.Interclan_Info.Controls.Add(this.button47);
+            this.Interclan_Info.Controls.Add(this.label16);
+            this.Interclan_Info.Controls.Add(this.label11);
+            this.Interclan_Info.Controls.Add(this.label10);
+            this.Interclan_Info.Controls.Add(this.label1);
+            resources.ApplyResources(this.Interclan_Info, "Interclan_Info");
+            this.Interclan_Info.Name = "Interclan_Info";
+            this.Interclan_Info.Enter += new System.EventHandler(this.Interclan_Info_Enter);
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::FSFLauncherA3.Properties.Resources.globe;
+            resources.ApplyResources(this.pictureBox17, "pictureBox17");
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.TabStop = false;
+            // 
+            // textBox17
+            // 
+            resources.ApplyResources(this.textBox17, "textBox17");
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            // 
+            // textBox12
+            // 
+            resources.ApplyResources(this.textBox12, "textBox12");
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            // 
+            // textBox10
+            // 
+            resources.ApplyResources(this.textBox10, "textBox10");
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            // 
+            // textBox16
+            // 
+            resources.ApplyResources(this.textBox16, "textBox16");
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged_1);
+            // 
+            // textBox15
+            // 
+            resources.ApplyResources(this.textBox15, "textBox15");
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
+            // 
+            // textBox13
+            // 
+            resources.ApplyResources(this.textBox13, "textBox13");
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            // 
+            // textBox14
+            // 
+            resources.ApplyResources(this.textBox14, "textBox14");
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
+            // 
+            // textBox9
+            // 
+            resources.ApplyResources(this.textBox9, "textBox9");
+            this.textBox9.Name = "textBox9";
+            // 
+            // label55
+            // 
+            resources.ApplyResources(this.label55, "label55");
+            this.label55.Name = "label55";
+            this.label55.Click += new System.EventHandler(this.label55_Click);
+            // 
+            // label54
+            // 
+            resources.ApplyResources(this.label54, "label54");
+            this.label54.Name = "label54";
+            // 
+            // label50
+            // 
+            resources.ApplyResources(this.label50, "label50");
+            this.label50.Name = "label50";
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
+            // 
+            // linkLabel4
+            // 
+            resources.ApplyResources(this.linkLabel4, "linkLabel4");
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            // 
+            // button48
+            // 
+            resources.ApplyResources(this.button48, "button48");
+            this.button48.Name = "button48";
+            this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.button48_Click);
+            // 
+            // button47
+            // 
+            resources.ApplyResources(this.button47, "button47");
+            this.button47.Name = "button47";
+            this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // label31
             // 
             resources.ApplyResources(this.label31, "label31");
@@ -2252,6 +2435,17 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // textBox18
+            // 
+            resources.ApplyResources(this.textBox18, "textBox18");
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -2347,6 +2541,9 @@
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.Interclan_Info.ResumeLayout(false);
+            this.Interclan_Info.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -2609,6 +2806,30 @@
         internal System.Windows.Forms.Label label_INTERCLANVitesseSynchro;
         internal System.Windows.Forms.Label label_INTERCLANTailleSynchro;
         internal System.Windows.Forms.CheckBox checkBox_SyncINTERCLAN;
+        internal System.Windows.Forms.TextBox textBox9;
+        internal System.Windows.Forms.Label label55;
+        internal System.Windows.Forms.Label label54;
+        internal System.Windows.Forms.Label label50;
+        internal System.Windows.Forms.Label label37;
+        internal System.Windows.Forms.LinkLabel linkLabel4;
+        internal System.Windows.Forms.Button button48;
+        internal System.Windows.Forms.Button button47;
+        internal System.Windows.Forms.Label label16;
+        internal System.Windows.Forms.Label label11;
+        internal System.Windows.Forms.Label label10;
+        internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.TextBox textBox14;
+        internal System.Windows.Forms.TextBox textBox13;
+        internal System.Windows.Forms.TextBox textBox15;
+        internal System.Windows.Forms.TextBox textBox16;
+        internal System.Windows.Forms.TextBox textBox12;
+        internal System.Windows.Forms.TextBox textBox10;
+        internal System.Windows.Forms.TextBox textBox17;
+        internal System.Windows.Forms.Label label19;
+        internal System.Windows.Forms.PictureBox pictureBox17;
+        internal System.Windows.Forms.TabPage Interclan_Info;
+        internal System.Windows.Forms.TextBox textBox18;
+        internal System.Windows.Forms.Label label27;
     }
 }
 

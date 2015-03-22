@@ -36,8 +36,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>284</ApplicationRevision>
-    <ApplicationVersion>1.53.0320.%2a</ApplicationVersion>
+    <ApplicationRevision>286</ApplicationRevision>
+    <ApplicationVersion>1.55.0322.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -129,6 +129,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\interclan.cs" />
     <Compile Include="Classes\Interface.cs" />
     <Compile Include="Classes\Priority.cs" />
     <Compile Include="Classes\ProcessSurveillance.cs" />

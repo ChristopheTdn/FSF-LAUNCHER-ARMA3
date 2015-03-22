@@ -157,6 +157,30 @@ namespace FSFLauncherA3
             }
             return false;
         }
+        static public void lancerTeamspeak3TaskForceINTERCLAN(string adresseTEAMSPEAK,string passwordTEAMSPEAK)
+        {
+            Process[] ts364bit = Process.GetProcessesByName("ts3client_win64");
+            Process[] ts332bit = Process.GetProcessesByName("ts3client_win32");
+
+            if (ts364bit.Length == 0 && ts332bit.Length == 0)
+            {
+                //test l'existence d'un process
+                // lance TASK FORCE
+                Process ts3TaskForce = new Process();
+                // Activation de l'envoi des événements
+                ts3TaskForce.StartInfo.UseShellExecute = true;
+                ts3TaskForce.StartInfo.Verb = "runas";
+                ts3TaskForce.StartInfo.FileName = FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\TeamSpeak3TaskForce3016\TeamSpeak3\ts3client_win64.exe";
+                ts3TaskForce.StartInfo.Arguments = "ts3server://" + adresseTEAMSPEAK + "?password=" + passwordTEAMSPEAK;
+                //ts3TaskForce.StartInfo.CreateNoWindow = true;
+                ts3TaskForce.Start();
+            }
+            else
+            {
+                var infoBox = MessageBox.Show("Impossible de lancer le TS3 (code d'erreur #CONHARD 00x277H). Vous semblez avoir TS3 deja lancé sur votre ordinateur.", "Erreur TS3 en cours d'execution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
         static public void lancerTeamspeak3TaskForce3016()
         {
             Process[] ts364bit = Process.GetProcessesByName("ts3client_win64");
@@ -177,7 +201,7 @@ namespace FSFLauncherA3
             }
             else
             {
-                var infoBox = MessageBox.Show("Impossible de lancer le TS3 dédié à TASK FORCE (code d'erreur #CON HARD 00x276H). Vous semblez avoir TS3 deja lancé sur votre ordinateur.", "Erreur TS3 en cours d'execution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var infoBox = MessageBox.Show("Impossible de lancer le TS3 dédié à TASK FORCE (code d'erreur #CONHARD 00x276H). Vous semblez avoir TS3 deja lancé sur votre ordinateur.", "Erreur TS3 en cours d'execution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
