@@ -609,15 +609,5 @@ namespace FSFLauncherA3.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
-        /// </summary>
-        internal static byte[] WinSCPnet {
-            get {
-                object obj = ResourceManager.GetObject("WinSCPnet", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

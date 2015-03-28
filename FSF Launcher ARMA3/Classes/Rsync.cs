@@ -257,7 +257,7 @@ namespace RSync
                             if (e.Data.StartsWith("Total transferred file size: "))
                             {
                                 
-                                String[] a = e.Data.Split(new char[] { ' ' });
+                                String[] a = e.Data.Split(new char[] {' '});
                                 foreach (String s in a)
                                 {
                                     if (s.IndexOf(",") > -1)

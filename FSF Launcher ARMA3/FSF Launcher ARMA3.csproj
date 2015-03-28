@@ -36,7 +36,7 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>286</ApplicationRevision>
+    <ApplicationRevision>288</ApplicationRevision>
     <ApplicationVersion>1.55.0322.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -394,7 +394,6 @@
     <None Include="gfx\helmet\next-Helmet.png" />
     <None Include="gfx\logo-fsf.png" />
     <None Include="dll\Infralution.Localization.dll" />
-    <Content Include="dll\WinSCPnet.dll" />
     <Content Include="gfx\ajouter-vert-plus-icone-9105-128.png" />
     <None Include="gfx\ajouterListe.png" />
     <None Include="gfx\blasonfsfA3.png" />

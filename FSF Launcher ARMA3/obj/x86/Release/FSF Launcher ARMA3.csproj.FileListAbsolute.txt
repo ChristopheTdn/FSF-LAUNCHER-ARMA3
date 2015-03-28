@@ -8,7 +8,6 @@ E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\el-
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\es-ES\FSFLauncherA3.resources.dll
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\ru-RU\FSFLauncherA3.resources.dll
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\Infralution.Localization.dll
-E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\WinSCPnet.dll
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_Unlock.resources
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_DefautApparence.resources
 E:\Documents de ToF\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_DefautLocalisationA3.resources

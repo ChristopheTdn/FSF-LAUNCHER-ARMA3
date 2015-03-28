@@ -3,10 +3,10 @@
   <PropertyGroup>
     <PublishUrlHistory>ftp://www.clan-gign.net/www/FSFLauncherA3/|ftp://www.clan-gign.net/FSFLauncherA3/</PublishUrlHistory>
     <InstallUrlHistory>http://www.clan-gign.net/FSFLauncherA3/</InstallUrlHistory>
-    <SupportUrlHistory />
+    <SupportUrlHistory>http://www.clan-fsf.fr</SupportUrlHistory>
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />
-    <ErrorReportUrlHistory />
+    <ErrorReportUrlHistory>https://code.google.com/p/fsf-launcher-a3/issues/list</ErrorReportUrlHistory>
     <FallbackCulture>fr-FR</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
