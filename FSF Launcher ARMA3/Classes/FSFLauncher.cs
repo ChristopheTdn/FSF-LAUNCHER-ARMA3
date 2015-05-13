@@ -1,19 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
 using System.Xml;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Net;
 using System.Reflection;
-using WinSCP;
 using Microsoft.Win32;
-using System.Deployment.Application;
-using System.Threading;
-using System.Collections;
-using Infralution.Localization;
 
 /*
  * class FSF LAUNCHER par ToF
@@ -610,9 +603,10 @@ namespace FSFLauncherA3
             if (fenetrePrincipale.checkBox_HeadlessClient.Checked) { listArguments += @"-name=""HeadLess Client"" -localhost=127.0.0.1 -connect=localhost -port="+fenetrePrincipale.textBox2.Text+" -password="+fenetrePrincipale.textBox3.Text+" -client -nosound "; }
             if (fenetrePrincipale.checkBox13.Checked) { listArguments += " " + fenetrePrincipale.textBox4.Text + " "; }
             if (fenetrePrincipale.checkBox_EnableHT.Checked) { listArguments += "-enableHT "; }
-            if (profil == "public" || profil == "interclan")
+            if (//profil == "public"|| 
+                profil == "interclan")
             {
-                if (profil == "public") { listArguments += @" ""-MOD=@FSF\@TEMPLATE\@CBA_A3;@FSF\@TEMPLATE\@task_force_radio;@FSF\@ISLANDS\@AllInArmaTerrainPack;@FSF\@ISLANDS\@fata;@FSF\@UNITS\@RHSAFRF;@FSF\@UNITS\@RHSUSF;@FSF\@FRAMEWORK\@agm;"" "; };
+                //if (profil == "public") { listArguments += @" ""-MOD=@FSF\@TEMPLATE\@CBA_A3;@FSF\@TEMPLATE\@task_force_radio;@FSF\@ISLANDS\@AllInArmaTerrainPack;@FSF\@ISLANDS\@fata;@FSF\@UNITS\@RHSAFRF;@FSF\@UNITS\@RHSUSF;@FSF\@FRAMEWORK\@agm;"" "; };
                 if (profil == "interclan") { listArguments += @" """ + FSFLauncherCore.fenetrePrincipale.textBox18.Text + @""" "; }
             }
             else { listArguments += @"""" + listMODS + @""" "; };
@@ -710,25 +704,7 @@ namespace FSFLauncherA3
          */
         #region Synchronisation
  
-        static public void FileTransferred(object sender, TransferEventArgs e)
-        {
-            if (e.Error == null)
-            {
-                fenetrePrincipale.textBox11.AppendText(e.FileName + " (ok)" + Environment.NewLine); 
-
-            }
-            else
-            {
-                if (e.FileName.IndexOf("FSFLauncher") == 0)
-                {
-                    fenetrePrincipale.textBox11.AppendText("ERREUR :" + e.FileName + " (" + e.Error + ")" + Environment.NewLine);
-                }
-                else
-                {
-                    fenetrePrincipale.textBox11.AppendText("INFO  : Impossible de mettre a jour FSFLauncher.exe quand il est lancé" + Environment.NewLine);
-                }
-            }
-        }
+       
 
         static public void synchroRsyncTaille(string NomRep, Button BoutonSender, ProgressBar ProgressDetail, ProgressBar ProgressGeneral, Control labelTailleSynchro, Control labelVitesseSynchro)
         {

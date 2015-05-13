@@ -1,18 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.IO;
-using System.Diagnostics;
 using System.Xml;
 using System.Net;
-using Microsoft.Win32;
-using System.Deployment.Application;
-using WinSCP;
-using System.ComponentModel;
-using System.Reflection;
-using System.Globalization;
-using System.Threading;
-using System.Collections;
-using Infralution.Localization;
 
 
 namespace FSFLauncherA3
