@@ -16,7 +16,7 @@ namespace PboClassReferenceBuilder
             {
                 Directory.Delete(configDir, true);
             }
-            catch (Exception e)
+            catch
             {
                 //Console.WriteLine(e.Message);
             }
@@ -31,7 +31,7 @@ namespace PboClassReferenceBuilder
                 pboFiles = Directory.GetFiles(path, "*.cpp", SearchOption.AllDirectories);
                 return pboFiles;
             }
-            catch (Exception e)
+            catch 
             {
                 return new string[0];
             }

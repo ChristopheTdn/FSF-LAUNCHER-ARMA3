@@ -111,8 +111,9 @@ namespace FSFLauncherA3
             Interface.ChangeLangage(GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "langage"));
             if (isFSFValid())
            {
-               timerSynchro.Tick += new EventHandler(TimerSynchroEvent);
-               timerSynchro.Interval = 30000; // 5 min
+                Interface.AfficheMissionServeurMulti();
+                timerSynchro.Tick += new EventHandler(TimerSynchroEvent);
+               timerSynchro.Interval = 30000; 
                timerSynchro.Start();
            }
         }
@@ -122,7 +123,8 @@ namespace FSFLauncherA3
             if (FSFLauncherCore.fenetrePrincipale.button1.Enabled)
             {
                 Interface.AlerteVersionArma3();
-                FSFLauncherCore.synchroRsyncTaille("", FSFLauncherCore.fenetrePrincipale.button16, null, null, FSFLauncherCore.fenetrePrincipale.label8, null);           
+                FSFLauncherCore.synchroRsyncTaille("", FSFLauncherCore.fenetrePrincipale.button16, null, null, FSFLauncherCore.fenetrePrincipale.label8, null);
+                Interface.AfficheMissionServeurMulti();          
             }
             timerSynchro.Start();
         }
@@ -635,9 +637,6 @@ namespace FSFLauncherA3
             if (apparenceValide())
             {
                 fenetrePrincipale.button1.Enabled = false;
-                fenetrePrincipale.button35.Enabled = false;
-                fenetrePrincipale.button36.Enabled = false;
-                fenetrePrincipale.button37.Enabled = false;
                 generationLigneArguments(serveur);
                 if (serveur == "newofficiel") { serveur = @"-connect=37.59.52.201 -port=4442 -password=honneur "; };
                 if (serveur == "newmapping") { serveur = @"-connect=37.59.52.201 -port=3302 -password=patrie "; };
@@ -745,9 +744,6 @@ namespace FSFLauncherA3
             RSync.RSyncCall rSyncCall = new RSync.RSyncCall(arguments, FSFLauncherCore.fenetrePrincipale, BoutonSender, FSFLauncherCore.fenetrePrincipale.textBox11, ProgressDetail, ProgressGeneral, rsyncExe, remoteServer, remoteDir, localDir, labelTailleSynchro, labelVitesseSynchro);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button16);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button1);
-            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button35);
-            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button36);
-            rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.button37);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.comboBox4);
             rSyncCall.addControlToDisable(FSFLauncherCore.fenetrePrincipale.labelSynchronisationInvisible);
             rSyncCall.start();

@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Priorité.Text" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
+  <data name="Options.Text" xml:space="preserve">
+    <value>Opciones</value>
+  </data>
   <data name="button13.Text" xml:space="preserve">
     <value>Invertir selección</value>
   </data>
@@ -177,8 +183,8 @@
   <data name="button29.ToolTip" xml:space="preserve">
     <value>Más prioridad</value>
   </data>
-  <data name="Priorité.Text" xml:space="preserve">
-    <value>Prioridad</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Parámetros de experto</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
@@ -536,8 +542,8 @@ solo si sabes lo que haces</value>
   <data name="checkBox7.Text" xml:space="preserve">
     <value>Número de CPUs</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Parámetros de experto</value>
+  <data name="progExterne.Text" xml:space="preserve">
+    <value>Programas de terceros</value>
   </data>
   <data name="checkBox11.Text" xml:space="preserve">
     <value>Activar Fraps</value>
@@ -545,8 +551,8 @@ solo si sabes lo que haces</value>
   <data name="checkBox12.Text" xml:space="preserve">
     <value>Activar TrackIR5</value>
   </data>
-  <data name="progExterne.Text" xml:space="preserve">
-    <value>Programas de terceros</value>
+  <data name="profil.Text" xml:space="preserve">
+    <value>Perfil</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 13</value>
@@ -554,11 +560,11 @@ solo si sabes lo que haces</value>
   <data name="label18.Text" xml:space="preserve">
     <value> Añadir un perfil :</value>
   </data>
-  <data name="profil.Text" xml:space="preserve">
-    <value>Perfil</value>
-  </data>
   <data name="Langage.Text" xml:space="preserve">
     <value>Idioma</value>
+  </data>
+  <data name="Apropos.Text" xml:space="preserve">
+    <value>Acerca de...</value>
   </data>
   <data name="linkLabel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 33</value>
@@ -581,8 +587,8 @@ solo si sabes lo que haces</value>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 78</value>
   </data>
-  <data name="Apropos.Text" xml:space="preserve">
-    <value>Acerca de...</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Parámetros</value>
   </data>
   <data name="checkBox23.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 17</value>
@@ -650,14 +656,8 @@ solo si sabes lo que haces</value>
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Modo ventana</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Parámetros</value>
-  </data>
-  <data name="Options.Text" xml:space="preserve">
-    <value>Opciones</value>
-  </data>
   <data name="checkBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 616</value>
+    <value>11, 633</value>
   </data>
   <data name="checkBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 17</value>
@@ -672,7 +672,7 @@ solo si sabes lo que haces</value>
     <value>Lanzar ARMA 3</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 585</value>
+    <value>40, 600</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -684,7 +684,7 @@ solo si sabes lo que haces</value>
     <value>Guardar el perfil</value>
   </data>
   <data name="checkBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 593</value>
+    <value>11, 616</value>
   </data>
   <data name="checkBox24.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 17</value>

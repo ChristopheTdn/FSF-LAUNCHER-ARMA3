@@ -36,8 +36,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>295</ApplicationRevision>
-    <ApplicationVersion>1.60.0513.%2a</ApplicationVersion>
+    <ApplicationRevision>298</ApplicationRevision>
+    <ApplicationVersion>1.60.0515.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -178,11 +178,6 @@
     <Compile Include="Form\FenetrePrincipale.Designer.cs">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FenetrePrincipale.en.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FenetrePrincipale.en.resx</DependentUpon>
-    </Compile>
     <Compile Include="Classes\FSFLauncher.cs" />
     <Compile Include="Form\ChoixLangue.cs">
       <SubType>Form</SubType>
@@ -242,13 +237,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FenetrePrincipale.en.resx">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>FenetrePrincipale.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FenetrePrincipale.es-ES.resx">
-      <DependentUpon>FenetrePrincipale.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\FenetrePrincipale.fr-FR.resx">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FenetrePrincipale.resx">

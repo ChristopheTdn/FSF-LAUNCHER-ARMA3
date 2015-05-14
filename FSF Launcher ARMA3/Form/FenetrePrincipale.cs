@@ -738,7 +738,12 @@ namespace FSFLauncherA3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FSFLauncherCore.lancerJeu("");
+            string serveur="";
+            if (checkBox_SERVEUR_OFFICIEL.Checked) { serveur = "newofficiel"; };
+            if (checkBox_SERVEUR_MAPPING.Checked) { serveur = "newmapping"; };
+            if (checkBox_SERVEUR_PUBLIC.Checked) { serveur = "public"; };
+            FSFLauncherCore.lancerJeu(serveur);
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -1531,9 +1536,32 @@ namespace FSFLauncherA3
             FSFLauncherCore.lancerJeu("interclan");
         }
 
+        private void checkBox14_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (checkBox_SERVEUR_OFFICIEL.Checked)
+            {
+                checkBox_SERVEUR_MAPPING.Checked = false;
+                checkBox_SERVEUR_PUBLIC.Checked = false;
+            }
+        }
 
+        private void checkBox15_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_SERVEUR_MAPPING.Checked)
+            {
+                checkBox_SERVEUR_OFFICIEL.Checked = false;
+                checkBox_SERVEUR_PUBLIC.Checked = false;
+            }
+        }
 
-
+        private void checkBox16_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_SERVEUR_PUBLIC.Checked)
+            {
+                checkBox_SERVEUR_OFFICIEL.Checked = false;
+                checkBox_SERVEUR_MAPPING.Checked = false;
+            }
+        }
     }
 }
     

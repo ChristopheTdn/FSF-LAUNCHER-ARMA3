@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+using Arma3Launcher;
 
 namespace FSFLauncherA3
 {
@@ -47,9 +48,6 @@ namespace FSFLauncherA3
                 FSFLauncherCore.fenetrePrincipale.pictureBox36.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button39.Visible = false;
                 FSFLauncherCore.fenetrePrincipale.button38.Visible = false;
-                FSFLauncherCore.fenetrePrincipale.button37.Visible = false;
-                FSFLauncherCore.fenetrePrincipale.button35.Visible = false;
-                FSFLauncherCore.fenetrePrincipale.button36.Visible = false; 
 
                 // TS3 version 3.0.14
                 FSFLauncherCore.fenetrePrincipale.button18.Visible = false;
@@ -339,8 +337,34 @@ namespace FSFLauncherA3
                     break;
             }
         }
+        static private string genereInfoMapServeur(string serveur, string IpServeur, int portServeur)
+        {
+            string nomMission = "";
+            string nombreJoueur ="";
+            CallArma3Server Arma3Serveur = new CallArma3Server();
+            try
+            {
 
-        
+                Arma3ServerBean bean = Arma3Serveur.call(IpServeur, portServeur);
+                nomMission = bean.getMissionName() + "." + bean.getMapName();
+                nombreJoueur = bean.getConnected();
+            }
+            catch { }
+            if (nomMission.Length > 30) nomMission = nomMission.Substring(0, 30) + "...";
+            return serveur + " (" +nombreJoueur + "):" + nomMission;
+        }
+        static public void AfficheMissionServeurMulti()
+         {
+            // Serveur Officiel
+            FSFLauncherCore.fenetrePrincipale.checkBox_SERVEUR_OFFICIEL.Text = genereInfoMapServeur ("Officiel", "37.59.52.201", 4443);
+
+            // Serveur Mapping
+            FSFLauncherCore.fenetrePrincipale.checkBox_SERVEUR_MAPPING.Text = genereInfoMapServeur("Mapping", "37.59.52.201", 3303);
+
+            // Serveur Public
+            FSFLauncherCore.fenetrePrincipale.checkBox_SERVEUR_PUBLIC.Text = genereInfoMapServeur("Public", "37.59.52.201", 2903);
+        }
+
 
         /*
          *    LANGAGE

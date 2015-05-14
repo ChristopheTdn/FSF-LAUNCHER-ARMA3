@@ -153,10 +153,8 @@ D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF L
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\el-GR\FSFLauncherA3.resources.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\en-US\FSFLauncherA3.resources.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\es-ES\FSFLauncherA3.resources.dll
-D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\fr-FR\FSFLauncherA3.resources.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\ru-RU\FSFLauncherA3.resources.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\Infralution.Localization.dll
-D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSF Launcher ARMA3.csprojResolveAssemblyReference.cache
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_ChangeLog.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_LanceSynchroOfficielle.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_Unlock.resources
@@ -177,7 +175,6 @@ D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF L
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.en-US.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.en.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.es-ES.resources
-D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.fr-FR.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.ru-RU.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSF Launcher ARMA3.csproj.GenerateResource.Cache
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\en\FSFLauncherA3.resources.dll
@@ -186,7 +183,6 @@ D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF L
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\el-GR\FSFLauncherA3.resources.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\en-US\FSFLauncherA3.resources.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\es-ES\FSFLauncherA3.resources.dll
-D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\fr-FR\FSFLauncherA3.resources.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\ru-RU\FSFLauncherA3.resources.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.TrustInfo.xml
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.exe.manifest
@@ -195,3 +191,4 @@ D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF L
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.pdb
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\mikero\DePbo.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\mikero\ExtractPboDos.exe
+D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSF Launcher ARMA3.csprojResolveAssemblyReference.cache
