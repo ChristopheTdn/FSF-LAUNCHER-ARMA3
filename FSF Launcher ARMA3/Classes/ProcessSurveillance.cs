@@ -39,9 +39,7 @@ namespace FSFLauncherA3
 
         static public void ProcessDisabled()
         {
-
             FSFLauncherCore.fenetrePrincipale.button1.Enabled = true;
-
         }
        
     }

@@ -111,8 +111,8 @@ namespace FSFLauncherA3
             Interface.ChangeLangage(GetKeyValue(@"Software\Clan FSF\FSF Launcher A3\", "langage"));
             if (isFSFValid())
            {
-                Interface.AfficheMissionServeurMulti();
-                timerSynchro.Tick += new EventHandler(TimerSynchroEvent);
+               Interface.AfficheMissionServeurMulti();
+               timerSynchro.Tick += new EventHandler(TimerSynchroEvent);
                timerSynchro.Interval = 30000; 
                timerSynchro.Start();
            }
@@ -838,26 +838,7 @@ namespace FSFLauncherA3
             }
             return resultat;
         }
-        static private bool downloadnouvelleVersion(string nomFichier, string repertoireFTP, string username, string password, string destinationRepertoire)
-        {
-            // parametre : nom du fichier téléchargé sur le FTP, répertoire d'emplacement dans le FTP, emplacement ou sera enregistré le fichier
-            try
-            {
 
-                WebClient request = new WebClient();
-                request.Credentials = new NetworkCredential(username, password);
-                byte[] fileData = request.DownloadData("ftp://" + repertoireFTP + "/" + nomFichier);
-                FileStream file = File.Create(destinationRepertoire + nomFichier);
-                file.Write(fileData, 0, fileData.Length);
-                file.Close();
-                return true;
-            }
-            catch
-            {
-                //MessageBox.Show("Impossible de réaliser la mise à jour automatique du programme. Nouvel essai...\n\n"+e,"Erreur Critique",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                return false;
-            }
-        }
         static private string testTailleLocal(string cheminFichier)
         {
             FileInfo f = new FileInfo(cheminFichier);

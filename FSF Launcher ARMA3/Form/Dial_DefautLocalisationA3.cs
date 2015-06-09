@@ -20,5 +20,10 @@ namespace FSFLauncherA3
         {
             this.Close();
         }
+
+        private void Dial_DefautLocalisationA3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

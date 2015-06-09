@@ -36,8 +36,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>298</ApplicationRevision>
-    <ApplicationVersion>1.60.0515.%2a</ApplicationVersion>
+    <ApplicationRevision>299</ApplicationRevision>
+    <ApplicationVersion>1.61.0515.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -127,6 +127,7 @@
   <ItemGroup>
     <Compile Include="Classes\CallArma3Server.cs" />
     <Compile Include="Classes\ConfigCpp.cs" />
+    <Compile Include="Classes\GestFile.cs" />
     <Compile Include="Classes\interclan.cs" />
     <Compile Include="Classes\Interface.cs" />
     <Compile Include="Classes\PboFiles.cs" />
@@ -136,17 +137,17 @@
     <Compile Include="Classes\FormSerializer.cs" />
     <Compile Include="Classes\ResidentAdmin.cs" />
     <Compile Include="Classes\Rsync.cs" />
+    <Compile Include="Form\DIAL_SynchroMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DIAL_SynchroMission.Designer.cs">
+      <DependentUpon>DIAL_SynchroMission.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\Dial_ChangeLog.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Dial_ChangeLog.Designer.cs">
       <DependentUpon>Dial_ChangeLog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\Dial_LanceSynchroOfficielle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\Dial_LanceSynchroOfficielle.Designer.cs">
-      <DependentUpon>Dial_LanceSynchroOfficielle.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\Dial_Unlock.cs">
       <SubType>Form</SubType>
@@ -165,12 +166,6 @@
     </Compile>
     <Compile Include="Form\Dial_DefautApparence.Designer.cs">
       <DependentUpon>Dial_DefautApparence.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\Dial_LanceSynchroBeta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\Dial_LanceSynchroBeta.Designer.cs">
-      <DependentUpon>Dial_LanceSynchroBeta.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FenetrePrincipale.cs">
       <SubType>Form</SubType>
@@ -196,11 +191,8 @@
     <EmbeddedResource Include="Form\Dial_ChangeLog.resx">
       <DependentUpon>Dial_ChangeLog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Dial_LanceSynchroOfficielle.en.resx">
-      <DependentUpon>Dial_LanceSynchroOfficielle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\Dial_LanceSynchroOfficielle.resx">
-      <DependentUpon>Dial_LanceSynchroOfficielle.cs</DependentUpon>
+    <EmbeddedResource Include="Form\DIAL_SynchroMission.resx">
+      <DependentUpon>DIAL_SynchroMission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Dial_Unlock.en.resx">
       <DependentUpon>Dial_Unlock.cs</DependentUpon>
@@ -216,12 +208,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Dial_DefautLocalisationA3.resx">
       <DependentUpon>Dial_DefautLocalisationA3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\Dial_LanceSynchroBeta.en.resx">
-      <DependentUpon>Dial_LanceSynchroBeta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\Dial_LanceSynchroBeta.resx">
-      <DependentUpon>Dial_LanceSynchroBeta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FenetrePrincipale.de-DE.resx">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>

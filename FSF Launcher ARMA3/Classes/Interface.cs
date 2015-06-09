@@ -337,7 +337,7 @@ namespace FSFLauncherA3
                     break;
             }
         }
-        static private string genereInfoMapServeur(string serveur, string IpServeur, int portServeur)
+        static private void genereInfoMapServeur(string serveur, string IpServeur, int portServeur, Control control_InfoServeur, Control control_NomMission)
         {
             string nomMission = "";
             string nombreJoueur ="";
@@ -350,19 +350,21 @@ namespace FSFLauncherA3
                 nombreJoueur = bean.getConnected();
             }
             catch { }
-            if (nomMission.Length > 30) nomMission = nomMission.Substring(0, 30) + "...";
-            return serveur + " (" +nombreJoueur + "):" + nomMission;
+            control_InfoServeur.Text = serveur + " (" + nombreJoueur + "):";
+            control_NomMission.Text = nomMission;
+            
         }
         static public void AfficheMissionServeurMulti()
          {
             // Serveur Officiel
-            FSFLauncherCore.fenetrePrincipale.checkBox_SERVEUR_OFFICIEL.Text = genereInfoMapServeur ("Officiel", "37.59.52.201", 4443);
+           genereInfoMapServeur ("Officiel", "37.59.52.201", 4443, FSFLauncherCore.fenetrePrincipale.checkBox_SERVEUR_OFFICIEL, FSFLauncherCore.fenetrePrincipale.textBox_nomMissionOFFICIELLE);
 
             // Serveur Mapping
-            FSFLauncherCore.fenetrePrincipale.checkBox_SERVEUR_MAPPING.Text = genereInfoMapServeur("Mapping", "37.59.52.201", 3303);
+           genereInfoMapServeur("Mapping", "37.59.52.201", 3303, FSFLauncherCore.fenetrePrincipale.checkBox_SERVEUR_MAPPING, FSFLauncherCore.fenetrePrincipale.textBox_nomMissionMAPPING);
 
             // Serveur Public
-            FSFLauncherCore.fenetrePrincipale.checkBox_SERVEUR_PUBLIC.Text = genereInfoMapServeur("Public", "37.59.52.201", 2903);
+           genereInfoMapServeur("Public", "37.59.52.201", 2903, FSFLauncherCore.fenetrePrincipale.checkBox_SERVEUR_PUBLIC, FSFLauncherCore.fenetrePrincipale.textBox_nomMissionPUBLIC);
+
         }
 
 
@@ -502,6 +504,17 @@ namespace FSFLauncherA3
         static public void AfficheChangelog()
         {
             Form dialogue = new Dial_ChangeLog();
+            dialogue.ShowDialog();
+        }
+        #endregion
+
+        /*
+              Recupere LIST MOD MISSION
+        */
+        #region LISTMODMISSION
+        static public void AfficheChargelistMod()
+        {
+            Form dialogue = new DIAL_SynchroMission();
             dialogue.ShowDialog();
         }
         #endregion

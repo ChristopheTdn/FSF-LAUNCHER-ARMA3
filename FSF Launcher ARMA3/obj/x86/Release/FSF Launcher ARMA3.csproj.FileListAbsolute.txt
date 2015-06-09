@@ -156,19 +156,15 @@ D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF L
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\ru-RU\FSFLauncherA3.resources.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\Infralution.Localization.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_ChangeLog.resources
-D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_LanceSynchroOfficielle.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_Unlock.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_DefautApparence.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_DefautLocalisationA3.resources
-D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_LanceSynchroBeta.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.langue.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.SplashScreen.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Properties.Resources.resources
-D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_LanceSynchroOfficielle.en.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_Unlock.en.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_DefautApparence.en.resources
-D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_LanceSynchroBeta.en.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.de-DE.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.de.resources
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.el-GR.resources
@@ -192,3 +188,65 @@ D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF L
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\mikero\DePbo.dll
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\mikero\ExtractPboDos.exe
 D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSF Launcher ARMA3.csprojResolveAssemblyReference.cache
+D:\Zone DOCUMENTS\Documents de ToF\Mes Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.DIAL_SynchroMission.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\mikero\DePbo.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\mikero\ExtractPboDos.exe
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cwrsync.cmd
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygcrypto-1.0.0.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cyggcc_s-1.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygiconv-2.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygssp-0.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygwin1.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\cygz.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\README.cwrsync.txt
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\README.rsync.txt
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\rsync.exe
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\rsync.html
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\rsyncd.conf.html
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\ssh-keygen.exe
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\rsync\ssh.exe
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\FSFLauncherA3.exe.config
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\FSFLauncherA3.exe.manifest
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\FSFLauncherA3.application
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\FSFLauncherA3.exe
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\FSFLauncherA3.pdb
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\en\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\de-DE\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\de\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\el-GR\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\en-US\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\es-ES\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\ru-RU\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\bin\Release\Infralution.Localization.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSF Launcher ARMA3.csprojResolveAssemblyReference.cache
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_ChangeLog.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.DIAL_SynchroMission.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_Unlock.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_DefautApparence.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_DefautLocalisationA3.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.langue.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.SplashScreen.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Properties.Resources.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_Unlock.en.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.Dial_DefautApparence.en.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.de-DE.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.de.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.el-GR.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.en-US.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.en.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.es-ES.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.FenetrePrincipale.ru-RU.resources
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSF Launcher ARMA3.csproj.GenerateResource.Cache
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\en\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\de-DE\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\de\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\el-GR\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\en-US\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\es-ES\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\ru-RU\FSFLauncherA3.resources.dll
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.TrustInfo.xml
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.exe.manifest
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.application
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.exe
+D:\Zone Documents\ToF\Documents\GitHub\FSF-LAUNCHER-ARMA3\FSF Launcher ARMA3\obj\x86\Release\FSFLauncherA3.pdb

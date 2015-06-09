@@ -50,5 +50,7 @@ namespace PboClassReferenceBuilder
             proc = Process.Start(startInfo);
             proc.WaitForExit();
         }
+
+     
     }
 }

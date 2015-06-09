@@ -525,6 +525,7 @@ namespace FSFLauncherA3
             reqStream.Write(buffer, 0, buffer.Length);
             reqStream.Close();
         }
+
         void sauvegardeInfoServeur(string typeServeur)
         {
             if (typeServeur == "LOCAL")
@@ -962,15 +963,24 @@ namespace FSFLauncherA3
 
         private void button39_Click(object sender, EventArgs e)
         {
-            if (!System.IO.File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml"))
+            if (checkBox_SERVEUR_MAPPING.Checked || checkBox_SERVEUR_OFFICIEL.Checked || checkBox_SERVEUR_PUBLIC.Checked)             
             {
-                //le fichier n'existe pas
-                FileStream fs = File.Create(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml");
-                fs.Close();
+                Interface.AfficheChargelistMod();
+                genereTabModsImportServeur();
+                MessageBox.Show("Liste des MODS importée.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            DownloadConfigServeur("ImportConfigServeurA3.xml", "ftp://37.59.36.179/system/listemod", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
-            genereTabModsImportServeur();
-            MessageBox.Show("Liste des MODS importée.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                if (!System.IO.File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml"))
+                {
+                    //le fichier n'existe pas
+                    FileStream fs = File.Create(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml");
+                    fs.Close();
+                }
+                DownloadConfigServeur("ImportConfigServeurA3.xml", "ftp://37.59.36.179/system/listemod", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
+                genereTabModsImportServeur();
+                MessageBox.Show("Liste des MODS importée.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            };
         }
 
         private void button38_Click(object sender, EventArgs e)
