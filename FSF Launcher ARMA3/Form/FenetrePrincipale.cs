@@ -963,20 +963,27 @@ namespace FSFLauncherA3
 
         private void button39_Click(object sender, EventArgs e)
         {
-            if (checkBox_SERVEUR_MAPPING.Checked || checkBox_SERVEUR_OFFICIEL.Checked || checkBox_SERVEUR_PUBLIC.Checked)             
+            if (!System.IO.File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml"))
             {
-                Interface.AfficheChargelistMod();
-                genereTabModsImportServeur();
-                MessageBox.Show("Liste des MODS importée.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //le fichier n'existe pas
+                FileStream fs = File.Create(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml");
+                fs.Close();
+            }
+            if (checkBox_SERVEUR_MAPPING.Checked || checkBox_SERVEUR_OFFICIEL.Checked || checkBox_SERVEUR_PUBLIC.Checked)             
+            {                
+                Form dialogue = new DIAL_SynchroMission();
+                dialogue.ShowDialog();
+                if (dialogue.DialogResult == DialogResult.Abort) {
+                    MessageBox.Show("Echec dans l'importation des Mods.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                };
+                if (dialogue.DialogResult == DialogResult.OK)
+                {
+                    genereTabModsImportServeur();
+                    MessageBox.Show("Liste des MODS importée.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                };
             }
             else
             {
-                if (!System.IO.File.Exists(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml"))
-                {
-                    //le fichier n'existe pas
-                    FileStream fs = File.Create(FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\ImportConfigServeurA3.xml");
-                    fs.Close();
-                }
                 DownloadConfigServeur("ImportConfigServeurA3.xml", "ftp://37.59.36.179/system/listemod", FSFLauncherCore.cheminARMA3 + @"\userconfig\FSF-LauncherA3\");
                 genereTabModsImportServeur();
                 MessageBox.Show("Liste des MODS importée.", "Importation Liste MODs", MessageBoxButtons.OK, MessageBoxIcon.Information);

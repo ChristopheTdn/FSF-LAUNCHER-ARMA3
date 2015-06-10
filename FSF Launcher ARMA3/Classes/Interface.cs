@@ -508,15 +508,6 @@ namespace FSFLauncherA3
         }
         #endregion
 
-        /*
-              Recupere LIST MOD MISSION
-        */
-        #region LISTMODMISSION
-        static public void AfficheChargelistMod()
-        {
-            Form dialogue = new DIAL_SynchroMission();
-            dialogue.ShowDialog();
-        }
-        #endregion
+   
     }
 }
