@@ -1,8 +1,9 @@
 FSF-LAUNCHER-ARMA3
 ==================
 
-a Launcher for ARMA 3. 
+THIS PROJECT IS CLOSED
 
-Installation link : http://www.clan-gign.net/FSFLauncherA3/publish.htm
+But it continue under the name GOS-LAUNCHER-ARMA3 (https://github.com/ChristopheTdn/GOS-LAUNCHER-ARMA3)
 
-Presentation : see wiki(https://github.com/ChristopheTdn/FSF-LAUNCHER-ARMA3/wiki)
+ToF
+
